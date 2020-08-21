@@ -3,7 +3,7 @@ eval('clear all');
 eval('clc');
 %% 1.根据目录确定slx文件名称并保存版本
 [path,~]=fileparts(mfilename('fullpath'));
-getFileName=ls(strcat(pwd,'\*.slx')); %  *脚本和excel输入文件放在同一个文件夹该文件夹下有且只有一个文件xlsx文件
+getFileName=ls(strcat(pwd,'\*.slx')); %  *脚本和slx放在同一个文件夹该文件夹下有且只有一个slx文件
 FileNum = size(getFileName);
 if  isequal(getFileName,'') % 防止选择空文件夹
     fprintf('当前目录下没有找到*.slx文件\n');
@@ -21,6 +21,7 @@ module_name = filename(1:4);
 warning('off')
 ModelSavePath = strcat(path,'\ModelSave');
 newfile = strcat(filename,'_AutoSave_',datestr(now,'yyyymmdd_HHMM'));
+protectfile = strcat(filename,'_Protect_MIL_',datestr(now,'yyyymmdd_HHMM'));
 getNewFileName = strcat(newfile,'.slx');
 try
     close_system(filename,newfile);
@@ -45,7 +46,6 @@ delete_block(strcat(filename,'/','Runnable_',module_name,'_Step')); % 删除runnab
 delete_block(strcat(SubSystName,'/function'));
 fprintf('2.您的模型[%s.slx]文件已经完成Simulink属性配置并删除Runnable模块\n',filename);
 %% 3.输出slxp模型，输出mat文件
-protectfile = strcat(filename,'_Protect_MIL_',datestr(now,'yyyymmdd_HHMM'));
 getProtectFileName = strcat(protectfile,'.slx');
 getProtectFileName1 = strcat(protectfile,'.slxc');
 getProtectFileName2 = strcat(protectfile,'.slxp');
