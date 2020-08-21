@@ -2,7 +2,7 @@
 eval('clear all');
 eval('clc');
 %% 1.根据目录确定slx文件名称并保存版本
-[path,~]=fileparts(mfilename('fullpath'));
+path = cd;
 getFileName=ls(strcat(pwd,'\*.slx')); %  *脚本和slx放在同一个文件夹该文件夹下有且只有一个slx文件
 FileNum = size(getFileName);
 if  isequal(getFileName,'') % 防止选择空文件夹
@@ -21,7 +21,7 @@ module_name = filename(1:4);
 warning('off')
 ModelSavePath = strcat(path,'\ModelSave');
 newfile = strcat(filename,'_AutoSave_',datestr(now,'yyyymmdd_HHMM'));
-protectfile = strcat(filename,'_Protect_MIL_',datestr(now,'yyyymmdd_HHMM'));
+protectfile = strcat(filename,'_NoProtect_MIL_',datestr(now,'yyyymmdd_HHMM'));
 getNewFileName = strcat(newfile,'.slx');
 try
     close_system(filename,newfile);
@@ -59,18 +59,17 @@ catch
     fprintf('3.！找不到您的“Rte_Type.m”文件，请将文件放于目录下或添加至路径\n');
 end
 sim(protectfile);
-fprintf('3.您已经调整过的[%s.slx]文件已经另存为[%s.slxp]\n',filename,protectfile);
-Simulink.ModelReference.protect(protectfile);
+fprintf('3.您已经调整过的[%s.slx]文件已经另存为[%s.slx]\n',filename,protectfile);
 %% 4.清理多余文件，规整文件并打包
-delete(getProtectFileName);
 delete(getProtectFileName1);
 delete(strcat(filename,'.slxc'));
 close_system(protectfile);
 zipfilename = protectfile;
-zipfilenames = {getProtectFileName2,getProtectFileName3,'Rte_Type.m'};
+zipfilenames = {getProtectFileName,getProtectFileName3,'Rte_Type.m'};
 zip(zipfilename,zipfilenames);
 movefile(strcat(zipfilename,'.zip'),ModelSavePath); 
+delete(getProtectFileName);
 delete(getProtectFileName2);
 delete(getProtectFileName3);
-fprintf('您的ProtectMIL模型已经输出至[%s%s]\n',ModelSavePath,strcat('\',zipfilename,'.zip'));
+fprintf('您的NoProtectMIL模型已经输出至[%s%s]\n',ModelSavePath,strcat('\',zipfilename,'.zip'));
 eval('clear all');
