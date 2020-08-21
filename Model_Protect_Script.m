@@ -1,4 +1,4 @@
-%% ¸ù¾İ½Ó¿ÚÎÄµµ×Ô¶¯Éú³ÉÄ£ĞÍ½Å±¾
+%% ¸ù¾İSWCÄ£ĞÍ×Ô¶¯Éú³ÉProtect ModelºÍMatÎÄ¼ş
 eval('clear all');
 eval('clc');
 %% 1.¸ù¾İÄ¿Â¼È·¶¨slxÎÄ¼şÃû³Æ²¢±£´æ°æ±¾
@@ -7,10 +7,14 @@ getFileName=ls(strcat(pwd,'\*.slx')); %  *½Å±¾ºÍexcelÊäÈëÎÄ¼ş·ÅÔÚÍ¬Ò»¸öÎÄ¼ş¼Ğ¸ÃÎ
 FileNum = size(getFileName);
 if  isequal(getFileName,'') % ·ÀÖ¹Ñ¡Ôñ¿ÕÎÄ¼ş¼Ğ
     fprintf('µ±Ç°Ä¿Â¼ÏÂÃ»ÓĞÕÒµ½*.slxÎÄ¼ş\n');
+    eval('clear all');
+    return;
 elseif  FileNum ~= 1
     fprintf('µ±Ç°Ä¿Â¼ÏÂ´æÔÚ²»Ö¹1¸ö*.slxÎÄ¼ş\n');
+    eval('clear all');
+    return;
 else
-    fprintf('ÄãµÄÄ¿±ê*.slxÎÄ¼şÊÇ:[%s]\n',getFileName);
+    fprintf('1.ÄúµÄÄ¿±ê*.slxÎÄ¼şÊÇ:[%s]\n',getFileName);
 end
 filename = getFileName(1:length(getFileName)-4);    %»ñÈ¡slxÎÄ¼şÃû
 module_name = filename(1:4);
@@ -21,11 +25,11 @@ getNewFileName = strcat(newfile,'.slx');
 try
     close_system(filename,newfile);
     movefile(getNewFileName,ModelSavePath); 
-    fprintf('ÄúÒÑ¾­´ò¿ªµÄÄ£ĞÍ[%s.slx]ÎÄ¼şÒÑ¾­Áí´æÎª[%s.slx]µ½[%s]\n',filename,newfile,ModelSavePath);
+    fprintf('1.ÄúÒÑ¾­´ò¿ªµÄÄ£ĞÍ[%s.slx]ÎÄ¼şÒÑ¾­Áí´æÎª[%s.slx]µ½[%s]\n',filename,newfile,ModelSavePath);
 catch
     copyfile(getFileName,ModelSavePath);
     eval(strcat('!rename',32,ModelSavePath,'\',getFileName,32,getNewFileName));
-    fprintf('ÄúµÄÄ£ĞÍ[%s.slx]ÎÄ¼şÒÑ¾­Áí´æÎª[%s.slx]µ½[%s]\n',filename,newfile,ModelSavePath);
+    fprintf('1.ÄúµÄÄ£ĞÍ[%s.slx]ÎÄ¼şÒÑ¾­Áí´æÎª[%s.slx]µ½[%s]\n',filename,newfile,ModelSavePath);
 end
 open_system(filename);
 
@@ -40,7 +44,8 @@ Subsystem = get_param(SubSystName,'PortHandles');
 delete_line(filename,Runnable.Outport,Subsystem.Trigger);  % É¾³ıÏàÓ¦Ïß¶Î
 delete_block(strcat(filename,'/','Runnable_',module_name,'_Step')); % É¾³ırunnable¶Ë¿Ú
 delete_block(strcat(SubSystName,'/function'));
-fprintf('ÄúµÄÄ£ĞÍ[%s.slx]ÎÄ¼şÒÑ¾­Íê³ÉSimulinkÊôĞÔÅäÖÃ²¢É¾³ıRunnableÄ£¿é\n',filename);
+fprintf('2.ÄúµÄÄ£ĞÍ[%s.slx]ÎÄ¼şÒÑ¾­Íê³ÉSimulinkÊôĞÔÅäÖÃ²¢É¾³ıRunnableÄ£¿é\n',filename);
+%% 3.Êä³öslxpÄ£ĞÍ£¬Êä³ömatÎÄ¼ş
 protectfile = strcat(filename,'_Protect_',datestr(now,'yyyymmdd_HHMM'));
 getProtectFileName = strcat(protectfile,'.slx');
 getProtectFileName1 = strcat(protectfile,'.slxc');
@@ -48,14 +53,22 @@ getProtectFileName2 = strcat(protectfile,'.slxp');
 getProtectFileName3 = strcat(protectfile,'.mat');
 mdlWks = get_param(filename,'ModelWorkspace');
 save(mdlWks,getProtectFileName3);
-fprintf('ÄúÒÑ¾­µ÷Õû¹ıµÄ[%s.slx]ÎÄ¼şModelWorkspaceÒÑ¾­Áí´æÎª[%s.mat]\n',filename,protectfile);
 save_system(filename,protectfile);
-fprintf('ÄúÒÑ¾­µ÷Õû¹ıµÄ[%s.slx]ÎÄ¼şÒÑ¾­Áí´æÎª[%s.slx]\n',filename,protectfile);
 sim(protectfile);
+fprintf('3.ÄúÒÑ¾­µ÷Õû¹ıµÄ[%s.slx]ÎÄ¼şÒÑ¾­Áí´æÎª[%s.slxp]\n',filename,protectfile);
 Simulink.ModelReference.protect(protectfile);
+%% 4.ÇåÀí¶àÓàÎÄ¼ş£¬¹æÕûÎÄ¼ş²¢´ò°ü
 delete(getProtectFileName);
 delete(getProtectFileName1);
 movefile(getProtectFileName2,ModelSavePath); 
 movefile(getProtectFileName3,ModelSavePath); 
 delete(strcat(filename,'.slxc'));
+close_system(protectfile);
+zipfilename = strcat(protectfile);
+zip(zipfilename,getProtectFileName2);
+zip(zipfilename,getProtectFileName3);
+zip(zipfilename,'Rte_Type.m');
+delete(getProtectFileName2);
+delete(getProtectFileName3);
 eval('clear all');
+fprintf('ÄúµÄÄ£ĞÍÒÑ¾­Êä³öslxpÎÄ¼şÓëmatÎÄ¼ş\n');
