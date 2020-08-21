@@ -32,7 +32,6 @@ catch
     fprintf('1.您的模型[%s.slx]文件已经另存为[%s.slx]到[%s]\n',filename,newfile,ModelSavePath);
 end
 open_system(filename);
-
 %% 2.配置Simulink属性，删除Runnable模块
 cs = getActiveConfigSet(filename);
 set_param(cs,'DefaultUnderspecifiedDataType','single');
@@ -54,6 +53,11 @@ getProtectFileName3 = strcat(protectfile,'.mat');
 mdlWks = get_param(filename,'ModelWorkspace');
 save(mdlWks,getProtectFileName3);
 save_system(filename,protectfile);
+try
+    Rte_Type;
+catch
+    fprintf('3.！找不到您的“Rte_Type.m”文件，请将文件放于目录下或添加至路径\n');
+end
 sim(protectfile);
 fprintf('3.您已经调整过的[%s.slx]文件已经另存为[%s.slxp]\n',filename,protectfile);
 Simulink.ModelReference.protect(protectfile);
@@ -62,12 +66,11 @@ delete(getProtectFileName);
 delete(getProtectFileName1);
 delete(strcat(filename,'.slxc'));
 close_system(protectfile);
-zipfilename = strcat(protectfile);
-zip(zipfilename,getProtectFileName2);
-zip(zipfilename,getProtectFileName3);
-zip(zipfilename,strcat(ModelSavePath,'\','Rte_Type.m'));
+zipfilename = protectfile;
+zipfilenames = {getProtectFileName2,getProtectFileName3,'Rte_Type.m'};
+zip(zipfilename,zipfilenames);
 movefile(strcat(zipfilename,'.zip'),ModelSavePath); 
 delete(getProtectFileName2);
 delete(getProtectFileName3);
+fprintf('您的ProtectMIL模型已经输出至[%s%s]\n',ModelSavePath,strcat('\',zipfilename,'.zip'));
 eval('clear all');
-fprintf('您的模型已经输出slxp文件与mat文件\n');
