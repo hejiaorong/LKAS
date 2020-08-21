@@ -1,0 +1,2606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model LKAS
+Model version                : 1.14
+Simulink Coder version       : Simulink Coder 9.0 (R2018b) 24-May-2018
+XML source code generated on : Fri Aug 21 16:34:15 2020
+Model Checksum               : 525869367 2385254217 2440500476 832143965
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>LKAS_pkg</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>LKAS_if</SHORT-NAME>
+                    <ELEMENTS>
+                        <SENDER-RECEIVER-INTERFACE UUID="566cb247-c1e5-5eea-0c34-13c73de5f3cd">
+                            <SHORT-NAME>IMAPve_d_LKA_Main_Switch</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a6176c62-a029-57a7-c6b1-8a72ef280589">
+                                    <SHORT-NAME>IMAPve_d_LKA_Main_Switch</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d4c3fb55-218f-5330-dd8a-907e56b583e9">
+                            <SHORT-NAME>IMAPve_d_LKA_Mode</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="4fc237a7-5da7-5af9-6b04-b73e99d17dc6">
+                                    <SHORT-NAME>IMAPve_d_LKA_Mode</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="501594aa-f32d-54c6-1a44-135f2e469597">
+                            <SHORT-NAME>IMAPve_d_LDW_Warn_Mode</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="30d849f2-17bb-525e-c06b-bad00e581114">
+                                    <SHORT-NAME>IMAPve_d_LDW_Warn_Mode</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f1c9909f-8421-5a65-69b8-58b596861be7">
+                            <SHORT-NAME>IMAPve_d_EPS_LKA_State</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="40741971-95a3-5cda-fe39-0547bec14f4a">
+                                    <SHORT-NAME>IMAPve_d_EPS_LKA_State</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="9e1134a2-ecbc-560b-60c3-5e373c7d3372">
+                            <SHORT-NAME>IMAPve_g_EPS_SW_Trq</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a4f1083a-0c03-5e1b-a3a0-c1088a5c6f04">
+                                    <SHORT-NAME>IMAPve_g_EPS_SW_Trq</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="de4c86f5-017e-530d-9fb3-56ab531c54c5">
+                            <SHORT-NAME>IMAPve_d_EPS_Error_State</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="4a25050a-b734-50d0-00e4-bd30142ba914">
+                                    <SHORT-NAME>IMAPve_d_EPS_Error_State</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="81e8b804-6d74-5bf8-2af0-f1828a688f3a">
+                            <SHORT-NAME>IMAPve_d_EPS_Trq_State</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a746d5e2-a53e-5b61-7be9-b03834fe8722">
+                                    <SHORT-NAME>IMAPve_d_EPS_Trq_State</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="8724f6bb-3e6a-54e6-a998-cad91673e81f">
+                            <SHORT-NAME>IMAPve_d_SAS_Clb_State</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="b40c8137-8fc8-529c-d1dc-e5b6a93c0590">
+                                    <SHORT-NAME>IMAPve_d_SAS_Clb_State</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="cd3a5d1b-323b-58c7-930c-9bbabf0d30fa">
+                            <SHORT-NAME>IMAPve_d_SAS_Trim_State</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e7f9836e-86d2-52a6-68af-682d6a975636">
+                                    <SHORT-NAME>IMAPve_d_SAS_Trim_State</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f67072e8-1674-533e-c976-22dcfca23fd0">
+                            <SHORT-NAME>IMAPve_d_EPS_TrqLim_State</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="16e74e8d-4405-5a11-ab4a-fd29b8d013a6">
+                                    <SHORT-NAME>IMAPve_d_EPS_TrqLim_State</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="1dc59c7f-25c4-56b6-364a-0f167087beb3">
+                            <SHORT-NAME>IMAPve_g_EPS_LKA_Current</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ae82be40-abcb-5afa-7dd8-bb024ef47799">
+                                    <SHORT-NAME>IMAPve_g_EPS_LKA_Current</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="188db064-f6cc-5c90-b0f9-41e8478f70f8">
+                            <SHORT-NAME>IMAPve_g_ESC_LatAcc</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="0de1e9ff-4f59-5b80-1fc5-5fab320f621c">
+                                    <SHORT-NAME>IMAPve_g_ESC_LatAcc</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="93f3365e-d2e4-5358-2403-fa28f7ddaa04">
+                            <SHORT-NAME>IMAPve_d_ESC_LatAcc_Valid</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="b0160d0b-3ea4-53bc-2997-688346ac88ba">
+                                    <SHORT-NAME>IMAPve_d_ESC_LatAcc_Valid</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="3ffbdb23-773e-5b8e-806e-d622b14d0bc6">
+                            <SHORT-NAME>IMAPve_g_ESC_YawRate</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="745b2ca5-8c66-5360-01af-3b3fee856073">
+                                    <SHORT-NAME>IMAPve_g_ESC_YawRate</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="a7eae620-4592-5470-b58a-06fbee88fc45">
+                            <SHORT-NAME>IMAPve_d_ESC_YawRate_Valid</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="973ef45c-8bd5-5f65-df78-d2c9a552a674">
+                                    <SHORT-NAME>IMAPve_d_ESC_YawRate_Valid</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="dc9d5d81-a50b-591e-9e6d-f32a2f67b430">
+                            <SHORT-NAME>IMAPve_g_ESC_UnYawRate</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="9aa47be8-8b34-5759-3e0c-6e4a2b44d837">
+                                    <SHORT-NAME>IMAPve_g_ESC_UnYawRate</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="0f5d3aae-bdae-5956-3705-822f7308dd7c">
+                            <SHORT-NAME>IMAPve_g_ESC_VehSpd</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="5292c764-513c-5037-ab91-601f912be7a4">
+                                    <SHORT-NAME>IMAPve_g_ESC_VehSpd</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="c6c0d34d-ce37-5b51-5df8-b87231d23253">
+                            <SHORT-NAME>IMAPve_g_ESC_LonAcc</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e044f44f-ded7-5a0a-a633-75923ed4b69e">
+                                    <SHORT-NAME>IMAPve_g_ESC_LonAcc</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="96bd1b3e-66c6-5604-057c-4ee5b1926efa">
+                            <SHORT-NAME>IMAPve_d_ESC_LonAcc_Valid</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="27484b29-f13e-5648-a680-08a427edde14">
+                                    <SHORT-NAME>IMAPve_d_ESC_LonAcc_Valid</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="eff0048c-a731-5707-894a-d573948f6b5e">
+                            <SHORT-NAME>IMAPve_g_ESC_Brake_Press</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="fd7a2259-590b-535e-2f78-345f10b8e519">
+                                    <SHORT-NAME>IMAPve_g_ESC_Brake_Press</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="e4d09c92-8c2f-5b81-e0d7-001bb631056b">
+                            <SHORT-NAME>IMAPve_g_SW_Angle</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="002dbc4e-58e2-5e85-b409-5ceddcbae457">
+                                    <SHORT-NAME>IMAPve_g_SW_Angle</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="c974996a-576c-5b51-64c2-b44f979b1c1d">
+                            <SHORT-NAME>IMAPve_g_SW_Angle_Speed</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="139fa181-d5b8-5f98-a79c-b1a8c0fe37d2">
+                                    <SHORT-NAME>IMAPve_g_SW_Angle_Speed</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="59f5bf37-1a7c-5133-9eb5-d8ab3538f93b">
+                            <SHORT-NAME>IMAPve_d_BCM_HazardLamp</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="48435c2c-aa34-5f7b-510a-4bb9ca31f836">
+                                    <SHORT-NAME>IMAPve_d_BCM_HazardLamp</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="3f54fe0f-66e3-56cb-c3eb-b48cf33aa317">
+                            <SHORT-NAME>IMAPve_d_BCM_Left_Light</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="4c7e232f-5a82-50d0-d705-11d7d02e7004">
+                                    <SHORT-NAME>IMAPve_d_BCM_Left_Light</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="335a69e7-cac8-5f05-57b0-53b9f781c3fd">
+                            <SHORT-NAME>IMAPve_d_BCM_Right_Light</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a9dce0c3-3e46-56f0-5d57-87a2f0606ada">
+                                    <SHORT-NAME>IMAPve_d_BCM_Right_Light</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d207f954-bdb4-55fc-5d1b-014341e203c1">
+                            <SHORT-NAME>IMAPve_g_EMS_RealPedal</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c8bc9b6d-a7cb-564a-72d4-1f055949a865">
+                                    <SHORT-NAME>IMAPve_g_EMS_RealPedal</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="18fb6ee4-4f28-5ee4-748d-865e6acb9f23">
+                            <SHORT-NAME>IMAPve_d_TCU_Actual_Gear</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="876fae9c-78f8-529d-3806-051895c51992">
+                                    <SHORT-NAME>IMAPve_d_TCU_Actual_Gear</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="eca951d1-9284-5fd7-f2d9-1a48880ed8c7">
+                            <SHORT-NAME>IMAPve_d_SWS_Fault_Code</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e50d2433-451f-5d50-b03e-a89f2fc4cc5b">
+                                    <SHORT-NAME>IMAPve_d_SWS_Fault_Code</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f5660ab5-a7e8-5dc9-efe2-5e6fb00a82e4">
+                            <SHORT-NAME>IMAPve_d_SWS_Failure_Status</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="54ffe9bb-ef22-5eeb-79b6-26ee8a9b9f46">
+                                    <SHORT-NAME>IMAPve_d_SWS_Failure_Status</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f1ccb268-7029-5f70-f873-dbb23a0764d6">
+                            <SHORT-NAME>IMAPve_d_ESC_VehSpd_Valid</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="f0549d46-c24c-53f8-cc89-f9cfbad97c2d">
+                                    <SHORT-NAME>IMAPve_d_ESC_VehSpd_Valid</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d0951431-0de2-5f0b-3bfb-336a0db9f8f8">
+                            <SHORT-NAME>IMAPve_d_EPS_Steer_Hold_State</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="27f4379b-9bc3-5a25-60f6-024b63e9a36a">
+                                    <SHORT-NAME>IMAPve_d_EPS_Steer_Hold_State</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="ef7ec3f9-a797-5fea-cddd-dcdc36e78a73">
+                            <SHORT-NAME>IMAPve_d_ORI_Lane_Valid</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c3c8442a-886b-527f-74c3-4c3c62eb028f">
+                                    <SHORT-NAME>IMAPve_d_ORI_Lane_Valid</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="5cccc52e-ea25-5484-5247-5cc3b1a1c18c">
+                            <SHORT-NAME>IMAPve_d_ORI_Lane_ConsArea</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="761739d6-e1a4-5d02-a726-f74db97fd736">
+                                    <SHORT-NAME>IMAPve_d_ORI_Lane_ConsArea</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="954ebf7f-71e4-54e2-6fa2-73dee33a7d97">
+                            <SHORT-NAME>IMAPve_d_ORI_Lane_RoadType</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="41769290-b8b9-5425-9524-1c97d6e3ee32">
+                                    <SHORT-NAME>IMAPve_d_ORI_Lane_RoadType</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="c6ff5881-58ea-5416-e930-9a6057449fdb">
+                            <SHORT-NAME>IMAPve_g_ORI_L0_C3</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="572e28d6-a813-5f95-0986-39a09313c6e0">
+                                    <SHORT-NAME>IMAPve_g_ORI_L0_C3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="b296e6e3-3d9c-5eb1-c394-12a006fc9414">
+                            <SHORT-NAME>IMAPve_g_ORI_L0_C2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="f3d89218-f875-5aad-6239-0d69d4551328">
+                                    <SHORT-NAME>IMAPve_g_ORI_L0_C2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="48ac5a0d-df9b-5405-484a-6e4853095ecb">
+                            <SHORT-NAME>IMAPve_g_ORI_L0_C1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="de3c0c74-aac1-552b-975d-06ed1b2db2b7">
+                                    <SHORT-NAME>IMAPve_g_ORI_L0_C1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="493f0d23-02a4-5077-5ef4-cac121bf485d">
+                            <SHORT-NAME>IMAPve_g_ORI_L0_C0</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="de129210-fe89-5678-cd6d-ff2e3ba6d8b2">
+                                    <SHORT-NAME>IMAPve_g_ORI_L0_C0</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d72c11c7-c227-5896-58d5-5d4f50dbe082">
+                            <SHORT-NAME>IMAPve_d_ORI_L0_Q</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="8df2b317-cb55-5383-4cfa-68c8dc65dfaf">
+                                    <SHORT-NAME>IMAPve_d_ORI_L0_Q</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="0a607597-82b2-5d64-acee-9a78732ef2ad">
+                            <SHORT-NAME>IMAPve_d_ORI_L0_Type</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="9dbe44d4-7a8b-5a58-d84a-f04c1da0ff6e">
+                                    <SHORT-NAME>IMAPve_d_ORI_L0_Type</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f883816b-f642-55e2-cd9b-cc9da59c6fc7">
+                            <SHORT-NAME>IMAPve_g_ORI_L0_VR</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="9cb2049f-22ad-5275-d46e-ac93205da75d">
+                                    <SHORT-NAME>IMAPve_g_ORI_L0_VR</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="7a5f8d81-4a9b-5632-e8a9-97e7443dce74">
+                            <SHORT-NAME>IMAPve_g_ORI_L0_TLC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e7337cab-52a9-5b3f-1ca6-af5278ffbedc">
+                                    <SHORT-NAME>IMAPve_g_ORI_L0_TLC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="466f0c96-560b-5352-dc8c-bda94e80112a">
+                            <SHORT-NAME>IMAPve_g_ORI_L0_W</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="9b60de6c-ddde-5483-dd7b-960a92298099">
+                                    <SHORT-NAME>IMAPve_g_ORI_L0_W</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="305ea940-1dd2-584a-28d4-2c93d6df221d">
+                            <SHORT-NAME>IMAPve_d_ORI_L0_LC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="50842db8-ecb8-5db1-e123-4fce80119856">
+                                    <SHORT-NAME>IMAPve_d_ORI_L0_LC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d7e6d1ae-da28-5c1e-b67d-dab8778fcefe">
+                            <SHORT-NAME>IMAPve_g_ORI_L1_C3</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="74191217-2517-5e4a-23b8-77faf41de665">
+                                    <SHORT-NAME>IMAPve_g_ORI_L1_C3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="ffee0604-1fd8-5bfc-0ea9-c8a91673a9d0">
+                            <SHORT-NAME>IMAPve_g_ORI_L1_C2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="73f6cf98-8827-5eb7-e729-a60c887dd4c9">
+                                    <SHORT-NAME>IMAPve_g_ORI_L1_C2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="ecf0b3dc-d98d-5673-50a3-5b5ee354456b">
+                            <SHORT-NAME>IMAPve_g_ORI_L1_C1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ccb75816-b185-5716-9fb0-0da78ae0900e">
+                                    <SHORT-NAME>IMAPve_g_ORI_L1_C1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="2b7dd79b-87be-548e-78af-39685772beee">
+                            <SHORT-NAME>IMAPve_g_ORI_L1_C0</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="042d9270-4b91-5318-cbf2-4c836d4756dc">
+                                    <SHORT-NAME>IMAPve_g_ORI_L1_C0</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="0de04398-f8c9-586d-f1f8-93f63aa064a6">
+                            <SHORT-NAME>IMAPve_d_ORI_L1_Q</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="38232ecb-b80d-5a96-d8cf-eefc8c39f89b">
+                                    <SHORT-NAME>IMAPve_d_ORI_L1_Q</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="787115ea-6f69-5baf-9cf0-00d54b7615f6">
+                            <SHORT-NAME>IMAPve_d_ORI_L1_Type</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="113151e9-ba85-5d5f-e63c-04b8c7c0850c">
+                                    <SHORT-NAME>IMAPve_d_ORI_L1_Type</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="73e1f028-348d-5896-6470-2f675213b851">
+                            <SHORT-NAME>IMAPve_g_ORI_L1_VR</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a3ecbb98-15f5-58ed-d8f5-ebd641f3b094">
+                                    <SHORT-NAME>IMAPve_g_ORI_L1_VR</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="1dcc1581-e3ff-5083-7de5-9620c7338832">
+                            <SHORT-NAME>IMAPve_g_ORI_L1_TLC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="37118169-6d78-55b3-165b-0a545d453acd">
+                                    <SHORT-NAME>IMAPve_g_ORI_L1_TLC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="cc86441b-ac6a-5fdf-ee54-1a3ccc7b11b0">
+                            <SHORT-NAME>IMAPve_g_ORI_L1_W</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ce817b79-d4d4-5044-0861-a33f4a967f51">
+                                    <SHORT-NAME>IMAPve_g_ORI_L1_W</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d4ebb1c6-2ca9-5316-f2fb-f73ca3ee72be">
+                            <SHORT-NAME>IMAPve_d_ORI_L1_LC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="21f15fb8-66d0-5a66-d433-134a175698e3">
+                                    <SHORT-NAME>IMAPve_d_ORI_L1_LC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d6dcd633-4ad9-5662-b6d2-29ed0a51626b">
+                            <SHORT-NAME>IMAPve_g_ORI_R0_C3</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ac46ef26-3811-594d-d9db-b6e2bdd45fe8">
+                                    <SHORT-NAME>IMAPve_g_ORI_R0_C3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="7f1061b1-92b6-5a8e-98bb-c5498dc95848">
+                            <SHORT-NAME>IMAPve_g_ORI_R0_C2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="0629d81a-e7b4-5626-8b8b-e6b369bb2c3e">
+                                    <SHORT-NAME>IMAPve_g_ORI_R0_C2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="e2eba6ab-c9d5-5356-18f6-fd5eb51562ea">
+                            <SHORT-NAME>IMAPve_g_ORI_R0_C1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="386e74ee-e89f-5d9d-1b0a-5017af9cfe63">
+                                    <SHORT-NAME>IMAPve_g_ORI_R0_C1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="094e7c88-112f-50ae-9cfb-3486da3675be">
+                            <SHORT-NAME>IMAPve_g_ORI_R0_C0</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="371d81c0-c2e7-5765-89dd-7158ea6bc335">
+                                    <SHORT-NAME>IMAPve_g_ORI_R0_C0</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="79b122f8-b0df-53cb-cfa8-e158ea643bff">
+                            <SHORT-NAME>IMAPve_d_ORI_R0_Q</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="06e0116e-808c-5802-f24a-a6eaa587162a">
+                                    <SHORT-NAME>IMAPve_d_ORI_R0_Q</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="ebb6bfb1-5e3e-520e-f38a-2af425d9fae6">
+                            <SHORT-NAME>IMAPve_d_ORI_R0_LT</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="7979aa45-4e89-5238-22c1-f238b70d8bd8">
+                                    <SHORT-NAME>IMAPve_d_ORI_R0_LT</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="979b8f78-36c7-5337-5c10-bf301ae1226a">
+                            <SHORT-NAME>IMAPve_g_ORI_R0_VR</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="53669884-eba0-56b9-14bb-477974f20772">
+                                    <SHORT-NAME>IMAPve_g_ORI_R0_VR</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f1fd2989-1434-510f-71a5-c6ecaf495ebb">
+                            <SHORT-NAME>IMAPve_g_ORI_R0_TLC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="05784e19-118c-54da-80f4-755eb3161053">
+                                    <SHORT-NAME>IMAPve_g_ORI_R0_TLC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="faab720d-2bf6-5954-07c9-72a5d50a4591">
+                            <SHORT-NAME>IMAPve_g_ORI_R0_W</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="26c9ddc3-289a-5a55-1c94-f1cb2da852dd">
+                                    <SHORT-NAME>IMAPve_g_ORI_R0_W</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="c4239ea9-b507-5926-e486-ff557681b4ef">
+                            <SHORT-NAME>IMAPve_d_ORI_R0_LC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c0ddd8e0-8740-55b6-3689-e261dd8296b9">
+                                    <SHORT-NAME>IMAPve_d_ORI_R0_LC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="9523c533-ba41-5fb8-8309-1bc274abe487">
+                            <SHORT-NAME>IMAPve_g_ORI_R1_C3</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c96a1144-ddeb-5b8f-8c84-5ca696f93757">
+                                    <SHORT-NAME>IMAPve_g_ORI_R1_C3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="51b6a648-0679-501d-54fa-46617ebeeaaf">
+                            <SHORT-NAME>IMAPve_g_ORI_R1_C2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="50cf4817-2e09-5bfe-a690-234cb4c49fc3">
+                                    <SHORT-NAME>IMAPve_g_ORI_R1_C2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="011c0e72-846f-5cd8-6c19-feda42926f12">
+                            <SHORT-NAME>IMAPve_g_ORI_R1_C1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a6ede071-8383-5100-08ce-f1e269bff7b7">
+                                    <SHORT-NAME>IMAPve_g_ORI_R1_C1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d533ebe7-6e62-590a-9e29-bf66edb2205d">
+                            <SHORT-NAME>IMAPve_g_ORI_R1_C0</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="2b7ecf3a-e9bf-5f32-c077-ef0da91e3521">
+                                    <SHORT-NAME>IMAPve_g_ORI_R1_C0</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="7960a34c-7635-526b-018d-3b099c722405">
+                            <SHORT-NAME>IMAPve_d_ORI_R1_Q</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="130cdcf3-9c04-5fda-8533-61063916516b">
+                                    <SHORT-NAME>IMAPve_d_ORI_R1_Q</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="2d4484c4-d7d2-5dbb-d1bf-69c2c779a40f">
+                            <SHORT-NAME>IMAPve_d_ORI_R1_LT</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="93e2168d-8f35-58b1-3696-ddb69d69b492">
+                                    <SHORT-NAME>IMAPve_d_ORI_R1_LT</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="2a8155f0-633c-5cd7-6ba3-a7ce819e695f">
+                            <SHORT-NAME>IMAPve_g_ORI_R1_VR</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a0290d04-edf3-5504-0c23-bf1d86dae397">
+                                    <SHORT-NAME>IMAPve_g_ORI_R1_VR</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="a25c4c31-f639-528d-18fa-a5ba8adb4932">
+                            <SHORT-NAME>IMAPve_g_ORI_R1_TLC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ab8b7bec-c788-503f-ed48-35c2430ba815">
+                                    <SHORT-NAME>IMAPve_g_ORI_R1_TLC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="e0c7eb7c-9e69-523b-54ed-540d6017c4d9">
+                            <SHORT-NAME>IMAPve_g_ORI_R1_W</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="cc72053d-05ad-5f1f-5eeb-703fb72b7e53">
+                                    <SHORT-NAME>IMAPve_g_ORI_R1_W</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f9f905e2-24d3-5e58-f86d-0767f4c715fe">
+                            <SHORT-NAME>IMAPve_d_ORI_R1_LC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="eec52c35-0851-5c8b-5796-34316c0a2069">
+                                    <SHORT-NAME>IMAPve_d_ORI_R1_LC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="e3933394-7f4c-5f56-3cc7-7df9afc56089">
+                            <SHORT-NAME>IMAPve_d_Sensor_Status</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ed4ef18c-b209-5e4a-dc40-b0f042bee003">
+                                    <SHORT-NAME>IMAPve_d_Sensor_Status</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="fb989005-1528-58a2-5a83-0f4dd01aab20">
+                            <SHORT-NAME>IMAPve_d_Fusion_Status</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="52ff81fc-45db-5e07-f92a-dfa1b893b370">
+                                    <SHORT-NAME>IMAPve_d_Fusion_Status</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="393eba83-a71a-5d53-c36f-40d9bc7a7c21">
+                            <SHORT-NAME>IMAPve_d_Lane_Valid</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="53a3ec18-33c0-5761-62fc-8957412f5e12">
+                                    <SHORT-NAME>IMAPve_d_Lane_Valid</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f68a7292-3cf9-5ab0-12d0-d0f1836a56fa">
+                            <SHORT-NAME>IMAPve_d_Road_Type</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="9b877d35-dc9f-5cef-0a02-95628cff659d">
+                                    <SHORT-NAME>IMAPve_d_Road_Type</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="593b1372-de74-53b0-e696-0a85fffc40f2">
+                            <SHORT-NAME>IMAPve_d_ConsArea</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="56def8e2-a5f5-5b00-3f2e-8454aaac8587">
+                                    <SHORT-NAME>IMAPve_d_ConsArea</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="712c5544-1820-55f4-8386-a0b089299ec3">
+                            <SHORT-NAME>IMAPve_g_L0_C0</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a9aa0d4a-4fe3-5e76-0cf3-b58416239e60">
+                                    <SHORT-NAME>IMAPve_g_L0_C0</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="bf68778b-2e56-5755-b6c8-7f18af415041">
+                            <SHORT-NAME>IMAPve_g_L0_C1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="f1287e56-4d87-52c7-8444-c2e67b215e8d">
+                                    <SHORT-NAME>IMAPve_g_L0_C1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="95cb3266-8623-5141-6e08-038866269ede">
+                            <SHORT-NAME>IMAPve_g_L0_C2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c0693f9e-3807-5f6b-63bb-f29652fab21a">
+                                    <SHORT-NAME>IMAPve_g_L0_C2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="69da14e2-028f-5396-5d5b-c2b71842e4c8">
+                            <SHORT-NAME>IMAPve_g_L0_C3</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="d31bba8a-d10c-5b75-9a9f-4009235573ef">
+                                    <SHORT-NAME>IMAPve_g_L0_C3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="e64481c5-e303-5d04-6612-a88a31999db6">
+                            <SHORT-NAME>IMAPve_g_L0_VR</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="42d0c623-811d-534a-424c-b1f648670b2b">
+                                    <SHORT-NAME>IMAPve_g_L0_VR</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="3c2a6a02-1529-5f04-d5cb-208b3b3473e4">
+                            <SHORT-NAME>IMAPve_d_L0_Q</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ef829418-8c22-5ebd-5604-24ad986679bf">
+                                    <SHORT-NAME>IMAPve_d_L0_Q</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="6504ee3f-4887-537c-e74b-fda7c9b0d9bd">
+                            <SHORT-NAME>IMAPve_d_L0_Type</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="d6b7e606-e688-5d17-bcd0-c6f4baca9cdd">
+                                    <SHORT-NAME>IMAPve_d_L0_Type</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f202d2ab-c688-57a7-ce75-85c8aec8666f">
+                            <SHORT-NAME>IMAPve_g_L0_Confidence</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="1c5c8d7b-eed9-526a-0258-314ea3ba28f7">
+                                    <SHORT-NAME>IMAPve_g_L0_Confidence</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="9687b358-9ae6-5af4-ef52-806ec3baeccd">
+                            <SHORT-NAME>IMAPve_g_L0_W</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="32bbe2a8-37ce-510a-7aac-09f26196259a">
+                                    <SHORT-NAME>IMAPve_g_L0_W</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="166dadaf-c353-5b0a-0ef8-a902ce4504f5">
+                            <SHORT-NAME>IMAPve_g_L0_TLC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="81ab6b27-a835-5bb0-0147-d75c0ebc8a1d">
+                                    <SHORT-NAME>IMAPve_g_L0_TLC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="5f96a066-063f-584f-e5a2-1db61d59485e">
+                            <SHORT-NAME>IMAPve_d_L0_LC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="16e00563-c755-544c-25f6-b8b85b8cdd1a">
+                                    <SHORT-NAME>IMAPve_d_L0_LC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="da8cdb91-df93-5c71-f0e9-b412774c2125">
+                            <SHORT-NAME>IMAPve_g_R0_C0</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="d85b1730-a137-550c-393d-264de2cb6a88">
+                                    <SHORT-NAME>IMAPve_g_R0_C0</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="f30f0552-aa3e-5366-76fe-c7c5d6667018">
+                            <SHORT-NAME>IMAPve_g_R0_C1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="6139b790-d215-5efd-d942-ed5f5863fe87">
+                                    <SHORT-NAME>IMAPve_g_R0_C1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="03c03fc3-a3e6-54ac-17d9-0dfa2dbf9924">
+                            <SHORT-NAME>IMAPve_g_R0_C2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ca4d9cde-2f49-5c93-3e43-eccec604903c">
+                                    <SHORT-NAME>IMAPve_g_R0_C2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="a345079c-6989-5545-dcb5-ea361d45b0e8">
+                            <SHORT-NAME>IMAPve_g_R0_C3</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="86641748-5986-5293-04f1-9cfa96de9ec6">
+                                    <SHORT-NAME>IMAPve_g_R0_C3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="03fc58c9-709a-56da-e192-65278b200bbc">
+                            <SHORT-NAME>IMAPve_g_R0_VR</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="4caaa59f-7dd6-5467-59db-8bc02b89c68f">
+                                    <SHORT-NAME>IMAPve_g_R0_VR</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="dfba8c27-50a6-557f-33cd-9a6598ec1d19">
+                            <SHORT-NAME>IMAPve_d_R0_Q</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e5f39b47-6a51-5cf2-2d01-1fc794d0cea7">
+                                    <SHORT-NAME>IMAPve_d_R0_Q</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="6fe581b2-3e13-57c9-9e23-b65f42d4fd4a">
+                            <SHORT-NAME>IMAPve_d_R0_Type</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e1583895-4120-51d4-3904-c1c9ff767b80">
+                                    <SHORT-NAME>IMAPve_d_R0_Type</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="4bfa757a-6566-5ea9-d65b-5c712d3913ed">
+                            <SHORT-NAME>IMAPve_g_R0_Confidence</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="0c51e7c9-5e78-5707-b339-550209aff899">
+                                    <SHORT-NAME>IMAPve_g_R0_Confidence</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="68f89854-55a5-5e7d-d622-953069f814bb">
+                            <SHORT-NAME>IMAPve_g_R0_W</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="e4529d53-350e-5ecb-cd90-94bbf796172d">
+                                    <SHORT-NAME>IMAPve_g_R0_W</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="fc70a645-b410-5a55-444c-412fa65880a4">
+                            <SHORT-NAME>IMAPve_g_R0_TLC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="ec1cc9fb-2989-5649-319f-73c6378b422c">
+                                    <SHORT-NAME>IMAPve_g_R0_TLC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="596d73f5-401c-5b7d-24cb-6762688dd4d9">
+                            <SHORT-NAME>IMAPve_d_R0_LC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="6c3b3a81-02a2-57db-fae4-1cdc09679ede">
+                                    <SHORT-NAME>IMAPve_d_R0_LC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="8c9c3857-01f7-55ed-b898-c4a8650d90ab">
+                            <SHORT-NAME>IMAPve_g_L1_C0</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a1f94dec-b7d3-559a-535f-5ba6130e8aa3">
+                                    <SHORT-NAME>IMAPve_g_L1_C0</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="90dae6b3-e9a8-5670-71a1-626b3d641e04">
+                            <SHORT-NAME>IMAPve_g_L1_C1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="6575e5dc-7164-5cd8-294d-ee871d6ab360">
+                                    <SHORT-NAME>IMAPve_g_L1_C1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="0e5900f6-b29b-58c5-9bf1-0596255da5d1">
+                            <SHORT-NAME>IMAPve_g_L1_C2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c749811b-c7ad-5648-309b-3cedfeaf1f75">
+                                    <SHORT-NAME>IMAPve_g_L1_C2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="48c639a2-8cac-54ed-b963-e4791f9f65ce">
+                            <SHORT-NAME>IMAPve_g_L1_C3</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="cd51f94d-a5bf-55a9-d6cb-4e2e7d8c4b4f">
+                                    <SHORT-NAME>IMAPve_g_L1_C3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="8863a2a2-cebb-5c10-3d95-f75f8abc5c6a">
+                            <SHORT-NAME>IMAPve_g_L1_VR</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a47411f6-d06c-51db-ffdc-befe049b29ea">
+                                    <SHORT-NAME>IMAPve_g_L1_VR</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="51fe6f5c-969e-5873-1455-943fc09d4a47">
+                            <SHORT-NAME>IMAPve_d_L1_Q</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="7ebf32c2-8fd8-51fa-553a-4212766dddd1">
+                                    <SHORT-NAME>IMAPve_d_L1_Q</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="d78899e4-028c-5688-cca0-4ebed26143ae">
+                            <SHORT-NAME>IMAPve_d_L1_Type</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="81614474-4f6a-5e12-560f-83c9537d2b09">
+                                    <SHORT-NAME>IMAPve_d_L1_Type</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="093787b0-ef18-515f-7ece-3fb9bcb3d3a3">
+                            <SHORT-NAME>IMAPve_g_L1_Confidence</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="02786061-3a9b-5da1-4400-feb44121943b">
+                                    <SHORT-NAME>IMAPve_g_L1_Confidence</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="dcc9b082-ab06-549a-0d86-31dc3db224f1">
+                            <SHORT-NAME>IMAPve_g_L1_W</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="27e3c332-f3a3-51c2-e18c-f24b7073e2a5">
+                                    <SHORT-NAME>IMAPve_g_L1_W</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="49977437-e48c-587d-3324-8198879c8e85">
+                            <SHORT-NAME>IMAPve_g_L1_TLC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="285dda37-3036-5372-7a94-e681ea624821">
+                                    <SHORT-NAME>IMAPve_g_L1_TLC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="4dbe896e-27e3-570a-8e2a-7bb8f6b11af5">
+                            <SHORT-NAME>IMAPve_d_L1_LC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="3a16651b-ef1b-5054-419c-798aff3be34e">
+                                    <SHORT-NAME>IMAPve_d_L1_LC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="c5675d9d-0dbd-592b-9587-f53f67a5898b">
+                            <SHORT-NAME>IMAPve_g_R1_C0</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="f017002c-0573-5921-39c5-4e241693459e">
+                                    <SHORT-NAME>IMAPve_g_R1_C0</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="fb71f62d-fa87-5a6f-f863-e2a69ecf1d3c">
+                            <SHORT-NAME>IMAPve_g_R1_C1</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="26c3e2fb-6fd6-543d-86cc-cd218e7c8ec1">
+                                    <SHORT-NAME>IMAPve_g_R1_C1</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="c514b6a1-d74b-51f0-3592-731105b473f4">
+                            <SHORT-NAME>IMAPve_g_R1_C2</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="c59bba15-c32e-58c8-2dbb-aa29cca27dca">
+                                    <SHORT-NAME>IMAPve_g_R1_C2</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="29c51b47-afb9-567b-cdc9-b2f771d856e8">
+                            <SHORT-NAME>IMAPve_g_R1_C3</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="819e19e5-ba8a-5793-c0c5-edcb7de4fe65">
+                                    <SHORT-NAME>IMAPve_g_R1_C3</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="85bf3577-8a67-5f4f-7fec-cb0160ca8521">
+                            <SHORT-NAME>IMAPve_g_R1_VR</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="59e9a228-c049-5638-c642-2f9999a55acd">
+                                    <SHORT-NAME>IMAPve_g_R1_VR</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="c0cee82d-06e2-5a75-125f-353cbd3c7087">
+                            <SHORT-NAME>IMAPve_d_R1_Q</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="06ab1426-7cba-5608-ff67-4c8b4e5b6aeb">
+                                    <SHORT-NAME>IMAPve_d_R1_Q</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="713d8763-943e-55c2-f135-8967cd3c52de">
+                            <SHORT-NAME>IMAPve_d_R1_Type</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="1038a7e8-b263-5560-6c98-0caba5ae87f8">
+                                    <SHORT-NAME>IMAPve_d_R1_Type</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="9e2ff51f-4880-5bca-307f-c33b7302ad89">
+                            <SHORT-NAME>IMAPve_g_R1_Confidence</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="3c0b947f-8c2e-52ab-37c1-5bf459020793">
+                                    <SHORT-NAME>IMAPve_g_R1_Confidence</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="1bf7a64b-867f-58c3-b35f-2ee58cb7f005">
+                            <SHORT-NAME>IMAPve_g_R1_W</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a669c20a-0ddc-5dfd-1cba-9acf3f304013">
+                                    <SHORT-NAME>IMAPve_g_R1_W</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="61a4b060-fb59-52d8-7454-8eaaae84a342">
+                            <SHORT-NAME>IMAPve_g_R1_TLC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="b11292e9-54a3-51d5-8f63-7c6f60b7f5f6">
+                                    <SHORT-NAME>IMAPve_g_R1_TLC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="63a4a6b5-d4bb-56f9-1ab0-0058236f3e5b">
+                            <SHORT-NAME>IMAPve_d_R1_LC</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="3eaa05c8-f08e-51ec-3e5b-1a26bfe8e277">
+                                    <SHORT-NAME>IMAPve_d_R1_LC</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="57ea0935-abbb-5c51-cd0b-2434ee0e0126">
+                            <SHORT-NAME>IMAPve_d_Camera_Signal_Fault</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="7ea168ae-ae47-54bb-50b5-76a2a064cfe3">
+                                    <SHORT-NAME>IMAPve_d_Camera_Signal_Fault</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="af51ec54-8336-54b2-8bd7-1242cca50b15">
+                            <SHORT-NAME>IMAPve_d_Camera_Status</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="f9f55d28-b0a6-5cee-95da-42589a791300">
+                                    <SHORT-NAME>IMAPve_d_Camera_Status</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt16</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="cc599e14-3508-5d2b-3112-31f4b405838e">
+                            <SHORT-NAME>LKASve_y_Vehicle_Lane_Display</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="9969bbdf-1219-5895-6776-11077f79948b">
+                                    <SHORT-NAME>LKASve_y_Vehicle_Lane_Display</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="78c3bc1d-5ff8-5faa-d4eb-7ace76dcc78f">
+                            <SHORT-NAME>LKASve_y_LDW_Status_Display</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="59288ec7-1d9c-5832-a454-1396abdcd3e1">
+                                    <SHORT-NAME>LKASve_y_LDW_Status_Display</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="e4b38d0e-5d4b-5a76-0f2a-91a49e60aa65">
+                            <SHORT-NAME>LKASve_y_LKA_Status_Display</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="272a4cdb-508d-5aef-c1b2-a6003517b889">
+                                    <SHORT-NAME>LKASve_y_LKA_Status_Display</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="1b916bb7-593e-506a-d8da-49c94835c748">
+                            <SHORT-NAME>LKASve_y_LDW_Flag</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="1df6f250-b5db-5ae1-0bad-5cbd1a3bbb9f">
+                                    <SHORT-NAME>LKASve_y_LDW_Flag</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="0efe7ed0-b091-5a20-6924-0e81c0b19432">
+                            <SHORT-NAME>LKASve_y_Hands_Off_Warning</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a4816c43-9962-53d8-a2ab-2864a750b07f">
+                                    <SHORT-NAME>LKASve_y_Hands_Off_Warning</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="42e6714c-65a2-59c6-d50d-ffb3247eeb57">
+                            <SHORT-NAME>LKASve_y_LKA_Action_Indication</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="fe764d4b-18df-5b6a-fd51-d5929831d946">
+                                    <SHORT-NAME>LKASve_y_LKA_Action_Indication</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="120a55e6-a07f-50ab-0179-f0a04d2d3924">
+                            <SHORT-NAME>LKASve_y_HMI_Popup_Status</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="174b6bc4-3246-57bd-39cc-b573f77aa699">
+                                    <SHORT-NAME>LKASve_y_HMI_Popup_Status</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="e2aa0f29-71b2-5ee4-87ef-f88767dfa39d">
+                            <SHORT-NAME>LKASve_y_EPS_State_Control</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="3d996df7-2274-5237-6de9-5069fca7d177">
+                                    <SHORT-NAME>LKASve_y_EPS_State_Control</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="5d307715-6fe5-52bf-9a7b-73575a444806">
+                            <SHORT-NAME>LKASve_g_LKA_SWA_Control</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="a4f3e011-444e-52d0-1cb7-8f2046961227">
+                                    <SHORT-NAME>LKASve_g_LKA_SWA_Control</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="978178ae-87fd-5943-1d8c-ed6e1e6903ae">
+                            <SHORT-NAME>LKASve_g_EPS_Factor_Control</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="2a7e8902-f606-5864-567a-46f2b42695af">
+                                    <SHORT-NAME>LKASve_g_EPS_Factor_Control</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/T_M_Nm_Float32</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE UUID="cc68989d-010a-5087-5549-f798f383f18a">
+                            <SHORT-NAME>LKASve_y_EPS_LKA_Control</SHORT-NAME>
+                            <IS-SERVICE>false</IS-SERVICE>
+                            <DATA-ELEMENTS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="20692307-5ade-58ff-dcd2-7aefec774baa">
+                                    <SHORT-NAME>LKASve_y_EPS_LKA_Control</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/LKAS_pkg/LKAS_dt/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </DATA-ELEMENTS>
+                        </SENDER-RECEIVER-INTERFACE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

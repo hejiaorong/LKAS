@@ -1,0 +1,4068 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for LKAS
+</title>
+
+</head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};">
+<h1>
+Code Interface Report for LKAS
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="LKAS_c.html#fcn_Runnable_LKAS_Init">Runnable_LKAS_Init</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void Runnable_LKAS_Init(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href=".html"></a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="LKAS_c.html#fcn_Runnable_LKAS_Step">Runnable_LKAS_Step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void Runnable_LKAS_Step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Exported function: <a href="matlab:coder.internal.code2model('LKAS:549')" name="code2model" class="code2model">&lt;Root&gt;/Runnable_LKAS_Step</a>
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 0.01 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href=".html"></a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:5')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_LKA_Main_Switch</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:9')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_LKA_Mode</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:13')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_LDW_Warn_Mode</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:17')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_EPS_LKA_State</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:21')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_EPS_SW_Trq</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:25')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_EPS_Error_State</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:29')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_EPS_Trq_State</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:33')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_SAS_Clb_State</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:37')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_SAS_Trim_State</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:41')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_EPS_TrqLim_State</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:45')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_EPS_LKA_Current</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:49')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ESC_LatAcc</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:53')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ESC_LatAcc_Valid</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:57')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ESC_YawRate</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:61')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ESC_YawRate_Valid</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:65')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ESC_UnYawRate</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:69')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ESC_VehSpd</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:73')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ESC_LonAcc</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:77')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ESC_LonAcc_Valid</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:81')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ESC_Brake_Press</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:85')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_SW_Angle</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:89')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_SW_Angle_Speed</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:93')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_BCM_HazardLamp</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:97')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_BCM_Left_Light</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:101')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_BCM_Right_Light</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:105')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_EMS_RealPedal</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:109')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_TCU_Actual_Gear</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:113')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_SWS_Fault_Code</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:117')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_SWS_Failure_Status</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:121')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ESC_VehSpd_Valid</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:125')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_EPS_Steer_Hold_State</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:129')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_Lane_Valid</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:133')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_Lane_ConsArea</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:137')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_Lane_RoadType</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:141')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L0_C3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:145')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L0_C2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:149')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L0_C1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:153')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L0_C0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:157')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_L0_Q</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:161')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_L0_Type</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:165')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L0_VR</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:169')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L0_TLC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:173')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L0_W</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:177')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_L0_LC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:181')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L1_C3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:185')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L1_C2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:189')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L1_C1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:193')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L1_C0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:197')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_L1_Q</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:201')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_L1_Type</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:205')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L1_VR</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:209')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L1_TLC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:213')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_L1_W</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:217')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_L1_LC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:221')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R0_C3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:225')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R0_C2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:229')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R0_C1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:233')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R0_C0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:237')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_R0_Q</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:241')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_R0_LT</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:245')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R0_VR</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:249')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R0_TLC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:253')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R0_W</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:257')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_R0_LC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:261')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R1_C3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:265')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R1_C2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:269')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R1_C1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:273')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R1_C0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:277')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_R1_Q</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:281')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_R1_LT</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:285')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R1_VR</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:289')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R1_TLC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:293')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_ORI_R1_W</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:297')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ORI_R1_LC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:301')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_Sensor_Status</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:305')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_Fusion_Status</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:309')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_Lane_Valid</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:313')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_Road_Type</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:317')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_ConsArea</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:321')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L0_C0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:325')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L0_C1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:329')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L0_C2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:333')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L0_C3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:337')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L0_VR</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:341')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_L0_Q</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:345')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_L0_Type</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:349')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L0_Confidence</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:353')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L0_W</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:357')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L0_TLC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:361')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_L0_LC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:365')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R0_C0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:369')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R0_C1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:373')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R0_C2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:377')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R0_C3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:381')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R0_VR</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:385')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_R0_Q</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:389')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_R0_Type</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:393')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R0_Confidence</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:397')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R0_W</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:401')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R0_TLC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:405')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_R0_LC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:409')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L1_C0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:413')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L1_C1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:417')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L1_C2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:421')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L1_C3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:425')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L1_VR</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:429')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_L1_Q</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:433')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_L1_Type</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:437')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L1_Confidence</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:441')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L1_W</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:445')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_L1_TLC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:449')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_L1_LC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:453')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R1_C0</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:457')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R1_C1</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:461')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R1_C2</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:465')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R1_C3</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:469')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R1_VR</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:473')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_R1_Q</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:477')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_R1_Type</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:481')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R1_Confidence</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:485')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R1_W</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:489')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_g_R1_TLC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:493')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_R1_LC</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:497')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_Camera_Signal_Fault</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:501')" name="code2model" class="code2model">&lt;Root&gt;/IMAPve_d_Camera_Status</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Require port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt16
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Block Name
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:505')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_Vehicle_Lane_Display</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:509')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_LDW_Status_Display</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:513')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_LKA_Status_Display</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:517')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_LDW_Flag</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:521')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_Hands_Off_Warning</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:525')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_LKA_Action_Indication</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:529')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_HMI_Popup_Status</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:533')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_EPS_State_Control</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:537')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_g_LKA_SWA_Control</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:541')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_g_EPS_Factor_Control</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+T_M_Nm_Float32
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('LKAS:545')" name="code2model" class="code2model">&lt;Root&gt;/LKASve_y_EPS_LKA_Control</a>
+</td>
+<td width="26%" align="left" valign="top">
+<i>
+Provide port, interface: sender-receiver
+</i>
+
+</td>
+<td width="21%" align="left" valign="top">
+UInt8
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Parameter Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LKA_CarWidth
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LKA_SampleTime
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LKA_StrRatio_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LKA_Veh2CamL_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LKA_Veh2CamW_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LKA_WhlBaseL_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_CompSWA_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_CrvtPrvwT_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_DesDvt_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_DvtComp_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_DvtPrvwT_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_DvtSpdDet_vDvtSpdMin_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_HdAgExT_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_HdAgPrvwT_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LAccMax_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LAccRMax_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LDWS_SUPPRESS_HEADING
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LDW_EarliestWarnLine_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LDW_LatestWarnLine_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_DiffCtlBalance
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_DiffCtrlMaxSWA
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_DiffCtrlRatio
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_FfCtlRatio_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_facmGainLutGain1_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_facmGainLutGain2_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_facmIntegRatio
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_facmKlat_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_phiIntegCtlMaxSWA_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_tiKlatPrvwT_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_vGainLutVehSpdLwr_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LFClb_TFC_vGainLutVehSpdUpr_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKAExPrcs_ExitC0Dvt
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKAExPrcs_ExitC0Swt
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKAExPrcs_tiExitTime1
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKAExPrcs_tiExitTime2
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKAExPrcs_tiExitTime3
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_M0
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_M1
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_M2
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_M3K
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_SWAaddMax
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_T2
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_TrqMax
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_TrqSwaAddSwt
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_TrqSwaRateDiff
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_tiTrqSwaRtTime
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKASWASyn_tiTrqSwaTime
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKAS_OUT_OF_CONTROL_LAT_VEL
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKAS_OUT_OF_CONTROL_TTLC
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKA_EarliestWarnLine_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LKA_LatestWarnLine_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_LSpdCompT_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_DELAY_EPSSTAR_TIME
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_DRIVER_TORQUE_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_DRIVER_TORQUE_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LANE_WIDTH_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LANE_WIDTH_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LAT_ACC_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LAT_ACC_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LDWS_SPEED_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LDWS_SPEED_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LKAS_SPEED_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LKAS_SPEED_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LONG_ACC_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LONG_ACC_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LONG_DECEL_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_LONG_DECEL_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_STEER_ANGLE_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_STEER_ANGLE_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_STEER_SPEED_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_STEER_SPEED_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_SYSTEM_CURVATURE_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MAX_SYSTEM_CURVATURE_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MIN_LANE_WIDTH_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MIN_LANE_WIDTH_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MIN_LKAS_SPEED_DISABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_MIN_LKAS_SPEED_ENABLE
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_Max_LDWS_Warning_Time
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_NomTAhd_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_ThresDet_lDvtThresLwrLDW
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_ThresDet_lDvtThresLwrLKA
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_ThresDet_lDvtThresUprLDW
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_ThresDet_lDvtThresUprLKA
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_ThresDet_tiTTLCThresLDW
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_ThresDet_tiTTLCThresLKA
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_TkOvStChk_tiTDelTime
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_TkOvStChk_tiTrqChkT
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+synthesized block
+</td>
+<td width="26%" align="left" valign="top">
+LL_lStpLngth_C
+</td>
+<td width="21%" align="left" valign="top">
+real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<p>
+No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model LKAS
+Model version                : 1.14
+Simulink Coder version       : Simulink Coder 9.0 (R2018b) 24-May-2018
+XML source code generated on : Fri Aug 21 16:34:15 2020
+Model Checksum               : 525869367 2385254217 2440500476 832143965
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>AUTOSAR</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Services</SHORT-NAME>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>Dcm</SHORT-NAME>
+                            <ELEMENTS>
+                                <DATA-CONSTR UUID="f05d1fc8-5ef5-589a-d112-a29074599be7">
+                                    <SHORT-NAME>DC_UInt16</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <INTERNAL-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                                            </INTERNAL-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="639f6390-1291-5068-6670-44b18d64e436">
+                                    <SHORT-NAME>DC_T_M_Nm_Float32</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <INTERNAL-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                            </INTERNAL-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="925e4e98-8149-511e-fe0e-6d242c5f7ea5">
+                                    <SHORT-NAME>DC_UInt8</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <INTERNAL-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                                            </INTERNAL-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="f0c426d9-e81c-50f0-c9d8-3c451ada8a5e">
+                                    <SHORT-NAME>DC_Float</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <INTERNAL-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-INF</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">INF</UPPER-LIMIT>
+                                            </INTERNAL-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>LKAS_pkg</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>LKAS_dt</SHORT-NAME>
+                    <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE UUID="59b0aee2-97f3-57b1-c2f1-b92fa2998ba2">
+                            <SHORT-NAME>UInt16</SHORT-NAME>
+                            <DESC>
+                                <L-2 L="FOR-ALL">Num</L-2>
+                            </DESC>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/LKAS_pkg/LKAS_dt/SwBaseTypes/uint16</BASE-TYPE-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/Services/Dcm/DC_UInt16</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="fa80c30e-be3e-5781-1dd0-90fedec795df">
+                            <SHORT-NAME>T_M_Nm_Float32</SHORT-NAME>
+                            <DESC>
+                                <L-2 L="FOR-ALL">Nm (newton-meters  (Nm))</L-2>
+                            </DESC>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/LKAS_pkg/LKAS_dt/SwBaseTypes/float32</BASE-TYPE-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/Services/Dcm/DC_T_M_Nm_Float32</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="b6f42914-6084-5fcd-65e8-ebf5cdba4aa6">
+                            <SHORT-NAME>UInt8</SHORT-NAME>
+                            <DESC>
+                                <L-2 L="FOR-ALL">Num</L-2>
+                            </DESC>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/LKAS_pkg/LKAS_dt/SwBaseTypes/uint8</BASE-TYPE-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/Services/Dcm/DC_UInt8</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE UUID="30c90732-65c9-5f73-301c-bbbba99afc83">
+                            <SHORT-NAME>Float</SHORT-NAME>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/LKAS_pkg/LKAS_dt/SwBaseTypes/float32</BASE-TYPE-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/Services/Dcm/DC_Float</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                    </ELEMENTS>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>Ground</SHORT-NAME>
+                            <ELEMENTS>
+                                <CONSTANT-SPECIFICATION UUID="ed4b1a00-6e34-5ada-4b4c-d8bd324349f6">
+                                    <SHORT-NAME>LKA_CarWidth</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LKA_CarWidth</SHORT-LABEL>
+                                            <VALUE>1.8</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="94d236dd-70a8-57ba-12fa-4b52ca7d84ff">
+                                    <SHORT-NAME>LKA_SampleTime</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LKA_SampleTime</SHORT-LABEL>
+                                            <VALUE>0.01</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="cdff6d18-dcaf-5c74-89be-0a3ac4ad1c2f">
+                                    <SHORT-NAME>LKA_StrRatio_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LKA_StrRatio_C</SHORT-LABEL>
+                                            <VALUE>15.3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="92acd5bd-741a-5893-a8b1-b281b66dab3a">
+                                    <SHORT-NAME>LKA_Veh2CamL_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LKA_Veh2CamL_C</SHORT-LABEL>
+                                            <VALUE>1.56</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="a3f16564-c1c1-540c-00d6-a7a4131ae92e">
+                                    <SHORT-NAME>LKA_Veh2CamW_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LKA_Veh2CamW_C</SHORT-LABEL>
+                                            <VALUE>0.9</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="1cf7e441-7e2a-5b16-4773-073e54f8304f">
+                                    <SHORT-NAME>LKA_WhlBaseL_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LKA_WhlBaseL_C</SHORT-LABEL>
+                                            <VALUE>2.65</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="71924d1f-09b7-5ab7-d16d-ffc515af5bfb">
+                                    <SHORT-NAME>LL_CompSWA_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_CompSWA_C</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="906d1a47-586f-532b-d0a0-93adf1fba13b">
+                                    <SHORT-NAME>LL_CrvtPrvwT_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_CrvtPrvwT_C</SHORT-LABEL>
+                                            <VALUE>0.45</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="a68ff5ea-613b-5249-eea3-91893993b7df">
+                                    <SHORT-NAME>LL_DesDvt_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_DesDvt_C</SHORT-LABEL>
+                                            <VALUE>0.2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="4313afc3-c58f-5369-7ee9-6e7168ad4776">
+                                    <SHORT-NAME>LL_DvtComp_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_DvtComp_C</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="5d100b59-e564-5192-5d89-0ce40dbacd7d">
+                                    <SHORT-NAME>LL_DvtPrvwT_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_DvtPrvwT_C</SHORT-LABEL>
+                                            <VALUE>0.45</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="b6acc729-96b2-5f06-1521-d7993d871c66">
+                                    <SHORT-NAME>LL_DvtSpdDet_vDvtSpdMin_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_DvtSpdDet_vDvtSpdMin_C</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="a2aa1c4c-209c-5727-994a-4a60082f605c">
+                                    <SHORT-NAME>LL_HdAgExT_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_HdAgExT_C</SHORT-LABEL>
+                                            <VALUE>15</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="ecfa7cf6-2bf6-5681-ff56-e22087d9efa7">
+                                    <SHORT-NAME>LL_HdAgPrvwT_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_HdAgPrvwT_C</SHORT-LABEL>
+                                            <VALUE>0.45</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="d15f58ca-712c-580d-f287-efb85c746049">
+                                    <SHORT-NAME>LL_LAccMax_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LAccMax_C</SHORT-LABEL>
+                                            <VALUE>3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="a238999e-54d5-5c22-8904-4a86930864be">
+                                    <SHORT-NAME>LL_LAccRMax_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LAccRMax_C</SHORT-LABEL>
+                                            <VALUE>5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="6299b8f1-db5c-5aa3-1404-4892377fb03e">
+                                    <SHORT-NAME>LL_LDWS_SUPPRESS_HEADING</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LDWS_SUPPRESS_HEADING</SHORT-LABEL>
+                                            <VALUE>2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="f413f541-3a64-5ae7-0224-63123db8d2cf">
+                                    <SHORT-NAME>LL_LDW_EarliestWarnLine_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LDW_EarliestWarnLine_C</SHORT-LABEL>
+                                            <VALUE>0.3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="2219bfa1-87da-52c3-74ef-cd67457678e6">
+                                    <SHORT-NAME>LL_LDW_LatestWarnLine_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LDW_LatestWarnLine_C</SHORT-LABEL>
+                                            <VALUE>-0.4</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="d3c1d7e3-9728-540c-3d46-2fc86327f0b9">
+                                    <SHORT-NAME>LL_LFClb_TFC_DiffCtlBalance</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_DiffCtlBalance</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="501d9f64-0184-5354-0bbc-ead124317abd">
+                                    <SHORT-NAME>LL_LFClb_TFC_DiffCtrlMaxSWA</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_DiffCtrlMaxSWA</SHORT-LABEL>
+                                            <VALUE>20</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="67367c5e-3b9c-53d4-1c65-b9b95e431b89">
+                                    <SHORT-NAME>LL_LFClb_TFC_DiffCtrlRatio</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_DiffCtrlRatio</SHORT-LABEL>
+                                            <VALUE>400</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="52d56b13-2b61-52cc-14f6-1cac1a91d8bc">
+                                    <SHORT-NAME>LL_LFClb_TFC_FfCtlRatio_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_FfCtlRatio_C</SHORT-LABEL>
+                                            <VALUE>1</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="4944ccbc-04b8-5b9c-09fa-0787ce0ad939">
+                                    <SHORT-NAME>LL_LFClb_TFC_facmGainLutGain1_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_facmGainLutGain1_C</SHORT-LABEL>
+                                            <VALUE>40</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="f98ebd4d-cd55-512e-50f8-dd08f710cb96">
+                                    <SHORT-NAME>LL_LFClb_TFC_facmGainLutGain2_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_facmGainLutGain2_C</SHORT-LABEL>
+                                            <VALUE>40</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="83d26bc5-9411-575b-b09c-c3e4ee3543d3">
+                                    <SHORT-NAME>LL_LFClb_TFC_facmIntegRatio</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_facmIntegRatio</SHORT-LABEL>
+                                            <VALUE>0.002</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="dfcbd342-c5f4-55d1-db8c-08e5c0869b5a">
+                                    <SHORT-NAME>LL_LFClb_TFC_facmKlat_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_facmKlat_C</SHORT-LABEL>
+                                            <VALUE>-9</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="1ba4730c-91cd-5b37-e3e2-70cf7f9dde2f">
+                                    <SHORT-NAME>LL_LFClb_TFC_phiIntegCtlMaxSWA_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_phiIntegCtlMaxSWA_C</SHORT-LABEL>
+                                            <VALUE>5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="d5453923-1dce-5e8a-c2c7-6bfda9f842d4">
+                                    <SHORT-NAME>LL_LFClb_TFC_tiKlatPrvwT_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_tiKlatPrvwT_C</SHORT-LABEL>
+                                            <VALUE>2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="eabd2042-1181-525c-5822-af24f508fdab">
+                                    <SHORT-NAME>LL_LFClb_TFC_vGainLutVehSpdLwr_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_vGainLutVehSpdLwr_C</SHORT-LABEL>
+                                            <VALUE>60</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="23461159-0131-57ac-0929-0c1878cc81b9">
+                                    <SHORT-NAME>LL_LFClb_TFC_vGainLutVehSpdUpr_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LFClb_TFC_vGainLutVehSpdUpr_C</SHORT-LABEL>
+                                            <VALUE>120</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="55c8ab02-cff1-526c-bd45-57a4629b15da">
+                                    <SHORT-NAME>LL_LKAExPrcs_ExitC0Dvt</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKAExPrcs_ExitC0Dvt</SHORT-LABEL>
+                                            <VALUE>0.01</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="5ec5aca9-c48a-5fa0-3285-d04ab2800828">
+                                    <SHORT-NAME>LL_LKAExPrcs_ExitC0Swt</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKAExPrcs_ExitC0Swt</SHORT-LABEL>
+                                            <VALUE>1</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="e29c4c41-80aa-5e73-e618-6cfaf1c7732a">
+                                    <SHORT-NAME>LL_LKAExPrcs_tiExitTime1</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKAExPrcs_tiExitTime1</SHORT-LABEL>
+                                            <VALUE>8</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="ac8a09b2-3488-57a3-92c0-96c85c15491e">
+                                    <SHORT-NAME>LL_LKAExPrcs_tiExitTime2</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKAExPrcs_tiExitTime2</SHORT-LABEL>
+                                            <VALUE>4</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="46eecd28-6dcf-503c-41c6-067f30dabd09">
+                                    <SHORT-NAME>LL_LKAExPrcs_tiExitTime3</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKAExPrcs_tiExitTime3</SHORT-LABEL>
+                                            <VALUE>0.2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="dc2b9005-a512-5d37-c3f4-2e47262c9446">
+                                    <SHORT-NAME>LL_LKASWASyn_M0</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_M0</SHORT-LABEL>
+                                            <VALUE>0.4</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="45181e6f-58b1-5718-7a74-4107ab360326">
+                                    <SHORT-NAME>LL_LKASWASyn_M1</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_M1</SHORT-LABEL>
+                                            <VALUE>0.8</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="f2ef87f4-adfa-5b3f-8719-b5ce28d969c8">
+                                    <SHORT-NAME>LL_LKASWASyn_M2</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_M2</SHORT-LABEL>
+                                            <VALUE>0.3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="a4f80a34-5180-5644-9c8a-afb0a01b4ef9">
+                                    <SHORT-NAME>LL_LKASWASyn_M3K</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_M3K</SHORT-LABEL>
+                                            <VALUE>0.2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="48c4b61e-b6b6-5a50-6c87-606d158e8553">
+                                    <SHORT-NAME>LL_LKASWASyn_SWAaddMax</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_SWAaddMax</SHORT-LABEL>
+                                            <VALUE>8</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="6c8a222d-38d0-516e-1d36-00f34522c73c">
+                                    <SHORT-NAME>LL_LKASWASyn_T2</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_T2</SHORT-LABEL>
+                                            <VALUE>4</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="fd03fa33-6e1e-51cd-216f-cc32332be0c9">
+                                    <SHORT-NAME>LL_LKASWASyn_TrqMax</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_TrqMax</SHORT-LABEL>
+                                            <VALUE>1.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="c54afabe-6c1e-5cb5-57c3-064e5ba4c4c2">
+                                    <SHORT-NAME>LL_LKASWASyn_TrqSwaAddSwt</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_TrqSwaAddSwt</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="b963338d-e98c-54a1-4587-0bf3c2034c23">
+                                    <SHORT-NAME>LL_LKASWASyn_TrqSwaRateDiff</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_TrqSwaRateDiff</SHORT-LABEL>
+                                            <VALUE>-0.2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="406497a0-003e-51c7-7866-985d5b10b092">
+                                    <SHORT-NAME>LL_LKASWASyn_tiTrqSwaRtTime</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_tiTrqSwaRtTime</SHORT-LABEL>
+                                            <VALUE>0.2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="bd694de5-e672-5c15-3fc7-a88389d16eac">
+                                    <SHORT-NAME>LL_LKASWASyn_tiTrqSwaTime</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKASWASyn_tiTrqSwaTime</SHORT-LABEL>
+                                            <VALUE>0.3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="673c53fe-9d37-5c8c-d196-1e6f0de36c2a">
+                                    <SHORT-NAME>LL_LKAS_OUT_OF_CONTROL_LAT_VEL</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKAS_OUT_OF_CONTROL_LAT_VEL</SHORT-LABEL>
+                                            <VALUE>1.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="ef1200b7-4432-5e6f-b26f-a94295f48bdf">
+                                    <SHORT-NAME>LL_LKAS_OUT_OF_CONTROL_TTLC</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKAS_OUT_OF_CONTROL_TTLC</SHORT-LABEL>
+                                            <VALUE>0.3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="ac0c0ba1-3ba4-56f7-937a-50bec11f1fce">
+                                    <SHORT-NAME>LL_LKA_EarliestWarnLine_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKA_EarliestWarnLine_C</SHORT-LABEL>
+                                            <VALUE>0.3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="7320b824-6176-5c23-3eb4-0c48be2e60e8">
+                                    <SHORT-NAME>LL_LKA_LatestWarnLine_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LKA_LatestWarnLine_C</SHORT-LABEL>
+                                            <VALUE>-0.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="38edf2d9-5ceb-57c9-3948-e22d298ff2ad">
+                                    <SHORT-NAME>LL_LSpdCompT_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_LSpdCompT_C</SHORT-LABEL>
+                                            <VALUE>0.4</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="f49552fd-40f5-5757-04d4-3f8b3ca21937">
+                                    <SHORT-NAME>LL_MAX_DELAY_EPSSTAR_TIME</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_DELAY_EPSSTAR_TIME</SHORT-LABEL>
+                                            <VALUE>0.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="d39a8a20-a08c-55be-9917-ae48c09da3d0">
+                                    <SHORT-NAME>LL_MAX_DRIVER_TORQUE_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_DRIVER_TORQUE_DISABLE</SHORT-LABEL>
+                                            <VALUE>2.25</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="1c6d14e1-2097-59bb-1e6f-3bd4e695a4fb">
+                                    <SHORT-NAME>LL_MAX_DRIVER_TORQUE_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_DRIVER_TORQUE_ENABLE</SHORT-LABEL>
+                                            <VALUE>3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="84d1e833-e839-5e14-4895-8dd1fc615258">
+                                    <SHORT-NAME>LL_MAX_LANE_WIDTH_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LANE_WIDTH_DISABLE</SHORT-LABEL>
+                                            <VALUE>5.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="786e6f88-0cf4-5f25-2464-97fe41757caa">
+                                    <SHORT-NAME>LL_MAX_LANE_WIDTH_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LANE_WIDTH_ENABLE</SHORT-LABEL>
+                                            <VALUE>5.4</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="8281a667-0dcf-5cba-4a2c-f5086652ad58">
+                                    <SHORT-NAME>LL_MAX_LAT_ACC_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LAT_ACC_DISABLE</SHORT-LABEL>
+                                            <VALUE>3.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="338f655e-50be-5184-becc-8e770f57c6d4">
+                                    <SHORT-NAME>LL_MAX_LAT_ACC_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LAT_ACC_ENABLE</SHORT-LABEL>
+                                            <VALUE>3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="5b1afaec-6a88-59c4-49a2-d51a0a6eead9">
+                                    <SHORT-NAME>LL_MAX_LDWS_SPEED_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LDWS_SPEED_DISABLE</SHORT-LABEL>
+                                            <VALUE>150</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="4f5e4989-fe94-5d55-f67c-58c197124f7a">
+                                    <SHORT-NAME>LL_MAX_LDWS_SPEED_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LDWS_SPEED_ENABLE</SHORT-LABEL>
+                                            <VALUE>140</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="74d7ef72-d207-5732-7116-9ad9d1a9005d">
+                                    <SHORT-NAME>LL_MAX_LKAS_SPEED_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LKAS_SPEED_DISABLE</SHORT-LABEL>
+                                            <VALUE>150</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="abc6215a-9a06-517b-b1f7-d303aceaaffa">
+                                    <SHORT-NAME>LL_MAX_LKAS_SPEED_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LKAS_SPEED_ENABLE</SHORT-LABEL>
+                                            <VALUE>140</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="368dccb5-b2e7-5ea3-3c48-06df171e4ba2">
+                                    <SHORT-NAME>LL_MAX_LONG_ACC_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LONG_ACC_DISABLE</SHORT-LABEL>
+                                            <VALUE>3.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="9d9aed16-98f9-5daf-0142-5f83b207c762">
+                                    <SHORT-NAME>LL_MAX_LONG_ACC_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LONG_ACC_ENABLE</SHORT-LABEL>
+                                            <VALUE>3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="6161ebf8-9fc2-5aee-7620-7a31a1033e62">
+                                    <SHORT-NAME>LL_MAX_LONG_DECEL_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LONG_DECEL_DISABLE</SHORT-LABEL>
+                                            <VALUE>2.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="b8e00b63-797a-5433-a886-c13a67c5eb56">
+                                    <SHORT-NAME>LL_MAX_LONG_DECEL_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_LONG_DECEL_ENABLE</SHORT-LABEL>
+                                            <VALUE>2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="d323447c-6a73-514e-8508-0f166eec70de">
+                                    <SHORT-NAME>LL_MAX_STEER_ANGLE_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_STEER_ANGLE_DISABLE</SHORT-LABEL>
+                                            <VALUE>70</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="c2f3aed5-24a1-59d1-6020-03e1806d261a">
+                                    <SHORT-NAME>LL_MAX_STEER_ANGLE_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_STEER_ANGLE_ENABLE</SHORT-LABEL>
+                                            <VALUE>60</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="c7d18917-37f0-50c8-52e7-aef16309bce3">
+                                    <SHORT-NAME>LL_MAX_STEER_SPEED_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_STEER_SPEED_DISABLE</SHORT-LABEL>
+                                            <VALUE>5000</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="bdb55889-6459-5335-0704-9aef567e09bb">
+                                    <SHORT-NAME>LL_MAX_STEER_SPEED_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_STEER_SPEED_ENABLE</SHORT-LABEL>
+                                            <VALUE>5000</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="f30b828e-cf69-58ce-3fba-0e7e46b98072">
+                                    <SHORT-NAME>LL_MAX_SYSTEM_CURVATURE_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_SYSTEM_CURVATURE_DISABLE</SHORT-LABEL>
+                                            <VALUE>0.0055</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="682758b5-6c49-57ad-9dde-d4afa7aad1b5">
+                                    <SHORT-NAME>LL_MAX_SYSTEM_CURVATURE_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MAX_SYSTEM_CURVATURE_ENABLE</SHORT-LABEL>
+                                            <VALUE>0.0045</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="06f29971-e12f-5fbc-80da-622c37f40901">
+                                    <SHORT-NAME>LL_MIN_LANE_WIDTH_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MIN_LANE_WIDTH_DISABLE</SHORT-LABEL>
+                                            <VALUE>2.4</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="6fa31cd3-f923-50e1-8b5a-ad024e221d25">
+                                    <SHORT-NAME>LL_MIN_LANE_WIDTH_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MIN_LANE_WIDTH_ENABLE</SHORT-LABEL>
+                                            <VALUE>2.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="76bded9f-3f82-57d4-a6f0-c08b3d2edb59">
+                                    <SHORT-NAME>LL_MIN_LKAS_SPEED_DISABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MIN_LKAS_SPEED_DISABLE</SHORT-LABEL>
+                                            <VALUE>55</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="7c7b08de-ba50-564e-cf57-02a7c9211949">
+                                    <SHORT-NAME>LL_MIN_LKAS_SPEED_ENABLE</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_MIN_LKAS_SPEED_ENABLE</SHORT-LABEL>
+                                            <VALUE>60</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="b4a8d4c6-920d-57a6-753b-a601a4bd0a7a">
+                                    <SHORT-NAME>LL_Max_LDWS_Warning_Time</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_Max_LDWS_Warning_Time</SHORT-LABEL>
+                                            <VALUE>5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="04036af5-6f95-5e44-ce06-7d3425b794fb">
+                                    <SHORT-NAME>LL_NomTAhd_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_NomTAhd_C</SHORT-LABEL>
+                                            <VALUE>0.2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="8b0c6c7c-a69e-585c-cb34-0ffbe806d964">
+                                    <SHORT-NAME>LL_ThresDet_lDvtThresLwrLDW</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_ThresDet_lDvtThresLwrLDW</SHORT-LABEL>
+                                            <VALUE>0.15</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="b37ce497-f62f-5d27-9159-e3121431b892">
+                                    <SHORT-NAME>LL_ThresDet_lDvtThresLwrLKA</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_ThresDet_lDvtThresLwrLKA</SHORT-LABEL>
+                                            <VALUE>0.3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="c929fd64-29f1-5d43-2d75-e1b4c4d3bba2">
+                                    <SHORT-NAME>LL_ThresDet_lDvtThresUprLDW</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_ThresDet_lDvtThresUprLDW</SHORT-LABEL>
+                                            <VALUE>0.3</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="3c14beb4-84f2-5f21-46f2-3d0390335f34">
+                                    <SHORT-NAME>LL_ThresDet_lDvtThresUprLKA</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_ThresDet_lDvtThresUprLKA</SHORT-LABEL>
+                                            <VALUE>0.6</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="53a541af-a1c7-51e6-214f-820bd9adb938">
+                                    <SHORT-NAME>LL_ThresDet_tiTTLCThresLDW</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_ThresDet_tiTTLCThresLDW</SHORT-LABEL>
+                                            <VALUE>0.75</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="8d211130-0566-53c5-f706-4a4a2acb3057">
+                                    <SHORT-NAME>LL_ThresDet_tiTTLCThresLKA</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_ThresDet_tiTTLCThresLKA</SHORT-LABEL>
+                                            <VALUE>1.5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="6cab4529-c0eb-532c-06c8-f7c721a18643">
+                                    <SHORT-NAME>LL_TkOvStChk_tiTDelTime</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_TkOvStChk_tiTDelTime</SHORT-LABEL>
+                                            <VALUE>2</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="10c03483-5c6e-5804-8823-eed8a51cbed4">
+                                    <SHORT-NAME>LL_TkOvStChk_tiTrqChkT</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_TkOvStChk_tiTrqChkT</SHORT-LABEL>
+                                            <VALUE>0.1</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                                <CONSTANT-SPECIFICATION UUID="43c0a784-9887-537c-5ac3-7d8057ed2865">
+                                    <SHORT-NAME>LL_lStpLngth_C</SHORT-NAME>
+                                    <VALUE-SPEC>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>LL_lStpLngth_C</SHORT-LABEL>
+                                            <VALUE>5</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </VALUE-SPEC>
+                                </CONSTANT-SPECIFICATION>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+                            <ELEMENTS>
+                                <SW-ADDR-METHOD UUID="32c03d17-8346-52ec-4f6a-79f6d71b060a">
+                                    <SHORT-NAME>CODE</SHORT-NAME>
+                                    <SECTION-TYPE>CODE</SECTION-TYPE>
+                                </SW-ADDR-METHOD>
+                                <SW-ADDR-METHOD UUID="340f3838-c40a-58e1-7a15-70158a4758da">
+                                    <SHORT-NAME>CONST</SHORT-NAME>
+                                    <SECTION-TYPE>CONST</SECTION-TYPE>
+                                </SW-ADDR-METHOD>
+                                <SW-ADDR-METHOD UUID="7376bd9e-4c3d-5dfa-8920-4615bf3d85e5">
+                                    <SHORT-NAME>VAR</SHORT-NAME>
+                                    <SECTION-TYPE>VAR</SECTION-TYPE>
+                                </SW-ADDR-METHOD>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <SW-BASE-TYPE UUID="9d77145e-3641-5521-28c0-91981ec082f4">
+                                    <SHORT-NAME>uint16</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>uint16</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                                <SW-BASE-TYPE UUID="12f747a5-036c-59c5-fb75-b399544a7bcd">
+                                    <SHORT-NAME>float32</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>float32</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                                <SW-BASE-TYPE UUID="c0bacfd5-46bb-552a-f744-eafeca49c43c">
+                                    <SHORT-NAME>uint8</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>LKAS_imp</SHORT-NAME>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>
