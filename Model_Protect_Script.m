@@ -46,7 +46,7 @@ delete_block(strcat(filename,'/','Runnable_',module_name,'_Step')); % 删除runnab
 delete_block(strcat(SubSystName,'/function'));
 fprintf('2.您的模型[%s.slx]文件已经完成Simulink属性配置并删除Runnable模块\n',filename);
 %% 3.输出slxp模型，输出mat文件
-protectfile = strcat(filename,'_Protect_',datestr(now,'yyyymmdd_HHMM'));
+protectfile = strcat(filename,'_Protect_MIL_',datestr(now,'yyyymmdd_HHMM'));
 getProtectFileName = strcat(protectfile,'.slx');
 getProtectFileName1 = strcat(protectfile,'.slxc');
 getProtectFileName2 = strcat(protectfile,'.slxp');
@@ -60,14 +60,13 @@ Simulink.ModelReference.protect(protectfile);
 %% 4.清理多余文件，规整文件并打包
 delete(getProtectFileName);
 delete(getProtectFileName1);
-movefile(getProtectFileName2,ModelSavePath); 
-movefile(getProtectFileName3,ModelSavePath); 
 delete(strcat(filename,'.slxc'));
 close_system(protectfile);
 zipfilename = strcat(protectfile);
 zip(zipfilename,getProtectFileName2);
 zip(zipfilename,getProtectFileName3);
-zip(zipfilename,'Rte_Type.m');
+zip(zipfilename,strcat(ModelSavePath,'\','Rte_Type.m'));
+movefile(strcat(zipfilename,'.zip'),ModelSavePath); 
 delete(getProtectFileName2);
 delete(getProtectFileName3);
 eval('clear all');
