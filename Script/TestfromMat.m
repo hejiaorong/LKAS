@@ -33,6 +33,8 @@ else
     fprintf('1.您的目标*.mat文件是:[%s]\n',getFileName1);
 end
 load(getFileName1)；%将mat文件载入工作区
+Timelong =  Time(length(Time));
+set_param(cs,'StopTime',num2str(Timelong));
 sim(('LKAS_Harness'));
 runIDs = Simulink.sdi.getAllRunIDs;
 runID = runIDs(end);
