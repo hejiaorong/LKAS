@@ -30,12 +30,13 @@ elseif  FileNum ~= 1
     eval('clear all');
     return;
 else
-    fprintf('1.您的目标*.mat文件是:[%s]\n',getFileName1);
+    fprintf('2.您的目标*.mat文件是:[%s]\n',getFileName1);
 end
 load(getFileName1);%将mat文件载入工作区
 Timelong =  Time(length(Time));
 cs = getActiveConfigSet('LKAS_Harness');
 set_param(cs,'StopTime',num2str(Timelong));
+warning("off");
 sim(('LKAS_Harness'));
 runIDs = Simulink.sdi.getAllRunIDs;
 runID = runIDs(end);
