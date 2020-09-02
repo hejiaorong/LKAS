@@ -20,6 +20,7 @@ filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
 module_name = filename(1:4);
 warning('off');
 ModelSavePath = strcat(path,'\ModelSave');
+binPath = strcat(path,'\bin');
 ScriptPath = strcat(path,'\Script');
 date1 = datestr(now,'yyyymmdd_HHMM');
 date2 = datestr(now,'yyyy-mm-dd-HH-MM');
@@ -130,10 +131,16 @@ close_system(newJLUfile,1);
 close_system(newSWCfile,0);
 eval(strcat('!TASKKILL',32,'/F',32,'/IM',32,'ide.exe',32,'/T'));
 delete(strcat(newJLUfile,'.slxc'));
-rmdir('slprj','s');
-copyfile(strcat(ModelSavePath,'\',newJLUfile,'_MPC5675Krt\bin\internal_FLASH.mot'),ModelSavePath);
+try
+    rmdir('slprj','s');
+catch
+end
+copyfile(strcat(binPath,'\',newJLUfile,'_MPC5675Krt\bin\internal_FLASH.mot'),ModelSavePath);
 eval(strcat('!rename',32,ModelSavePath,'\','internal_FLASH.mot',32,strcat(newJLUfile,'.mot')));
-rmdir(strcat(newJLUfile,'_MPC5675Krt'),'s');
+try
+    rmdir(strcat(binPath,'\',newJLUfile,'_MPC5675Krt'),'s');
+catch
+end
 cd(path);
 delete(strcat(matname,'.m'));
 delete(strcat(newmatname,'.m'));
