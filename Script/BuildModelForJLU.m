@@ -21,6 +21,7 @@ module_name = filename(1:4);
 warning('off');
 ModelSavePath = strcat(path,'\ModelSave');
 binPath = strcat(path,'\bin');
+cachePath = strcat(path,'\cache');
 ScriptPath = strcat(path,'\Script');
 date1 = datestr(now,'yyyymmdd_HHMM');
 date2 = datestr(now,'yyyy-mm-dd-HH-MM');
@@ -80,6 +81,7 @@ clear(mdlWks);
 mdlWks.DataSource = 'MATLAB File';
 mdlWks.FileName = strcat(newmatname,'.m');
 reload(mdlWks);
+mdlWks.DataSource = 'Model File';
 fclose('all');
 fprintf('2.您的模型已经完成标定量和观测量属性配置\n');
 %% 3.迁移模块并连线
@@ -130,9 +132,9 @@ end
 close_system(newJLUfile,1);
 close_system(newSWCfile,0);
 eval(strcat('!TASKKILL',32,'/F',32,'/IM',32,'ide.exe',32,'/T'));
-delete(strcat(newJLUfile,'.slxc'));
+delete(strcat(cachePath,'\',newJLUfile,'.slxc'));
 try
-    rmdir('slprj','s');
+    rmdir(strcat(cachePath,'\slprj'),'s');
 catch
 end
 copyfile(strcat(binPath,'\',newJLUfile,'_MPC5675Krt\bin\internal_FLASH.mot'),ModelSavePath);
