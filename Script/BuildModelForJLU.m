@@ -141,6 +141,9 @@ end
 %% 5.关闭并不保存模型，删除多余文件
 close_system(newJLUfile,1);
 close_system(newSWCfile,0);
+copyfile(strcat(ModelSavePath,'\',getNewJLUName),ScriptPath);
+delete(strcat(ScriptPath,'\',getJLUfile));
+eval(strcat('!rename',32,ScriptPath,'\',getNewJLUName,32,getJLUfile));
 eval(strcat('!TASKKILL',32,'/F',32,'/IM',32,'ide.exe',32,'/T'));
 delete(strcat(cachePath,'\',newJLUfile,'.slxc'));
 try rmdir(strcat(cachePath,'\slprj'),'s');

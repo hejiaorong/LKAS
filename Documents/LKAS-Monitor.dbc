@@ -1,0 +1,91 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 1536 Mon_1: 8 Vector__XXX
+ SG_ Signal_1 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_2 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_3 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_4 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1552 Mon_2: 8 Vector__XXX
+ SG_ Signal_5 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_6 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_7 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_8 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1568 Mon_3: 8 Vector__XXX
+ SG_ Signal_9 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_10 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_11 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_12 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1584 Mon_4: 8 Vector__XXX
+ SG_ Signal_13 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_14 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_15 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_16 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1600 Mon_5: 8 Vector__XXX
+ SG_ Signal_17 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_18 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_19 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_20 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1616 Mon_6: 8 Vector__XXX
+ SG_ Signal_21 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_22 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_23 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_24 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1632 Mon_7: 8 Vector__XXX
+ SG_ Signal_25 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_26 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_27 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_28 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+BO_ 1648 Mon_8: 8 Vector__XXX
+ SG_ Signal_29 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_30 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_31 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+ SG_ Signal_32 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+
