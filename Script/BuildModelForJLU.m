@@ -107,10 +107,8 @@ set_param(Annotation(1),'Name',date2)
 fprintf('3.您的模型已经完成迁移至%s\n',getNewJLUName);
 %% 4.运行并编译模型
 cd(ModelSavePath);
-try
-    sim(newJLUfile);
-    try
-        slbuild(newJLUfile,'StandaloneRTWTarget','ForceTopModelBuild',true)
+try sim(newJLUfile);
+    try slbuild(newJLUfile,'StandaloneRTWTarget','ForceTopModelBuild',true)
         fprintf('3.您的模型已完成编译并生成代码\n')
     catch error
         if error.identifier == "RTW:makertw:makeHookError"
@@ -122,7 +120,9 @@ try
         delete(strcat(matname,'.m'));
         delete(strcat(newmatname,'.m'));
         delete(strcat(cachePath,'\',newJLUfile,'.slxc'));
-        try rmdir(strcat(cachePath,'\slprj'),'s');
+        try rmdir(strcat(binPath,'\slprj'),'s');
+            rmdir(strcat(binPath,'\',newJLUfile,'_MPC5675Krt'),'s');
+            rmdir(strcat(cachePath,'\slprj'),'s');
         catch
         end
         return;
@@ -138,20 +138,17 @@ catch
     end
     return;
 end
-
 %% 5.关闭并不保存模型，删除多余文件
 close_system(newJLUfile,1);
 close_system(newSWCfile,0);
 eval(strcat('!TASKKILL',32,'/F',32,'/IM',32,'ide.exe',32,'/T'));
 delete(strcat(cachePath,'\',newJLUfile,'.slxc'));
-try
-    rmdir(strcat(cachePath,'\slprj'),'s');
+try rmdir(strcat(cachePath,'\slprj'),'s');
 catch
 end
 copyfile(strcat(binPath,'\',newJLUfile,'_MPC5675Krt\bin\internal_FLASH.mot'),ModelSavePath);
 eval(strcat('!rename',32,ModelSavePath,'\','internal_FLASH.mot',32,strcat(newJLUfile,'.mot')));
-try
-    rmdir(strcat(binPath,'\',newJLUfile,'_MPC5675Krt'),'s');
+try rmdir(strcat(binPath,'\',newJLUfile,'_MPC5675Krt'),'s');
 catch
 end
 cd(path);
