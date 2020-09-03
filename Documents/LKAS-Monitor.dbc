@@ -1,4 +1,4 @@
-VERSION ""
+VERSION "Mon"
 
 
 NS_ : 
@@ -33,59 +33,151 @@ NS_ :
 
 BS_:
 
-BU_:
+BU_: Mon
+
+VAL_TABLE_ VitSig_LKA_main_switch 1 "LKA ON" 0 "LKA OFF" ;
+VAL_TABLE_ VitSig_LC_Mode 3 "车道居中控制" 2 "车道保持辅助" 1 "车道偏离预警" 0 "预留" ;
+VAL_TABLE_ VitSig_State_of_EPS_for_LKA 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "defect" 3 "active" 2 "available" 1 "authorized" 0 "unauthorized" ;
+VAL_TABLE_ VitSig_Steering_wheel_sensor_dir 1 "Negative angles, decrease" 0 "Positive angles, increase" ;
+VAL_TABLE_ VitSig_BCM_Status_Indicator 3 "Left and right indicator active" 2 "Left Indicator active" 1 "Right Indicator active" 0 "Indicator inactive" ;
+VAL_TABLE_ VitSig_TCU_Gear_lever_position 15 "CMF disabled or unavailable" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Manual mode / Reserved1100" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "D" 2 "N" 1 "R" 0 "P" ;
 
 
-BO_ 1536 Mon_1: 8 Vector__XXX
- SG_ Signal_1 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_2 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_3 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_4 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+VAL_TABLE_ VLlaneType_valueTable 6 "road edge" 5 "bott's dotts" 4 "double lane mark" 3 "solid" 2 "dashed" 1 "undecided" 0 "invalid" ;
+VAL_TABLE_ VLquality_valueTable 1 "high" 0 "low" ;
 
-BO_ 1552 Mon_2: 8 Vector__XXX
- SG_ Signal_5 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_6 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_7 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_8 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+BO_ 1536 Mon_1: 8 Mon
+ SG_ bsInInfo1 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo2 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo3 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo4 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
-BO_ 1568 Mon_3: 8 Vector__XXX
- SG_ Signal_9 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_10 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_11 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_12 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+BO_ 1552 Mon_2: 8 Mon
+ SG_ bsInInfo5 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo6 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo7 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo8 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
-BO_ 1584 Mon_4: 8 Vector__XXX
- SG_ Signal_13 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_14 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_15 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_16 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+BO_ 1568 Mon_3: 8 Mon
+ SG_ bsInInfo9 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo10 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo11 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo12 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
-BO_ 1600 Mon_5: 8 Vector__XXX
- SG_ Signal_17 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_18 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_19 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_20 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+BO_ 1584 Mon_4: 8 Mon
+ SG_ bsInInfo13 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo14 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo15 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo16 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
-BO_ 1616 Mon_6: 8 Vector__XXX
- SG_ Signal_21 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_22 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_23 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_24 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+BO_ 1600 Mon_5: 8 Mon
+ SG_ bsInInfo17 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo18 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo19 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo20 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
-BO_ 1632 Mon_7: 8 Vector__XXX
- SG_ Signal_25 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_26 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_27 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_28 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+BO_ 1616 Mon_6: 8 Mon
+ SG_ bsInInfo21 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo22 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo23 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo24 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
-BO_ 1648 Mon_8: 8 Vector__XXX
- SG_ Signal_29 : 7|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_30 : 23|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_31 : 39|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
- SG_ Signal_32 : 55|16@0- (0.01,0) [-327.68|327.67] "" Vector__XXX
+BO_ 1632 Mon_7: 8 Mon
+ SG_ bsInInfo25 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo26 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo27 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo28 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
+BO_ 1648 Mon_8: 8 Mon
+ SG_ bsInInfo29 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo30 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo31 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ bsInInfo32 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+
+BO_ 1360 GW_550_PSA1: 8 Gateway
+ SG_ LKA_main_switch : 5|1@0+ (1,0) [0|1] ""  ADAS,Camera
+ SG_ LC_Mode : 7|2@0+ (1,0) [0|3] ""  ADAS,Camera
+BO_ 1173 EPS_495_PSA1: 4 EPS
+ SG_ State_of_EPS_for_LKA_function : 20|3@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ Steering_wheel_torque : 7|8@0- (0.25,0) [-32|31.5] "N.m"  ADAS,Camera
+BO_ 973 ESC_3CD_PSA1: 8 ESC
+ SG_ Yaw_speed : 23|16@0- (0.1,0) [-100|100] "Degree/s"  EPS,Gateway,APA,Camera,ADAS
+ SG_ TMC_pressure : 47|12@0+ (0.1,-55) [-55|354.4] "Bar"  Gateway,APA,Radar,Camera,ADAS
+ SG_ Lateral_acceleration : 7|16@0- (0.05,0) [-15|15] "m/s2"  EPS,Gateway,APA,Radar,Camera,ADAS
+BO_ 909 ESC_38D_PSA1: 8 ESC
+ SG_ Vehicle_speed_of_wheelsensor : 7|16@0+ (0.01,0) [0|655.34] "km/h"  EPS,Gateway,APA,Radar,Camera,ADAS
+BO_ 813 GW_32D_PSA1: 8 Gateway
+ SG_ ACCEL_LONGI_CALIB : 7|12@0+ (0.02,-40.96) [-40.96|40.92] "m/s2"  Radar,Camera,ADAS
+BO_ 773 EPS_305_PSA1: 7 EPS
+ SG_ Steering_wheel_sensor_direction : 31|1@0+ (1,0) [0|0] ""  ADAS,Camera,ESC,Gateway,Radar
+ SG_ Steering_wheel_rotation_speed : 23|8@0+ (4,0) [0|1016] "Degree/s"  ADAS,APA,Camera,ESC,Gateway,Radar
+ SG_ Steering_wheel_angle : 7|16@0- (0.1,0) [-780|780] "Degree"  ADAS,APA,Camera,ESC,Gateway,Radar
+BO_ 1106 GW_452_PSA1: 6 Gateway
+ SG_ BCM_Status_Indicator : 5|2@0+ (1,0) [0|0] ""  APA,Radar,Camera,ADAS
+BO_ 841 GW_349_PSA1: 8 Gateway
+ SG_ TCU_Gear_lever_position : 27|4@0+ (1,0) [0|0] ""  ESC,APA,Radar,Camera,ADAS
+
+
+
+BO_ 1532 Video_Lane_Left_B: 4 Camera
+ SG_ Me_Line_Changed_5FC : 16|1@0+ (1,0) [0|1] ""  radar,ADAS
+ SG_ Line_Width_5FC : 23|7@0+ (0.01,0) [0|1.27] "m"  radar,ADAS
+ SG_ TLC_5FC : 15|8@0+ (0.01,0) [0|2.55] "s"  radar,ADAS
+ SG_ View_Range_5FC : 7|8@0+ (0.5,0) [0|127.5] "m"  radar,ADAS
+BO_ 1530 Video_Lane_Left_A: 8 Camera
+ SG_ Line_Type_5FA : 61|3@0+ (1,0) [0|7] ""  radar,ADAS
+ SG_ Quality_5FA : 63|2@0+ (1,0) [0|3] ""  radar,ADAS
+ SG_ C1_5FA : 43|10@0- (0.0009765625,0) [-0.357|0.357] ""  radar,ADAS
+ SG_ C0_5FA : 39|12@0- (0.01,0) [-20.48|20.47] "m"  radar,ADAS
+ SG_ C2_5FA : 23|16@0- (1E-006,0) [-0.032768|0.032766] "m-1"  radar,ADAS
+ SG_ C3_5FA : 7|16@0- (4E-009,0) [-0.000131072|0.000131068] "m-2"  radar,ADAS
+BO_ 1535 Video_Lane_Right_B: 4 Camera
+ SG_ Me_Line_Changed_5FF : 16|1@0+ (1,0) [0|1] ""  radar,ADAS
+ SG_ Line_Width_5FF : 23|7@0+ (0.01,0) [0|1.27] "m"  radar,ADAS
+ SG_ TLC_5FF : 15|8@0+ (0.01,0) [0|2.55] "s"  radar,ADAS
+ SG_ View_Range_5FF : 7|8@0+ (0.5,0) [0|127.5] "m"  radar,ADAS
+BO_ 1533 Video_Lane_Right_A: 8 Camera
+ SG_ Line_Type_5FD : 61|3@0+ (1,0) [0|7] ""  radar,ADAS
+ SG_ Quality_5FD : 63|2@0+ (1,0) [0|3] ""  radar,ADAS
+ SG_ C1_5FD : 43|10@0- (0.0009765625,0) [-0.357|0.357] ""  radar,ADAS
+ SG_ C0_5FD : 39|12@0- (0.01,0) [-20.48|20.47] "m"  radar,ADAS
+ SG_ C2_5FD : 23|16@0- (1E-006,0) [-0.032768|0.032766] "m-1"  radar,ADAS
+ SG_ C3_5FD : 7|16@0- (4E-009,0) [-0.000131072|0.000131068] "m-2"  radar,ADAS
+
+CM_ SG_ 1360 LKA_main_switch "LKA开启开关";
+CM_ SG_ 1360 LC_Mode "LKA功能选择";
+CM_ SG_ 1173 State_of_EPS_for_LKA_function "LKA功能的EPS状态";
+CM_ SG_ 1173 Steering_wheel_torque "方向盘转矩";
+CM_ SG_ 973 Yaw_speed "横摆角速度";
+CM_ SG_ 973 TMC_pressure "主缸压力";
+CM_ SG_ 973 Lateral_acceleration "侧向加速度";
+CM_ SG_ 909 Vehicle_speed_of_wheelsensor "车速（轮速传感器)";
+CM_ SG_ 813 ACCEL_LONGI_CALIB "标定后的当前纵向加速度";
+CM_ SG_ 773 Steering_wheel_sensor_direction "转向传感器方向";
+CM_ SG_ 773 Steering_wheel_rotation_speed "转向旋转速度";
+CM_ SG_ 773 Steering_wheel_angle "转向角信号";
+CM_ SG_ 1106 BCM_Status_Indicator "转向灯状态（包括双闪）";
+CM_ SG_ 841 TCU_Gear_lever_position "换挡手柄位置";
+
+
+
+CM_ SG_ 1532 Me_Line_Changed_5FC "is one for one cycle when lane model switched.";
+CM_ SG_ 1530 C1_5FA "57 degrees, 0.06 degrees resolution";
+CM_ SG_ 1530 C2_5FA "250m minimal radius";
+CM_ SG_ 1535 Me_Line_Changed_5FF "is one for one cycle when lane model switched.";
+CM_ SG_ 1533 C1_5FD "57 degrees, 0.06 degrees resolution";
+CM_ SG_ 1533 C2_5FD "250m minimal radius";
 
 
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 
+VAL_ 1360 LKA_main_switch 1 "LKA ON" 0 "LKA OFF" ;
+VAL_ 1360 LC_Mode 3 "车道居中控制" 2 "车道保持辅助" 1 "车道偏离预警" 0 "预留" ;
+VAL_ 1173 State_of_EPS_for_LKA_function 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "defect" 3 "active" 2 "available" 1 "authorized" 0 "unauthorized" ;
+VAL_ 773 Steering_wheel_sensor_direction 1 "Negative angles, decrease" 0 "Positive angles, increase" ;
+VAL_ 1106 BCM_Status_Indicator 3 "Left and right indicator active" 2 "Left Indicator active" 1 "Right Indicator active" 0 "Indicator inactive" ;
+
+
+VAL_ 1530 Line_Type_5FA 5 "bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_ 1530 Quality_5FA 3 "High" 2 "Medium_PredictedOrLowScore" 1 "Low2_InsufficientScore" 0 "Low1_NoLineDetected" ;

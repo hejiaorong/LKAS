@@ -66,15 +66,15 @@ fid=fopen(strcat(newmatname,'.m'),'wt');      %新建一个txt文件
 phns = strcat(matname,'.m');                 %要读取的文档所在的路径  
 fpn = fopen (phns, 'rt');           %打开文档  
 while feof(fpn) ~= 1                %用于判断文件指针p在其所指的文件中的位置，如果到文件末，函数返回1，否则返回0  
-    file = fgetl(fpn);            %获取文档第一行   
-    if file == -1
+    line = fgetl(fpn);            %获取文档第一行   
+    if line == -1
         break;
     end
-    if contains(file,"StorageClass = 'Custom'")
-        new_str = strrep(file,"StorageClass = 'Custom'","StorageClass = 'Auto'");
+    if contains(line,"SG_ ")
+        new_str = regexpi(line,' ','');
         fprintf(fid,'%s\n',new_str);%新的字符串写入当新建的txt文档中
     else
-        new_str = strrep(file,strcat(module_name,'_calib.c'),' ');
+        new_str = strrep(line,strcat(module_name,'_calib.c'),' ');
         fprintf(fid,'%s\n',new_str);%新的字符串写入当新建的txt文档中  
     end
 end  
