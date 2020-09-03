@@ -12,8 +12,10 @@ elseif  FileNum ~= 1
     fprintf('当前目录下存在不止1个*.slx文件\n');
     eval('clear all');
     return;
-else
+elseif questdlg('您将编译适用于东风控制器的程序','编译确认','是','否','是')=='是'
     fprintf('1.您的目标*.slx文件是:[%s]\n',getFileName);
+else
+    return;
 end
 ModelSavePath = strcat(path,'\ModelSave');
 binPath = strcat(path,'\bin');

@@ -1,6 +1,7 @@
 %% 自动编译适用2018B版JLU工具链的程序
 eval('clear all');
 eval('clc');
+
 %% 1.另存模型到ModelSave文件夹
 path = cd;
 getFileName=ls(strcat(pwd,'\*.slx')); %  *脚本和slx放在同一个文件夹该文件夹下有且只有一个slx文件
@@ -13,8 +14,10 @@ elseif  FileNum ~= 1
     fprintf('当前目录下存在不止1个*.slx文件\n');
     eval('clear all');
     return;
-else
+elseif questdlg('您将编译适用于吉大控制器的程序','编译确认','是','否','是')=='是'
     fprintf('1.您的目标*.slx文件是:[%s]\n',getFileName);
+else
+    return;
 end
 filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
 module_name = filename(1:4);
@@ -115,16 +118,24 @@ try
         else
             fprintf('3.您的模型无法正常编译，请检查\n')
         end
+        cd(path);
         delete(strcat(matname,'.m'));
         delete(strcat(newmatname,'.m'));
-        delete(strcat(newJLUfile,'.slxc'));
+        delete(strcat(cachePath,'\',newJLUfile,'.slxc'));
+        try rmdir(strcat(cachePath,'\slprj'),'s');
+        catch
+        end
         return;
     end
 catch
     fprintf('3.您的模型无法正常运行，请检查模型\n')
+    cd(path);
     delete(strcat(matname,'.m'));
     delete(strcat(newmatname,'.m'));
-    delete(strcat(newJLUfile,'.slxc'));
+    delete(strcat(cachePath,'\',newJLUfile,'.slxc'));
+    try rmdir(strcat(cachePath,'\slprj'),'s');
+    catch
+    end
     return;
 end
 

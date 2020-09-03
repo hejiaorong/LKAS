@@ -13,8 +13,10 @@ elseif  FileNum ~= 1
     fprintf('当前目录下存在不止1个*.slx文件\n');
     eval('clear all');
     return;
-else
+elseif questdlg('您将输出适用MIL仿真的开放模型','执行确认','是','否','是')=='是'
     fprintf('1.您的目标*.slx文件是:[%s]\n',getFileName);
+else
+    return;
 end
 filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
 module_name = filename(1:4);
