@@ -1,7 +1,8 @@
 %% 自动编译适用2018B版JLU工具链的程序
 eval('clear all');
 eval('clc');
-
+%% 更新观测量
+UpdateMon;
 %% 1.另存模型到ModelSave文件夹
 path = cd;
 getFileName=ls(strcat(pwd,'\*.slx')); %  *脚本和slx放在同一个文件夹该文件夹下有且只有一个slx文件
@@ -105,16 +106,17 @@ add_line(newJLUfile,'LL/1','LLOut/1');
 Annotation = find_system(newJLUfile,'FindAll','on','SearchDepth',1,'Type','annotation');
 set_param(Annotation(1),'Name',date2)
 fprintf('3.您的模型已经完成迁移至%s\n',getNewJLUName);
+
 %% 4.运行并编译模型
 cd(ModelSavePath);
 try sim(newJLUfile);
     try slbuild(newJLUfile,'StandaloneRTWTarget','ForceTopModelBuild',true)
-        fprintf('3.您的模型已完成编译并生成代码\n')
+        fprintf('4.您的模型已完成编译并生成代码\n')
     catch error
         if error.identifier == "RTW:makertw:makeHookError"
-        	fprintf('3.未检测到合法的加密狗，请检查后重试！\n')
+        	fprintf('4.未检测到合法的加密狗，请检查后重试！\n')
         else
-            fprintf('3.您的模型无法正常编译，请检查\n')
+            fprintf('4.您的模型无法正常编译，请检查\n')
         end
         cd(path);
         delete(strcat(matname,'.m'));
@@ -128,7 +130,7 @@ try sim(newJLUfile);
         return;
     end
 catch
-    fprintf('3.您的模型无法正常运行，请检查模型\n')
+    fprintf('4.您的模型无法正常运行，请检查模型\n')
     cd(path);
     delete(strcat(matname,'.m'));
     delete(strcat(newmatname,'.m'));
