@@ -36,13 +36,12 @@ else
     fprintf('2.您的目标*.slx文件是:【%s】\n',getScriptName);
 end
 scriptfile = getScriptName(1:length(getScriptName)-4);    %获取slx文件名
-
-
 warning('off');
 open_system(modelname);
 open_system(strcat(modelname,'/',modelname,'/LL/LLOn'));
 open_system(scriptfile);
 open_system(strcat(scriptfile,'/CAN Monitor (CANMon)/Monitor'));
+%%
 ModelMon = find_system(strcat(modelname,'/',modelname,'/LL'),'BlockType','Goto','TagVisibility','global');
 totalnum = length(ModelMon);
 realMon = cell(0,1);
@@ -56,3 +55,9 @@ for i = 1:totalnum
 end
 ModelMon = realMon;
 clear montag i realMon FileNum totalnum;
+%%
+MonNum = length(ModelMon);
+for i = 1:MonNum
+    new_str = regexpi(MonPath,'/','split');
+    
+end
