@@ -23,7 +23,7 @@ end
 modelname = getModelName(1:length(getModelName)-4);    %获取slx文件名
 warning('off');
 open_system(modelname);
-open_system(strcat(modelname,'/',modelname,'/LL'));
+open_system(strcat(modelname,'/',modelname,'/LL/LLOn'));
 ModelMon = find_system(strcat(modelname,'/',modelname,'/LL'),'BlockType','Goto','TagVisibility','global');
 totalnum = length(ModelMon);
 realMon = cell(0,1);
