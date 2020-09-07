@@ -21,9 +21,28 @@ else
     fprintf('1.您的目标*.slx文件是:【%s】\n',getModelName);
 end
 modelname = getModelName(1:length(getModelName)-4);    %获取slx文件名
+scriptpath = strcat(path,'\Script');
+getScriptName=ls(strcat(scriptpath,'\*.slx')); %  *脚本和slx放在同一个文件夹该文件夹下有且只有一个slx文件
+FileNum = size(getScriptName);
+if  isequal(getScriptName,'') % 防止选择空文件夹
+    fprintf('当前目录下没有找到*.slx文件\n');
+    eval('clear all');
+    return;
+elseif  FileNum ~= 1
+    fprintf('当前目录下存在不止1个*.slx文件\n');
+    eval('clear all');
+    return;
+else
+    fprintf('2.您的目标*.slx文件是:【%s】\n',getScriptName);
+end
+scriptfile = getScriptName(1:length(getScriptName)-4);    %获取slx文件名
+
+
 warning('off');
 open_system(modelname);
 open_system(strcat(modelname,'/',modelname,'/LL/LLOn'));
+open_system(scriptfile);
+open_system(strcat(scriptfile,'/CAN Monitor (CANMon)/Monitor'));
 ModelMon = find_system(strcat(modelname,'/',modelname,'/LL'),'BlockType','Goto','TagVisibility','global');
 totalnum = length(ModelMon);
 realMon = cell(0,1);
