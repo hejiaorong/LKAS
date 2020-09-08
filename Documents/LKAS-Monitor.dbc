@@ -45,52 +45,52 @@ VAL_TABLE_ VLquality_valueTable 1 "high" 0 "low" ;
 
 
 BO_ 1536 Mon_1: 8 Mon
- SG_ asdfa1 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ baerqwe2 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ qwer3 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ dgadsf4 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ LFTTTLC_Mon1 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ RGTTTLC_Mon2 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ LDW_State_Mon3 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ LKA_State_Mon4 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1552 Mon_2: 8 Mon
- SG_ asdfa5 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ baerqwe6 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ qwer7 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ dgadsf8 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ ActFlg_Mon5 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ LKA_SampleTime_Mon6 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ T1_Mon7 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor88 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1568 Mon_3: 8 Mon
- SG_ asdfa9 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ baerqwe10 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ qwer11 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ dgadsf12 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor99 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1010 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1111 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1212 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1584 Mon_4: 8 Mon
- SG_ asdfa13 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ baerqwe14 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ qwer15 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ dgadsf16 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1313 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1414 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1515 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1616 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1600 Mon_5: 8 Mon
- SG_ asdfa17 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ baerqwe18 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ qwer19 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ dgadsf20 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1717 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1818 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor1919 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2020 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1616 Mon_6: 8 Mon
- SG_ asdfa21 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ baerqwe22 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ qwer23 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ dgadsf24 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2121 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2222 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2323 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2424 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1632 Mon_7: 8 Mon
- SG_ asdfa25 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ baerqwe26 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ qwer27 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ dgadsf28 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2525 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2626 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2727 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2828 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1648 Mon_8: 8 Mon
- SG_ asdfa29 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ baerqwe30 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ qwer31 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
- SG_ dgadsf32 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor2929 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor3030 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor3131 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ Monitor3232 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1360 GW_550_PSA1: 8 Gateway
  SG_ LKA_main_switch : 5|1@0+ (1,0) [0|1] ""  ADAS,Camera

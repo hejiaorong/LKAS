@@ -41,14 +41,14 @@ warning('off');
 load_system(filename);
 load_system(strcat(filename,'/CAN Monitor (CANMon)/Monitor'));
 Monitor = find_system(strcat(filename,'/CAN Monitor (CANMon)/Monitor'),'SearchDepth',1,'BlockType','From');
-MonitorNum = size(Monitor);
-dist = Monitor{1};
-for i = 1:MonitorNum(1)
+MonitorNum = length(Monitor)-1;
+dist = Monitor{2};
+for i = 1:MonitorNum
     Monitor{i} = strcat(dist(1:length(dist)-1),num2str(i));
 end
-tag = {MonitorNum(1)};
-text = {MonitorNum(1)};
-for i = 1:MonitorNum(1)
+tag = {MonitorNum};
+text = {MonitorNum};
+for i = 1:MonitorNum
     tag(i) = get_param(Monitor(i),'GotoTag');
     text(i) = get_param(Monitor(i),'Description');
 %     set_param(Monitor{i},'Description',strcat('Monitor',num2str(i)));
@@ -56,13 +56,15 @@ end
 id = 1536;
 varid = 45;
 a = [];
-for i = 1 : MonitorNum(1)
+for i = 1 : MonitorNum
     if contains(text(i),'-LKA')
         deviceid = '13';
-    elseif contains(text(i),'-InP')
+    elseif contains(text(i),'-State')
         deviceid = '12';
-    else
+    elseif contains(text(i),'-InP')
         deviceid = '11';
+    else
+        deviceid = '14';
     end
     addsignals = [strcat(tag(i),'_',num2str(i)),num2str(10),num2str(id+16*idivide(i-1,int32(4))),'0',num2str(varid+i),'1',num2str(7+mod(i-1,4)*16),'16','0','0.01',deviceid,'-','300','-300',text(i),'1'];
     Monxlstable = [Monxlstable;addsignals];
@@ -74,7 +76,7 @@ dbcfile = strcat(path,'\Documents\LKAS-Monitor.dbc');
 newdbcfile = strcat(path,'\Documents\new-LKAS-Monitor.dbc');
 dbcinifile = strcat(path,'\Documents\LKAS-Monitor.ini');
 newdbcinifile = strcat(path,'\Documents\new-LKAS-Monitor.ini');
-fid = fopen(newdbcfile,'wt');      %新建一个txt文件  
+fid = fopen(newdbcfile,'wt');      %新建一个文件  
 fpn = fopen(dbcfile, 'rt');           %打开文档  
 i = 1;
 while feof(fpn) ~= 1                %用于判断文件指针p在其所指的文件中的位置，如果到文件末，函数返回1，否则返回0  
@@ -82,7 +84,7 @@ while feof(fpn) ~= 1                %用于判断文件指针p在其所指的文件中的位置，如
     if line == -1
         break;
     end
-    if contains(line," SG_ ")&&contains(line,' "Mon" ')&&(i <= MonitorNum(1))
+    if contains(line," SG_ ")&&contains(line,' "Mon" ')&&(i <= MonitorNum)
         new_str = regexpi(line,' ','split');
         new_str(3) = strcat(tag(i),num2str(i));
         newline = strjoin(new_str,' ');
