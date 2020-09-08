@@ -101,6 +101,8 @@ for i = 1:MonNum
         w = w + 1;
     elseif contains(new_str(5),'LKA')
         add_block('Simulink/Signal Routing/From',strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon/FromLKA',num2str(e+1)),'GotoTag',ModelMon{i},'Position',[50 100+e*60 180 130+e*60]);
+        add_block('Simulink/Quick Insert/Signal Attributes/Cast To Single',strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon/CastLKA',num2str(e+1)),'Position',[250 100+e*60 380 130+e*60]);
+    	add_line(strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon'),strcat('FromLKA',num2str(e+1),'/1'),strcat('CastLKA',num2str(e+1),'/1'));
         e = e + 1;
     else
     end
@@ -110,8 +112,8 @@ add_block('Simulink/Signal Routing/Bus Creator',strcat(modelname,'/',modelname,'
 add_block('Simulink/Signal Routing/Goto',strcat(modelname,'/',modelname,'/LL/LLOn/LL_Mon/InPMon'),'GotoTag','InPMon','Position',[350 70+q*30 430 100+q*30]);
 add_block('Simulink/Signal Routing/Bus Creator',strcat(modelname,'/',modelname,'/LL/LLOn/LL_Mon/BusState'),'Inputs',num2str(w),'Position',[750 85 760 85+w*60]);
 add_block('Simulink/Signal Routing/Goto',strcat(modelname,'/',modelname,'/LL/LLOn/LL_Mon/StateMon'),'GotoTag','StateMon','Position',[850 70+w*30 930 100+w*30]);
-add_block('Simulink/Signal Routing/Bus Creator',strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon/BusLKA'),'Inputs',num2str(e),'Position',[250 85 260 85+e*60]);
-add_block('Simulink/Commonly Used Blocks/Out1',strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon/LKAMon'),'Position',[350 70+e*30 430 100+e*30]);
+add_block('Simulink/Signal Routing/Bus Creator',strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon/BusLKA'),'Inputs',num2str(e),'Position',[450 85 460 85+e*60]);
+add_block('Simulink/Commonly Used Blocks/Out1',strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon/LKAMon'),'Position',[550 70+e*30 630 100+e*30]);
 add_line(strcat(modelname,'/',modelname,'/LL/LLOn/LKA'),'LKA_Mon/1','LKAMon/1');
 for i = 1:q
     tempname = get_param(strcat(modelname,'/',modelname,'/LL/LLOn/LL_Mon/FromInP',num2str(i)),'GotoTag');
@@ -123,7 +125,7 @@ for i = 1:w
 end
 for i = 1:e
     tempname = get_param(strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon/FromLKA',num2str(i)),'GotoTag');
-    set_param(add_line(strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon'),strcat('FromLKA',num2str(i),'/1'),strcat('BusLKA/',num2str(i))),'Name',tempname);
+    set_param(add_line(strcat(modelname,'/',modelname,'/LL/LLOn/LKA/LKA_Mon'),strcat('CastLKA',num2str(i),'/1'),strcat('BusLKA/',num2str(i))),'Name',tempname);
 end
 set_param(add_line(strcat(modelname,'/',modelname,'/LL/LLOn/LL_Mon'),'BusInP/1','InPMon/1'),'Name','InPMon');
 set_param(add_line(strcat(modelname,'/',modelname,'/LL/LLOn/LL_Mon'),'BusState/1','StateMon/1'),'Name','StateMon');

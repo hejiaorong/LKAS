@@ -2,7 +2,7 @@
 eval('clear all');
 eval('clc');
 %% 更新观测量
-UpdateMon;
+UpdateMonAuto;
 %% 1.另存模型到ModelSave文件夹
 path = cd;
 getFileName=ls(strcat(pwd,'\*.slx')); %  *脚本和slx放在同一个文件夹该文件夹下有且只有一个slx文件
@@ -36,8 +36,8 @@ getJLUfile = strcat(JLUName,'.slx');
 newJLUfile = strcat(JLUName,'_JLU_',date1);
 getNewJLUName = strcat(newJLUfile,'.slx');
 try
-    close_system(getFileName,newSWCfile);
-    movefile(getFileName,ModelSavePath);
+    close_system(filename,newSWCfile);
+    movefile(getNewSWCName,ModelSavePath);
     fprintf('1.您已经打开的模型[%s]文件已经另存为[%s.slx]到[%s]\n',getFileName,newSWCfile,ModelSavePath);
 catch
     copyfile(getFileName,ModelSavePath);

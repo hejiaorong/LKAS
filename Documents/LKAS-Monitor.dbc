@@ -51,7 +51,7 @@ BO_ 1536 Mon_1: 8 Mon
  SG_ LKA_State_Mon4 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
 
 BO_ 1552 Mon_2: 8 Mon
- SG_ ActFlg_Mon5 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
+ SG_ LKA_ExitFlg_Mon5 : 7|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
  SG_ LKA_SampleTime_Mon6 : 23|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
  SG_ T1_Mon7 : 39|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
  SG_ Monitor88 : 55|16@0- (0.01,0) [-327.68|327.67] "Mon" Vector__XXX
