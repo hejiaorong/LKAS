@@ -165,30 +165,38 @@ VAL_TABLE_ Vitsig_DAE_status_for_Citypark 3 "Invalid" 2 "Control_in_progress" 1 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ ACC_dynamic_frame_checksum : 0|4@0+ (1,0) [0|0] "" Vector__XXX
- SG_ View_range_of_the_line45B : 0|8@0+ (0.5,0) [0|127.5] "m" Vector__XXX
- SG_ Time_to_line_crossing45B : 0|8@0+ (0.01,0) [0|2.55] "s" Vector__XXX
- SG_ Message_counter45B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ MobiEye_lane_change45B : 0|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Maker_width_of_the_line45B : 0|7@0+ (0.01,0) [0|1.27] "m" Vector__XXX
- SG_ Quality_of_the_detected_line44B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ Message_counter44B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ Detected_line_type44B : 0|3@0+ (1,0) [0|7] "" Vector__XXX
- SG_ C3_coefficient44B : 0|16@0- (4E-009,0) [-0.000131|0.00013107] "m-2" Vector__XXX
- SG_ C2_coefficient44B : 0|16@0- (1E-006,0) [-0.032768|0.032766] "m-1" Vector__XXX
- SG_ C1_coefficient44B : 0|10@0- (0.00098,0) [-0.357|0.357] "" Vector__XXX
- SG_ C0_coefficient44B : 0|12@0- (0.01,0) [-20.48|20.47] "m" Vector__XXX
- SG_ View_range_of_the_line43B : 0|8@0+ (0.5,0) [0|127.5] "m" Vector__XXX
- SG_ Time_to_crossing43B : 0|8@0+ (0.01,0) [0|2.55] "s" Vector__XXX
- SG_ Message_counter43B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ MobiEye_lane_change43B : 0|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Maker_with_of_the_line43B : 0|7@0+ (0.01,0) [0|1.27] "m" Vector__XXX
- SG_ Quality_of_the_detected_line42B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ Message_counter42B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ Detected_line_type42B : 0|3@0+ (1,0) [0|7] "" Vector__XXX
- SG_ C3_coefficient42B : 0|16@0- (4E-009,0) [-0.000131|0.00013107] "m-2" Vector__XXX
- SG_ C2_coefficient42B : 0|16@0- (1E-006,0) [-0.032768|0.03276] "m-1" Vector__XXX
- SG_ C1_coefficient42B : 0|10@0- (0.00098,0) [-0.357|0.357] "" Vector__XXX
- SG_ C0_coefficient42B : 0|12@0- (0.01,0) [-20.48|20.47] "m" Vector__XXX
+
+BO_ 1115 ADAS_45B_PSA1: 8 Vector__XXX
+ SG_ View_range_of_the_line45B : 7|8@0+ (0.5,0) [0|127.5] "m"  ADAS
+ SG_ Time_to_line_crossing45B : 15|8@0+ (0.01,0) [0|2.55] "s"  ADAS
+ SG_ Message_counter45B : 31|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MobiEye_lane_change45B : 16|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ Maker_width_of_the_line45B : 23|7@0+ (0.01,0) [0|1.27] "m"  ADAS
+
+BO_ 1099 ADAS_44B_PSA1: 8 Vector__XXX
+ SG_ Quality_of_the_detected_line44B : 63|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Message_counter44B : 49|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Detected_line_type44B : 61|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ C3_coefficient44B : 7|16@0- (4E-009,0) [-0.000131|0.00013107] "m-2"  ADAS
+ SG_ C2_coefficient44B : 23|16@0- (1E-006,0) [-0.032768|0.032766] "m-1"  ADAS
+ SG_ C1_coefficient44B : 43|10@0- (0.00098,0) [-0.357|0.357] ""  ADAS
+ SG_ C0_coefficient44B : 39|12@0- (0.01,0) [-20.48|20.47] "m"  ADAS
+
+BO_ 1083 ADAS_43B_PSA1: 8 Vector__XXX
+ SG_ View_range_of_the_line43B : 7|8@0+ (0.5,0) [0|127.5] "m"  ADAS
+ SG_ Time_to_crossing43B : 15|8@0+ (0.01,0) [0|2.55] "s"  ADAS
+ SG_ Message_counter43B : 31|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MobiEye_lane_change43B : 16|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ Maker_with_of_the_line43B : 23|7@0+ (0.01,0) [0|1.27] "m"  ADAS
+
+BO_ 1067 ADAS_42B_PSA1: 8 Vector__XXX
+ SG_ Quality_of_the_detected_line42B : 63|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Message_counter42B : 49|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Detected_line_type42B : 61|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ C3_coefficient42B : 7|16@0- (4E-009,0) [-0.000131|0.00013107] "m-2"  ADAS
+ SG_ C2_coefficient42B : 23|16@0- (1E-006,0) [-0.032768|0.03276] "m-1"  ADAS
+ SG_ C1_coefficient42B : 43|10@0- (0.00098,0) [-0.357|0.357] ""  ADAS
+ SG_ C0_coefficient42B : 39|12@0- (0.01,0) [-20.48|20.47] "m"  ADAS
 
 BO_ 941 ESC_3AD_PSA1: 8 ESC
  SG_ Park_brake_function_status : 26|3@0+ (1,0) [0|0] ""  Gateway,Radar,ADAS
@@ -472,30 +480,30 @@ BO_TX_BU_ 1010 : Gateway,ADAS;
 
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 CM_ SG_ 3221225472 ACC_dynamic_frame_checksum "校验码";
-CM_ SG_ 3221225472 View_range_of_the_line45B "可视车道线范围";
-CM_ SG_ 3221225472 Time_to_line_crossing45B "TTC";
-CM_ SG_ 3221225472 Message_counter45B "计数器";
-CM_ SG_ 3221225472 MobiEye_lane_change45B "车道改变";
-CM_ SG_ 3221225472 Maker_width_of_the_line45B "右车道宽度";
-CM_ SG_ 3221225472 Quality_of_the_detected_line44B "探测右车道线质量";
-CM_ SG_ 3221225472 Message_counter44B "计速器";
-CM_ SG_ 3221225472 Detected_line_type44B "右车道线类型";
-CM_ SG_ 3221225472 C3_coefficient44B "右车道线轨迹计算公式参数C3";
-CM_ SG_ 3221225472 C2_coefficient44B "右车道线轨迹计算公式参数C2";
-CM_ SG_ 3221225472 C1_coefficient44B "右车道线轨迹计算公式参数C1";
-CM_ SG_ 3221225472 C0_coefficient44B "右车道线轨迹计算公式参数C0";
-CM_ SG_ 3221225472 View_range_of_the_line43B "可视车道线范围";
-CM_ SG_ 3221225472 Time_to_crossing43B "TTC";
-CM_ SG_ 3221225472 Message_counter43B "计数器";
-CM_ SG_ 3221225472 MobiEye_lane_change43B "车道改变";
-CM_ SG_ 3221225472 Maker_with_of_the_line43B "左车道宽度";
-CM_ SG_ 3221225472 Quality_of_the_detected_line42B "探测左车道线质量";
-CM_ SG_ 3221225472 Message_counter42B "计速器";
-CM_ SG_ 3221225472 Detected_line_type42B "左车道线的类型";
-CM_ SG_ 3221225472 C3_coefficient42B "左车道线轨迹计算公式参数C3";
-CM_ SG_ 3221225472 C2_coefficient42B "左车道线轨迹计算公式参数C2";
-CM_ SG_ 3221225472 C1_coefficient42B "左车道线轨迹计算公式参数C1";
-CM_ SG_ 3221225472 C0_coefficient42B "左车道线轨迹计算公式参数C0";
+CM_ SG_ 1115 View_range_of_the_line45B "可视车道线范围";
+CM_ SG_ 1115 Time_to_line_crossing45B "TTC";
+CM_ SG_ 1115 Message_counter45B "计数器";
+CM_ SG_ 1115 MobiEye_lane_change45B "车道改变";
+CM_ SG_ 1115 Maker_width_of_the_line45B "右车道宽度";
+CM_ SG_ 1099 Quality_of_the_detected_line44B "探测右车道线质量";
+CM_ SG_ 1099 Message_counter44B "计速器";
+CM_ SG_ 1099 Detected_line_type44B "右车道线类型";
+CM_ SG_ 1099 C3_coefficient44B "右车道线轨迹计算公式参数C3";
+CM_ SG_ 1099 C2_coefficient44B "右车道线轨迹计算公式参数C2";
+CM_ SG_ 1099 C1_coefficient44B "右车道线轨迹计算公式参数C1";
+CM_ SG_ 1099 C0_coefficient44B "右车道线轨迹计算公式参数C0";
+CM_ SG_ 1083 View_range_of_the_line43B "可视车道线范围";
+CM_ SG_ 1083 Time_to_crossing43B "TTC";
+CM_ SG_ 1083 Message_counter43B "计数器";
+CM_ SG_ 1083 MobiEye_lane_change43B "车道改变";
+CM_ SG_ 1083 Maker_with_of_the_line43B "左车道宽度";
+CM_ SG_ 1067 Quality_of_the_detected_line42B "探测左车道线质量";
+CM_ SG_ 1067 Message_counter42B "计速器";
+CM_ SG_ 1067 Detected_line_type42B "左车道线的类型";
+CM_ SG_ 1067 C3_coefficient42B "左车道线轨迹计算公式参数C3";
+CM_ SG_ 1067 C2_coefficient42B "左车道线轨迹计算公式参数C2";
+CM_ SG_ 1067 C1_coefficient42B "左车道线轨迹计算公式参数C1";
+CM_ SG_ 1067 C0_coefficient42B "左车道线轨迹计算公式参数C0";
 CM_ SG_ 1394 IC_seat_bealt_driver_state "驾驶员安全带状态";
 CM_ SG_ 1271 TJA_status_icon "TJA状态灯";
 CM_ SG_ 1271 ICA_HMI_Txt_Disp "TJA弹出文字提醒";
@@ -701,9 +709,9 @@ BA_DEF_DEF_  "CANoeJitterMin" 0;
 BA_DEF_DEF_  "CANoeDrift" 0;
 BA_DEF_DEF_  "CANoeStartDelay" 0;
 BA_ "DBName" "ADASECUPSA1CAN_for_HIL_20190729_";
-VAL_ 3221225472 Quality_of_the_detected_line44B 3 "high" 2 "medium" 1 "low2" 0 "low1" ;
-VAL_ 3221225472 Detected_line_type44B 7 "forbidden value" 6 "Barrier" 5 "Bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
-VAL_ 3221225472 Quality_of_the_detected_line42B 3 "high" 2 "medium" 1 "low2(line detected)" 0 "low1(no line detected)" ;
+VAL_ 1099 Quality_of_the_detected_line44B 3 "high" 2 "medium" 1 "low2" 0 "low1" ;
+VAL_ 1099 Detected_line_type44B 7 "forbidden value" 6 "Barrier" 5 "Bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_ 1067 Quality_of_the_detected_line42B 3 "high" 2 "medium" 1 "low2(line detected)" 0 "low1(no line detected)" ;
 VAL_ 941 Park_brake_function_status 7 "Undefined" 6 "Reserved" 5 "locked at maximun strees value" 4 "Dynamic braking in progress " 3 "Park brake releasing in progress" 2 "Park brake locking in progress" 1 "Park brake locked" 0 "Park brake released" ;
 VAL_ 1394 IC_seat_bealt_driver_state 3 "invalid" 2 "seat bealt put" 1 "seat bealt not put" 0 "indeterminate" ;
 VAL_ 1271 TJA_status_icon 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Red（ICA Fault）" 3 "Orange（ICA Degraded）" 2 "Green ICA Active)" 1 "Gray ICA ON and Inactive)" 0 "No_display (ICA off)" ;
