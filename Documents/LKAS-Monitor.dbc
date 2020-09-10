@@ -35,7 +35,7 @@ BS_:
 
 BU_: Mon ADAS Camera Gateway EPS APA Radar ESC radar
 VAL_TABLE_ VitSig_LKA_main_switch 1 "LKA ON" 0 "LKA OFF" ;
-VAL_TABLE_ VitSig_LC_Mode 3 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¿ï¿½ï¿½ï¿½" 2 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½" 1 "ï¿½ï¿½ï¿½ï¿½Æ«ï¿½ï¿½Ô¤ï¿½ï¿½" 0 "Ô¤ï¿½ï¿½" ;
+VAL_TABLE_ VitSig_LC_Mode 3 "³µµÀ¾ÓÖĞ¿ØÖÆ" 2 "³µµÀ±£³Ö¸¨Öú" 1 "³µµÀÆ«ÀëÔ¤¾¯" 0 "Ô¤Áô" ;
 VAL_TABLE_ VitSig_State_of_EPS_for_LKA 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "defect" 3 "active" 2 "available" 1 "authorized" 0 "unauthorized" ;
 VAL_TABLE_ VitSig_Steering_wheel_sensor_dir 1 "Negative angles, decrease" 0 "Positive angles, increase" ;
 VAL_TABLE_ VitSig_BCM_Status_Indicator 3 "Left and right indicator active" 2 "Left Indicator active" 1 "Right Indicator active" 0 "Indicator inactive" ;
@@ -47,7 +47,7 @@ VAL_TABLE_ VitSig_Deadman_dedicated_button 3 "Fault" 2 "Unconfigured" 1 "Request
 VAL_TABLE_ VitSig_ASR_connection_dis_demand 1 "ASR disconnection requested" 0 "No ASR disconnection requested" ;
 VAL_TABLE_ VitSig_Trailer_Present 1 "Trailer presence" 0 "Trailer absence" ;
 VAL_TABLE_ VitSig_Permit_to_know_if_LKALPA 1 "LPA function" 0 "LKA function" ;
-VAL_TABLE_ VitSig_TSR_Vision_Only_Sign_Type 255 "é¢„ç•™" 16 "é¢„ç•™" 15 "ç¦æ­¢é©¶å…¥æ ‡å¿—" 14 "åœè½¦è®©è¡Œæ ‡å¿—" 13 "æ³¨æ„å„¿ç«¥æ ‡å¿—" 12 "æ³¨æ„è¡Œäººæ ‡å¿—" 11 "æ³¨æ„å±é™©æ ‡å¿—" 10 "æ³¨æ„æ¨ªé£æ ‡å¿—" 9 "æ³¨æ„ä¿¡å·ç¯æ ‡å¿—" 8 "æ³¨æ„è½çŸ³æ ‡å¿—" 7 "æ˜“æ»‘æ ‡å¿—" 6 "ä¸‹é™¡å¡æ ‡å¿—" 5 "ä¸Šé™¡å¡æ ‡å¿—" 4 "åå­—äº¤å‰æ ‡å¿—" 3 "æ–½å·¥æ ‡å¿—" 2 "ç¦æ­¢å³è½¬æ ‡å¿—" 1 "ç¦æ­¢å·¦è½¬æ ‡å¿—" 0 "No TSR detected" ;
+VAL_TABLE_ VitSig_TSR_Vision_Only_Sign_Type 255 "Ô¤Áô" 16 "Ô¤Áô" 15 "½ûÖ¹Ê»Èë±êÖ¾" 14 "Í£³µÈÃĞĞ±êÖ¾" 13 "×¢Òâ¶ùÍ¯±êÖ¾" 12 "×¢ÒâĞĞÈË±êÖ¾" 11 "×¢ÒâÎ£ÏÕ±êÖ¾" 10 "×¢Òâºá·ç±êÖ¾" 9 "×¢ÒâĞÅºÅµÆ±êÖ¾" 8 "×¢ÒâÂäÊ¯±êÖ¾" 7 "Ò×»¬±êÖ¾" 6 "ÏÂ¶¸ÆÂ±êÖ¾" 5 "ÉÏ¶¸ÆÂ±êÖ¾" 4 "Ê®×Ö½»²æ±êÖ¾" 3 "Ê©¹¤±êÖ¾" 2 "½ûÖ¹ÓÒ×ª±êÖ¾" 1 "½ûÖ¹×ó×ª±êÖ¾" 0 "No TSR detected" ;
 VAL_TABLE_ VitSig_ISA_Status 2 "ISA sign flash(over speed)" 1 "ISA system ON with limit value" 0 "ISA system OFF" ;
 VAL_TABLE_ VitSig_ISA_Sign_Type 3 "End of speed limit sign" 2 "Speed limit sign with value" 1 "Speed limit sign without value" 0 "Default value" ;
 VAL_TABLE_ VitSig_ISA_Value 31 "reserved" 30 "reserved" 29 "145km/h speed limit sign" 28 "135km/h speed limit sign" 27 "125km/h speed limit sign" 26 "115km/h speed limit sign" 25 "105km/h speed limit sign" 24 "95km/h speed limit sign" 23 "85km/h speed limit sign" 22 "75km/h speed limit sign" 21 "65km/h speed limit sign" 20 "55km/h speed limit sign" 19 "45km/h speed limit sign" 18 "35km/h speed limit sign" 17 "25km/h speed limit sign" 16 "15km/h speed limit sign" 15 "5km/h speed limit sign" 14 "140km/h speed limit sign" 13 "130km/h speed limit sign" 12 "120km/h speed limit sign" 11 "110km/h speed limit sign" 10 "100km/h speed limit sign" 9 "90km/h speed limit sign" 8 "80km/h speed limit sign" 7 "70km/h speed limit sign" 6 "60km/h speed limit sign" 5 "50km/h speed limit sign" 4 "40km/h speed limit sign" 3 "30km/h speed limit sign" 2 "20km/h speed limit sign" 1 "10km/h speed limit sign" 0 "No speed limit sign detected" ;
@@ -61,7 +61,6 @@ VAL_TABLE_ VitSig_Vehicle_Lane_Display 15 "Invalid" 14 "Reserved" 13 "Reserved" 
 VAL_TABLE_ VitSig_LKA_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,  green" 0 "LKA + LDW OFF, no icon display" ;
 VAL_TABLE_ VitSig_LDW_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,green" 0 "LDW Only OFF, no icon display" ;
 VAL_TABLE_ VitSig_LKA_action_indication 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "available and with LKA,orange" 2 "available and without LKA, green" 1 "ON but not in working range" 0 "LKA+LDW OFF,no icon display" ;
-
 
 
 BO_ 1536 Mon_1: 8 Mon
@@ -170,7 +169,7 @@ BO_ 1789 Video_Lane_Right_A: 8 Camera
  SG_ C2_5FD : 23|16@0- (1E-006,0) [-0.032768|0.032766] "m-1"  radar,ADAS
  SG_ C3_5FD : 7|16@0- (4E-009,0) [-0.000131072|0.000131068] "m-2"  radar,ADAS
 
-BO_ 1010 ADAS_3F2_PSA1: 8 ADAS
+BO_ 1009 ADAS_3F2_PSA1: 8 ADAS
  SG_ checksum : 15|4@0+ (1,0) [0|15] "" Vector__XXX
  SG_ bits_compute_process_counter : 11|4@0+ (1,0) [0|0] "" Vector__XXX
  SG_ Dead_man_dedicated_push_button2 : 57|2@0+ (1,0) [0|0] ""  APA,ESC
@@ -184,8 +183,8 @@ BO_ 1010 ADAS_3F2_PSA1: 8 ADAS
  SG_ General_state_of_LKA_function3F2 : 36|3@0+ (1,0) [0|0] ""  EPS
  SG_ Power_steering_power_cut3F2 : 2|1@0+ (1,0) [0|0] ""  EPS
 
-BO_ 1345 ADAS_541_PSA1: 8 ADAS
- SG_ Vehicle_Lane_Display : 15|4@0+ (1,0) [0|0] ""  Gateway
+BO_ 1344 ADAS_541_PSA1: 8 ADAS
+ SG_ Vehicle_Lane_Display : 11|4@0+ (1,0) [0|0] ""  Gateway
  SG_ TSR_Vision_Only_Sign_Type : 55|8@0+ (1,0) [0|0] ""  Gateway
  SG_ LKA_Switch_State : 21|1@0+ (1,0) [0|0] ""  Gateway
  SG_ LKA_Status_Display : 6|2@0+ (1,0) [0|0] ""  Gateway
@@ -202,80 +201,81 @@ BO_ 1345 ADAS_541_PSA1: 8 ADAS
  SG_ ECU_operating_phase : 27|4@0+ (1,0) [0|0] ""  Gateway
 
 
-CM_ SG_ 1359 LKA_main_switch "LKAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
-CM_ SG_ 1359 LC_Mode "LKAï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½";
-CM_ SG_ 1172 State_of_EPS_for_LKA_function "LKAï¿½ï¿½ï¿½Üµï¿½EPS×´Ì¬";
-CM_ SG_ 1172 Steering_wheel_torque "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½";
-CM_ SG_ 972 Yaw_speed "ï¿½ï¿½Ú½ï¿½ï¿½Ù¶ï¿½";
-CM_ SG_ 972 TMC_pressure "ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½";
-CM_ SG_ 972 Lateral_acceleration "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½";
-CM_ SG_ 908 Vehicle_speed_of_wheelsensor "ï¿½ï¿½ï¿½Ù£ï¿½ï¿½ï¿½ï¿½Ù´ï¿½ï¿½ï¿½ï¿½ï¿½)";
-CM_ SG_ 812 ACCEL_LONGI_CALIB "ï¿½ê¶¨ï¿½ï¿½Äµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½";
-CM_ SG_ 772 Steering_wheel_sensor_direction "×ªï¿½ò´«¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
-CM_ SG_ 772 Steering_wheel_rotation_speed "×ªï¿½ï¿½ï¿½ï¿½×ªï¿½Ù¶ï¿½";
-CM_ SG_ 772 Steering_wheel_angle "×ªï¿½ï¿½ï¿½ï¿½Åºï¿½";
-CM_ SG_ 1105 BCM_Status_Indicator "×ªï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë«ï¿½ï¿½ï¿½ï¿½";
-CM_ SG_ 840 TCU_Gear_lever_position "ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Î»ï¿½ï¿½";
+
+CM_ SG_ 1359 LKA_main_switch "LKA¿ªÆô¿ª¹Ø";
+CM_ SG_ 1359 LC_Mode "LKA¹¦ÄÜÑ¡Ôñ";
+CM_ SG_ 1172 State_of_EPS_for_LKA_function "LKA¹¦ÄÜµÄEPS×´Ì¬";
+CM_ SG_ 1172 Steering_wheel_torque "·½ÏòÅÌ×ª¾Ø";
+CM_ SG_ 972 Yaw_speed "ºá°Ú½ÇËÙ¶È";
+CM_ SG_ 972 TMC_pressure "Ö÷¸×Ñ¹Á¦";
+CM_ SG_ 972 Lateral_acceleration "²àÏò¼ÓËÙ¶È";
+CM_ SG_ 908 Vehicle_speed_of_wheelsensor "³µËÙ£¨ÂÖËÙ´«¸ĞÆ÷)";
+CM_ SG_ 812 ACCEL_LONGI_CALIB "±ê¶¨ºóµÄµ±Ç°×İÏò¼ÓËÙ¶È";
+CM_ SG_ 772 Steering_wheel_sensor_direction "×ªÏò´«¸ĞÆ÷·½Ïò";
+CM_ SG_ 772 Steering_wheel_rotation_speed "×ªÏòĞı×ªËÙ¶È";
+CM_ SG_ 772 Steering_wheel_angle "×ªÏò½ÇĞÅºÅ";
+CM_ SG_ 1105 BCM_Status_Indicator "×ªÏòµÆ×´Ì¬£¨°üÀ¨Ë«ÉÁ£©";
+CM_ SG_ 840 TCU_Gear_lever_position "»»µ²ÊÖ±úÎ»ÖÃ";
 CM_ SG_ 1788 Me_Line_Changed_5FC "is one for one cycle when lane model switched.";
 CM_ SG_ 1786 C1_5FA "57 degrees, 0.06 degrees resolution";
 CM_ SG_ 1786 C2_5FA "250m minimal radius";
 CM_ SG_ 1791 Me_Line_Changed_5FF "is one for one cycle when lane model switched.";
 CM_ SG_ 1789 C1_5FD "57 degrees, 0.06 degrees resolution";
 CM_ SG_ 1789 C2_5FD "250m minimal radius";
-CM_ SG_ 1010 Dead_man_dedicated_push_button2 "è‡ªåŠ¨æ³Šè½¦åŠŸèƒ½å¼€å…³";
-CM_ SG_ 1010 ASR_connection_dis_demand2 "ASRè¿æ¥/ä¸è¿æ¥å‘½ä»¤ï¼ˆESC OFFå¼€å…³æŒ‡ä»¤ï¼‰";
-CM_ SG_ 1010 ABS_ESP_power_cut_request2 "ABS ESPä¾›ç”µåˆ‡æ–­è¯·æ±‚";
-CM_ SG_ 1010 EASYMOVE_powercut_request3F2 "EASYMOVEä¾›ç”µåˆ‡æ–­è¯·æ±‚";
-CM_ SG_ 1010 Trailer_Present3F2 "æ‹–è½¦ç¨³å®šç³»ç»Ÿä½¿ç”¨çŠ¶æ€";
-CM_ SG_ 1010 Column_angle_setpoint3F2 "è®¡ç®—è§’åº¦";
-CM_ SG_ 1010 Permit_to_know_if_LKA_or_LPA3F2 "LKAæˆ–LPAåŠŸèƒ½å…è®¸";
-CM_ SG_ 1010 Coefficient_toregulate_EPS "EPSåº”ç”¨æ‰­çŸ©ç³»æ•°";
-CM_ SG_ 1010 Power_steering_power_cut3F2 "åŠ¨åŠ›è½¬å‘åˆ‡æ–­è¯·æ±‚";
-CM_ SG_ 1345 Vehicle_Lane_Display "è½¦é“çº¿æ˜¾ç¤º";
-CM_ SG_ 1345 TSR_Vision_Only_Sign_Type "æ ‡è¯†ç¬¦çš„ç§ç±»";
-CM_ SG_ 1345 LKA_Switch_State "LKAåŠŸèƒ½å¼€å¯";
-CM_ SG_ 1345 LKA_Status_Display "LKAçŠ¶æ€æŒ‡ç¤º";
-CM_ SG_ 1345 LKA_Mode_from_Camera "æ‘„åƒå¤´å‘å‡ºçš„LKA åŠŸèƒ½æ¨¡å¼";
-CM_ SG_ 1345 LKA_action_indication "LKAåŠ¨ä½œæŒ‡ç¤º";
-CM_ SG_ 1345 LDW_Status_Display "LDW Only çŠ¶æ€æŒ‡ç¤º";
-CM_ SG_ 1345 LDW_Flag "LDW æŠ¥è­¦çŠ¶æ€";
-CM_ SG_ 1345 ISA_Value "ISAåŠŸèƒ½çš„é€Ÿåº¦å€¼";
-CM_ SG_ 1345 ISA_Status "ISAåŠŸèƒ½æŠ¥è­¦çŠ¶æ€";
-CM_ SG_ 1345 ISA_Sign_Type "ISAé™é€Ÿæ ‡è¯†ç±»å‹";
-CM_ SG_ 1345 ISA_Popup_text "ISAåŠŸèƒ½æ–‡å­—æ˜¾ç¤º";
-CM_ SG_ 1345 HMI_Popup_Status "ä»ªè¡¨å¼¹å‡ºæ–‡å­— è¡¨ç¤ºçŠ¶æ€å˜åŒ–";
-CM_ SG_ 1345 Hands_off_warning "è„±æ‰‹æŠ¥è­¦";
-CM_ SG_ 1345 ECU_operating_phase "å½“å‰æ‘„åƒå¤´å·¥ä½œçŠ¶æ€";
-
+CM_ SG_ 1009 Dead_man_dedicated_push_button2 "×Ô¶¯²´³µ¹¦ÄÜ¿ª¹Ø";
+CM_ SG_ 1009 ASR_connection_dis_demand2 "ASRÁ¬½Ó/²»Á¬½ÓÃüÁî£¨ESC OFF¿ª¹ØÖ¸Áî£©";
+CM_ SG_ 1009 ABS_ESP_power_cut_request2 "ABS ESP¹©µçÇĞ¶ÏÇëÇó";
+CM_ SG_ 1009 EASYMOVE_powercut_request3F2 "EASYMOVE¹©µçÇĞ¶ÏÇëÇó";
+CM_ SG_ 1009 Trailer_Present3F2 "ÍÏ³µÎÈ¶¨ÏµÍ³Ê¹ÓÃ×´Ì¬";
+CM_ SG_ 1009 Column_angle_setpoint3F2 "¼ÆËã½Ç¶È";
+CM_ SG_ 1009 Permit_to_know_if_LKA_or_LPA3F2 "LKA»òLPA¹¦ÄÜÔÊĞí";
+CM_ SG_ 1009 Coefficient_toregulate_EPS "EPSÓ¦ÓÃÅ¤¾ØÏµÊı";
+CM_ SG_ 1009 Power_steering_power_cut3F2 "¶¯Á¦×ªÏòÇĞ¶ÏÇëÇó";
+CM_ SG_ 1344 Vehicle_Lane_Display "³µµÀÏßÏÔÊ¾";
+CM_ SG_ 1344 TSR_Vision_Only_Sign_Type "±êÊ¶·ûµÄÖÖÀà";
+CM_ SG_ 1344 LKA_Switch_State "LKA¹¦ÄÜ¿ªÆô";
+CM_ SG_ 1344 LKA_Status_Display "LKA×´Ì¬Ö¸Ê¾";
+CM_ SG_ 1344 LKA_Mode_from_Camera "ÉãÏñÍ··¢³öµÄLKA ¹¦ÄÜÄ£Ê½";
+CM_ SG_ 1344 LKA_action_indication "LKA¶¯×÷Ö¸Ê¾";
+CM_ SG_ 1344 LDW_Status_Display "LDW Only ×´Ì¬Ö¸Ê¾";
+CM_ SG_ 1344 LDW_Flag "LDW ±¨¾¯×´Ì¬";
+CM_ SG_ 1344 ISA_Value "ISA¹¦ÄÜµÄËÙ¶ÈÖµ";
+CM_ SG_ 1344 ISA_Status "ISA¹¦ÄÜ±¨¾¯×´Ì¬";
+CM_ SG_ 1344 ISA_Sign_Type "ISAÏŞËÙ±êÊ¶ÀàĞÍ";
+CM_ SG_ 1344 ISA_Popup_text "ISA¹¦ÄÜÎÄ×ÖÏÔÊ¾";
+CM_ SG_ 1344 HMI_Popup_Status "ÒÇ±íµ¯³öÎÄ×Ö ±íÊ¾×´Ì¬±ä»¯";
+CM_ SG_ 1344 Hands_off_warning "ÍÑÊÖ±¨¾¯";
+CM_ SG_ 1344 ECU_operating_phase "µ±Ç°ÉãÏñÍ·¹¤×÷×´Ì¬";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 VAL_ 1359 LKA_main_switch 1 "LKA ON" 0 "LKA OFF" ;
-VAL_ 1359 LC_Mode 3 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¿ï¿½ï¿½ï¿½" 2 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½" 1 "ï¿½ï¿½ï¿½ï¿½Æ«ï¿½ï¿½Ô¤ï¿½ï¿½" 0 "Ô¤ï¿½ï¿½" ;
+VAL_ 1359 LC_Mode 3 "³µµÀ¾ÓÖĞ¿ØÖÆ" 2 "³µµÀ±£³Ö¸¨Öú" 1 "³µµÀÆ«ÀëÔ¤¾¯" 0 "Ô¤Áô" ;
 VAL_ 1172 State_of_EPS_for_LKA_function 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "defect" 3 "active" 2 "available" 1 "authorized" 0 "unauthorized" ;
 VAL_ 772 Steering_wheel_sensor_direction 1 "Negative angles, decrease" 0 "Positive angles, increase" ;
 VAL_ 1105 BCM_Status_Indicator 3 "Left and right indicator active" 2 "Left Indicator active" 1 "Right Indicator active" 0 "Indicator inactive" ;
 VAL_ 1786 Line_Type_5FA 5 "bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
 VAL_ 1786 Quality_5FA 3 "High" 2 "Medium_PredictedOrLowScore" 1 "Low2_InsufficientScore" 0 "Low1_NoLineDetected" ;
-VAL_ 1010 Dead_man_dedicated_push_button2 3 "Fault" 2 "Unconfigured" 1 "Request" 0 "No request" ;
-VAL_ 1010 ASR_connection_dis_demand2 1 "ASR disconnection requested" 0 "No ASR disconnection requested" ;
-VAL_ 1010 ABS_ESP_power_cut_request2 1 "Power cut request" 0 "Not request" ;
-VAL_ 1010 EASYMOVE_powercut_request3F2 1 "Power cut request" 0 "Not request" ;
-VAL_ 1010 Trailer_Present3F2 1 "Trailer presence" 0 "Trailer absence" ;
-VAL_ 1010 Permit_to_know_if_LKA_or_LPA3F2 1 "LPA function" 0 "LKA function" ;
-VAL_ 1010 General_state_of_LKA_function3F2 7 "Reserved" 6 "Collision risk" 5 "Defect" 4 "Active" 3 "Autorized" 2 "Selected" 1 "Unselected" 0 "Unavailable" ;
-VAL_ 1010 Power_steering_power_cut3F2 1 "Power cut request" 0 "Not request" ;
-VAL_ 1345 Vehicle_Lane_Display 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "LKA intervention or LDW warning " 8 "LKA intervention or LDW warning " 7 "LKA intervention or LDW warning " 6 "LKA intervention or LDW warning " 5 "both lanes detected,both green" 4 "only right lane detected, green" 3 "only left detected,left green" 2 "available but no lane detected" 1 "ON but not in the working range " 0 "OFF and no lane line displayed" ;
-VAL_ 1345 TSR_Vision_Only_Sign_Type 255 "é¢„ç•™" 16 "é¢„ç•™" 15 "ç¦æ­¢å³è½¬æ ‡å¿—" 14 "ç¦æ­¢å·¦è½¬æ ‡å¿—" 13 "ç¦æ­¢é©¶å…¥æ ‡å¿—" 12 "åœè½¦è®©è¡Œæ ‡å¿—" 11 "æ³¨æ„å„¿ç«¥æ ‡å¿—" 10 "æ³¨æ„è¡Œäººæ ‡å¿—" 9 "æ³¨æ„å±é™©æ ‡å¿—" 8 "æ³¨æ„æ¨ªé£æ ‡å¿—" 7 "æ³¨æ„ä¿¡å·ç¯æ ‡å¿—" 6 "æ³¨æ„è½çŸ³æ ‡å¿—" 5 "æ˜“æ»‘æ ‡å¿—" 4 "ä¸‹é™¡å¡æ ‡å¿—" 3 "ä¸Šé™¡å¡æ ‡å¿—" 2 "åå­—äº¤å‰æ ‡å¿—" 1 "æ–½å·¥æ ‡å¿—" 0 "No TSR detected" ;
-VAL_ 1345 LKA_Switch_State 1 "LKA Switch ON" 0 "LKA Switch OFF" ;
-VAL_ 1345 LKA_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,  green" 0 "LKA + LDW OFF, no icon display" ;
-VAL_ 1345 LKA_Mode_from_Camera 3 "LCA+LDW (resolved)" 2 "LKA+LDW" 1 "LDW only" 0 "OFF" ;
-VAL_ 1345 LKA_action_indication 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "available and with LKA,orange" 2 "available and without LKA, green" 1 "ON but not in working range" 0 "LKA+LDW OFF,no icon display" ;
-VAL_ 1345 LDW_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,green" 0 "LDW Only OFF, no icon display" ;
-VAL_ 1345 LDW_Flag 3 "Invalid" 2 "Right LDW warining" 1 "Left LDW warining" 0 "No LDW warning" ;
-VAL_ 1345 ISA_Value 31 "reserved" 30 "reserved" 29 "145km/h speed limit sign" 28 "135km/h speed limit sign" 27 "125km/h speed limit sign" 26 "115km/h speed limit sign" 25 "105km/h speed limit sign" 24 "95km/h speed limit sign" 23 "85km/h speed limit sign" 22 "75km/h speed limit sign" 21 "65km/h speed limit sign" 20 "55km/h speed limit sign" 19 "45km/h speed limit sign" 18 "35km/h speed limit sign" 17 "25km/h speed limit sign" 16 "15km/h speed limit sign" 15 "5km/h speed limit sign" 14 "140km/h speed limit sign" 13 "130km/h speed limit sign" 12 "120km/h speed limit sign" 11 "110km/h speed limit sign" 10 "100km/h speed limit sign" 9 "90km/h speed limit sign" 8 "80km/h speed limit sign" 7 "70km/h speed limit sign" 6 "60km/h speed limit sign" 5 "50km/h speed limit sign" 4 "40km/h speed limit sign" 3 "30km/h speed limit sign" 2 "20km/h speed limit sign" 1 "10km/h speed limit sign" 0 "No speed limit sign detected" ;
-VAL_ 1345 ISA_Status 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "System fault" 2 "ISA sign flash(over speed)" 1 "ISA system ON with limit value" 0 "ISA system OFF" ;
-VAL_ 1345 ISA_Sign_Type 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "End of speed limit sign" 2 "Speed limit sign with value" 1 "Speed limit sign without value" 0 "Default value" ;
-VAL_ 1345 ISA_Popup_text 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "System fault" 2 "ISA system OFF (From ON to OFF)" 1 "ISA system ON (From OFF to ON)" 0 "No popup" ;
-VAL_ 1345 HMI_Popup_Status 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "LaneSense Off" 7 "LaneSense Canbe Switched On" 6 "LaneSenseDisable - System Fault" 5 "LaneSense Available" 4 "Front Camera Blocked" 3 "LaneSenseTemporarily Unavailable" 2 "PleaseHands on Steering Wheel" 1 "3 second popup=LaneSense On" 0 "Default value" ;
-VAL_ 1345 Hands_off_warning 1 "Hands off warning" 0 "No Hands off warning" ;
-VAL_ 1345 ECU_operating_phase 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "Service Alignment in processing" 9 "System fully operational" 8 "reserved" 7 "Camera Degraded" 6 "reserved" 5 "Camera Blocked/No image" 4 "reserved" 3 "Camera not calibrated" 2 "System Initializing/Warming Up" 1 "Status not available" 0 "system error" ;
+VAL_ 1009 Dead_man_dedicated_push_button2 3 "Fault" 2 "Unconfigured" 1 "Request" 0 "No request" ;
+VAL_ 1009 ASR_connection_dis_demand2 1 "ASR disconnection requested" 0 "No ASR disconnection requested" ;
+VAL_ 1009 ABS_ESP_power_cut_request2 1 "Power cut request" 0 "Not request" ;
+VAL_ 1009 EASYMOVE_powercut_request3F2 1 "Power cut request" 0 "Not request" ;
+VAL_ 1009 Trailer_Present3F2 1 "Trailer presence" 0 "Trailer absence" ;
+VAL_ 1009 Permit_to_know_if_LKA_or_LPA3F2 1 "LPA function" 0 "LKA function" ;
+VAL_ 1009 General_state_of_LKA_function3F2 7 "Reserved" 6 "Collision risk" 5 "Defect" 4 "Active" 3 "Autorized" 2 "Selected" 1 "Unselected" 0 "Unavailable" ;
+VAL_ 1009 Power_steering_power_cut3F2 1 "Power cut request" 0 "Not request" ;
+VAL_ 1344 Vehicle_Lane_Display 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "LKA intervention or LDW warning " 8 "LKA intervention or LDW warning " 7 "LKA intervention or LDW warning " 6 "LKA intervention or LDW warning " 5 "both lanes detected,both green" 4 "only right lane detected, green" 3 "only left detected,left green" 2 "available but no lane detected" 1 "ON but not in the working range " 0 "OFF and no lane line displayed" ;
+VAL_ 1344 TSR_Vision_Only_Sign_Type 255 "Ô¤Áô" 16 "Ô¤Áô" 15 "½ûÖ¹ÓÒ×ª±êÖ¾" 14 "½ûÖ¹×ó×ª±êÖ¾" 13 "½ûÖ¹Ê»Èë±êÖ¾" 12 "Í£³µÈÃĞĞ±êÖ¾" 11 "×¢Òâ¶ùÍ¯±êÖ¾" 10 "×¢ÒâĞĞÈË±êÖ¾" 9 "×¢ÒâÎ£ÏÕ±êÖ¾" 8 "×¢Òâºá·ç±êÖ¾" 7 "×¢ÒâĞÅºÅµÆ±êÖ¾" 6 "×¢ÒâÂäÊ¯±êÖ¾" 5 "Ò×»¬±êÖ¾" 4 "ÏÂ¶¸ÆÂ±êÖ¾" 3 "ÉÏ¶¸ÆÂ±êÖ¾" 2 "Ê®×Ö½»²æ±êÖ¾" 1 "Ê©¹¤±êÖ¾" 0 "No TSR detected" ;
+VAL_ 1344 LKA_Switch_State 1 "LKA Switch ON" 0 "LKA Switch OFF" ;
+VAL_ 1344 LKA_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,  green" 0 "LKA + LDW OFF, no icon display" ;
+VAL_ 1344 LKA_Mode_from_Camera 3 "LCA+LDW (resolved)" 2 "LKA+LDW" 1 "LDW only" 0 "OFF" ;
+VAL_ 1344 LKA_action_indication 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "available and with LKA,orange" 2 "available and without LKA, green" 1 "ON but not in working range" 0 "LKA+LDW OFF,no icon display" ;
+VAL_ 1344 LDW_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,green" 0 "LDW Only OFF, no icon display" ;
+VAL_ 1344 LDW_Flag 3 "Invalid" 2 "Right LDW warining" 1 "Left LDW warining" 0 "No LDW warning" ;
+VAL_ 1344 ISA_Value 31 "reserved" 30 "reserved" 29 "145km/h speed limit sign" 28 "135km/h speed limit sign" 27 "125km/h speed limit sign" 26 "115km/h speed limit sign" 25 "105km/h speed limit sign" 24 "95km/h speed limit sign" 23 "85km/h speed limit sign" 22 "75km/h speed limit sign" 21 "65km/h speed limit sign" 20 "55km/h speed limit sign" 19 "45km/h speed limit sign" 18 "35km/h speed limit sign" 17 "25km/h speed limit sign" 16 "15km/h speed limit sign" 15 "5km/h speed limit sign" 14 "140km/h speed limit sign" 13 "130km/h speed limit sign" 12 "120km/h speed limit sign" 11 "110km/h speed limit sign" 10 "100km/h speed limit sign" 9 "90km/h speed limit sign" 8 "80km/h speed limit sign" 7 "70km/h speed limit sign" 6 "60km/h speed limit sign" 5 "50km/h speed limit sign" 4 "40km/h speed limit sign" 3 "30km/h speed limit sign" 2 "20km/h speed limit sign" 1 "10km/h speed limit sign" 0 "No speed limit sign detected" ;
+VAL_ 1344 ISA_Status 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "System fault" 2 "ISA sign flash(over speed)" 1 "ISA system ON with limit value" 0 "ISA system OFF" ;
+VAL_ 1344 ISA_Sign_Type 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "End of speed limit sign" 2 "Speed limit sign with value" 1 "Speed limit sign without value" 0 "Default value" ;
+VAL_ 1344 ISA_Popup_text 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "System fault" 2 "ISA system OFF (From ON to OFF)" 1 "ISA system ON (From OFF to ON)" 0 "No popup" ;
+VAL_ 1344 HMI_Popup_Status 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "LaneSense Off" 7 "LaneSense Canbe Switched On" 6 "LaneSenseDisable - System Fault" 5 "LaneSense Available" 4 "Front Camera Blocked" 3 "LaneSenseTemporarily Unavailable" 2 "PleaseHands on Steering Wheel" 1 "3 second popup=LaneSense On" 0 "Default value" ;
+VAL_ 1344 Hands_off_warning 1 "Hands off warning" 0 "No Hands off warning" ;
+VAL_ 1344 ECU_operating_phase 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "Service Alignment in processing" 9 "System fully operational" 8 "reserved" 7 "Camera Degraded" 6 "reserved" 5 "Camera Blocked/No image" 4 "reserved" 3 "Camera not calibrated" 2 "System Initializing/Warming Up" 1 "Status not available" 0 "system error" ;
+

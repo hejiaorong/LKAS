@@ -17,6 +17,7 @@ elseif questdlg('您将编译适用于东风控制器的程序','编译确认','是','否','是')=='是
 else
     return;
 end
+warning('off');
 ModelSavePath = strcat(path,'\ModelSave');
 binPath = strcat(path,'\bin');
 filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
