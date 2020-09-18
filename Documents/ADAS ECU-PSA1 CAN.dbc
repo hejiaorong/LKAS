@@ -1,0 +1,840 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Camera Radar APA ADAS Gateway ESC EPS
+VAL_TABLE_ VitSig_stAcvTqWhlPTPotReq 3 "no need" 2 "Brake mode request" 1 "GMPmode request" 0 "no request" ;
+VAL_TABLE_ VitSig_ACC_Engine_Start_Request 1 "on" 0 "off" ;
+VAL_TABLE_ VitSig_Vehicle_driving_direction 3 "Invalid" 2 "Rear toward" 1 "front toward" 0 "Undefined" ;
+VAL_TABLE_ VitSig_MobiEye_lane_change45B 1 "line change" 0 "no line change" ;
+VAL_TABLE_ VitSig_Detected_line_type44B 7 "forbidden value" 6 "Barrier" 5 "Bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_TABLE_ VitSig_MobiEye_lane_change 1 "line change" 0 "no line change" ;
+VAL_TABLE_ VitSig_Detected_line_type 7 "forbidden value" 6 "Barrier" 5 "Bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_TABLE_ VitSig_Vehicle_detected_as_stati 1 "vehicle standstill" 0 "no vehicle standstill " ;
+VAL_TABLE_ VitSig_Park_brake_function_statu 7 "Undefined" 6 "Reserved" 5 "locked at maximun strees value" 4 "Dynamic braking in progress " 3 "Park brake releasing in progress" 2 "Park brake locking in progress" 1 "Park brake locked" 0 "Park brake released" ;
+VAL_TABLE_ VitSig_Request_to_light_ABS_faul 1 "switch on request" 0 "no request" ;
+VAL_TABLE_ VitSig_Request_to_light_fault_la 1 "switch on request" 0 "no request " ;
+VAL_TABLE_ VitSig_ASR_ESP_disconnected 1 "Disconnected by the driver" 0 "Connected by the driver" ;
+VAL_TABLE_ VitSig_IC_seat_bealt_driver 3 "invalid" 2 "seat bealt put" 1 "seat bealt not put" 0 "indeterminate" ;
+VAL_TABLE_ VitSig_BCM_Openingstates 9 "Driver open 左前车门开" 8 "Driver closed 左前车门关" 7 "Passenger open右前车门开" 6 "Passenger closed 右前车门关" 5 "ARG open左后车门开" 4 "ARG closed 左后车门关" 3 "ARD open 右后车门开" 2 "ARD closed右后车门关" 1 "Boot open行李箱开" 0 "Boot closed 行李箱关" ;
+VAL_TABLE_ VitSig_DAE_staus_for_Citypark 3 "Invalid" 2 "Control in progress" 1 "Available" 0 "Unavailable" ;
+VAL_TABLE_ VitSig_TJA_HMI_Txt_Disp 10 "TJA Temporarily Unavailable" 9 "Please take over the car ( ACC)" 8 "hold the steering wheel(LKA)" 7 "TJA Overridden by Driver" 6 "TJA Standby" 5 "TJA Active" 4 "TJA Canceled" 3 "TJA_Fault" 2 "TJA OFF" 1 "TJA ON Please confirm  inhighway" 0 "No_display" ;
+VAL_TABLE_ VitSig_TJA_status_icon 3 "Red (TJA Fault)" 2 "Green (TJA Active)" 1 "Gray (TJA ON and Inactive)" 0 "No_display (TJA off)" ;
+VAL_TABLE_ VitSig_AEB_tips 7 "Emergency_Braking_System_OFF" 6 "Emergency_Braking_System_Fault" 5 "Emergency_Braking_Unavailable" 4 "Forward_Collision_Warning_OFF" 3 "Forward_Collision_Warning_Fault" 2 "Emergency_Braking System_ON" 1 "Forward_Collison_Warning_ON" 0 "No_display" ;
+VAL_TABLE_ VitSig_AEB_Fault_Status 3 "AEB_FCW_Fault" 2 "AEB_Fault" 1 "FCW_Fault" 0 "No_Fault" ;
+VAL_TABLE_ VitSig_AEB_Switch_Status 3 "Description for the value '0x3'" 2 "AEB_Alert_Req" 1 "FCW_Alert_Req" 0 "No Req" ;
+VAL_TABLE_ VitSig_AEB_Alert_Req 3 "Reserved" 2 "AEB_Alert_Req" 1 "FCW_Alert_Req" 0 "No Req" ;
+VAL_TABLE_ VitSig_ACC_Pop_Up_Message 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Radar Fault（雷达故障)" 10 "Radar Blocked (雷达被遮挡)" 9 "ACC Activation Unsatisfied " 8 "Please Take Over immediately" 7 "Please Take Over the Car(L1报警" 6 "ACC Overridden by Driver (暂缓)" 5 "ACC Active(自动巡航激活)" 4 "ACC Canceled (自动巡航已取消)" 3 "ACC Fault (自动巡航故障)" 2 "ACC OFF （自适应巡航关闭）" 1 "ACC ON （自适应巡航开启）" 0 "No Pop Up Message" ;
+VAL_TABLE_ VitSig_RVVACC_Vehiclespeed_req 1 "RVV or ACC request" 0 "No RVV or ACC request" ;
+VAL_TABLE_ VitSig_ACC_DesiredHeadway_Displ 3 "Far" 2 "medium" 1 "near" 0 "Invalid" ;
+VAL_TABLE_ VitSig_ACC_DesiredHeadway_Icon 1 "On" 0 "Off" ;
+VAL_TABLE_ VitSig_ACC_Set_Speed_Display 3 "short dash line without value" 2 "without a strikethrough line" 1 "value with a strikethrough line" 0 "No display" ;
+VAL_TABLE_ VitSig_ACC_Vehicle_Icon_Display 3 "Red" 2 "Green" 1 "Gray" 0 "No Display" ;
+VAL_TABLE_ VitSig_State_of_the_functionFARC 7 "fault" 6 "active" 5 "waiting" 4 "value not used" 3 "inhibited" 2 "value not used" 1 "initialization" 0 "unavaible" ;
+VAL_TABLE_ VitSig_MDD_decelerationtype 3 "Low speed  braking/FARC2 " 2 "High Speed braking/AFUi braking" 1 "ACC braking" 0 "no Braking" ;
+VAL_TABLE_ VitSig_MDD_Decelerationcontrol 1 "control resquest UCF" 0 "no control request UCF" ;
+VAL_TABLE_ VitSig_TYPE_RAPPORT 1 "Increase" 0 "Decrease" ;
+VAL_TABLE_ VitSig_Prefill_request 1 "Prefill request" 0 "No prefill request" ;
+VAL_TABLE_ VitSig_Powertrain_torquewheel 3 "Not used" 2 "Lower bound request" 1 "Upper bound Request" 0 "No Request" ;
+VAL_TABLE_ VitSig_Function_Acc_status 15 "Fault" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Waiting rise" 6 "Brake only" 5 "Suspended" 4 "Active" 3 "Waiting" 2 "Inhibited" 1 "OFF" 0 "Initialization" ;
+VAL_TABLE_ VitSig_TARGET_POSITION 7 "Invalid" 6 "POS7 Not PRESENT" 5 "POS6" 4 "POS5 VFAR" 3 "POS4 FAR" 2 "POS3 SPOTON" 1 "POS2 CLOSE" 0 "POS1 VCLOSE" ;
+VAL_TABLE_ VitSig_Decel_Request 1 "control resquest" 0 "no control request" ;
+VAL_TABLE_ VitSig_AEB_Status 7 "fault" 6 "active" 5 "waiting" 4 "value not used" 3 "inhibited" 2 "value not used" 1 "initialization" 0 "unavaible" ;
+VAL_TABLE_ VitSig_Drive_Away_Req 1 "Drive away required" 0 "No drive away required" ;
+VAL_TABLE_ VitSig_FCW_Staus 15 "fault" 14 "value not used" 13 "value not used" 12 "active" 11 "value not used" 10 "waiting" 9 "value not used" 8 "value not used" 7 "value not used" 6 "inhibited" 5 "value not used" 4 "value not used" 3 "initialization" 2 "value not used" 1 "value not used" 0 "unavailable" ;
+VAL_TABLE_ VitSig_AEB_Braking_progress 1 "braking in progress" 0 "not braking in progress" ;
+VAL_TABLE_ VitSig_Radar_State 7 "Fault ，故障状态" 6 "Blocked，遮挡状态" 5 "Learning，自学习状态" 4 "Simulation，功能模拟状态" 3 "Reduce visibility，视野能力降低" 2 "Actif，工作状态" 1 "Stand by，等待状态" 0 "Init,初始化状态" ;
+VAL_TABLE_ VitSig_ACC_HMI_TgtDisp 1 "On(有目标车辆）" 0 "Off(无目标车辆）" ;
+VAL_TABLE_ VitSig_Haptic_Alarm 1 "request haptic alarm" 0 "no request haptic alarm" ;
+VAL_TABLE_ VitSig_GW_SCC_RightSteering 9 "翻页键按下" 8 "OK按下" 7 "仪表下翻按下" 6 "仪表上翻按下" 5 "seek- /蓝牙挂断按键按下" 4 "seek+/ 蓝牙接听按键按下" 3 "音量- 按键按下" 2 "音量+ 按键按下" 1 "音源选择按键（mode）按下" 0 "无按键按下" ;
+VAL_TABLE_ VitSig_GW_SCC_LeftSteering 254 "ACC按键错误" 13 "TJA main switch pressed(TJA按下)" 12 "ACC headway set (距离设置按下" 11 "ACC Cancel按键按下" 10 "ACC_Set/-按键按下" 9 "ACC reset/+按键按下" 8 "ACC开关按键按下" 7 "MUTE键按下" 6 "语音识别按键按下" 5 "SET-按键按下" 4 "RES+按键按下" 3 "CANCEL按键按下" 2 "CRUISE OFF巡航按键按下" 1 "CRUISE 巡航按键按下" 0 "无按键按下" ;
+VAL_TABLE_ VitSig_GW_EMS_ACC_Ihibited 1 "Inhibition requested" 0 "No Inhibition" ;
+VAL_TABLE_ VitSig_GW_EMS_EMS_Status_ACC 7 "Failure 故障" 6 "Reserved" 5 "Active effective 正在工作" 4 "Active not effective 油门接管" 3 "Waiting 等待ACC扭矩请求" 2 "Inhibit 功能不可用" 1 "Initialization 初始化" 0 "Shunt down 功能关闭" ;
+VAL_TABLE_ VitSig_EMS_ACC_Effecitive_EMS 1 "ACC torque request is realized" 0 "ACC torque  is not realized " ;
+VAL_TABLE_ VitSig_EMS_GearBox_ACCcontrol 1 "Available" 0 "Not available" ;
+VAL_TABLE_ VitSig_EMS_ACCcontrol_Available 1 "Available" 0 "Not available" ;
+VAL_TABLE_ VitSig_TCU_PROGRAMME_ACC 3 "Reserved" 2 "Eco" 1 "Sport" 0 "Comfort" ;
+VAL_TABLE_ VitSig_MP5_AEB_Activation_Config 3 "预留" 2 "开启" 1 "关闭" 0 "无输入" ;
+VAL_TABLE_ VitSig_IC_FCW_Sensitivity 3 "3 prudent" 2 "2 standard" 1 "1 sportive" 0 "value not used" ;
+VAL_TABLE_ VitSig_IC_Fcw_Activation_Config 3 "预留" 2 "开启" 1 "关闭" 0 "无输入" ;
+VAL_TABLE_ VitSig_IC_passengerBeltSwitchSig 1 "安全带系上" 0 "安全带未系" ;
+VAL_TABLE_ VitSig_GW_BCM_Brakeonly 1 "Brake only request by BCM" 0 "Not brake only request by BCM" ;
+VAL_TABLE_ VitSig_Speed_Limitation_On 1 "LVV Request" 0 "No LVV Request" ;
+VAL_TABLE_ VitSig_BCM_BrakeLampStatu 3 "无效" 2 "错误" 1 "ON" 0 "OFF" ;
+VAL_TABLE_ VitSig_BCM_CHMSLStatus 3 "无效" 2 "错误" 1 "ON" 0 "OFF" ;
+VAL_TABLE_ VitSig_Radar_Detec_Req 3 "Invalid" 2 "Simulation" 1 "Detection request" 0 "Init or no detection request" ;
+VAL_TABLE_ VitSig_Dynamic_slope_accuracy 3 "Undefined" 2 "Low" 1 "Mid" 0 "High" ;
+VAL_TABLE_ VitSig_Vehicle_Hold_Status 3 "Reserved" 2 "vehicule hold due to security" 1 "vehicule hold due to comfort" 0 "No vehicle hold due to ADAS " ;
+VAL_TABLE_ VitSig_ESC_ACC_Status 3 "Default" 2 "Active" 1 "Wait" 0 "Inhibed" ;
+VAL_TABLE_ VitSig_Message_from_ESC 1 "ESC is releasing the brakes" 0 "No need to release brakes " ;
+VAL_TABLE_ VitSig_Braking_effort 1 "Brake force generated" 0 "No brake force generated" ;
+VAL_TABLE_ VitSig_ESC_AEB_Status 3 "Default" 2 "Active" 1 "Wait" 0 "Inhibed" ;
+VAL_TABLE_ VitSig_TCU_Gear_lever_position 15 "CMF disabled or unavailable" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Manual mode / Reserved1100" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "D" 2 "N" 1 "R" 0 "P" ;
+VAL_TABLE_ VitSig_TCU_AGB_Targetposition 15 "range engaged doubtful" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Neutral" 9 "Reverse" 8 "Transmission range : 8" 7 "Transmission range : 7" 6 "Transmission range : 6" 5 "Transmission range : 5" 4 "Transmission range : 4" 3 "Transmission range : 3" 2 "Transmission range : 2" 1 "Transmission range : 1" 0 "Declutched" ;
+VAL_TABLE_ VitSig_TCU_DCTClutchStatus 2 "non slip(incl.u-slip)" 1 "Slip" 0 "Fully Disengaged" ;
+VAL_TABLE_ VitSig_TCU_GearEngagement 1 "吸合（clutched）" 0 "未吸合（not clutched）" ;
+VAL_TABLE_ VitSig_EMS_Engine_state 15 "Invalid" 14 "Reserved" 13 "Autonomous restart" 12 "Reserved" 11 "Reserved" 10 "Autonomous starting" 9 "Reserved" 8 "Reserved" 7 "Engine preparing" 6 "Degraded go" 5 "Driven restart" 4 "Stopped" 3 "Engine running" 2 "Starting" 1 "Cut" 0 "Locked" ;
+VAL_TABLE_ VitSig_TCU_ATFailure 1 "AT故障" 0 "没有故障" ;
+VAL_TABLE_ VitSig_Rear_Right_pulse 1 "fault" 0 "No fault" ;
+VAL_TABLE_ VitSig_Rear_Left_pulse 1 "Fault" 0 "No Fault" ;
+VAL_TABLE_ VitSig_Front_right_pulse_counter 1 "Fault" 0 "No Fault" ;
+VAL_TABLE_ VitSig_Front_Left_pulse_counter 1 "Fault" 0 "No Fault" ;
+VAL_TABLE_ VitSig_TSR_Vision_Only_Sign_Type 255 "预留" 16 "预留" 15 "禁止驶入标志" 14 "停车让行标志" 13 "注意儿童标志" 12 "注意行人标志" 11 "注意危险标志" 10 "注意横风标志" 9 "注意信号灯标志" 8 "注意落石标志" 7 "易滑标志" 6 "下陡坡标志" 5 "上陡坡标志" 4 "十字交叉标志" 3 "施工标志" 2 "禁止右转标志" 1 "禁止左转标志" 0 "No TSR detected" ;
+VAL_TABLE_ VitSig_ISA_Status 2 "ISA sign flash(over speed)" 1 "ISA system ON with limit value" 0 "ISA system OFF" ;
+VAL_TABLE_ VitSig_ISA_Sign_Type 3 "End of speed limit sign" 2 "Speed limit sign with value" 1 "Speed limit sign without value" 0 "Default value" ;
+VAL_TABLE_ VitSig_ISA_Value 31 "reserved" 30 "reserved" 29 "145km/h speed limit sign" 28 "135km/h speed limit sign" 27 "125km/h speed limit sign" 26 "115km/h speed limit sign" 25 "105km/h speed limit sign" 24 "95km/h speed limit sign" 23 "85km/h speed limit sign" 22 "75km/h speed limit sign" 21 "65km/h speed limit sign" 20 "55km/h speed limit sign" 19 "45km/h speed limit sign" 18 "35km/h speed limit sign" 17 "25km/h speed limit sign" 16 "15km/h speed limit sign" 15 "5km/h speed limit sign" 14 "140km/h speed limit sign" 13 "130km/h speed limit sign" 12 "120km/h speed limit sign" 11 "110km/h speed limit sign" 10 "100km/h speed limit sign" 9 "90km/h speed limit sign" 8 "80km/h speed limit sign" 7 "70km/h speed limit sign" 6 "60km/h speed limit sign" 5 "50km/h speed limit sign" 4 "40km/h speed limit sign" 3 "30km/h speed limit sign" 2 "20km/h speed limit sign" 1 "10km/h speed limit sign" 0 "No speed limit sign detected" ;
+VAL_TABLE_ VitSig_ISA_Popup_text 3 "System fault" 2 "ISA system OFF (From ON to OFF)" 1 "ISA system ON (From OFF to ON)" 0 "No popup" ;
+VAL_TABLE_ VitSig_ECU_operating_phase 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "Service Alignment in processing" 9 "System fully operational" 8 "reserved" 7 "Camera Degraded" 6 "reserved" 5 "Camera Blocked/No image" 4 "reserved" 3 "Camera not calibrated" 2 "System Initializing/Warming Up" 1 "Status not available" 0 "system error" ;
+VAL_TABLE_ VitSig_LKA_Switch_State 1 "LKA Switch ON" 0 "LKA Switch OFF" ;
+VAL_TABLE_ VitSig_LKA_Mode_from_Camera 3 "LCA+LDW (resolved)" 2 "LKA+LDW" 1 "LDW only" 0 "OFF" ;
+VAL_TABLE_ VitSig_hands_off_warning 1 "Hands off warning" 0 "No Hands off warning" ;
+VAL_TABLE_ VitSig_LDW_Flag 3 "Invalid" 2 "Right LDW warining" 1 "Left LDW warining" 0 "No LDW warning" ;
+VAL_TABLE_ VitSig_Vehicle_Lane_Display 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "LKA intervention or LDW warning " 8 "LKA intervention or LDW warning " 7 "LKA intervention or LDW warning " 6 "LKA intervention or LDW warning " 5 "both lanes detected,both green" 4 "only right lane detected, green" 3 "only left detected,left green" 2 "available but no lane detected" 1 "ON but not in the working range " 0 "OFF and no lane line displayed" ;
+VAL_TABLE_ VitSig_LKA_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,  green" 0 "LKA + LDW OFF, no icon display" ;
+VAL_TABLE_ VitSig_LDW_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,green" 0 "LDW Only OFF, no icon display" ;
+VAL_TABLE_ VitSig_LKA_action_indication 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "available and with LKA,orange" 2 "available and without LKA, green" 1 "ON but not in working range" 0 "LKA+LDW OFF,no icon display" ;
+VAL_TABLE_ VitSig_GW_Mp5_TSR_Switch 3 "Reserved" 2 "Reserved" 1 "TSR ON" 0 "TSR OFF" ;
+VAL_TABLE_ VitSig_GW_Mp5_ISA_Switch 3 "Reserved" 2 "Reserved" 1 "ISA ON" 0 "ISA OFF" ;
+VAL_TABLE_ VitSig_LKA_main_switch 1 "LKA ON" 0 "LKA OFF" ;
+VAL_TABLE_ VitSig_LC_Mode 3 "车道居中控制" 2 "车道保持辅助" 1 "车道偏离预警" 0 "预留" ;
+VAL_TABLE_ VitSig_High_beam_state 1 "Lighted on" 0 "Lighted off" ;
+VAL_TABLE_ VitSig_BCM_Status_Indicator 3 "Left and right indicator active" 2 "Left Indicator active" 1 "Right Indicator active" 0 "Indicator inactive" ;
+VAL_TABLE_ VitSig_BCM_State_Front_Wiper 3 "Hight Speed" 2 "Low Speed;" 1 "Front wiping confirmed;" 0 "Stop" ;
+VAL_TABLE_ VitSig_Brake_Pedal_Active 3 "reserved" 2 "break pedal press" 1 "no break pedal press" 0 "break press rebuilt out of order" ;
+VAL_TABLE_ VitSig_ABS_in_regulation 1 "Regulation active" 0 "No regulation" ;
+VAL_TABLE_ VitSig_Brake_pedal_disabled_UC 1 "Main brake switch not OK" 0 "Main brake switch OK" ;
+VAL_TABLE_ VitSig_Vehicle_speed_unavailabil 3 "Invalid" 2 "Speed informations unavailable" 1 "Speed informations available" 0 "Invalid" ;
+VAL_TABLE_ VitSig_ASR_in_regulation 1 "Regulation active" 0 "No regulation" ;
+VAL_TABLE_ VitSig_MSR_in_regulation 1 "Regulation active" 0 "No regulation" ;
+VAL_TABLE_ VitSig_ESP_in_regulation 1 "Regulation active" 0 "No regulation" ;
+VAL_TABLE_ VitSig_indication_of_steering 3 "other" 2 "integrated CAV3" 1 "CAV3" 0 "estimator" ;
+VAL_TABLE_ VitSig_Absolute_Steering_angle 1 "Valid but uncertain value" 0 "Valid value in the range" ;
+VAL_TABLE_ VitSig_Initialization_steering 1 "steering wheel angle memorized" 0 "steering wheel angle available" ;
+VAL_TABLE_ VitSig_Internal_SWS_status 1 "Sensor is OK" 0 "Sensor faulty" ;
+VAL_TABLE_ VitSig_SWS_calibration 1 "Sensor is calibrated" 0 "Sensor not calibrated" ;
+VAL_TABLE_ VitSig_SWS_trim 1 "SWS trimmed" 0 "SWS not trimmed" ;
+VAL_TABLE_ VitSig_SWS_fault_code 4 "Internal failures detected " 3 "Detected by angle and rotation" 2 "Detected by angle " 1 "Detected by rotation speed " 0 "No default or no more failure" ;
+VAL_TABLE_ VitSig_Steering_wheel_sensor_dir 1 "Negative angles, decrease" 0 "Positive angles, increase" ;
+VAL_TABLE_ VitSig_GW_BCM_SEVmain_state 3 "Reserved" 2 "Start" 1 "Contact(ON)" 0 "Stop(OFF)" ;
+VAL_TABLE_ VitSig_Main_wake_up 3 "Not valid" 2 "Main wake up request" 1 "No main wake up request" 0 "Invalid RCD" ;
+VAL_TABLE_ VitSig_General_state_of_LKA_3F2 7 "Reserved" 6 "Collision risk" 5 "Defect" 4 "Active" 3 "Autorized" 2 "Selected" 1 "Unselected" 0 "Unavailable" ;
+VAL_TABLE_ VitSig_Deadman_dedicated_button 3 "Fault" 2 "Unconfigured" 1 "Request" 0 "No request" ;
+VAL_TABLE_ VitSig_ASR_connection_dis_demand 1 "ASR disconnection requested" 0 "No ASR disconnection requested" ;
+VAL_TABLE_ VitSig_Trailer_Present 1 "Trailer presence" 0 "Trailer absence" ;
+VAL_TABLE_ VitSig_Permit_to_know_if_LKALPA 1 "LPA function" 0 "LKA function" ;
+VAL_TABLE_ VitSig_General_state_of_LKA_3F1 7 "Reserved" 6 "Collision risk" 5 "Defect" 4 "Active" 3 "Autorized" 2 "Selected" 1 "Unselected" 0 "Unavailable" ;
+VAL_TABLE_ VitSig_Torque_limitation_state 1 "Saturation effective" 0 "no saturation" ;
+VAL_TABLE_ VitSig_State_indicating 1 "steering activity detected" 0 "no steering activity detected " ;
+VAL_TABLE_ VitSig_State_of_EPS_for_LKA 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "defect" 3 "active" 2 "available" 1 "authorized" 0 "unauthorized" ;
+VAL_TABLE_ Vitsig_Power_steering_status 3 "Description for the value '0x3'" 2 "Request to light orange lamp " 1 "Request to light red lamp " 0 "No request to light lamp" ;
+VAL_TABLE_ VitSig_Column_angle_safe_state 1 "Column angle safe" 0 "Column angle unsafe" ;
+VAL_TABLE_ VitSig_DAE_stateforVirtual_CAV3 6 "INVALID" 5 "Reserved" 4 "EPS works with calibrated offset" 3 "EPS works with the ESC offset" 2 "Waiting for a new offset" 1 "Supply cut off" 0 "Init" ;
+VAL_TABLE_ Vitsig_DAE_status_for_Citypark 3 "Invalid" 2 "Control_in_progress" 1 "Avaliable" 0 "Unavaliable" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ ACC_dynamic_frame_checksum : 0|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ View_range_of_the_line45B : 0|8@0+ (0.5,0) [0|127.5] "m" Vector__XXX
+ SG_ Time_to_line_crossing45B : 0|8@0+ (0.01,0) [0|2.55] "s" Vector__XXX
+ SG_ Message_counter45B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MobiEye_lane_change45B : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Maker_width_of_the_line45B : 0|7@0+ (0.01,0) [0|1.27] "m" Vector__XXX
+ SG_ Quality_of_the_detected_line44B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_counter44B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Detected_line_type44B : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ C3_coefficient44B : 0|16@0- (4E-009,0) [-0.000131|0.00013107] "m-2" Vector__XXX
+ SG_ C2_coefficient44B : 0|16@0- (1E-006,0) [-0.032768|0.032766] "m-1" Vector__XXX
+ SG_ C1_coefficient44B : 0|10@0- (0.00098,0) [-0.357|0.357] "" Vector__XXX
+ SG_ C0_coefficient44B : 0|12@0- (0.01,0) [-20.48|20.47] "m" Vector__XXX
+ SG_ View_range_of_the_line43B : 0|8@0+ (0.5,0) [0|127.5] "m" Vector__XXX
+ SG_ Time_to_crossing43B : 0|8@0+ (0.01,0) [0|2.55] "s" Vector__XXX
+ SG_ Message_counter43B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MobiEye_lane_change43B : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Maker_with_of_the_line43B : 0|7@0+ (0.01,0) [0|1.27] "m" Vector__XXX
+ SG_ Quality_of_the_detected_line42B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Message_counter42B : 0|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Detected_line_type42B : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ C3_coefficient42B : 0|16@0- (4E-009,0) [-0.000131|0.00013107] "m-2" Vector__XXX
+ SG_ C2_coefficient42B : 0|16@0- (1E-006,0) [-0.032768|0.03276] "m-1" Vector__XXX
+ SG_ C1_coefficient42B : 0|10@0- (0.00098,0) [-0.357|0.357] "" Vector__XXX
+ SG_ C0_coefficient42B : 0|12@0- (0.01,0) [-20.48|20.47] "m" Vector__XXX
+
+BO_ 941 ESC_3AD_PSA1: 8 ESC
+ SG_ Park_brake_function_status : 26|3@0+ (1,0) [0|0] ""  Gateway,Radar,ADAS
+
+BO_ 1394 GW_572_PSA1: 8 Gateway
+ SG_ IC_seat_bealt_driver_state : 7|2@0+ (1,0) [0|0] ""  ESC,APA,Radar,ADAS
+
+BO_ 1271 ADAS_4F7_PSA1: 8 ADAS
+ SG_ TJA_status_icon : 39|3@0+ (1,0) [0|7] ""  Gateway
+ SG_ ICA_HMI_Txt_Disp : 35|4@0+ (1,0) [0|15] ""  Gateway
+ SG_ AEB_tips : 26|3@0+ (1,0) [0|7] ""  Gateway
+ SG_ AEB_Switch_Status : 13|2@0+ (1,0) [0|3] ""  Gateway
+ SG_ AEB_Fault_Status : 28|2@0+ (1,0) [0|3] ""  Gateway
+ SG_ AEB_Alert_Req : 15|2@0+ (1,0) [0|3] ""  Gateway
+ SG_ ACC_Desired_Set_Speed : 23|8@0+ (1,0) [0|254] "kp/h"  Gateway
+ SG_ RVVACC_Vehiclespeed_request_type : 7|1@0+ (1,0) [0|1] ""  Gateway
+ SG_ ACC_Set_Speed_Display : 2|3@0+ (1,0) [0|3] ""  Gateway
+ SG_ ACC_Pop_Up_Message : 11|4@0+ (1,0) [0|15] ""  Gateway
+ SG_ ACC_DesiredHeadway_Icon_Basic : 4|1@0+ (1,0) [0|1] ""  Gateway
+ SG_ ACC_DesiredHeadway_Display : 6|2@0+ (1,0) [0|3] ""  Gateway
+ SG_ ACC_Vehicle_Icon_Display : 42|3@0+ (1,0) [0|3] ""  Gateway
+
+BO_ 694 ADAS_2B6_PSA1: 8 ADAS
+ SG_ bits_Compute_counter_forACC : 63|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ACC_dynamic_frame_checksum : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Deceleration_setpoint_device : 7|8@0+ (0.05,-10.65) [-10.65|2] "m/s2"  ESC,Gateway
+ SG_ State_of_the_functionFARC_det : 50|3@0+ (1,0) [0|0] ""  ESC,Gateway
+ SG_ MDD_deceleration_type : 52|2@0+ (1,0) [0|0] ""  ESC,Gateway
+ SG_ MDD_Decelerationcontrol_request : 53|1@0+ (1,0) [0|0] ""  Gateway
+ SG_ TYPE_RAPPORT : 54|1@0+ (1,0) [0|0] ""  Gateway
+ SG_ Prefill_request : 55|1@0+ (1,0) [0|0] ""  ESC,Gateway
+ SG_ Powertrain_torquewheel_request : 41|2@0+ (1,0) [0|0] ""  Gateway
+ SG_ ACCTqReq : 39|14@0+ (1,-4000) [-4000|11000] "N.m"  Gateway
+ SG_ Function_Acc_status : 27|4@0+ (1,0) [0|0] ""  ESC,Gateway
+ SG_ PotACCTqReq : 23|12@0+ (4,-4000) [-4000|11000] "N.m"  Gateway
+ SG_ stAcvTqWhlPTPotReq : 9|2@0+ (1,0) [0|0] ""  Gateway
+ SG_ TminUp_or_downGear : 15|6@0+ (0.1,0) [0|6.2] "s"  Gateway
+
+BO_ 758 ADAS_2F6_PSA1: 8 ADAS
+ SG_ RollCouter_ACC2 : 55|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Checksum_ACC2 : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TARGET_POSITION : 63|3@0+ (1,0) [0|0] ""  Gateway
+ SG_ Radar_State : 6|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ FCW_Status : 19|4@0+ (1,0) [0|0] ""  Gateway
+ SG_ Decel_Request : 42|1@0+ (1,0) [0|0] ""  ESC,Gateway
+ SG_ AEB_Status : 47|3@0+ (1,0) [0|0] ""  Gateway
+ SG_ AEB_Braking_progress : 20|1@0+ (1,0) [0|0] ""  ESC,Gateway
+ SG_ ACC_Engine_Start_Request : 34|1@0+ (1,0) [0|0] ""  Gateway
+ SG_ ACC_HMI_TgtDisp_Flag : 0|1@0+ (1,0) [0|0] ""  Gateway
+ SG_ Haptic_Alarm : 7|1@0+ (1,0) [0|0] ""  EPS,ESC,Gateway
+
+BO_ 777 GW_309_PSA1: 8 Gateway
+ SG_ GW_SCC_RightSteeringWheelSwitch : 15|8@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ GW_SCC_LeftSteeringWheelSwitch : 7|8@0+ (1,0) [0|0] ""  Radar,ADAS
+
+BO_ 728 GW_2D8_PSA1: 7 Gateway
+ SG_ GW_EMS_Pot_WhlTrq_Request : 15|13@0+ (2,-4000) [-4000|11000] "N.m"  Radar,ADAS
+ SG_ GW_EMS_Pot_WhlTrq_Min : 47|11@0+ (8,-4000) [-4000|11000] "N.m"  Radar,ADAS
+ SG_ GW_EMS_Pot_WhlTrq_Max : 31|11@0+ (8,-4000) [-4000|11000] "N.m"  Radar,ADAS
+ SG_ GW_EMS_EMS_Status_ACC : 18|3@0+ (1,0) [0|7] ""  Radar,ADAS
+ SG_ GW_EMS_ACC_Ihibited_By_Engine : 52|1@0+ (1,0) [0|1] ""  Radar,ADAS
+
+BO_ 792 GW_318_PSA1: 5 Gateway
+ SG_ EMS_GearBox_ACCcontrol_Available : 16|1@0+ (1,0) [0|1] ""  Radar,ADAS
+ SG_ EMS_Driver_wheel_torque : 15|14@0+ (1,-4000) [-4000|11000] "N.m"  Radar,ADAS
+ SG_ EMS_Actual_whlTrq : 31|14@0+ (1,-4000) [-4000|11000] "N.m"  ESC,APA,Radar,ADAS
+ SG_ EMS_ACCcontrol_Available : 17|1@0+ (1,0) [0|1] ""  Radar,ADAS
+ SG_ EMS_ACC_Effecitive_EMS : 32|1@0+ (1,0) [0|1] ""  Radar,ADAS
+
+BO_ 552 GW_228_PSA1: 8 Gateway
+ SG_ EMS_Acceleration_pedal_position : 23|8@0+ (0.5,0) [0|100] "%"  APA,Radar,ADAS
+
+BO_ 760 GW_2F8_PSA1: 7 Gateway
+ SG_ EMS_WhlTrq_min_offset : 42|11@0+ (2,0) [0|4000] "N.m"  ESC,APA,Camera,ADAS
+ SG_ EMS_WhlTrq_min : 39|13@0+ (2,-4000) [-4000|11000] "N.m"  ESC,APA,Radar,ADAS
+ SG_ EMS_WhlTrq_max_offset : 18|11@0+ (2,0) [0|4000] "N.m"  ESC,APA,Radar,ADAS
+ SG_ EMS_WhlTrq_max : 15|13@0+ (2,-4000) [-4000|11000] "N.m"  ESC,APA,Radar,ADAS
+
+BO_ 1426 GW_592_PSA1: 8 Gateway
+ SG_ Radar_Detec_Req : 33|2@0+ (1,0) [0|0] ""  Radar,ADAS
+
+BO_ 1069 GW_42D_PSA1: 4 Gateway
+ SG_ Dynamic_slope_accuracy : 7|2@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ Dynamic_slope : 5|6@0+ (1,-30) [-30|30] "%"  Radar,ADAS
+
+BO_ 841 GW_349_PSA1: 8 Gateway
+ SG_ BV_dynamic_frame_checksum : 55|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bits_Compute_for_Gear_Box : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TCU_Gear_lever_position : 27|4@0+ (1,0) [0|0] ""  ESC,APA,Radar,Camera,ADAS
+ SG_ TCU_AGB_Target_position : 31|4@0+ (1,0) [0|0] ""  ESC,Radar,ADAS
+
+BO_ 840 GW_348_PSA1: 8 Gateway
+ SG_ TCU_DCTClutchStatus : 47|3@0+ (1,0) [0|7] ""  Radar,ADAS
+ SG_ TCU_GearEngagement : 37|1@0+ (1,0) [0|1] ""  Radar,ADAS
+ SG_ EMS_Engine_state : 43|4@0+ (1,0) [0|0] ""  EPS,ESC,APA,Radar,ADAS
+
+BO_ 1161 GW_489_PSA1: 8 Gateway
+ SG_ TCU_ATFailure : 15|1@0+ (1,0) [0|0] ""  Radar,ADAS
+
+BO_ 749 ESC_2ED_PSA1: 7 ESC
+ SG_ Frame_checksum : 7|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bits_process_counter : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Rear_Right_pulse_malfunction : 43|1@0+ (1,0) [0|0] ""  APA,Radar,ADAS
+ SG_ Rear_Left_pulse_malfunction : 39|1@0+ (1,0) [0|0] ""  APA,Radar,ADAS
+ SG_ Pulse_counter_rearright_wheel : 42|11@0+ (1,0) [0|2047] ""  APA,Radar,ADAS
+ SG_ Pulse_counter_rearleft_wheel : 38|11@0+ (1,0) [0|2047] ""  APA,Radar,ADAS
+ SG_ Pulse_counter_front_right_wheel : 18|11@0+ (1,0) [0|2047] ""  APA,Radar,ADAS
+ SG_ Pulse_counter_front_left_wheel : 14|11@0+ (1,0) [0|2047] ""  APA,Radar,ADAS
+ SG_ Front_right_pulse_malfunction : 19|1@0+ (1,0) [0|0] ""  APA,Radar,ADAS
+ SG_ Front_Left_pulse_malfunction : 15|1@0+ (1,0) [0|0] ""  APA,Radar,ADAS
+
+BO_ 1042 GW_412_PSA1: 8 Gateway
+ SG_ BCM_Opening_states : 55|5@0+ (1,0) [0|0] ""  ESC,APA,Radar,ADAS
+
+BO_ 1345 ADAS_541_PSA1: 8 ADAS
+ SG_ Vehicle_Lane_Display : 11|4@0+ (1,0) [0|0] ""  Gateway
+ SG_ TSR_Vision_Only_Sign_Type : 55|8@0+ (1,0) [0|0] ""  Gateway
+ SG_ LKA_Switch_State : 21|1@0+ (1,0) [0|0] ""  Gateway
+ SG_ LKA_Status_Display : 6|2@0+ (1,0) [0|0] ""  Gateway
+ SG_ LKA_Mode_from_Camera : 20|2@0+ (1,0) [0|0] ""  Gateway
+ SG_ LKA_action_indication : 2|3@0+ (1,0) [0|0] ""  Gateway
+ SG_ LDW_Status_Display : 4|2@0+ (1,0) [0|0] ""  Gateway
+ SG_ LDW_Flag : 17|2@0+ (1,0) [0|0] ""  Gateway
+ SG_ ISA_Value : 36|5@0- (1,0) [0|31] "km/h"  Gateway
+ SG_ ISA_Status : 45|3@0+ (1,0) [0|0] ""  Gateway
+ SG_ ISA_Sign_Type : 42|3@0+ (1,0) [0|0] ""  Gateway
+ SG_ ISA_Popup_text : 30|3@0+ (1,0) [0|0] ""  Gateway
+ SG_ HMI_Popup_Status : 15|4@0+ (1,0) [0|0] ""  Gateway
+ SG_ Hands_off_warning : 18|1@0+ (1,0) [0|0] ""  Gateway
+ SG_ ECU_operating_phase : 27|4@0+ (1,0) [0|0] ""  Gateway
+
+BO_ 1360 GW_550_PSA1: 8 Gateway
+ SG_ LKA_main_switch : 5|1@0+ (1,0) [0|1] ""  ADAS,Camera
+ SG_ LC_Mode : 7|2@0+ (1,0) [0|3] ""  ADAS,Camera
+ SG_ GW_Mp5_TSR_Switch : 2|2@0+ (1,0) [0|3] ""  Camera,ADAS
+ SG_ GW_Mp5_ISA_Switch : 4|2@0+ (1,0) [0|3] ""  Camera,ADAS
+
+BO_ 1554 GW_612_PSA1: 8 Gateway
+ SG_ High_beam_state : 10|1@0+ (1,0) [0|1] ""  Camera,ADAS
+
+BO_ 1106 GW_452_PSA1: 6 Gateway
+ SG_ Checksum452 : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ RollingCount_BCM : 31|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TCU_PROGRAMME_ACC : 47|2@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ Speed_Limitation_On : 22|1@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ MP5_AEB_Activation_Config : 33|2@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ IC_passengerBeltSwitchSig : 19|1@0+ (1,0) [0|0] ""  APA,Radar,ADAS
+ SG_ IC_FCW_Sensitivity : 26|2@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ IC_Fcw_Activation_Config : 21|2@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ GW_BCM_Brakeonly_Request_BCM : 18|1@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ BCM_CHMSLStatus : 3|2@0+ (1,0) [0|3] ""  Radar,ADAS
+ SG_ BCM_BrakeLampStatus : 1|2@0+ (1,0) [0|3] ""  Radar,ADAS
+ SG_ BCM_Status_Indicator : 5|2@0+ (1,0) [0|0] ""  APA,Radar,Camera,ADAS
+ SG_ BCM_State_Front_Wiper : 7|2@0+ (1,0) [0|0] ""  APA,Radar,Camera,ADAS
+
+BO_ 813 GW_32D_PSA1: 8 Gateway
+ SG_ bits_compute_counter_for_UCbrake : 63|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ UFC_to_ACC_dynamic_frame : 59|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Vehicle_detected_as_stationary : 21|1@0+ (1,0) [0|0] ""  Radar,Camera,ADAS
+ SG_ Vehicle_Hold_Status : 30|2@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ ESC_ACC_Status : 20|2@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ Message_from_ESC_informing : 23|1@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ Braking_effort : 9|1@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ ESC_AEB_Status : 11|2@0+ (1,0) [0|0] ""  Radar,ADAS
+ SG_ YawRate_Raw : 39|12@0+ (0.08,-163.84) [-163.84|163.68] "Degree/s"  Radar,Camera,ADAS
+ SG_ Brake_Pedal_Active : 17|2@0+ (1,0) [0|0] ""  Radar,Camera,ADAS
+ SG_ ACCEL_LONGI_CALIB : 7|12@0+ (0.02,-40.96) [-40.96|40.92] "m/s2"  Radar,Camera,ADAS
+
+BO_ 1293 ESC_50D_PSA1: 8 ESC
+ SG_ Request_to_light_ABS_fault_Lamp : 0|1@0+ (1,0) [0|0] ""  Gateway,Radar,ADAS
+ SG_ ABS_in_regulation : 5|1@0+ (1,0) [0|0] ""  EPS,Gateway,APA,Radar,Camera,ADAS
+
+BO_ 973 ESC_3CD_PSA1: 8 ESC
+ SG_ Frame_checksum3CD : 63|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bits_compute_process_counter3CD : 59|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Yaw_speed : 23|16@0- (0.1,0) [-100|100] "Degree/s"  EPS,Gateway,APA,Camera,ADAS
+ SG_ TMC_pressure : 47|12@0+ (0.1,-55) [-55|354.4] "Bar"  Gateway,APA,Radar,Camera,ADAS
+ SG_ Lateral_acceleration : 7|16@0- (0.05,0) [-15|15] "m/s2"  EPS,Gateway,APA,Radar,Camera,ADAS
+ SG_ Brake_pedal_disabled_UC_Brake : 37|1@0+ (1,0) [0|0] ""  Gateway,Radar,Camera,ADAS
+
+BO_ 909 ESC_38D_PSA1: 8 ESC
+ SG_ ABR_dynamic_checksum : 43|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bits_compute_for_UC_brake : 47|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Vehicle_driving_direction : 53|2@0+ (1,0) [0|0] ""  APA,Radar,ADAS
+ SG_ Vehiclespeed_unavailability_flag : 51|2@0+ (1,0) [0|0] ""  Gateway,Radar,Camera,ADAS
+ SG_ Vehicle_speed_of_wheelsensor : 7|16@0+ (0.01,0) [0|655.34] "km/h"  EPS,Gateway,APA,Radar,Camera,ADAS
+
+BO_ 845 ESC_34D_PSA1: 8 ESC
+ SG_ bits_Compute_proces_for_ESP : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Static_slope : 61|6@0+ (1,-30) [-30|30] "%"  Gateway,APA,Radar,ADAS
+ SG_ Request_to_light_fault_lamp : 4|1@0+ (1,0) [0|0] ""  EPS,Gateway,APA,Radar,ADAS
+ SG_ ASR_ESP_disconnected : 7|1@0+ (1,0) [0|0] ""  EPS,Gateway,APA,Radar,ADAS
+ SG_ MSR_in_regulation : 51|1@0+ (1,0) [0|0] ""  Gateway,APA,Radar,Camera,ADAS
+ SG_ ESP_in_regulation : 52|1@0+ (1,0) [0|0] ""  Gateway,APA,Radar,Camera,ADAS
+ SG_ ASR_in_regulation : 50|1@0+ (1,0) [0|0] ""  Camera,Gateway,APA,Radar,ADAS
+
+BO_ 781 ESC_30D_PSA1: 8 ESC
+ SG_ No_filtered_rear_rignt_speed : 55|16@0+ (0.01,0) [0|655.33] "km/h"  EPS,Gateway,APA,Radar,Camera,ADAS
+ SG_ No_filtered_rear_left_speed : 39|16@0+ (0.01,0) [0|655.33] "km/h"  EPS,Gateway,APA,Radar,Camera,ADAS
+ SG_ No_filtered_front_right_speed : 23|16@0+ (0.01,0) [0|655.33] "km/h"  EPS,Gateway,APA,Radar,Camera,ADAS
+ SG_ No_filtered_front_left_speed : 7|16@0+ (0.01,0) [0|655.33] "km/h"  EPS,Gateway,APA,Radar,Camera,ADAS
+
+BO_ 773 EPS_305_PSA1: 7 EPS
+ SG_ SWS_checksum : 39|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bits_Compute_counter_for_SWS : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ indication_of_steering_wheel : 53|2@0+ (1,0) [0|0] ""  ESC,Gateway,Radar,Camera,ADAS
+ SG_ Absolute_Steering_Wheel_angle : 54|1@0+ (1,0) [0|0] ""  ESC,Gateway,APA,Radar,Camera,ADAS
+ SG_ Initialization_steering_angle : 55|1@0+ (1,0) [0|0] ""  ESC,Gateway,APA,Radar,Camera,ADAS
+ SG_ Internal_SWS_status : 24|1@0+ (1,0) [0|0] ""  ESC,Gateway,Radar,Camera,ADAS
+ SG_ SWS_calibration : 25|1@0+ (1,0) [0|0] ""  ADAS,Camera,ESC,Gateway
+ SG_ SWS_trim : 26|1@0+ (1,0) [0|0] ""  ADAS,Camera,ESC,Gateway
+ SG_ SWS_fault_code : 30|4@0+ (1,0) [0|0] ""  ADAS,Camera,ESC,Gateway,Radar
+ SG_ Steering_wheel_sensor_direction : 31|1@0+ (1,0) [0|0] ""  ADAS,Camera,ESC,Gateway,Radar
+ SG_ Steering_wheel_rotation_speed : 23|8@0+ (4,0) [0|1016] "Degree/s"  ADAS,APA,Camera,ESC,Gateway,Radar
+ SG_ Steering_wheel_angle : 7|16@0- (0.1,0) [-780|780] "Degree"  ADAS,APA,Camera,ESC,Gateway,Radar
+
+BO_ 1362 GW_522_PSA1: 8 Gateway
+ SG_ Temporal_counter_Reset_counter : 63|8@0+ (1,0) [0|253] ""  ADAS,EPS,ESC,Radar
+ SG_ number_of_kilometer : 39|24@0+ (1,0) [0|16777214] "km"  ADAS,APA,Camera,EPS,ESC,Radar
+ SG_ Vehicle_time_counter : 7|32@0+ (0.1,0) [0|429496729.3] "s"  ADAS,Camera,EPS,ESC,Radar
+
+BO_ 1074 GW_432_PSA1: 8 Gateway
+ SG_ GW_BCM_SEV_main_state : 49|2@0+ (1,0) [0|0] ""  ADAS,APA,Camera,EPS,ESC,Radar
+ SG_ Main_wake_up : 7|2@0+ (1,0) [0|0] ""  ADAS,Camera,ESC
+
+BO_ 1010 ADAS_3F2_PSA1: 8 ADAS
+ SG_ checksum : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bits_compute_process_counter : 11|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Dead_man_dedicated_push_button2 : 57|2@0+ (1,0) [0|0] ""  APA,ESC
+ SG_ ASR_connection_dis_demand2 : 23|1@0+ (1,0) [0|0] ""  ESC
+ SG_ ABS_ESP_power_cut_request2 : 1|1@0+ (1,0) [0|0] ""  ESC
+ SG_ EASYMOVE_powercut_request3F2 : 3|1@0+ (1,0) [0|0] ""  ESC
+ SG_ Trailer_Present3F2 : 7|1@0+ (1,0) [0|0] ""  ESC
+ SG_ Column_angle_setpoint3F2 : 55|14@0- (0.1,0) [-780|780] "Degree"  EPS
+ SG_ Permit_to_know_if_LKA_or_LPA3F2 : 40|1@0+ (1,0) [0|0] ""  EPS
+ SG_ Coefficient_toregulate_EPS : 47|7@0+ (0.01,0) [0|1] ""  EPS
+ SG_ General_state_of_LKA_function3F2 : 36|3@0+ (1,0) [0|0] ""  EPS
+ SG_ Power_steering_power_cut3F2 : 2|1@0+ (1,0) [0|0] ""  EPS
+
+BO_ 1009 GW_3F1_PSA1: 8 Gateway
+ SG_ Column_angle_setpoint : 55|14@0- (0.1,0) [-780|780] "Degree" Vector__XXX
+ SG_ General_state_of_LKA_function3F1 : 36|3@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ checksum3F1 : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ bits_compute_process_counter3F1 : 11|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Dead_man_dedicated_push_button1 : 57|2@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ ASR_connection_dis_demand1 : 23|1@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ ABS_ESP_power_cut_request1 : 1|1@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ EASYMOVE_powercut_request3F1 : 3|1@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ Trailer_Present3F1 : 7|1@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ Permit_to_know_if_LKA_or_LPA3F1 : 40|1@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ Coefficient_to_regulate_EPS : 47|7@0+ (0.01,0) [0|1] ""  ADAS,Camera
+ SG_ Power_steering_power_cut3F1 : 2|1@0+ (1,0) [0|0] ""  ADAS,Camera
+
+BO_ 1173 EPS_495_PSA1: 4 EPS
+ SG_ Torque_limitation_if_DAE_limit : 16|1@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ State_indicating_steering_or_not : 17|1@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ State_of_EPS_for_LKA_function : 20|3@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ Power_steering_status : 15|2@0+ (1,0) [0|0] ""  ADAS,Camera,Gateway
+ SG_ Steering_wheel_torque : 7|8@0- (0.25,0) [-32|31.5] "N.m"  ADAS,Camera
+
+BO_ 757 EPS_2F5_PSA1: 7 EPS
+ SG_ DAE_frame_dynamic_checksum : 7|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bits_compute_process_counter2F5 : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ Column_angle_safe_state : 48|1@0+ (1,0) [0|0] ""  ADAS,Camera,ESC
+ SG_ DAE_state_for_Virtual_CAV3 : 51|3@0+ (1,0) [0|0] ""  ADAS,Camera
+ SG_ EPS_column_speed : 47|12@0- (1,0) [-2000|2000] "Degree/s"  ADAS,Camera,ESC
+ SG_ EPS_column_angle : 31|16@0- (0.1,0) [-1630|1630] "Degree"  ADAS,Camera,ESC
+ SG_ Citypark_inhibition_cause : 20|3@0+ (1,0) [0|0] ""  ADAS,APA,Camera
+ SG_ DAE_staus_for_Citypark : 22|2@0+ (1,0) [0|0] ""  ADAS,APA,Camera
+ SG_ Optimized_steering_wheel_torque : 15|8@0- (0.1,0) [-10|10] "N.m"  ADAS,APA,Camera
+
+BO_ 520 GW_208_PSA1: 8 Gateway
+ SG_ EMS_Actual_torque : 23|8@0+ (2,-100) [-100|408] "N.m"  ADAS,EPS,ESC,Radar
+ SG_ EMS_Engine_RPM : 7|16@0+ (0.125,0) [0|8191.75] ""  ADAS,EPS,ESC,Radar
+ SG_ Brake_secondary_contact : 33|1@0+ (1,0) [0|0] ""  ADAS,Camera,EPS,ESC
+ SG_ EMS_DiagMuxOn : 38|1@0+ (1,0) [0|0] ""  ADAS,Camera,Radar,ESC,EPS
+ SG_ EMS_Driver_request : 31|8@0+ (0.5,0) [0|100] "%"  Camera,ADAS,Radar,ESC,EPS
+
+BO_TX_BU_ 1010 : Gateway,ADAS;
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 ACC_dynamic_frame_checksum "校验码";
+CM_ SG_ 3221225472 View_range_of_the_line45B "可视车道线范围";
+CM_ SG_ 3221225472 Time_to_line_crossing45B "TTC";
+CM_ SG_ 3221225472 Message_counter45B "计数器";
+CM_ SG_ 3221225472 MobiEye_lane_change45B "车道改变";
+CM_ SG_ 3221225472 Maker_width_of_the_line45B "右车道宽度";
+CM_ SG_ 3221225472 Quality_of_the_detected_line44B "探测右车道线质量";
+CM_ SG_ 3221225472 Message_counter44B "计速器";
+CM_ SG_ 3221225472 Detected_line_type44B "右车道线类型";
+CM_ SG_ 3221225472 C3_coefficient44B "右车道线轨迹计算公式参数C3";
+CM_ SG_ 3221225472 C2_coefficient44B "右车道线轨迹计算公式参数C2";
+CM_ SG_ 3221225472 C1_coefficient44B "右车道线轨迹计算公式参数C1";
+CM_ SG_ 3221225472 C0_coefficient44B "右车道线轨迹计算公式参数C0";
+CM_ SG_ 3221225472 View_range_of_the_line43B "可视车道线范围";
+CM_ SG_ 3221225472 Time_to_crossing43B "TTC";
+CM_ SG_ 3221225472 Message_counter43B "计数器";
+CM_ SG_ 3221225472 MobiEye_lane_change43B "车道改变";
+CM_ SG_ 3221225472 Maker_with_of_the_line43B "左车道宽度";
+CM_ SG_ 3221225472 Quality_of_the_detected_line42B "探测左车道线质量";
+CM_ SG_ 3221225472 Message_counter42B "计速器";
+CM_ SG_ 3221225472 Detected_line_type42B "左车道线的类型";
+CM_ SG_ 3221225472 C3_coefficient42B "左车道线轨迹计算公式参数C3";
+CM_ SG_ 3221225472 C2_coefficient42B "左车道线轨迹计算公式参数C2";
+CM_ SG_ 3221225472 C1_coefficient42B "左车道线轨迹计算公式参数C1";
+CM_ SG_ 3221225472 C0_coefficient42B "左车道线轨迹计算公式参数C0";
+CM_ SG_ 1394 IC_seat_bealt_driver_state "驾驶员安全带状态";
+CM_ SG_ 1271 TJA_status_icon "TJA状态灯";
+CM_ SG_ 1271 ICA_HMI_Txt_Disp "TJA弹出文字提醒";
+CM_ SG_ 1271 AEB_tips "AEB 文字提示";
+CM_ SG_ 1271 AEB_Switch_Status "AEB OFF指示灯";
+CM_ SG_ 1271 AEB_Fault_Status "AEB &FCW Fault 指示灯";
+CM_ SG_ 1271 AEB_Alert_Req "AEB FCW报警请求信号";
+CM_ SG_ 1271 ACC_Desired_Set_Speed "驾驶员设置ACC巡航速度";
+CM_ SG_ 1271 RVVACC_Vehiclespeed_request_type "RVV/ACC请求类型";
+CM_ SG_ 1271 ACC_Set_Speed_Display "ACC设定车速状态显示";
+CM_ SG_ 1271 ACC_Pop_Up_Message "ACC文字提示";
+CM_ SG_ 1271 ACC_DesiredHeadway_Icon_Basic "ACC时距状态显示";
+CM_ SG_ 1271 ACC_DesiredHeadway_Display "ACC时距间隔显示";
+CM_ SG_ 1271 ACC_Vehicle_Icon_Display "ACC状态图标显示";
+CM_ SG_ 694 bits_Compute_counter_forACC "滚动计数";
+CM_ SG_ 694 ACC_dynamic_frame_checksum "校验码";
+CM_ SG_ 694 Deceleration_setpoint_device "减速度设置";
+CM_ SG_ 694 State_of_the_functionFARC_det "在减速度设置装置中的AEB功能状态";
+CM_ SG_ 694 MDD_deceleration_type "MDD减速度类型";
+CM_ SG_ 694 MDD_Decelerationcontrol_request "MDD减速度控制请求";
+CM_ SG_ 694 TYPE_RAPPORT "(0,1交替每个cycle变化)";
+CM_ SG_ 694 Prefill_request "预建压请求";
+CM_ SG_ 694 Powertrain_torquewheel_request "飞轮扭矩激活请求";
+CM_ SG_ 694 ACCTqReq "ACC轮端请求扭矩";
+CM_ SG_ 694 Function_Acc_status "ACC功能状态";
+CM_ SG_ 694 PotACCTqReq "ACC轮端潜在请求扭矩";
+CM_ SG_ 694 stAcvTqWhlPTPotReq "潜在扭矩请求状态位";
+CM_ SG_ 694 TminUp_or_downGear "ACC请求升档最小确认时间";
+CM_ SG_ 758 TARGET_POSITION "目标位置";
+CM_ SG_ 758 Radar_State "雷达传感器状态";
+CM_ SG_ 758 FCW_Status "前向预警状态位";
+CM_ SG_ 758 Decel_Request "刹车请求(AEB/IBA/ACC共用)";
+CM_ SG_ 758 AEB_Status "紧急预碰撞状态位";
+CM_ SG_ 758 AEB_Braking_progress "自动刹车状态位（仅 AEB/IBA）";
+CM_ SG_ 758 ACC_Engine_Start_Request "RADA的发动机启动请求(Engine startreques for";
+CM_ SG_ 758 ACC_HMI_TgtDisp_Flag "是否有前车";
+CM_ SG_ 758 Haptic_Alarm "振动报警请求";
+CM_ SG_ 777 GW_SCC_RightSteeringWheelSwitch "方向盘右快拨键";
+CM_ SG_ 777 GW_SCC_LeftSteeringWheelSwitch "方向盘左快拨键";
+CM_ SG_ 728 GW_EMS_Pot_WhlTrq_Request "巡航模式的潜在扭矩请求";
+CM_ SG_ 728 GW_EMS_Pot_WhlTrq_Min "最高档最小潜在扭矩";
+CM_ SG_ 728 GW_EMS_Pot_WhlTrq_Max "最低档最大潜在扭矩";
+CM_ SG_ 728 GW_EMS_EMS_Status_ACC "EMS响应ACC状态";
+CM_ SG_ 728 GW_EMS_ACC_Ihibited_By_Engine "EMS禁止ACC功能";
+CM_ SG_ 792 EMS_GearBox_ACCcontrol_Available "控制换挡是否可用";
+CM_ SG_ 792 EMS_Driver_wheel_torque "驾驶员轮端扭矩请求";
+CM_ SG_ 792 EMS_Actual_whlTrq "轮端真实扭矩";
+CM_ SG_ 792 EMS_ACCcontrol_Available "ACC控制扭矩是否可用";
+CM_ SG_ 792 EMS_ACC_Effecitive_EMS "ACC需求是否能满足";
+CM_ SG_ 552 EMS_Acceleration_pedal_position "油门踏板位置";
+CM_ SG_ 760 EMS_WhlTrq_min_offset "当前档位不能实现的最小扭矩偏差";
+CM_ SG_ 760 EMS_WhlTrq_min "当前档位最小扭矩";
+CM_ SG_ 760 EMS_WhlTrq_max_offset "当前档位不能实现的最大扭矩偏差";
+CM_ SG_ 760 EMS_WhlTrq_max "当前档位最大扭矩";
+CM_ SG_ 1426 Radar_Detec_Req "雷达检测请求";
+CM_ SG_ 1069 Dynamic_slope_accuracy "动态坡道精度";
+CM_ SG_ 1069 Dynamic_slope "动态坡道";
+CM_ SG_ 841 TCU_Gear_lever_position "换挡手柄位置";
+CM_ SG_ 841 TCU_AGB_Target_position "自动变速箱目标档位";
+CM_ SG_ 840 TCU_DCTClutchStatus "离合器的状态";
+CM_ SG_ 840 TCU_GearEngagement "输入离合器状态";
+CM_ SG_ 840 EMS_Engine_state "发动机状态";
+CM_ SG_ 1161 TCU_ATFailure "AT故障指示灯";
+CM_ SG_ 749 Rear_Right_pulse_malfunction "右后轮齿圈脉冲故障";
+CM_ SG_ 749 Rear_Left_pulse_malfunction "左后轮齿圈脉冲故障";
+CM_ SG_ 749 Pulse_counter_rearright_wheel "右后轮齿圈脉冲(96plus/rd)";
+CM_ SG_ 749 Pulse_counter_rearleft_wheel "左后轮齿圈脉冲(96plus/rd)";
+CM_ SG_ 749 Pulse_counter_front_right_wheel "右前轮齿圈脉冲(96plus/rd)";
+CM_ SG_ 749 Pulse_counter_front_left_wheel "左前轮齿圈脉冲(96plus/rd)";
+CM_ SG_ 749 Front_right_pulse_malfunction "右前轮齿圈脉冲故障";
+CM_ SG_ 749 Front_Left_pulse_malfunction "左前轮齿圈脉冲故障";
+CM_ SG_ 1042 BCM_Opening_states "车门状态";
+CM_ SG_ 1345 Vehicle_Lane_Display "车道线显示";
+CM_ SG_ 1345 TSR_Vision_Only_Sign_Type "标识符的种类";
+CM_ SG_ 1345 LKA_Switch_State "LKA功能开启";
+CM_ SG_ 1345 LKA_Status_Display "LKA状态指示";
+CM_ SG_ 1345 LKA_Mode_from_Camera "摄像头发出的LKA 功能模式";
+CM_ SG_ 1345 LKA_action_indication "LKA动作指示";
+CM_ SG_ 1345 LDW_Status_Display "LDW Only 状态指示";
+CM_ SG_ 1345 LDW_Flag "LDW 报警状态";
+CM_ SG_ 1345 ISA_Value "ISA功能的速度值";
+CM_ SG_ 1345 ISA_Status "ISA功能报警状态";
+CM_ SG_ 1345 ISA_Sign_Type "ISA限速标识类型";
+CM_ SG_ 1345 ISA_Popup_text "ISA功能文字显示";
+CM_ SG_ 1345 HMI_Popup_Status "仪表弹出文字 表示状态变化";
+CM_ SG_ 1345 Hands_off_warning "脱手报警";
+CM_ SG_ 1345 ECU_operating_phase "当前摄像头工作状态";
+CM_ SG_ 1360 LKA_main_switch "LKA开启开关";
+CM_ SG_ 1360 LC_Mode "LKA功能选择";
+CM_ SG_ 1360 GW_Mp5_TSR_Switch "TSR开关";
+CM_ SG_ 1360 GW_Mp5_ISA_Switch "ISA功能开关";
+CM_ SG_ 1554 High_beam_state "大灯状态";
+CM_ SG_ 1106 TCU_PROGRAMME_ACC "ACC工作模式";
+CM_ SG_ 1106 Speed_Limitation_On "限速功能是否打开";
+CM_ SG_ 1106 MP5_AEB_Activation_Config "AEB开关";
+CM_ SG_ 1106 IC_passengerBeltSwitchSig "副驾驶员安全带信号";
+CM_ SG_ 1106 IC_FCW_Sensitivity "FCW报警敏感度";
+CM_ SG_ 1106 IC_Fcw_Activation_Config "FCW开关";
+CM_ SG_ 1106 GW_BCM_Brakeonly_Request_BCM "判断ACC只允许制动（例如驾驶侧门打开，驾驶员安全带解";
+CM_ SG_ 1106 BCM_CHMSLStatus "第三制动灯输出状态";
+CM_ SG_ 1106 BCM_BrakeLampStatus "制动灯输出状态";
+CM_ SG_ 1106 BCM_Status_Indicator "转向灯状态（包括双闪）";
+CM_ SG_ 1106 BCM_State_Front_Wiper "前雨刮状态";
+CM_ SG_ 813 Vehicle_Hold_Status "车辆是否在hold状态";
+CM_ SG_ 813 ESC_ACC_Status "ESC执行ACC当前状态位";
+CM_ SG_ 813 Message_from_ESC_informing "0-因为功能安全不需要释放制动1-因为功能安全需要释放制动( ACC S&G和ACC-STOP功能用)";
+CM_ SG_ 813 Braking_effort "ESC是否在加制动力";
+CM_ SG_ 813 ESC_AEB_Status "ESC执行AEB当前状态位";
+CM_ SG_ 813 YawRate_Raw "未滤波的横摆角速度";
+CM_ SG_ 813 Brake_Pedal_Active "制动踏板是否有错";
+CM_ SG_ 813 ACCEL_LONGI_CALIB "标定后的当前纵向加速度";
+CM_ SG_ 1293 Request_to_light_ABS_fault_Lamp "ABS故障灯";
+CM_ SG_ 1293 ABS_in_regulation "ABS工作";
+CM_ SG_ 973 Yaw_speed "横摆角速度";
+CM_ SG_ 973 TMC_pressure "主缸压力";
+CM_ SG_ 973 Lateral_acceleration "侧向加速度";
+CM_ SG_ 973 Brake_pedal_disabled_UC_Brake "制动踏板是否有效标识 0-制动踏板状态正常 1-制动踏板状态异常";
+CM_ SG_ 909 Vehicle_driving_direction "行驶方向";
+CM_ SG_ 909 Vehiclespeed_unavailability_flag "车速可靠位";
+CM_ SG_ 909 Vehicle_speed_of_wheelsensor "车速（轮速传感器)";
+CM_ SG_ 845 Static_slope "静态坡道";
+CM_ SG_ 845 Request_to_light_fault_lamp "ESC故障灯点亮请求";
+CM_ SG_ 845 ASR_ESP_disconnected "ESC OFF开关状态";
+CM_ SG_ 845 MSR_in_regulation "MSR工作";
+CM_ SG_ 845 ESP_in_regulation "ESC在工作";
+CM_ SG_ 845 ASR_in_regulation "TCS工作";
+CM_ SG_ 781 No_filtered_rear_rignt_speed "未过滤过的右后轮速";
+CM_ SG_ 781 No_filtered_rear_left_speed "未过滤过的左后轮速";
+CM_ SG_ 781 No_filtered_front_right_speed "未过滤过的右前轮速";
+CM_ SG_ 781 No_filtered_front_left_speed "未过滤过的左前轮速";
+CM_ SG_ 773 Absolute_Steering_Wheel_angle "绝对转向角度";
+CM_ SG_ 773 Initialization_steering_angle "初始转向角度标志";
+CM_ SG_ 773 Internal_SWS_status "SWS内部状态";
+CM_ SG_ 773 SWS_calibration "SWS标定";
+CM_ SG_ 773 SWS_trim "SWS修正";
+CM_ SG_ 773 SWS_fault_code "SWS故障码";
+CM_ SG_ 773 Steering_wheel_sensor_direction "转向传感器方向";
+CM_ SG_ 773 Steering_wheel_rotation_speed "转向旋转速度";
+CM_ SG_ 773 Steering_wheel_angle "转向角信号";
+CM_ SG_ 1362 Temporal_counter_Reset_counter "暂时置位计数";
+CM_ SG_ 1362 number_of_kilometer "里程";
+CM_ SG_ 1362 Vehicle_time_counter "车辆时间计数";
+CM_ SG_ 1074 GW_BCM_SEV_main_state "点火开关状态";
+CM_ SG_ 1074 Main_wake_up "主唤醒";
+CM_ SG_ 1010 Dead_man_dedicated_push_button2 "自动泊车功能开关";
+CM_ SG_ 1010 ASR_connection_dis_demand2 "ASR连接/不连接命令（ESC OFF开关指令）";
+CM_ SG_ 1010 ABS_ESP_power_cut_request2 "ABS ESP供电切断请求";
+CM_ SG_ 1010 EASYMOVE_powercut_request3F2 "EASYMOVE供电切断请求";
+CM_ SG_ 1010 Trailer_Present3F2 "拖车稳定系统使用状态";
+CM_ SG_ 1010 Column_angle_setpoint3F2 "计算角度";
+CM_ SG_ 1010 Permit_to_know_if_LKA_or_LPA3F2 "LKA或LPA功能允许";
+CM_ SG_ 1010 Coefficient_toregulate_EPS "EPS应用扭矩系数";
+CM_ SG_ 1010 Power_steering_power_cut3F2 "动力转向切断请求";
+CM_ SG_ 1009 Dead_man_dedicated_push_button1 "自动泊车功能开关";
+CM_ SG_ 1009 ASR_connection_dis_demand1 "ASR连接/不连接命令（ESC OFF开关指令）";
+CM_ SG_ 1009 ABS_ESP_power_cut_request1 "ABS ESP供电切断请求";
+CM_ SG_ 1009 EASYMOVE_powercut_request3F1 "EASYMOVE供电切断请求";
+CM_ SG_ 1009 Trailer_Present3F1 "拖车稳定系统使用状态";
+CM_ SG_ 1009 Permit_to_know_if_LKA_or_LPA3F1 "LKA或LPA功能允许";
+CM_ SG_ 1009 Coefficient_to_regulate_EPS "EPS应用扭矩系数";
+CM_ SG_ 1009 Power_steering_power_cut3F1 "动力转向切断请求";
+CM_ SG_ 1173 Torque_limitation_if_DAE_limit "如果DAE限制的扭矩限制状态";
+CM_ SG_ 1173 State_indicating_steering_or_not "司机保持转向或非转向的状态指示";
+CM_ SG_ 1173 State_of_EPS_for_LKA_function "LKA功能的EPS状态";
+CM_ SG_ 1173 Power_steering_status "动力转向状态";
+CM_ SG_ 1173 Steering_wheel_torque "方向盘转矩";
+CM_ SG_ 757 Column_angle_safe_state "管柱角度的安全状态";
+CM_ SG_ 757 DAE_state_for_Virtual_CAV3 "虚拟CAV3的DAE状态";
+CM_ SG_ 757 EPS_column_speed "EPS管柱速度";
+CM_ SG_ 757 EPS_column_angle "EPS管柱角度";
+CM_ SG_ 757 Citypark_inhibition_cause "自动泊车禁止原因";
+CM_ SG_ 757 DAE_staus_for_Citypark "自动泊车DAE状态";
+CM_ SG_ 757 Optimized_steering_wheel_torque "轮转向扭矩";
+CM_ SG_ 520 EMS_Actual_torque "实际扭矩";
+CM_ SG_ 520 EMS_Engine_RPM "发动机转速";
+CM_ SG_ 520 Brake_secondary_contact "制动踏板是否踩下";
+CM_ SG_ 520 EMS_DiagMuxOn "诊断模式";
+CM_ SG_ 520 EMS_Driver_request "驾驶员请求";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 200;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","CyclicIfActive","SpontanWithDelay","CyclicAndSpontan","CyclicAndSpontanWithDelay";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 10;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "DBName" "Cluster";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_ "DBName" "ADASECUPSA1CAN_for_HIL_20190729_";
+VAL_ 3221225472 Quality_of_the_detected_line44B 3 "high" 2 "medium" 1 "low2" 0 "low1" ;
+VAL_ 3221225472 Detected_line_type44B 7 "forbidden value" 6 "Barrier" 5 "Bott's dotts" 4 "double lane mark" 3 "dashed" 2 "road edge" 1 "solid" 0 "undecided" ;
+VAL_ 3221225472 Quality_of_the_detected_line42B 3 "high" 2 "medium" 1 "low2(line detected)" 0 "low1(no line detected)" ;
+VAL_ 941 Park_brake_function_status 7 "Undefined" 6 "Reserved" 5 "locked at maximun strees value" 4 "Dynamic braking in progress " 3 "Park brake releasing in progress" 2 "Park brake locking in progress" 1 "Park brake locked" 0 "Park brake released" ;
+VAL_ 1394 IC_seat_bealt_driver_state 3 "invalid" 2 "seat bealt put" 1 "seat bealt not put" 0 "indeterminate" ;
+VAL_ 1271 TJA_status_icon 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Red（ICA Fault）" 3 "Orange（ICA Degraded）" 2 "Green ICA Active)" 1 "Gray ICA ON and Inactive)" 0 "No_display (ICA off)" ;
+VAL_ 1271 ICA_HMI_Txt_Disp 21 "Reserved" 20 "Reserved" 19 "Reserved" 18 "Reserved" 17 "ICA off" 16 "ICA Canceled" 9 "Please take over the car ( ACC)" 8 "hold the steering wheel(LKA)" 7 "Please take over the car" 6 "ICA go request" 5 "ICA Active" 4 "ICA Activation Unsatisfied" 3 "ICA_Fault" 2 "Radar Blocked" 1 "ICA ON Please confirm  inhighway" 0 "No_display" ;
+VAL_ 1271 AEB_tips 7 "Emergency_Braking_System_OFF" 6 "Emergency_Braking_System_Fault" 5 "Emergency_Braking_Unavailable" 4 "Forward_Collision_Warning_OFF" 3 "Forward_Collision_Warning_Fault" 2 "Emergency_Braking System_ON" 1 "Forward_Collison_Warning_ON" 0 "No_display" ;
+VAL_ 1271 AEB_Switch_Status 3 "Description for the value '0x3'" 2 "AEB_Alert_Req" 1 "FCW_Alert_Req" 0 "No Req" ;
+VAL_ 1271 AEB_Fault_Status 3 "AEB_FCW_Fault" 2 "AEB_Fault" 1 "FCW_Fault" 0 "No_Fault" ;
+VAL_ 1271 AEB_Alert_Req 3 "Reserved" 2 "AEB_Alert_Req" 1 "FCW_Alert_Req" 0 "No Req" ;
+VAL_ 1271 RVVACC_Vehiclespeed_request_type 1 "RVV or ACC request" 0 "No RVV or ACC request" ;
+VAL_ 1271 ACC_Pop_Up_Message 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Radar Fault（雷达故障)" 10 "Radar Blocked (雷达被遮挡)" 9 "ACC Activation Unsatisfied " 8 "Please Take Over immediately" 7 "Please Take Over the Car(L1报警" 6 "ACC Overridden by Driver (暂缓)" 5 "ACC Active(自动巡航激活)" 4 "ACC Canceled (自动巡航已取消)" 3 "ACC Fault (自动巡航故障)" 2 "ACC OFF （自适应巡航关闭）" 1 "ACC ON （自适应巡航开启）" 0 "No Pop Up Message" ;
+VAL_ 1271 ACC_DesiredHeadway_Icon_Basic 1 "On" 0 "Off" ;
+VAL_ 1271 ACC_DesiredHeadway_Display 3 "2s" 2 "1.5s" 1 "1s" 0 "Invalid" ;
+VAL_ 1271 ACC_Vehicle_Icon_Display 3 "Red" 2 "Green" 1 "Gray" 0 "No Display" ;
+VAL_ 694 State_of_the_functionFARC_det 7 "fault" 6 "active" 5 "waiting" 4 "value not used" 3 "inhibited" 2 "value not used" 1 "initialization" 0 "unavaible" ;
+VAL_ 694 MDD_deceleration_type 3 "Low speed  braking/FARC2 " 2 "High Speed braking/AFUi braking" 1 "ACC braking" 0 "no Braking" ;
+VAL_ 694 MDD_Decelerationcontrol_request 1 "control resquest UCF" 0 "no control request UCF" ;
+VAL_ 694 TYPE_RAPPORT 1 "Increase" 0 "Decrease" ;
+VAL_ 694 Prefill_request 1 "Prefill request" 0 "No prefill request" ;
+VAL_ 694 Powertrain_torquewheel_request 3 "Not used" 2 "Lower bound request" 1 "Upper bound Request" 0 "No Request" ;
+VAL_ 694 Function_Acc_status 15 "Fault" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Waiting rise" 6 "Brake only" 5 "Suspended" 4 "Active" 3 "Waiting" 2 "Inhibited" 1 "OFF" 0 "Initialization" ;
+VAL_ 694 stAcvTqWhlPTPotReq 3 "no need" 2 "Brake mode request" 1 "GMPmode request" 0 "no request" ;
+VAL_ 758 TARGET_POSITION 7 "Invalid" 6 "POS7 Not PRESENT" 5 "POS6" 4 "POS5 VFAR" 3 "POS4 FAR" 2 "POS3 SPOTON" 1 "POS2 CLOSE" 0 "POS1 VCLOSE" ;
+VAL_ 758 Radar_State 7 "Fault ，故障状态" 6 "Blocked，遮挡状态" 5 "Learning，自学习状态" 4 "Simulation，功能模拟状态" 3 "Reduce visibility，视野能力降低" 2 "Actif，工作状态" 1 "Stand by，等待状态" 0 "Init,初始化状态" ;
+VAL_ 758 FCW_Status 15 "fault" 14 "value not used" 13 "value not used" 12 "active" 11 "value not used" 10 "waiting" 9 "value not used" 8 "value not used" 7 "value not used" 6 "inhibited" 5 "value not used" 4 "value not used" 3 "initialization" 2 "value not used" 1 "value not used" 0 "unavailable" ;
+VAL_ 758 Decel_Request 1 "control resquest" 0 "no control request" ;
+VAL_ 758 AEB_Status 7 "fault" 6 "active" 5 "waiting" 4 "value not used" 3 "inhibited" 2 "value not used" 1 "initialization" 0 "unavaible" ;
+VAL_ 758 AEB_Braking_progress 1 "braking in progress" 0 "not braking in progress" ;
+VAL_ 758 ACC_Engine_Start_Request 1 "on" 0 "off" ;
+VAL_ 758 ACC_HMI_TgtDisp_Flag 1 "On(有目标车辆）" 0 "Off(无目标车辆）" ;
+VAL_ 758 Haptic_Alarm 1 "request haptic alarm" 0 "no request haptic alarm" ;
+VAL_ 777 GW_SCC_RightSteeringWheelSwitch 9 "翻页键按下" 8 "OK按下" 7 "仪表下翻按下" 6 "仪表上翻按下" 5 "seek- /蓝牙挂断按键按下" 4 "seek+/ 蓝牙接听按键按下" 3 "音量- 按键按下" 2 "音量+ 按键按下" 1 "音源选择按键（mode）按下" 0 "无按键按下" ;
+VAL_ 777 GW_SCC_LeftSteeringWheelSwitch 254 "ACC按键错误" 13 "TJA main switch pressed(TJA按下)" 12 "ACC headway set (距离设置按下" 11 "ACC Cancel按键按下" 10 "ACC_Set/-按键按下" 9 "ACC reset/+按键按下" 8 "ACC开关按键按下" 7 "MUTE键按下" 6 "语音识别按键按下" 5 "SET-按键按下" 4 "RES+按键按下" 3 "CANCEL按键按下" 2 "CRUISE OFF巡航按键按下" 1 "CRUISE 巡航按键按下" 0 "无按键按下" ;
+VAL_ 728 GW_EMS_EMS_Status_ACC 7 "Failure 故障" 6 "Reserved" 5 "Active effective 正在工作" 4 "Active not effective 油门接管" 3 "Waiting 等待ACC扭矩请求" 2 "Inhibit 功能不可用" 1 "Initialization 初始化" 0 "Shunt down 功能关闭" ;
+VAL_ 728 GW_EMS_ACC_Ihibited_By_Engine 1 "Inhibition requested" 0 "No Inhibition" ;
+VAL_ 792 EMS_GearBox_ACCcontrol_Available 1 "Available" 0 "Not available" ;
+VAL_ 792 EMS_ACCcontrol_Available 1 "Available" 0 "Not available" ;
+VAL_ 792 EMS_ACC_Effecitive_EMS 1 "ACC torque request is realized" 0 "ACC torque  is not realized " ;
+VAL_ 1426 Radar_Detec_Req 3 "Invalid" 2 "Simulation" 1 "Detection request" 0 "Init or no detection request" ;
+VAL_ 1069 Dynamic_slope_accuracy 3 "Undefined" 2 "Low" 1 "Mid" 0 "High" ;
+VAL_ 841 TCU_Gear_lever_position 15 "CMF disabled or unavailable" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Manual mode / Reserved1100" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "D" 2 "N" 1 "R" 0 "P" ;
+VAL_ 841 TCU_AGB_Target_position 15 "range engaged doubtful" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Neutral" 9 "Reverse" 8 "Transmission range : 8" 7 "Transmission range : 7" 6 "Transmission range : 6" 5 "Transmission range : 5" 4 "Transmission range : 4" 3 "Transmission range : 3" 2 "Transmission range : 2" 1 "Transmission range : 1" 0 "Declutched" ;
+VAL_ 840 TCU_DCTClutchStatus 2 "non slip(incl.u-slip)" 1 "Slip" 0 "Fully Disengaged" ;
+VAL_ 840 TCU_GearEngagement 1 "吸合（clutched）" 0 "未吸合（not clutched）" ;
+VAL_ 840 EMS_Engine_state 15 "Invalid" 14 "Reserved" 13 "Autonomous restart" 12 "Reserved" 11 "Reserved" 10 "Autonomous starting" 9 "Reserved" 8 "Reserved" 7 "Engine preparing" 6 "Degraded go" 5 "Driven restart" 4 "Stopped" 3 "Engine running" 2 "Starting" 1 "Cut" 0 "Locked" ;
+VAL_ 1161 TCU_ATFailure 1 "AT故障" 0 "没有故障" ;
+VAL_ 749 Rear_Right_pulse_malfunction 1 "fault" 0 "No fault" ;
+VAL_ 749 Rear_Left_pulse_malfunction 1 "Fault" 0 "No Fault" ;
+VAL_ 749 Front_right_pulse_malfunction 1 "Fault" 0 "No Fault" ;
+VAL_ 749 Front_Left_pulse_malfunction 1 "Fault" 0 "No Fault" ;
+VAL_ 1345 Vehicle_Lane_Display 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "LKA intervention or LDW warning " 8 "LKA intervention or LDW warning " 7 "LKA intervention or LDW warning " 6 "LKA intervention or LDW warning " 5 "both lanes detected,both green" 4 "only right lane detected, green" 3 "only left detected,left green" 2 "available but no lane detected" 1 "ON but not in the working range " 0 "OFF and no lane line displayed" ;
+VAL_ 1345 TSR_Vision_Only_Sign_Type 255 "预留" 16 "预留" 15 "禁止右转标志" 14 "禁止左转标志" 13 "禁止驶入标志" 12 "停车让行标志" 11 "注意儿童标志" 10 "注意行人标志" 9 "注意危险标志" 8 "注意横风标志" 7 "注意信号灯标志" 6 "注意落石标志" 5 "易滑标志" 4 "下陡坡标志" 3 "上陡坡标志" 2 "十字交叉标志" 1 "施工标志" 0 "No TSR detected" ;
+VAL_ 1345 LKA_Switch_State 1 "LKA Switch ON" 0 "LKA Switch OFF" ;
+VAL_ 1345 LKA_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,  green" 0 "LKA + LDW OFF, no icon display" ;
+VAL_ 1345 LKA_Mode_from_Camera 3 "LCA+LDW (resolved)" 2 "LKA+LDW" 1 "LDW only" 0 "OFF" ;
+VAL_ 1345 LKA_action_indication 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "available and with LKA,orange" 2 "available and without LKA, green" 1 "ON but not in working range" 0 "LKA+LDW OFF,no icon display" ;
+VAL_ 1345 LDW_Status_Display 3 "Invalid" 2 "ON and system fault detected,red" 1 "ON and no system fault,green" 0 "LDW Only OFF, no icon display" ;
+VAL_ 1345 LDW_Flag 3 "Invalid" 2 "Right LDW warining" 1 "Left LDW warining" 0 "No LDW warning" ;
+VAL_ 1345 ISA_Value 31 "reserved" 30 "reserved" 29 "145km/h speed limit sign" 28 "135km/h speed limit sign" 27 "125km/h speed limit sign" 26 "115km/h speed limit sign" 25 "105km/h speed limit sign" 24 "95km/h speed limit sign" 23 "85km/h speed limit sign" 22 "75km/h speed limit sign" 21 "65km/h speed limit sign" 20 "55km/h speed limit sign" 19 "45km/h speed limit sign" 18 "35km/h speed limit sign" 17 "25km/h speed limit sign" 16 "15km/h speed limit sign" 15 "5km/h speed limit sign" 14 "140km/h speed limit sign" 13 "130km/h speed limit sign" 12 "120km/h speed limit sign" 11 "110km/h speed limit sign" 10 "100km/h speed limit sign" 9 "90km/h speed limit sign" 8 "80km/h speed limit sign" 7 "70km/h speed limit sign" 6 "60km/h speed limit sign" 5 "50km/h speed limit sign" 4 "40km/h speed limit sign" 3 "30km/h speed limit sign" 2 "20km/h speed limit sign" 1 "10km/h speed limit sign" 0 "No speed limit sign detected" ;
+VAL_ 1345 ISA_Status 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "System fault" 2 "ISA sign flash(over speed)" 1 "ISA system ON with limit value" 0 "ISA system OFF" ;
+VAL_ 1345 ISA_Sign_Type 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "End of speed limit sign" 2 "Speed limit sign with value" 1 "Speed limit sign without value" 0 "Default value" ;
+VAL_ 1345 ISA_Popup_text 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "System fault" 2 "ISA system OFF (From ON to OFF)" 1 "ISA system ON (From OFF to ON)" 0 "No popup" ;
+VAL_ 1345 HMI_Popup_Status 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "LaneSense Off" 7 "LaneSense Canbe Switched On" 6 "LaneSenseDisable - System Fault" 5 "LaneSense Available" 4 "Front Camera Blocked" 3 "LaneSenseTemporarily Unavailable" 2 "PleaseHands on Steering Wheel" 1 "3 second popup=LaneSense On" 0 "Default value" ;
+VAL_ 1345 Hands_off_warning 1 "Hands off warning" 0 "No Hands off warning" ;
+VAL_ 1345 ECU_operating_phase 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "Service Alignment in processing" 9 "System fully operational" 8 "reserved" 7 "Camera Degraded" 6 "reserved" 5 "Camera Blocked/No image" 4 "reserved" 3 "Camera not calibrated" 2 "System Initializing/Warming Up" 1 "Status not available" 0 "system error" ;
+VAL_ 1360 LKA_main_switch 1 "LKA ON" 0 "LKA OFF" ;
+VAL_ 1360 LC_Mode 3 "车道居中控制" 2 "车道保持辅助" 1 "车道偏离预警" 0 "预留" ;
+VAL_ 1360 GW_Mp5_TSR_Switch 3 "Reserved" 2 "Reserved" 1 "TSR ON" 0 "TSR OFF" ;
+VAL_ 1360 GW_Mp5_ISA_Switch 3 "Reserved" 2 "Reserved" 1 "ISA ON" 0 "ISA OFF" ;
+VAL_ 1554 High_beam_state 1 "Lighted on" 0 "Lighted off" ;
+VAL_ 1106 TCU_PROGRAMME_ACC 3 "Reserved" 2 "Eco" 1 "Sport" 0 "Comfort" ;
+VAL_ 1106 Speed_Limitation_On 1 "LVV Request" 0 "No LVV Request" ;
+VAL_ 1106 MP5_AEB_Activation_Config 3 "预留" 2 "开启" 1 "关闭" 0 "无输入" ;
+VAL_ 1106 IC_passengerBeltSwitchSig 1 "安全带系上" 0 "安全带未系" ;
+VAL_ 1106 IC_FCW_Sensitivity 3 "3 prudent" 2 "2 standard" 1 "1 sportive" 0 "value not used" ;
+VAL_ 1106 IC_Fcw_Activation_Config 3 "预留" 2 "开启" 1 "关闭" 0 "无输入" ;
+VAL_ 1106 GW_BCM_Brakeonly_Request_BCM 1 "Brake only request by BCM" 0 "Not brake only request by BCM" ;
+VAL_ 1106 BCM_CHMSLStatus 3 "无效" 2 "错误" 1 "ON" 0 "OFF" ;
+VAL_ 1106 BCM_BrakeLampStatus 3 "无效" 2 "错误" 1 "ON" 0 "OFF" ;
+VAL_ 1106 BCM_Status_Indicator 3 "Left and right indicator active" 2 "Left Indicator active" 1 "Right Indicator active" 0 "Indicator inactive" ;
+VAL_ 1106 BCM_State_Front_Wiper 3 "Hight Speed" 2 "Low Speed;" 1 "Front wiping confirmed;" 0 "Stop" ;
+VAL_ 813 Vehicle_detected_as_stationary 1 "vehicle standstill" 0 "no vehicle standstill " ;
+VAL_ 813 Vehicle_Hold_Status 3 "Reserved" 2 "vehicule hold due to security" 1 "vehicule hold due to comfort" 0 "No vehicle hold due to ADAS " ;
+VAL_ 813 ESC_ACC_Status 3 "Default" 2 "Active" 1 "Wait" 0 "Inhibed" ;
+VAL_ 813 Message_from_ESC_informing 1 "ESC is releasing the brakes" 0 "No need to release brakes " ;
+VAL_ 813 Braking_effort 1 "Brake force generated" 0 "No brake force generated" ;
+VAL_ 813 ESC_AEB_Status 3 "Default" 2 "Active" 1 "Wait" 0 "Inhibed" ;
+VAL_ 813 Brake_Pedal_Active 3 "reserved" 2 "break pedal press" 1 "no break pedal press" 0 "break press rebuilt out of order" ;
+VAL_ 1293 Request_to_light_ABS_fault_Lamp 1 "Regulation active" 0 "NO regulation" ;
+VAL_ 1293 ABS_in_regulation 1 "Regulation active" 0 "No regulation" ;
+VAL_ 973 Brake_pedal_disabled_UC_Brake 1 "Main brake switch not OK" 0 "Main brake switch OK" ;
+VAL_ 909 Vehicle_driving_direction 3 "Invalid" 2 "Rear toward" 1 "front toward" 0 "Undefined" ;
+VAL_ 909 Vehiclespeed_unavailability_flag 3 "Invalid" 2 "Speed informations unavailable" 1 "Speed informations available" 0 "Invalid" ;
+VAL_ 845 Request_to_light_fault_lamp 1 "switch on request" 0 "no request " ;
+VAL_ 845 ASR_ESP_disconnected 1 "Disconnected by the driver" 0 "Connected by the driver" ;
+VAL_ 845 MSR_in_regulation 1 "Regulation active" 0 "No regulation" ;
+VAL_ 845 ESP_in_regulation 1 "Regulation active" 0 "No regulation" ;
+VAL_ 845 ASR_in_regulation 1 "Regulation active" 0 "No regulation" ;
+VAL_ 773 indication_of_steering_wheel 3 "other" 2 "integrated CAV3" 1 "CAV3" 0 "estimator" ;
+VAL_ 773 Absolute_Steering_Wheel_angle 1 "Valid but uncertain value" 0 "Valid value in the range" ;
+VAL_ 773 Initialization_steering_angle 1 "steering wheel angle memorized" 0 "steering wheel angle available" ;
+VAL_ 773 Internal_SWS_status 1 "Sensor is OK" 0 "Sensor faulty" ;
+VAL_ 773 SWS_calibration 1 "Sensor is calibrated" 0 "Sensor not calibrated" ;
+VAL_ 773 SWS_trim 1 "SWS trimmed" 0 "SWS not trimmed" ;
+VAL_ 773 SWS_fault_code 4 "Internal failures detected " 3 "Detected by angle and rotation" 2 "Detected by angle " 1 "Detected by rotation speed " 0 "No default or no more failure" ;
+VAL_ 773 Steering_wheel_sensor_direction 1 "Negative angles, decrease" 0 "Positive angles, increase" ;
+VAL_ 1074 GW_BCM_SEV_main_state 3 "Reserved" 2 "Start" 1 "Contact(ON)" 0 "Stop(OFF)" ;
+VAL_ 1074 Main_wake_up 3 "Not valid" 2 "Main wake up request" 1 "No main wake up request" 0 "Invalid RCD" ;
+VAL_ 1010 Dead_man_dedicated_push_button2 3 "Fault" 2 "Unconfigured" 1 "Request" 0 "No request" ;
+VAL_ 1010 ASR_connection_dis_demand2 1 "ASR disconnection requested" 0 "No ASR disconnection requested" ;
+VAL_ 1010 ABS_ESP_power_cut_request2 1 "Power cut request" 0 "Not request" ;
+VAL_ 1010 EASYMOVE_powercut_request3F2 1 "Power cut request" 0 "Not request" ;
+VAL_ 1010 Trailer_Present3F2 1 "Trailer presence" 0 "Trailer absence" ;
+VAL_ 1010 Permit_to_know_if_LKA_or_LPA3F2 1 "LPA function" 0 "LKA function" ;
+VAL_ 1010 General_state_of_LKA_function3F2 7 "Reserved" 6 "Collision risk" 5 "Defect" 4 "Active" 3 "Autorized" 2 "Selected" 1 "Unselected" 0 "Unavailable" ;
+VAL_ 1010 Power_steering_power_cut3F2 1 "Power cut request" 0 "Not request" ;
+VAL_ 1009 General_state_of_LKA_function3F1 7 "Reserved" 6 "Collision risk" 5 "Defect" 4 "Active" 3 "Autorized" 2 "Selected" 1 "Unselected" 0 "Unavailable" ;
+VAL_ 1009 Dead_man_dedicated_push_button1 3 "Fault" 2 "Unconfigured" 1 "Request" 0 "No request" ;
+VAL_ 1009 ASR_connection_dis_demand1 1 "ASR disconnection requested" 0 "No ASR disconnection requested" ;
+VAL_ 1009 ABS_ESP_power_cut_request1 1 "Power cut request" 0 "Not request" ;
+VAL_ 1009 EASYMOVE_powercut_request3F1 1 "Power cut request" 0 "Not request" ;
+VAL_ 1009 Trailer_Present3F1 1 "Trailer presence" 0 "Trailer absence" ;
+VAL_ 1009 Permit_to_know_if_LKA_or_LPA3F1 1 "LPA function" 0 "LKA function" ;
+VAL_ 1009 Power_steering_power_cut3F1 1 "Power cut request" 0 "Not request" ;
+VAL_ 1173 Torque_limitation_if_DAE_limit 1 "Saturation effective" 0 "no saturation" ;
+VAL_ 1173 State_indicating_steering_or_not 1 "steering activity detected" 0 "no steering activity detected " ;
+VAL_ 1173 State_of_EPS_for_LKA_function 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "defect" 3 "active" 2 "available" 1 "authorized" 0 "unauthorized" ;
+VAL_ 1173 Power_steering_status 3 "Reserved" 2 "Request to light orange lamp" 1 "Request to light red lamp" 0 "No request to light lamp" ;
+VAL_ 757 Column_angle_safe_state 1 "Column angle safe" 0 "Column angle unsafe" ;
+VAL_ 757 DAE_state_for_Virtual_CAV3 7 "INVALID" 6 "Reserved" 5 "EPS works with self-determined " 4 "EPS works with calibrated offset" 3 "EPS works with the ESC offset" 2 "Waiting for a new offset" 1 "Supply cut off" 0 "Init" ;
+VAL_ 757 Citypark_inhibition_cause 7 "Other faults" 6 "DAE thermal safety catch" 5 "Manoeuvring number too high" 4 "Obstacle at the wheel" 3 "Angular error too high" 2 "Vehicle speed too high" 1 "Pick up driver" 0 "No control interruption" ;
+VAL_ 757 DAE_staus_for_Citypark 3 "Invalid" 2 "Control in progress" 1 "Available" 0 "Unavailable" ;
+VAL_ 520 Brake_secondary_contact 1 "Brake pedal pressed" 0 "Brake pedal released" ;
+VAL_ 520 EMS_DiagMuxOn 1 "Communication diagnostic on" 0 "No communication diagnostic " ;
+

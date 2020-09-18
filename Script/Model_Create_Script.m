@@ -309,7 +309,7 @@ path(11) = strcat(TypePackage,'/ApplDataTypes/RecordLayouts');
 path(12) = path(8);
 set(arProps,'XmlOptions','ApplicationDataTypePackage',path(1));
 set(arProps,'XmlOptions','SwBaseTypePackage',path(2));
-set(arProps,'XmlOptions','DataTypeMappingPackage',path(3));
+% set(arProps,'XmlOptions','DataTypeMappingPackage',path(3));
 set(arProps,'XmlOptions','ConstantSpecificationPackage',path(4));
 set(arProps,'XmlOptions','DataConstraintPackage',path(5));
 set(arProps,'XmlOptions','SystemConstantPackage',path(6));
@@ -319,7 +319,7 @@ set(arProps,'XmlOptions','CompuMethodPackage',path(9));
 set(arProps,'XmlOptions','UnitPackage',path(10));
 set(arProps,'XmlOptions','SwRecordLayoutPackage',path(11));
 set(arProps,'XmlOptions','InternalDataConstraintPackage',path(12));
-set(arProps,'XmlOptions','InternalDataConstraintExport',true);
+set(arProps,'XmlOptions','InternalDataConstraintExport',false);
 
 slMap=autosar.api.getSimulinkMapping(module_name);
 for i=3:in_excel_num

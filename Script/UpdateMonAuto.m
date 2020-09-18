@@ -229,7 +229,7 @@ for i = 1 : MonitorNum
     else
         deviceid = '14';
     end
-    addsignals = [strcat(tag(i),'_',num2str(i)),num2str(10),num2str(id+16*idivide(i-1,int32(4))),'0',num2str(varid+i),'1',num2str(7+mod(i-1,4)*16),'16','0','0.01',deviceid,'-','300','-300',text(i),'1'];
+    addsignals = [strcat(tag(i),'_',num2str(i)),num2str(100),num2str(id+16*idivide(i-1,int32(4))),'0',num2str(varid+i),'1',num2str(7+mod(i-1,4)*16),'16','0','0.01',deviceid,'-','300','-300',text(i),'1'];
     Monxlstable = [Monxlstable;addsignals];
 end
 writetable(Monxlstable,strcat(monxlspath,'\CAN_Protocol.xls'));
@@ -249,7 +249,7 @@ while feof(fpn) ~= 1                %用于判断文件指针p在其所指的文件中的位置，如
     end
     if contains(line," SG_ ")&&contains(line,' "Mon" ')&&(i <= MonitorNum)
         new_str = regexpi(line,' ','split');
-        new_str(3) = strcat(tag(i),num2str(i));
+        new_str(3) = strcat('M',num2str(i+100),'_',tag(i));
         newline = strjoin(new_str,' ');
         i = i + 1;
         fprintf(fid,'%s\n',newline);%新的字符串写入当新建文档中
