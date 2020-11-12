@@ -16,5 +16,5 @@ else
     fprintf('1.您的目标*.slx文件是:[%s]\n',getFileName);
 end
 filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
-load_system(filename);
+open_system(filename);
 sltest.harness.open('LKAS/LKAS/LL','LKAS_Harness');

@@ -32,3 +32,12 @@ addFile(proj,strcat(ModelSavePath,'\',zipfile,'.zip'));
 delete(strcat(filename,'.slxc'));
 delete(strcat(filename,'_autosar_rtw'));
 eval('clear all');
+[Fcheckflg,Fcheckinfo] = Build_FloatCheck();
+if Fcheckflg
+    fprintf(2,'【警告】您生成的代码含有double数据类型，请检查！\n');
+    msgbox('您生成的代码含有double数据类型', '警告','error');
+    eval('Fcheckinfo');
+else
+    fprintf('【成功】您生成的代码已打包\n');
+    eval('clear all');
+end

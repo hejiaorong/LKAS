@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Info Type="Basic" GroupUUID="bb91c3fd-b450-458c-b9a8-aedc723bd324" Visible="1" Icon="" File="Script/OpenTestHarness.m" Name="TestHarness" />
+<Info Type="Basic" GroupUUID="bb91c3fd-b450-458c-b9a8-aedc723bd324" Visible="1" Icon="" File="Script/Test_Harness.m" Name="TestHarness" />
