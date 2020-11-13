@@ -25,6 +25,7 @@ catch
     return;
 end
 Timelong =  Time(length(Time));
+Data_Process;
 cs = getActiveConfigSet('LKAS_Harness');
 set_param(cs,'StopTime',num2str(Timelong));
 sim('LKAS_Harness',[]);

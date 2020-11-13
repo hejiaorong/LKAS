@@ -1,14 +1,3 @@
-eval('clear all');
-eval('clc');
-%将数据加载到工作区
-try
-    [filename,filepath]=uigetfile('*.mat','打开文件');
-    load(strcat(filepath,filename));
-    fprintf('1.[%s]已加载到工作区；\n',filename);
-catch
-    return;
-end
-%读取加载的变量，判断变量中是否有PSA1_CAN和Sensor_CAN参数
 C = who; %按字母顺序列出当前活动工作区中的所有变量的名称
 PSA1_Num=0;
 Sensor_Num=0;
@@ -98,3 +87,4 @@ else
       GW_349_PSA1__TCU_Gear_lever_position = zeros(Time_len,1);
       fprintf('2.已添加PSA1_CAN和Sensor_CAN数据；\n');
 end
+clear('C','filename', 'filepath', 'k', 'PSA1_Num', 'Sensor_Num', 'Time_len', 'Time_Num');
