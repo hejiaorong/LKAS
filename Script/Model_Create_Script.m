@@ -217,7 +217,7 @@ for i=1:length(Inport)
         else
             set_param(Inport{i},'OutDataTypeStr','UInt16');
         end
-        set_param(Inport{i},'PortDimensions',input(i+2,6));
+        set_param(Inport{i},'PortDimensions','1');
     else
         set_param(Inport{i},'Position',[(modelInportPos(i,1)-250),(modelInportPos(i,2)-80),(modelInportPos(i,1)-220),(modelInportPos(i,2)-65)]);
         add_line(module_name,h.Outport(1),h1.Trigger(1),'autorouting','on');	% RunaableŒª÷√µ•∂¿…Ë÷√
@@ -239,7 +239,7 @@ for i=1:length(Outport)
     else
         set_param(Outport{i},'OutDataTypeStr','UInt16');
     end
-    set_param(Outport{i},'PortDimensions',output(i+2,6));
+    set_param(Outport{i},'PortDimensions','1');
 end
 
 for i=1:length(Inport)-1
