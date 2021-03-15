@@ -73,5 +73,7 @@ movefile(strcat(zipfilename,'.zip'),ModelSavePath);
 delete(getProtectFileName);
 delete(getProtectFileName2);
 delete(getProtectFileName3);
+proj = simulinkproject;
+addFile(proj,strcat(ModelSavePath,'\',zipfilename,'.zip'));
 fprintf('您的NoProtectMIL模型已经输出至[%s%s]\n',ModelSavePath,strcat('\',zipfilename,'.zip'));
 eval('clear all');
