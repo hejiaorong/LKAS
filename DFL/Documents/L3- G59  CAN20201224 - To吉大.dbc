@@ -1,0 +1,212 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ESM IBCM EMS TCU EPS SAS ESC
+VAL_TABLE_ VitSig_APA_SysSts 7 "Reserved" 6 "Failure" 5 "Abort" 4 "Suspend" 3 "ManeuverFinished" 2 "Active" 1 "Standby" 0 "Init" ;
+VAL_TABLE_ Vtsig_ESC_APA_VMCStatus 8 "Reserved" 7 "Failure" 6 "Abort" 5 "Reserved" 4 "DriverBrakeToStop" 3 "BrakeHold" 2 "Active_AutomaticPark" 1 "Standby" 0 "Unavailable" ;
+
+
+BO_ 136 GW_EMS10: 8 Vector__XXX
+ SG_ EMS_AccPedalPositionRaw : 39|8@0+ (0.3937,0) [0|99.9998] "%" Vector__XXX
+
+BO_ 291 ESC6: 8 ESC
+ SG_ ESC_VehDrivingDirection : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 570 IBCM2: 8 Vector__XXX
+ SG_ BCM_RightlightSt : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ BCM_LeftlightSt : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 147 GW_TCU1: 8 Vector__XXX
+ SG_ TCU_ActialGear : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCU_PRNDLStatus : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 224 GW_EMS5: 8 Vector__XXX
+ SG_ EMS_AccPedalPos : 63|8@0+ (0.5,0) [0|100] "%" Vector__XXX
+ SG_ EMS_BrakePedalSignal : 6|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 165 SAS_Info: 8 SAS
+ SG_ SAS_SteeringAngle : 7|16@0- (0.1,0) [-780|779.9] "deg"  EMS,EPS,ESC,SAS,TCU
+ SG_ SAS_SASfailureSts : 31|1@0+ (1,0) [0|1] ""  EPS,ESC
+
+BO_ 290 ESC5: 8 ESC
+ SG_ ESC_LongitudinalAccelervalidity : 47|1@0+ (1,0) [0|1] ""  EMS,TCU
+ SG_ ESC_YawrateValidity : 23|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ESC_LateralAccelarationValidity : 22|1@0+ (1,0) [0|1] ""  TCU
+ SG_ ESC_LongitudinalAcceleration : 46|11@0+ (0.03,-15.36) [-15.36|15.36] "m/s2"  EMS,TCU
+ SG_ ESC_LateralAccelaration : 19|12@0+ (0.01,-12.45) [-12.45|12.45] "m/s2" Vector__XXX
+ SG_ ESC_YawRate : 7|16@0+ (0.01,-81.91) [-81.91|81.91] "" Vector__XXX
+
+BO_ 289 ESC3: 8 ESC
+ SG_ ESC_RRWDirection : 47|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESC_RLWDirection : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESC_FRWDirection : 35|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ESC_FLWDirection : 33|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 160 ESC2: 8 ESC
+ SG_ ESC_VeSpd : 55|16@0+ (0.01,0) [0|300] "km/h"  EMS,EPS,ESC,ESM,IBCM,TCU
+ SG_ ESC_VehSpdValidFlag : 25|1@0+ (1,0) [0|1] ""  ESM,EMS,EPS,IBCM,TCU
+
+
+
+BA_DEF_ EV_  "GenEnvControlType" ENUM  "NoControl","SliderHoriz","SliderVert","PushButton","Edit","BitmapSwitch";
+BA_DEF_ EV_  "GenEnvMsgName" STRING ;
+BA_DEF_ EV_  "GenEnvMsgOffset" INT 0 999999999;
+BA_DEF_ EV_  "GenEnvAutoGenCtrl" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigAltSetting" STRING ;
+BA_DEF_ SG_  "GenSigAssignSetting" STRING ;
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigConditionalSend" STRING ;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigPostIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreSetting" STRING ;
+BA_DEF_ SG_  "GenSigReceiveSetting" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 2 50000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 1 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetitions" INT 1 999999;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","Event","spontaneous","cyclicIfActive","spontaneousWithDelay","cyclicAndSpontaneous","cyclicAndSpontaneousWithDelay","spontaneousWithRepetition","cyclicIfActiveAndSpontaneousWD";
+BA_DEF_ BO_  "GenMsgAltSetting" STRING ;
+BA_DEF_ BO_  "GenMsgAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgConditionalSend" STRING ;
+BA_DEF_ BO_  "GenMsgEVName" STRING ;
+BA_DEF_ BO_  "GenMsgPostIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreSetting" STRING ;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_ BU_  "GenNodSleepTime" INT 0 1000000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "GenNodAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "GenNWMApBusSleep" STRING ;
+BA_DEF_  "GenNWMApCanNormal" STRING ;
+BA_DEF_  "GenNWMApCanOff" STRING ;
+BA_DEF_  "GenNWMApCanOn" STRING ;
+BA_DEF_  "GenNWMApCanSleep" STRING ;
+BA_DEF_  "GenNWMApCanWakeUp" STRING ;
+BA_DEF_  "GenNWMGotoMode_Awake" STRING ;
+BA_DEF_  "GenNWMGotoMode_BusSleep" STRING ;
+BA_DEF_  "GenNWMSleepTime" INT 0 1000000;
+BA_DEF_  "GenNWMTalkNM" STRING ;
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_DEF_  "GenEnvControlType" "";
+BA_DEF_DEF_  "GenEnvMsgName" "";
+BA_DEF_DEF_  "GenEnvMsgOffset" 0;
+BA_DEF_DEF_  "GenEnvAutoGenCtrl" "No";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigAltSetting" "";
+BA_DEF_DEF_  "GenSigAssignSetting" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "";
+BA_DEF_DEF_  "GenSigAutoGenSnd" "";
+BA_DEF_DEF_  "GenSigConditionalSend" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_DEF_DEF_  "GenSigPostIfSetting" "";
+BA_DEF_DEF_  "GenSigPostSetting" "";
+BA_DEF_DEF_  "GenSigPreIfSetting" "";
+BA_DEF_DEF_  "GenSigPreSetting" "";
+BA_DEF_DEF_  "GenSigReceiveSetting" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 20;
+BA_DEF_DEF_  "GenMsgDelayTime" 1;
+BA_DEF_DEF_  "GenMsgNrOfRepetitions" 1;
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgAltSetting" "";
+BA_DEF_DEF_  "GenMsgAutoGenDsp" "";
+BA_DEF_DEF_  "GenMsgAutoGenSnd" "";
+BA_DEF_DEF_  "GenMsgConditionalSend" "";
+BA_DEF_DEF_  "GenMsgEVName" "";
+BA_DEF_DEF_  "GenMsgPostIfSetting" "";
+BA_DEF_DEF_  "GenMsgPostSetting" "";
+BA_DEF_DEF_  "GenMsgPreIfSetting" "";
+BA_DEF_DEF_  "GenMsgPreSetting" "";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "GenNodSleepTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "GenNodAutoGenSnd" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenNWMApBusSleep" "apBusSleep()";
+BA_DEF_DEF_  "GenNWMApCanNormal" "apCanNormal()";
+BA_DEF_DEF_  "GenNWMApCanOff" "apCanOff()";
+BA_DEF_DEF_  "GenNWMApCanOn" "apCanOn()";
+BA_DEF_DEF_  "GenNWMApCanSleep" "apCanSleep()";
+BA_DEF_DEF_  "GenNWMApCanWakeUp" "apCanWakeUp()";
+BA_DEF_DEF_  "GenNWMGotoMode_Awake" "GotoMode_Awake()";
+BA_DEF_DEF_  "GenNWMGotoMode_BusSleep" "GotoMode_BusSleep()";
+BA_DEF_DEF_  "GenNWMSleepTime" 0;
+BA_DEF_DEF_  "GenNWMTalkNM" "TalkNM()";
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "Dsp_";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "_";
+BA_DEF_DEF_  "GenEnvVarPrefix" "Env";
+BA_ "DBName" "G59L3";
+BA_ "GenMsgCycleTime" BO_ 136 10;
+BA_ "GenMsgCycleTime" BO_ 291 20;
+BA_ "GenMsgSendType" BO_ 570 0;
+BA_ "GenMsgCycleTime" BO_ 570 40;
+BA_ "GenMsgCycleTime" BO_ 147 10;
+BA_ "GenMsgCycleTime" BO_ 224 20;
+BA_ "GenMsgCycleTime" BO_ 165 10;
+BA_ "GenMsgCycleTime" BO_ 290 20;
+BA_ "GenMsgCycleTime" BO_ 289 20;
+BA_ "GenMsgCycleTime" BO_ 160 10;
+BA_ "GenSigStartValue" SG_ 290 ESC_LongitudinalAcceleration 512;
+VAL_ 291 ESC_VehDrivingDirection 3 "invalid" 2 "Rear toward" 1 "Front toward" 0 "Undefined(standstill)" ;
+VAL_ 570 BCM_RightlightSt 1 "on" 0 "off" ;
+VAL_ 570 BCM_LeftlightSt 1 "on" 0 "off" ;
+VAL_ 147 TCU_ActialGear 9 "7th gear" 8 "6th gear" 7 "5th gear" 6 "Reserve" 5 "P range" 4 "4th gear" 3 "3rd gear" 2 "2nd gear" 1 "1st gear" 0 "Neutral" ;
+VAL_ 147 TCU_PRNDLStatus 10 "M-" 9 "M+" 8 "M" 7 "Remake" 6 "Unreliable" 5 "park" 4 "D range" 3 "3 range" 2 "2 rangge " 1 "L range" 0 "Neutral" ;
+VAL_ 224 EMS_BrakePedalSignal 3 "abnormal" 2 "Reserved" 1 "Press" 0 "release" ;
+VAL_ 165 SAS_SASfailureSts 1 "no fault" 0 "fault" ;
+VAL_ 290 ESC_LongitudinalAccelervalidity 1 "unvalid" 0 "Valid" ;
+VAL_ 290 ESC_YawrateValidity 1 "unvalid" 0 "valid" ;
+VAL_ 290 ESC_LateralAccelarationValidity 1 "invalid" 0 "Valid" ;
+VAL_ 289 ESC_RRWDirection 3 "Invalid" 2 "Stop" 1 "Backward" 0 "Forward" ;
+VAL_ 289 ESC_RLWDirection 3 "Invalid" 2 "Stop" 1 "Backward" 0 "Forward" ;
+VAL_ 289 ESC_FRWDirection 3 "Invalid" 2 "Stop" 1 "Backward" 0 "Foeward" ;
+VAL_ 289 ESC_FLWDirection 3 "Invalid" 2 "Stop" 1 "Backward" 0 "Forward" ;
+VAL_ 160 ESC_VehSpdValidFlag 1 "error" 0 "no error" ;
+

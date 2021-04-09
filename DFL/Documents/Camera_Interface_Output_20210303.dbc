@@ -1,0 +1,1628 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IFC FR DEBUG
+
+
+BO_ 1150 IFC_RE: 64 IFC
+ SG_ IFC_Roadedge01_LineID : 0|8@1+ (1,0) [0|255] ""  FR
+ SG_ IFC_Roadedge01_ExistProb : 8|6@1+ (0.02,0) [0|1] ""  FR
+ SG_ IFC_Roadedge01_DxStart : 14|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Roadedge01_DxEnd : 64|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Roadedge01_HeadingAngle : 181|9@1+ (0.01,-2) [-2|2] "rad"  FR
+ SG_ IFC_Roadedge01_Dy : 219|13@1+ (0.01,-30) [-30|30] "m"  FR
+ SG_ IFC_Roadedge01_Curv : 79|15@1+ (1.6E-005,-0.25) [-0.25|0.25] "1/m"  FR
+ SG_ IFC_Roadedge01_CurvChange : 32|20@1+ (5E-008,-0.024) [-0.024|0.024] "1/(m*m)"  FR
+ SG_ IFC_Roadedge01_MeasureType : 29|2@1+ (1,0) [0|3] ""  FR
+ SG_ IFC_Roadedge01_Type : 192|4@1+ (1,0) [0|15] "/"  FR
+ SG_ IFC_Roadedge02_LineID : 56|8@1+ (1,0) [0|255] ""  FR
+ SG_ IFC_Roadedge02_ExistProb : 162|6@1+ (0.02,0) [0|1] ""  FR
+ SG_ IFC_Roadedge02_DxStart : 97|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Roadedge02_DxEnd : 112|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Roadedge02_HeadingAngle : 143|9@1+ (0.01,-2) [-2|2] "rad"  FR
+ SG_ IFC_Roadedge02_Dy : 168|13@1+ (0.01,-30) [-30|30] "m"  FR
+ SG_ IFC_Roadedge02_Curv : 128|15@1+ (1.6E-005,-0.25) [-0.25|0.25] "1/m"  FR
+ SG_ IFC_Roadedge02_CurvChange : 196|20@1+ (5E-008,-0.024) [-0.024|0.024] "1/(m*m)"  FR
+ SG_ IFC_Roadedge02_MeasureType : 94|2@1+ (1,0) [0|3] ""  FR
+ SG_ IFC_Roadedge02_Type : 52|4@1+ (1,0) [0|15] "/"  FR
+
+BO_ 1536 IFC_Failsafe: 64 IFC
+ SG_ FS_Out_Of_Calib : 30|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Rain : 24|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Fog : 21|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Splashes_0 : 15|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Sun_Ray_0 : 18|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Low_Sun_0 : 12|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Blur_Image_0 : 9|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Partial_Blockage_0 : 27|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Full_Blockage_0 : 6|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Frozen_Windshield_0 : 3|3@1+ (1,0) [0|5] " "  DEBUG
+ SG_ FS_Out_Of_Focus_0 : 0|3@1+ (1,0) [0|5] " "  DEBUG
+
+BO_ 1060 IFC_LD1: 64 IFC
+ SG_ IFC_Line01_LineID : 24|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_Line01_ExistProb : 272|6@1+ (0.02,0) [0|1] " "  FR
+ SG_ IFC_Line01_DxStart : 128|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Line01_ColorClass : 84|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_Line01_DxEnd : 32|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Line01_HeadingAngle : 111|9@1+ (0.01,-2) [-2|2] "rad"  FR
+ SG_ IFC_Line01_Dy : 47|13@1+ (0.01,-30) [-30|30] "m"  FR
+ SG_ IFC_Line01_CurvChange : 64|20@1+ (5E-008,-0.024) [-0.024|0.024] "1/(m*m)"  FR
+ SG_ IFC_Line01_Curv : 96|15@1+ (1.6E-005,-0.25) [-0.25|0.25] "1/m"  FR
+ SG_ IFC_Line01_MeasureType : 180|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_Line01_LineWidth : 120|7@1+ (0.01,0) [0|0.7] "m"  FR
+ SG_ IFC_Line01_Type : 60|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_Line01_TypeConf : 223|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_Line02_LineID : 184|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_Line02_ExistProb : 259|6@1+ (0.02,0) [0|1] " "  FR
+ SG_ IFC_Line02_DxStart : 192|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Line02_ColorClass : 220|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_Line02_DxEnd : 143|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Line02_HeadingAngle : 230|9@1+ (0.01,-2) [-2|2] "rad"  FR
+ SG_ IFC_Line02_Dy : 207|13@1+ (0.01,-30) [-30|30] "m"  FR
+ SG_ IFC_Line02_CurvChange : 160|20@1+ (5E-008,-0.024) [-0.024|0.024] "1/(m*m)"  FR
+ SG_ IFC_Line02_Curv : 240|15@1+ (1.6E-005,-0.25) [-0.25|0.25] "1/m"  FR
+ SG_ IFC_Line02_MeasureType : 278|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_Line02_LineWidth : 265|7@1+ (0.01,0) [0|0.7] "m"  FR
+ SG_ IFC_Line02_Type : 255|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_Line02_TypeConf : 280|7@1+ (0.01,0) [0|1] " "  FR
+
+BO_ 1061 IFC_LD2: 64 IFC
+ SG_ IFC_Line03_LineID : 24|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_Line03_ExistProb : 272|6@1+ (0.02,0) [0|1] " "  FR
+ SG_ IFC_Line03_DxStart : 128|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Line03_ColorClass : 84|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_Line03_DxEnd : 32|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Line03_HeadingAngle : 111|9@1+ (0.01,-2) [-2|2] "rad"  FR
+ SG_ IFC_Line03_Dy : 47|13@1+ (0.01,-30) [-30|30] "m"  FR
+ SG_ IFC_Line03_CurvChange : 64|20@1+ (5E-008,-0.024) [-0.024|0.024] "1/(m*m)"  FR
+ SG_ IFC_Line03_Curv : 96|15@1+ (1.6E-005,-0.25) [-0.25|0.25] "1/m"  FR
+ SG_ IFC_Line03_MeasureType : 180|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_Line03_LineWidth : 120|7@1+ (0.01,0) [0|0.7] "m"  FR
+ SG_ IFC_Line03_Type : 60|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_Line03_TypeConf : 223|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_Line04_LineID : 184|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_Line04_ExistProb : 259|6@1+ (0.02,0) [0|1] " "  FR
+ SG_ IFC_Line04_DxStart : 192|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Line04_ColorClass : 220|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_Line04_DxEnd : 143|15@1+ (0.01,0) [0|200] "m"  FR
+ SG_ IFC_Line04_HeadingAngle : 230|9@1+ (0.01,-2) [-2|2] "rad"  FR
+ SG_ IFC_Line04_Dy : 207|13@1+ (0.01,-30) [-30|30] "m"  FR
+ SG_ IFC_Line04_CurvChange : 160|20@1+ (5E-008,-0.024) [-0.024|0.024] "1/(m*m)"  FR
+ SG_ IFC_Line04_Curv : 240|15@1+ (1.6E-005,-0.25) [-0.25|0.25] "1/m"  FR
+ SG_ IFC_Line04_MeasureType : 278|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_Line04_LineWidth : 265|7@1+ (0.01,0) [0|0.7] "m"  FR
+ SG_ IFC_Line04_Type : 255|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_Line04_TypeConf : 280|7@1+ (0.01,0) [0|1] " "  FR
+
+BO_ 1062 IFC_Status: 64 IFC
+ SG_ IFC_State : 32|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_ObjHdr_ObjCount : 24|7@1+ (1,0) [0|127] " "  FR
+ SG_ IFC_VD_CIPV_ID : 48|8@1+ (1,0) [0|255] " "  FR
+
+BO_ 1104 IFC_OD1: 64 IFC
+ SG_ IFC_obj01_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj01_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj01_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj01_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj01_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj01_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj01_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj01_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj01_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj01_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj01_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj01_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj01_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj01_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj01_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj01_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj01_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj01_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj01_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj01_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj01_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj01_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj01_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj01_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj01_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj01_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj01_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj01_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj01_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj01_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj01_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj01_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj01_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj01_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj01_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj01_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj01_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj01_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj01_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj01_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj01_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj01_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj01_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1113 IFC_OD10: 64 IFC
+ SG_ IFC_obj10_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj10_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj10_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj10_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj10_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj10_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj10_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj10_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj10_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj10_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj10_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj10_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj10_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj10_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj10_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj10_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj10_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj10_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj10_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj10_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj10_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj10_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj10_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj10_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj10_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj10_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj10_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj10_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj10_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj10_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj10_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj10_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj10_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj10_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj10_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj10_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj10_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj10_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj10_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj10_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj10_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj10_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj10_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1114 IFC_OD11: 64 IFC
+ SG_ IFC_obj11_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj11_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj11_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj11_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj11_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj11_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj11_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj11_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj11_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj11_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj11_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj11_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj11_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj11_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj11_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj11_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj11_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj11_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj11_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj11_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj11_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj11_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj11_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj11_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj11_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj11_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj11_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj11_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj11_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj11_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj11_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj11_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj11_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj11_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj11_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj11_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj11_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj11_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj11_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj11_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj11_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj11_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj11_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1115 IFC_OD12: 64 IFC
+ SG_ IFC_obj12_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj12_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj12_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj12_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj12_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj12_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj12_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj12_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj12_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj12_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj12_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj12_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj12_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj12_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj12_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj12_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj12_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj12_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj12_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj12_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj12_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj12_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj12_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj12_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj12_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj12_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj12_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj12_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj12_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj12_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj12_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj12_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj12_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj12_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj12_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj12_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj12_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj12_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj12_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj12_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj12_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj12_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj12_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1116 IFC_OD13: 64 IFC
+ SG_ IFC_obj13_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj13_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj13_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj13_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj13_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj13_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj13_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj13_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj13_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj13_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj13_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj13_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj13_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj13_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj13_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj13_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj13_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj13_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj13_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj13_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj13_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj13_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj13_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj13_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj13_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj13_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj13_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj13_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj13_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj13_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj13_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj13_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj13_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj13_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj13_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj13_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj13_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj13_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj13_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj13_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj13_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj13_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj13_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1117 IFC_OD14: 64 IFC
+ SG_ IFC_obj14_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj14_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj14_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj14_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj14_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj14_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj14_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj14_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj14_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj14_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj14_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj14_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj14_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj14_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj14_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj14_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj14_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj14_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj14_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj14_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj14_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj14_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj14_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj14_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj14_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj14_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj14_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj14_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj14_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj14_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj14_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj14_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj14_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj14_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj14_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj14_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj14_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj14_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj14_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj14_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj14_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj14_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj14_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1118 IFC_OD15: 64 IFC
+ SG_ IFC_obj15_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj15_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj15_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj15_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj15_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj15_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj15_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj15_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj15_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj15_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj15_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj15_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj15_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj15_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj15_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj15_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj15_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj15_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj15_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj15_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj15_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj15_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj15_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj15_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj15_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj15_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj15_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj15_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj15_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj15_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj15_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj15_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj15_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj15_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj15_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj15_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj15_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj15_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj15_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj15_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj15_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj15_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj15_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1119 IFC_OD16: 64 IFC
+ SG_ IFC_obj16_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj16_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj16_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj16_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj16_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj16_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj16_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj16_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj16_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj16_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj16_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj16_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj16_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj16_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj16_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj16_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj16_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj16_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj16_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj16_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj16_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj16_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj16_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj16_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj16_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj16_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj16_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj16_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj16_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj16_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj16_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj16_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj16_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj16_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj16_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj16_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj16_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj16_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj16_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj16_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj16_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj16_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj16_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1056 IFC_OD17: 64 IFC
+ SG_ IFC_obj17_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj17_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj17_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj17_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj17_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj17_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj17_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj17_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj17_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj17_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj17_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj17_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj17_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj17_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj17_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj17_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj17_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj17_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj17_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj17_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj17_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj17_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj17_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj17_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj17_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj17_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj17_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj17_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj17_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj17_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj17_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj17_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj17_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj17_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj17_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj17_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj17_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj17_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj17_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj17_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj17_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj17_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj17_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1057 IFC_OD18: 64 IFC
+ SG_ IFC_obj18_TTIPC_StdDev : 401|7@1+ (0.0625,0) [0|4] "1/s"  FR
+ SG_ IFC_obj18_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj18_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj18_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj18_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj18_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj18_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj18_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj18_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj18_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj18_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj18_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj18_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj18_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj18_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj18_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj18_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj18_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj18_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj18_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj18_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj18_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj18_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj18_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj18_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj18_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj18_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj18_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj18_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj18_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj18_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj18_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj18_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj18_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj18_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj18_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj18_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj18_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj18_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj18_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj18_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj18_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj18_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1058 IFC_OD19: 64 IFC
+ SG_ IFC_obj19_TTIPC_StdDev : 401|7@1+ (0.0625,0) [0|4] "1/s"  FR
+ SG_ IFC_obj19_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj19_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj19_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj19_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj19_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj19_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj19_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj19_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj19_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj19_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj19_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj19_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj19_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj19_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj19_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj19_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj19_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj19_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj19_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj19_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj19_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj19_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj19_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj19_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj19_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj19_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj19_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj19_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj19_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj19_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj19_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj19_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj19_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj19_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj19_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj19_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj19_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj19_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj19_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj19_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj19_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj19_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1105 IFC_OD2: 64 IFC
+ SG_ IFC_obj02_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj02_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj02_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj02_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj02_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj02_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj02_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj02_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj02_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj02_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj02_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj02_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj02_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj02_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj02_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj02_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj02_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj02_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj02_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj02_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj02_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj02_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj02_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj02_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj02_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj02_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj02_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj02_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj02_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj02_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj02_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj02_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj02_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj02_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj02_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj02_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj02_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj02_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj02_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj02_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj02_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj02_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj02_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1059 IFC_OD20: 64 IFC
+ SG_ IFC_obj20_TTIPC_StdDev : 401|7@1+ (0.0625,0) [0|4] "1/s"  FR
+ SG_ IFC_obj20_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj20_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj20_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj20_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj20_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj20_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj20_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj20_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj20_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj20_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj20_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj20_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj20_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj20_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj20_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj20_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj20_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj20_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj20_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj20_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj20_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj20_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj20_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj20_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj20_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj20_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj20_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj20_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj20_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj20_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj20_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj20_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj20_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj20_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj20_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj20_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj20_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj20_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj20_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj20_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj20_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj20_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1106 IFC_OD3: 64 IFC
+ SG_ IFC_obj03_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj03_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj03_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj03_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj03_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj03_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj03_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj03_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj03_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj03_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj03_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj03_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj03_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj03_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj03_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj03_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj03_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj03_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj03_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj03_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj03_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj03_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj03_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj03_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj03_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj03_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj03_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj03_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj03_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj03_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj03_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj03_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj03_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj03_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj03_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj03_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj03_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj03_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj03_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj03_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj03_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj03_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj03_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1107 IFC_OD4: 64 IFC
+ SG_ IFC_obj04_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj04_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj04_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj04_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj04_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj04_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj04_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj04_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj04_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj04_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj04_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj04_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj04_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj04_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj04_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj04_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj04_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj04_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj04_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj04_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj04_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj04_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj04_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj04_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj04_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj04_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj04_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj04_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj04_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj04_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj04_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj04_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj04_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj04_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj04_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj04_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj04_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj04_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj04_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj04_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj04_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj04_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj04_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1108 IFC_OD5: 64 IFC
+ SG_ IFC_obj05_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj05_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj05_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj05_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj05_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj05_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj05_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj05_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj05_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj05_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj05_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj05_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj05_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj05_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj05_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj05_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj05_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj05_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj05_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj05_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj05_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj05_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj05_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj05_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj05_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj05_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj05_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj05_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj05_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj05_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj05_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj05_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj05_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj05_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj05_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj05_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj05_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj05_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj05_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj05_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj05_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj05_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj05_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1109 IFC_OD6: 64 IFC
+ SG_ IFC_obj06_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj06_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj06_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj06_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj06_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj06_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj06_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj06_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj06_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj06_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj06_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj06_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj06_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj06_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj06_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj06_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj06_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj06_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj06_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj06_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj06_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj06_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj06_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj06_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj06_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj06_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj06_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj06_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj06_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj06_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj06_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj06_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj06_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj06_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj06_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj06_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj06_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj06_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj06_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj06_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj06_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj06_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj06_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1110 IFC_OD7: 64 IFC
+ SG_ IFC_obj07_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj07_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj07_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj07_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj07_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj07_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj07_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj07_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj07_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj07_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj07_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj07_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj07_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj07_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj07_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj07_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj07_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj07_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj07_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj07_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj07_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj07_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj07_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj07_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj07_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj07_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj07_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj07_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj07_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj07_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj07_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj07_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj07_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj07_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj07_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj07_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj07_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj07_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj07_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj07_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj07_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj07_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj07_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1111 IFC_OD8: 64 IFC
+ SG_ IFC_obj08_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj08_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj08_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj08_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj08_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj08_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj08_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj08_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj08_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj08_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj08_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj08_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj08_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj08_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj08_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj08_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj08_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj08_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj08_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj08_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj08_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj08_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj08_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj08_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj08_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj08_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj08_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj08_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj08_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj08_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj08_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj08_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj08_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj08_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj08_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj08_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj08_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj08_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj08_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj08_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj08_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj08_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj08_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+BO_ 1112 IFC_OD9: 64 IFC
+ SG_ IFC_obj09_TTIPC_StdDev : 400|7@1+ (0.0625,0) [0|4] "1/s" Vector__XXX
+ SG_ IFC_obj09_abs_Ax : 352|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj09_abs_Ay : 39|9@1+ (0.05,-10.3) [-10.3|7.3] "m/s^2"  FR
+ SG_ IFC_obj09_Rel_Vx : 76|13@1+ (0.05,-120) [-120|130] "m/s"  FR
+ SG_ IFC_obj09_Rel_Vy : 192|11@1+ (0.05,-50) [-50|50] "m/s"  FR
+ SG_ IFC_obj09_Dx : 50|14@1+ (0.05,-200) [-200|250] "m"  FR
+ SG_ IFC_obj09_Dy : 64|12@1+ (0.05,-100) [-100|100] "m"  FR
+ SG_ IFC_obj09_abs_AxStdDev : 24|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj09_abs_AyStdDev : 216|8@1+ (0.05,0) [0|7.3] "m/s^2"  FR
+ SG_ IFC_obj09_Rel_VxStdDev : 169|11@1+ (0.05,0) [0|65] "m/s"  FR
+ SG_ IFC_obj09_Rel_VyStdDev : 96|10@1+ (0.05,0) [0|50] "m/s"  FR
+ SG_ IFC_obj09_DxStdDev : 115|13@1+ (0.05,0) [0|250] "m"  FR
+ SG_ IFC_obj09_DyStdDev : 128|11@1+ (0.05,0) [0|100] "m"  FR
+ SG_ IFC_obj09_Rel_VxValid : 48|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj09_Rel_VyValid : 49|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj09_Rel_VxStdDevValid : 319|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj09_Rel_VyStdDevValid : 351|1@1+ (1,0) [0|1] " "  FR
+ SG_ IFC_obj09_ExistProb : 89|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj09_TypeProb : 32|7@1+ (0.01,0) [0|1] " "  FR
+ SG_ IFC_obj09_Width : 106|9@1+ (0.01,0.4) [0.4|2.95] "m"  FR
+ SG_ IFC_obj09_Height : 288|9@1+ (0.01,0) [0|2.95] "m"  FR
+ SG_ IFC_obj09_LengthStdDev : 344|7@1+ (0.05,0) [0|10] "m"  FR
+ SG_ IFC_obj09_WidthStdDev : 385|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj09_HeightStdDev : 297|7@1+ (0.01,0) [0|2] "m"  FR
+ SG_ IFC_obj09_PhiLeft : 256|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj09_PhiRight : 270|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj09_angle_3D : 237|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj09_PhiLeftStdDev : 224|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj09_PhiRightStdDev : 139|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj09_angle_3DStdDev : 203|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj09_angle_rate : 180|12@1+ (0.002,-2.234) [-2.234|2.232] "rad/s"  FR
+ SG_ IFC_obj09_angle_rate_StdDev : 370|11@1+ (0.002,0) [0|2.232] "rad/s"  FR
+ SG_ IFC_obj09_PhiBottom : 330|14@1+ (0.0002,-1.571) [-1.571|1.571] "rad"  FR
+ SG_ IFC_obj09_PhiBottomStdDev : 304|13@1+ (0.0002,0) [0|1.571] "rad"  FR
+ SG_ IFC_obj09_Measured : 317|2@1+ (1,0) [0|3] " "  FR
+ SG_ IFC_obj09_Heading : 320|10@1+ (0.01,-3.14) [-3.14|3.14] "rad"  FR
+ SG_ IFC_obj09_HeadingStdDev : 361|9@1+ (0.01,0) [0|3.14] "rad"  FR
+ SG_ IFC_obj09_HeadOrientation : 284|4@1+ (1,0) [0|15] " "  FR
+ SG_ IFC_obj09_Type : 381|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj09_ID : 392|8@1+ (1,0) [0|255] " "  FR
+ SG_ IFC_obj09_TTIPC : 408|11@1+ (0.01,-8) [-8|8] "1/s"  FR
+ SG_ IFC_obj09_DirIndicator : 253|3@1+ (1,0) [0|7] " "  FR
+ SG_ IFC_obj09_BrakeLight : 384|1@1+ (1,0) [0|1] " "  FR
+
+
+
+EV_ EnvKlemme30: 0 [0|1] "" 1 1 DUMMY_NODE_VECTOR0  IFC;
+
+EV_ EnvKlemme15: 0 [0|1] "" 0 2 DUMMY_NODE_VECTOR0  IFC;
+
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 50000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 50000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "P","E","M","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed","vector_leerstring";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgSendType" "P";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "BusType" "CAN FD";
+BA_ "DBName" "Fusion_ADAS_CAN_DBC";
+BA_ "GenMsgSendType" BO_ 1150 0;
+BA_ "GenMsgCycleTime" BO_ 1150 55;
+BA_ "VFrameFormat" BO_ 1150 14;
+BA_ "GenMsgCycleTime" BO_ 1536 55;
+BA_ "VFrameFormat" BO_ 1536 14;
+BA_ "GenMsgCycleTime" BO_ 1060 55;
+BA_ "VFrameFormat" BO_ 1060 14;
+BA_ "GenMsgSendType" BO_ 1061 0;
+BA_ "GenMsgCycleTime" BO_ 1061 55;
+BA_ "VFrameFormat" BO_ 1061 14;
+BA_ "GenMsgCycleTime" BO_ 1062 55;
+BA_ "VFrameFormat" BO_ 1062 14;
+BA_ "GenMsgCycleTime" BO_ 1104 55;
+BA_ "VFrameFormat" BO_ 1104 14;
+BA_ "GenMsgCycleTime" BO_ 1113 55;
+BA_ "VFrameFormat" BO_ 1113 14;
+BA_ "GenMsgCycleTime" BO_ 1114 55;
+BA_ "VFrameFormat" BO_ 1114 14;
+BA_ "GenMsgCycleTime" BO_ 1115 55;
+BA_ "VFrameFormat" BO_ 1115 14;
+BA_ "GenMsgCycleTime" BO_ 1116 55;
+BA_ "VFrameFormat" BO_ 1116 14;
+BA_ "GenMsgCycleTime" BO_ 1117 55;
+BA_ "VFrameFormat" BO_ 1117 14;
+BA_ "GenMsgCycleTime" BO_ 1118 55;
+BA_ "VFrameFormat" BO_ 1118 14;
+BA_ "GenMsgCycleTime" BO_ 1119 55;
+BA_ "VFrameFormat" BO_ 1119 14;
+BA_ "GenMsgCycleTime" BO_ 1056 55;
+BA_ "VFrameFormat" BO_ 1056 14;
+BA_ "GenMsgCycleTime" BO_ 1057 55;
+BA_ "VFrameFormat" BO_ 1057 14;
+BA_ "GenMsgCycleTime" BO_ 1058 55;
+BA_ "VFrameFormat" BO_ 1058 14;
+BA_ "GenMsgCycleTime" BO_ 1105 55;
+BA_ "VFrameFormat" BO_ 1105 14;
+BA_ "GenMsgCycleTime" BO_ 1059 55;
+BA_ "VFrameFormat" BO_ 1059 14;
+BA_ "GenMsgCycleTime" BO_ 1106 55;
+BA_ "VFrameFormat" BO_ 1106 14;
+BA_ "GenMsgCycleTime" BO_ 1107 55;
+BA_ "VFrameFormat" BO_ 1107 14;
+BA_ "GenMsgCycleTime" BO_ 1108 55;
+BA_ "VFrameFormat" BO_ 1108 14;
+BA_ "GenMsgCycleTime" BO_ 1109 55;
+BA_ "VFrameFormat" BO_ 1109 14;
+BA_ "GenMsgCycleTime" BO_ 1110 55;
+BA_ "VFrameFormat" BO_ 1110 14;
+BA_ "GenMsgCycleTime" BO_ 1111 55;
+BA_ "VFrameFormat" BO_ 1111 14;
+BA_ "GenMsgCycleTime" BO_ 1112 55;
+BA_ "VFrameFormat" BO_ 1112 14;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_LineID 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_ExistProb 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_DxStart 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_DxEnd 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_HeadingAngle 201;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_Dy 3001;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_Curv 31250;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_CurvChange 960000;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_MeasureType 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge01_Type 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_LineID 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_ExistProb 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_DxStart 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_DxEnd 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_HeadingAngle 201;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_Dy 3001;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_Curv 31250;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_CurvChange 960000;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_MeasureType 0;
+BA_ "GenSigStartValue" SG_ 1150 IFC_Roadedge02_Type 0;
+BA_ "GenSigStartValue" SG_ 1060 IFC_Line01_HeadingAngle 201;
+BA_ "GenSigStartValue" SG_ 1060 IFC_Line01_Dy 3001;
+BA_ "GenSigStartValue" SG_ 1060 IFC_Line01_CurvChange 960000;
+BA_ "GenSigStartValue" SG_ 1060 IFC_Line01_Curv 31250;
+BA_ "GenSigStartValue" SG_ 1060 IFC_Line02_HeadingAngle 201;
+BA_ "GenSigStartValue" SG_ 1060 IFC_Line02_Dy 3001;
+BA_ "GenSigStartValue" SG_ 1060 IFC_Line02_CurvChange 960000;
+BA_ "GenSigStartValue" SG_ 1060 IFC_Line02_Curv 31250;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_LineID 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_ExistProb 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_DxStart 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_ColorClass 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_DxEnd 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_HeadingAngle 201;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_Dy 3001;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_CurvChange 960000;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_Curv 31250;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_MeasureType 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_LineWidth 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_Type 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line03_TypeConf 0;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line04_HeadingAngle 201;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line04_Dy 3001;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line04_CurvChange 960000;
+BA_ "GenSigStartValue" SG_ 1061 IFC_Line04_Curv 31250;
+BA_ "GenSigStartValue" SG_ 1062 IFC_State 6;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1104 IFC_obj01_Heading 315;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1113 IFC_obj10_Heading 315;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1114 IFC_obj11_Heading 315;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1115 IFC_obj12_Heading 315;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1116 IFC_obj13_Heading 315;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1117 IFC_obj14_Heading 315;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1118 IFC_obj15_Heading 315;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1119 IFC_obj16_Heading 315;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1056 IFC_obj17_Heading 315;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1057 IFC_obj18_Heading 315;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1058 IFC_obj19_Heading 315;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1105 IFC_obj02_Heading 315;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1059 IFC_obj20_Heading 315;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1106 IFC_obj03_Heading 315;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1107 IFC_obj04_Heading 315;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1108 IFC_obj05_Heading 315;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1109 IFC_obj06_Heading 315;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1110 IFC_obj07_Heading 315;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1111 IFC_obj08_Heading 315;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_abs_Ax 207;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_abs_Ay 207;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_Rel_Vx 2401;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_Rel_Vy 1001;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_Dx 4001;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_Dy 2001;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_PhiLeft 7856;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_PhiRight 7856;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_angle_3D 7856;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_angle_rate 1118;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_PhiBottom 7856;
+BA_ "GenSigStartValue" SG_ 1112 IFC_obj09_Heading 315;
+VAL_ 1150 IFC_Roadedge01_MeasureType 0 " MTYPE_MEASURED" 1 " MTYPE_VIRTUAL" 2 " MTYPE_UNKNOWN" 3 "reversed" ;
+VAL_ 1150 IFC_Roadedge01_Type 0 "undecided" 1 "solid" 2 "dashed" 3 "double solid dashed" 4 "double dashed solid" 5 "double solid solid" 6 "double dashed dashed" 7 "botts" 8 "deceleration" 9 "hov_lane" 10 "road edge" 11 "elevated_structure" 12 "curb" 13 "cones_poles" ;
+VAL_ 1150 IFC_Roadedge02_MeasureType 0 " MTYPE_MEASURED" 1 " MTYPE_VIRTUAL" 2 " MTYPE_UNKNOWN" 3 "reversed" ;
+VAL_ 1150 IFC_Roadedge02_Type 0 "undecided" 1 "solid" 2 "dashed" 3 "double solid dashed" 4 "double dashed solid" 5 "double solid solid" 6 "double dashed dashed" 7 "botts" 8 "deceleration" 9 "hov_lane" 10 "road edge" 11 "elevated_structure" 12 "curb" 13 "cones_poles" ;
+VAL_ 1536 FS_Out_Of_Calib 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Rain 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Fog 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Splashes_0 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Sun_Ray_0 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Low_Sun_0 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Blur_Image_0 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Partial_Blockage_0 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Full_Blockage_0 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Frozen_Windshield_0 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1536 FS_Out_Of_Focus_0 0 "NOT_READY" 1 "NONE" 2 "25" 3 "50" 4 "75" 5 "99" ;
+VAL_ 1060 IFC_Line01_ColorClass 0 "COLOR_WHITE" 1 "COLOR_YELLOW" 2 "COLOR_BLUE" 3 "COLOR_UNKNOWN" 4 "reserved" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1060 IFC_Line01_MeasureType 0 "MTYPE_MEASURED" 1 "MTYPE_VIRTUAL" 2 "MTYPE_UNKNOWN" 3 "reserved" ;
+VAL_ 1060 IFC_Line01_Type 0 "undecided" 1 "solid" 2 "dashed" 3 "double solid dashed" 4 "double dashed solid" 5 "double solid solid" 6 "double dashed dashed" 7 "botts" 8 "deceleration" 9 "hov_lane" 10 "road edge" 11 "elevated_structure" 12 "curb" 13 "cones_poles" ;
+VAL_ 1060 IFC_Line02_ColorClass 0 "COLOR_WHITE" 1 "COLOR_YELLOW" 2 "COLOR_BLUE" 3 "COLOR_UNKNOWN" 4 "reserved" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1060 IFC_Line02_MeasureType 0 "MTYPE_MEASURED" 1 "MTYPE_VIRTUAL" 2 "MTYPE_UNKNOWN" 3 "reserved" ;
+VAL_ 1060 IFC_Line02_Type 0 "undecided" 1 "solid" 2 "dashed" 3 "double solid dashed" 4 "double dashed solid" 5 "double solid solid" 6 "double dashed dashed" 7 "botts" 8 "deceleration" 9 "hov_lane" 10 "road edge" 11 "elevated_structure" 12 "curb" 13 "cones_poles" ;
+VAL_ 1061 IFC_Line03_MeasureType 0 " MTYPE_MEASURED" 1 " MTYPE_VIRTUAL" 2 " MTYPE_UNKNOWN" 3 "reversed" ;
+VAL_ 1061 IFC_Line03_Type 0 "undecided" 1 "solid" 2 "dashed" 3 "double solid dashed" 4 "double dashed solid" 5 "double solid solid" 6 "double dashed dashed" 7 "botts" 8 "deceleration" 9 "hov_lane" 10 "road edge" 11 "elevated_structure" 12 "curb" 13 "cones_poles" ;
+VAL_ 1061 IFC_Line04_ColorClass 0 "COLOR_WHITE" 1 "COLOR_YELLOW" 2 "COLOR_BLUE" 3 "COLOR_UNKNOWN" 4 "reserved" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1061 IFC_Line04_MeasureType 0 "MTYPE_MEASURED" 1 "MTYPE_VIRTUAL" 2 "MTYPE_UNKNOWN" 3 "reserved" ;
+VAL_ 1061 IFC_Line04_Type 0 "undecided" 1 "solid" 2 "dashed" 3 "double solid dashed" 4 "double dashed solid" 5 "double solid solid" 6 "double dashed dashed" 7 "botts" 8 "deceleration" 9 "hov_lane" 10 "road edge" 11 "elevated_structure" 12 "curb" 13 "cones_poles" ;
+VAL_ 1062 IFC_State 0 "system error" 1 "Status not available" 2 "System Initializing/Warming Up" 3 "Camera not calibrated" 4 "Camera Blocked/No image" 5 "Camera Degraded" 6 "System fully operational" 7 "Service Alignment in processing" 8 "reserved" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "reserved" ;
+VAL_ 1104 IFC_obj01_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1104 IFC_obj01_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1104 IFC_obj01_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1104 IFC_obj01_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1104 IFC_obj01_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1104 IFC_obj01_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1104 IFC_obj01_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1104 IFC_obj01_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1104 IFC_obj01_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1113 IFC_obj10_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1113 IFC_obj10_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1113 IFC_obj10_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1113 IFC_obj10_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1113 IFC_obj10_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1113 IFC_obj10_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1113 IFC_obj10_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1113 IFC_obj10_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1113 IFC_obj10_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1114 IFC_obj11_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1114 IFC_obj11_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1114 IFC_obj11_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1114 IFC_obj11_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1114 IFC_obj11_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1114 IFC_obj11_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1114 IFC_obj11_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1114 IFC_obj11_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1114 IFC_obj11_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1115 IFC_obj12_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1115 IFC_obj12_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1115 IFC_obj12_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1115 IFC_obj12_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1115 IFC_obj12_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1115 IFC_obj12_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1115 IFC_obj12_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1115 IFC_obj12_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1115 IFC_obj12_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1116 IFC_obj13_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1116 IFC_obj13_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1116 IFC_obj13_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1116 IFC_obj13_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1116 IFC_obj13_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1116 IFC_obj13_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1116 IFC_obj13_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1116 IFC_obj13_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1116 IFC_obj13_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1117 IFC_obj14_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1117 IFC_obj14_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1117 IFC_obj14_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1117 IFC_obj14_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1117 IFC_obj14_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1117 IFC_obj14_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1117 IFC_obj14_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1117 IFC_obj14_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1117 IFC_obj14_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1118 IFC_obj15_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1118 IFC_obj15_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1118 IFC_obj15_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1118 IFC_obj15_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1118 IFC_obj15_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1118 IFC_obj15_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1118 IFC_obj15_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1118 IFC_obj15_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1118 IFC_obj15_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1119 IFC_obj16_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1119 IFC_obj16_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1119 IFC_obj16_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1119 IFC_obj16_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1119 IFC_obj16_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1119 IFC_obj16_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1119 IFC_obj16_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1119 IFC_obj16_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1119 IFC_obj16_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1056 IFC_obj17_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1056 IFC_obj17_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1056 IFC_obj17_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1056 IFC_obj17_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1056 IFC_obj17_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1056 IFC_obj17_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1056 IFC_obj17_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1056 IFC_obj17_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1056 IFC_obj17_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1057 IFC_obj18_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1057 IFC_obj18_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1057 IFC_obj18_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1057 IFC_obj18_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1057 IFC_obj18_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1057 IFC_obj18_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1057 IFC_obj18_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1057 IFC_obj18_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1057 IFC_obj18_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1058 IFC_obj19_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1058 IFC_obj19_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1058 IFC_obj19_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1058 IFC_obj19_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1058 IFC_obj19_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1058 IFC_obj19_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1058 IFC_obj19_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1058 IFC_obj19_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1058 IFC_obj19_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1105 IFC_obj02_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1105 IFC_obj02_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1105 IFC_obj02_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1105 IFC_obj02_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1105 IFC_obj02_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1105 IFC_obj02_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1105 IFC_obj02_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1105 IFC_obj02_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1105 IFC_obj02_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1059 IFC_obj20_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1059 IFC_obj20_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1059 IFC_obj20_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1059 IFC_obj20_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1059 IFC_obj20_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1059 IFC_obj20_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1059 IFC_obj20_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1059 IFC_obj20_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1059 IFC_obj20_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1106 IFC_obj03_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1106 IFC_obj03_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1106 IFC_obj03_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1106 IFC_obj03_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1106 IFC_obj03_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1106 IFC_obj03_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1106 IFC_obj03_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1106 IFC_obj03_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1106 IFC_obj03_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1107 IFC_obj04_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1107 IFC_obj04_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1107 IFC_obj04_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1107 IFC_obj04_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1107 IFC_obj04_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1107 IFC_obj04_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1107 IFC_obj04_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1107 IFC_obj04_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1107 IFC_obj04_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1108 IFC_obj05_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1108 IFC_obj05_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1108 IFC_obj05_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1108 IFC_obj05_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1108 IFC_obj05_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1108 IFC_obj05_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1108 IFC_obj05_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1108 IFC_obj05_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1108 IFC_obj05_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1109 IFC_obj06_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1109 IFC_obj06_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1109 IFC_obj06_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1109 IFC_obj06_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1109 IFC_obj06_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1109 IFC_obj06_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1109 IFC_obj06_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1109 IFC_obj06_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1109 IFC_obj06_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1110 IFC_obj07_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1110 IFC_obj07_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1110 IFC_obj07_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1110 IFC_obj07_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1110 IFC_obj07_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1110 IFC_obj07_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1110 IFC_obj07_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1110 IFC_obj07_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1110 IFC_obj07_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1111 IFC_obj08_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1111 IFC_obj08_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1111 IFC_obj08_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1111 IFC_obj08_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1111 IFC_obj08_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1111 IFC_obj08_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1111 IFC_obj08_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1111 IFC_obj08_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1111 IFC_obj08_BrakeLight 0 "false" 1 "true" ;
+VAL_ 1112 IFC_obj09_Rel_VxValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1112 IFC_obj09_Rel_VyValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1112 IFC_obj09_Rel_VxStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1112 IFC_obj09_Rel_VyStdDevValid 0 "INVALID" 1 "VALID" ;
+VAL_ 1112 IFC_obj09_Measured 0 "Invalid" 1 "Predicted" 2 "Measured" 3 "Reserved" ;
+VAL_ 1112 IFC_obj09_HeadOrientation 0 "invalid" 1 "Drifting Right" 2 "Crossing Right" 3 "Oncoming Drifting Right" 4 "Oncoming" 5 "Oncoming Drifting Left" 6 "Crossing Left" 7 "Drifting Left" 8 "Preceeding" 9 "reserved" 10 "reserved" 11 "reserved" 12 "reserved" 13 "reserved" 14 "reserved" 15 "Unknown" ;
+VAL_ 1112 IFC_obj09_Type 0 "No type" 1 "Car" 2 "Truck" 3 "Motorcycle" 4 "Pedestrian" 5 "Cyclist" 6 "reserved" 7 "reserved" ;
+VAL_ 1112 IFC_obj09_DirIndicator 0 "No direction indicator" 1 "Left indicator" 2 "Right indicator" 3 "Warning Lights" 4 "Unknown" 5 "reserved" 6 "reserved" 7 "reserved" ;
+VAL_ 1112 IFC_obj09_BrakeLight 0 "false" 1 "true" ;
+

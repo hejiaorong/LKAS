@@ -2,7 +2,7 @@
 eval('clear all');
 %% 1.根据Excel文档定义输入输出信号
 fprintf('确认目标文件夹目录下仅有一个excel文件，同时该文件未被打开.\n');
-getFileName=ls(strcat(pwd,'\Documents\*.xlsx*')); %  *脚本和excel输入文件放在同一个文件夹该文件夹下有且只有一个文件xlsx文件
+getFileName=ls(strcat(pwd,'\DFL\Documents\*.xlsx*')); %  *脚本和excel输入文件放在同一个文件夹该文件夹下有且只有一个文件xlsx文件
 FileNum = size(getFileName);
 if  isequal(getFileName,'') % 防止选择空文件夹
     fprintf('no excel file in the path you selected\n');
@@ -50,7 +50,8 @@ for i=3:out_excel_num
 end
 %% 4.建立模型，配置参数，文件/模块名称,方便后续创建相关文件
 name_1 = input{2,2};
-module_name = string(name_1(1:4));
+module_name = strcat(string(name_1(1:4)));
+model_name = char(name_1(1:4));
 warning('off')
 try
     newfile = strcat(module_name,'_AutoSave_',datestr(now,'yyyymmdd_HHMM'));
@@ -278,16 +279,16 @@ runnables = get(arProps,ib,'Runnables');
 
 % Init Runnables修改
 runable_1 = runnables{1};
-initRunnable = char(strcat('Runnable_',module_name,'_Init'));
+initRunnable = char(strcat('Runnable_',model_name,'_Init'));
 set(arProps,runable_1,'Name',initRunnable,'symbol',initRunnable);
-eventNmae_init = char(strcat('Event_',module_name,'_Init'));
+eventNmae_init = char(strcat('Event_',model_name,'_Init'));
 add(arProps,ib,'Events',eventNmae_init,'Category','InitEvent','StartOnEvent',[ib '/' initRunnable]);
 
 % Step Runnables修改
 runable_2 = runnables{2};
-periodicRunnable = char(strcat('Runnable_',module_name,'_Step'));
+periodicRunnable = char(strcat('Runnable_',model_name,'_Step'));
 set(arProps,runable_2,'Name',periodicRunnable,'symbol',periodicRunnable);
-eventName_step = char(strcat('Event_',module_name,'_Step'));
+eventName_step = char(strcat('Event_',model_name,'_Step'));
 ifPaths=char(find(arProps,ib,'TimingEvent'));
 set(arProps,ifPaths,'Name',eventName_step);
 

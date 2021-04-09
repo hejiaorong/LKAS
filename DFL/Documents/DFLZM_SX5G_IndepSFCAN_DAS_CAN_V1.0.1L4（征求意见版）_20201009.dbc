@@ -1,0 +1,1087 @@
+VERSION ""
+
+
+NS_ : 
+        NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+        BA_SGTYPE_
+        SIG_TYPE_REF_
+        VAL_TABLE_
+        SIG_GROUP_
+        SIG_VALTYPE_
+        SIGTYPE_VALTYPE_
+        BO_TX_BU_
+        BA_DEF_REL_
+        BA_REL_
+        BA_DEF_DEF_REL_
+        BU_SG_REL_
+        BU_EV_REL_
+        BU_BO_REL_
+        SG_MUL_VAL_
+
+BS_:
+
+BU_: ABSESP AVM BCM_PEPS_SF BCM_SF DAS EPS GW_SF PSC PSC_AVM SRS 
+
+
+BO_ 16 TCU2: 8 GW_SF
+ SG_ ShiftLeverPos : 2|3@0+ (1,0) [0|7] "" ABSESP,DAS,EPS,BCM_SF,BCM_PEPS_SF,SRS,AVM,PSC,PSC_AVM
+ SG_ TCU2_Status_TransFailure : 3|1@0+ (1,0) [0|1] "" DAS
+ SG_ TargetGear : 7|4@0+ (1,0) [0|15] "" ABSESP,DAS
+ SG_ ActualGear : 14|4@0+ (1,0) [0|15] "" ABSESP,DAS
+ SG_ TCU2_rolling_counter : 51|4@0+ (1,0) [0|15] "" ABSESP,DAS
+ SG_ TCU2_checksum : 63|8@0+ (1,0) [0|255] "" ABSESP,DAS
+
+BO_ 329 IC1: 8 GW_SF
+ SG_ odometer_value : 31|24@0+ (1,0) [0|1999999] "km" ABSESP,DAS,PSC,PSC_AVM
+
+BO_ 338 ABS3: 8 ABSESP
+ SG_ ABS3_FLWhlPulseCnt_Valid : 13|1@0+ (1,0) [0|1] "" DAS
+ SG_ ABS3_WhlPulseCnt_FL : 5|8@0+ (1,0) [0|254] "" DAS
+ SG_ ABS3_FRWhlPulseCnt_Valid : 18|1@0+ (1,0) [0|1] "" DAS
+ SG_ ABS3_WhlPulseCnt_FR : 10|8@0+ (1,0) [0|254] "" DAS
+ SG_ ABS3_WhlPulseCnt_RL : 31|8@0+ (1,0) [0|254] "" DAS,PSC,PSC_AVM
+ SG_ ABS3_RLWhlPulseCnt_Valid : 39|1@0+ (1,0) [0|1] "" DAS,PSC,PSC_AVM
+ SG_ ABS3_RRWhlPulseCnt_Valid : 44|1@0+ (1,0) [0|1] "" DAS,PSC,PSC_AVM
+ SG_ ABS3_WhlPulseCnt_RR : 36|8@0+ (1,0) [0|254] "" DAS,PSC,PSC_AVM
+ SG_ ABS3_Counter_Message : 51|4@0+ (1,0) [0|15] "" DAS,PSC,PSC_AVM
+ SG_ ABS3_Check_Sum : 63|8@0+ (1,0) [0|255] "" DAS,PSC,PSC_AVM
+
+BO_ 339 ESP1: 8 ABSESP
+ SG_ TCS_active : 3|1@0+ (1,0) [0|1] "" DAS,SRS,AVM,PSC_AVM
+ SG_ VDC_active : 4|1@0+ (1,0) [0|1] "" DAS,SRS,AVM,PSC_AVM
+ SG_ ESP_EnableSts : 40|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP1_rolling_counter : 51|4@0+ (1,0) [0|15] "" DAS,AVM,PSC_AVM
+ SG_ VDC_Fault : 52|1@0+ (1,0) [0|1] "" DAS,SRS
+ SG_ TCS_Fault : 53|1@0+ (1,0) [0|1] "" DAS,SRS
+ SG_ ESP1_checksum : 63|8@0+ (1,0) [0|255] "" DAS,AVM,PSC_AVM
+
+BO_ 340 ESP2: 8 ABSESP
+ SG_ ax : 7|12@0+ (0.0271267,-89.4638566) [-21.593|21.593] "m/s2" DAS,BCM_SF,BCM_PEPS_SF,AVM,PSC,PSC_AVM
+ SG_ ay : 11|12@0+ (0.0271267,-89.4638566) [-21.593|21.593] "m/s2" DAS,AVM,PSC,PSC_AVM
+ SG_ ax_fault : 33|1@0+ (1,0) [0|1] "" DAS,AVM,PSC,PSC_AVM
+ SG_ ay_fault : 34|1@0+ (1,0) [0|1] "" DAS,AVM,PSC,PSC_AVM
+ SG_ yrs_fault : 35|1@0+ (1,0) [0|1] "" DAS,AVM,PSC,PSC_AVM
+ SG_ yrs : 31|12@0+ (0.0021326,-6.6366512) [-2.0943|2.0943] "rad/s" DAS,SRS,AVM,PSC,PSC_AVM
+ SG_ brake_pressure : 47|8@0+ (1,0) [0|254] "Bar" DAS,AVM,PSC_AVM
+ SG_ ESP2_rolling_counter : 51|4@0+ (1,0) [0|15] "" DAS,AVM,PSC,PSC_AVM
+ SG_ ESP2_checksum : 63|8@0+ (1,0) [0|255] "" DAS,AVM,PSC,PSC_AVM
+
+BO_ 355 APB1: 8 ABSESP
+ SG_ APB_Status : 3|4@0+ (1,0) [0|15] "" DAS,BCM_SF,BCM_PEPS_SF,SRS,PSC,PSC_AVM
+ SG_ APB_IND_Error : 5|2@0+ (1,0) [0|3] "" DAS,SRS
+ SG_ ESP_Status_ACCInfo_Error : 15|2@0+ (1,0) [0|3] "" DAS
+ SG_ ESP_Status_ACC_Available : 16|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_AEB_Available : 17|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_Prefill_Response : 18|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_AEBJerk_Response : 19|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_FCW_DBS_Response : 20|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_ACCReq_Response : 21|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_AEBReq_Response : 22|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_Hold : 23|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_AEBJerk_Available : 29|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_FCW_DBS_Available : 30|1@0+ (1,0) [0|1] "" DAS
+ SG_ ESP_Status_Prefill_Available : 31|1@0+ (1,0) [0|1] "" DAS
+
+BO_ 368 PEPS1: 8 GW_SF
+ SG_ PEPS_Ign_Key_POS : 7|2@0+ (1,0) [0|3] "" ABSESP,DAS,AVM,PSC,PSC_AVM
+ SG_ PEPS_Live_counter : 27|4@0+ (1,0) [0|15] "" DAS
+ SG_ PEPS_checksum : 63|8@0+ (1,0) [0|255] "" DAS
+
+BO_ 384 BCM1: 8 BCM_SF
+ SG_ BCM_DrDoorLockSwStatus : 0|1@0+ (1,0) [0|1] "" DAS
+ SG_ BCM_DriverDoorSt : 1|1@0+ (1,0) [0|1] "" ABSESP,DAS,AVM,PSC,PSC_AVM
+ SG_ BCM_PassDoorSt : 2|1@0+ (1,0) [0|1] "" DAS,AVM,PSC,PSC_AVM
+ SG_ BCM_RLDoorSt : 3|1@0+ (1,0) [0|1] "" DAS,AVM,PSC,PSC_AVM
+ SG_ BCM_RRDoorSt : 4|1@0+ (1,0) [0|1] "" DAS,AVM,PSC,PSC_AVM
+ SG_ BCM_LuggageDoorSt : 5|1@0+ (1,0) [0|1] "" DAS,AVM,PSC,PSC_AVM
+ SG_ BCM1_IND_HighBeamSwt_OnOff : 7|1@0+ (1,0) [0|1] "" DAS
+ SG_ Front_Wiper_Status : 11|2@0+ (1,0) [0|3] "" DAS,AVM,PSC_AVM
+ SG_ Left_Turn_Lamp_Status : 12|1@0+ (1,0) [0|1] "" DAS,SRS,AVM,PSC_AVM
+ SG_ Right_Turn_Lamp_Status : 13|1@0+ (1,0) [0|1] "" DAS,SRS,AVM,PSC_AVM
+ SG_ Low_Beam_Status : 14|1@0+ (1,0) [0|1] "" DAS,AVM,PSC_AVM
+ SG_ High_Beam_Status : 15|1@0+ (1,0) [0|1] "" DAS,AVM,PSC_AVM
+ SG_ Front_Fog_Lamp_Status : 16|1@0+ (1,0) [0|1] "" DAS,AVM,PSC_AVM
+ SG_ Rear_Fog_Lamp_Status : 17|1@0+ (1,0) [0|1] "" DAS,AVM,PSC_AVM
+ SG_ BCM_IgnKeyPOS : 19|2@0+ (1,0) [0|3] "" ABSESP,DAS,AVM,PSC,PSC_AVM
+ SG_ BCM1_Status_LKAMainSwt_reserved : 31|1@0+ (1,0) [0|1] "" DAS
+ SG_ BCM1_Status_AutoLightSwt_OnOff : 34|1@0+ (1,0) [0|1] "" DAS
+ SG_ BCM1_Rain_Intensity : 43|4@0+ (1,0) [0|3] "" DAS
+ SG_ BCM1_Status_ACCSwt : 54|3@0+ (1,0) [0|7] "" DAS
+ SG_ BCM1_IND_OvertakinglampSwt_OnOff : 55|1@0+ (1,0) [0|1] "" DAS
+
+BO_ 400 AC1: 8 GW_SF
+ SG_ AC1_Status_AmbientTemp_Lvl : 31|8@0+ (0.5,-40) [-40|87] "℃" DAS,PSC,PSC_AVM
+
+BO_ 512 ABS1: 8 ABSESP
+ SG_ ABS_active : 0|1@0+ (1,0) [0|1] "" DAS,SRS,AVM,PSC_AVM
+ SG_ ABS_fault : 1|1@0+ (1,0) [0|1] "" DAS
+ SG_ EBD_fault : 2|1@0+ (1,0) [0|1] "" DAS,SRS
+ SG_ vehicle_speed : 15|13@0+ (0.05625,0) [0|270] "km/h" DAS,EPS,BCM_SF,BCM_PEPS_SF,SRS,AVM,PSC,PSC_AVM
+ SG_ ABS1_RotDir_FL : 25|2@0+ (1,0) [0|3] "" DAS
+ SG_ ABS1_RotDir_FR : 27|2@0+ (1,0) [0|3] "" DAS
+ SG_ ABS1_RotDir_RL : 29|2@0+ (1,0) [0|3] "" DAS,PSC,PSC_AVM
+ SG_ ABS1_RotDir_RR : 31|2@0+ (1,0) [0|3] "" DAS,PSC,PSC_AVM
+ SG_ ABS1_checksum : 55|8@0+ (1,0) [0|255] "" DAS,EPS,BCM_PEPS_SF,AVM,PSC,PSC_AVM
+ SG_ ABS1_message_counter : 59|4@0+ (1,0) [0|15] "" DAS,EPS,BCM_PEPS_SF,AVM,PSC,PSC_AVM
+
+BO_ 520 ABS2: 8 ABSESP
+ SG_ wheel_speed_FL : 7|13@0+ (0.05625,0) [0|270] "km/h" DAS,EPS,PSC,PSC_AVM
+ SG_ wheel_speed_FR : 10|13@0+ (0.05625,0) [0|270] "km/h" DAS,EPS,PSC,PSC_AVM
+ SG_ wheel_speed_RL : 29|13@0+ (0.05625,0) [0|270] "km/h" DAS,EPS,PSC,PSC_AVM
+ SG_ wheel_speed_RR_fault : 48|1@0+ (1,0) [0|1] "" DAS,EPS,PSC,PSC_AVM
+ SG_ wheel_speed_RL_fault : 49|1@0+ (1,0) [0|1] "" DAS,EPS,PSC,PSC_AVM
+ SG_ wheel_speed_FR_fault : 50|1@0+ (1,0) [0|1] "" DAS,EPS,PSC,PSC_AVM
+ SG_ wheel_speed_FL_fault : 51|1@0+ (1,0) [0|1] "" DAS,EPS,PSC,PSC_AVM
+ SG_ wheel_speed_RR : 32|13@0+ (0.05625,0) [0|270] "km/h" DAS,EPS,PSC,PSC_AVM
+ SG_ ABS2_message_counter : 59|4@0+ (1,0) [0|15] "" DAS,EPS,PSC,PSC_AVM
+
+BO_ 528 Engine1: 8 GW_SF
+ SG_ Accelerator_Effective_Position : 23|8@0+ (0.4,0) [0|101.6] "%" ABSESP,DAS
+ SG_ kick_down : 34|1@0+ (1,0) [0|1] "" DAS
+ SG_ Engine1_IND_AccelPadel_Override : 35|1@0+ (1,0) [0|1] "" DAS
+ SG_ Engine1_Status_DASReq_Resp : 36|1@0+ (1,0) [0|1] "" DAS
+
+BO_ 530 Engine2: 8 GW_SF
+ SG_ engine_revolution_speed : 23|16@0+ (1,0) [0|65534] "rpm" ABSESP,DAS,EPS,BCM_SF,BCM_PEPS_SF,SRS,PSC,PSC_AVM
+ SG_ Engine_Status : 47|3@0+ (1,0) [0|7] "" ABSESP,DAS,BCM_SF,BCM_PEPS_SF,PSC,PSC_AVM
+ SG_ brake_pedal_status : 57|2@0+ (1,0) [0|3] "" ABSESP,DAS,SRS,PSC,PSC_AVM
+
+BO_ 532 Engine4: 8 GW_SF
+ SG_ actual_powertrain_torque : 17|13@0+ (0.25,-500) [-500|1547.5] "Nm" ABSESP,DAS
+ SG_ Powertrain_Torque_Validity : 54|1@0+ (1,0) [0|1] "" DAS
+ SG_ minimum_powertrain_torque : 35|13@0+ (0.25,-500) [-500|1547.5] "Nm" ABSESP,DAS
+ SG_ maximum_powertrain_torque : 53|13@0+ (0.25,-500) [-500|1547.5] "Nm" ABSESP,DAS
+
+BO_ 560 DAS1: 8 DAS
+ SG_ DAS1_Status_ACCTorqueReq_Value : 6|13@0+ (0.25,-500) [-500|1547.5] "Nm" Vector__XXX
+ SG_ DAS1_Status_DBS_Enable : 23|1@0+ (1,0) [0|1] "" ABSESP
+ SG_ DAS1_Status_ACCStandstillReq : 30|1@0+ (1,0) [0|1] "" ABSESP
+ SG_ DAS1_Status_ACCDecelReq_Value : 21|7@0+ (0.08,-5.04) [-5.04|5.04] "m/s2" ABSESP
+ SG_ DAS1_Status_PrefillReq : 34|1@0+ (1,0) [0|1] "" ABSESP
+ SG_ DAS1_Status_AEBJerkReq : 35|1@0+ (1,0) [0|1] "" ABSESP
+ SG_ DAS1_Status_AEBDecelerateReq : 36|1@0+ (1,0) [0|1] "" ABSESP
+ SG_ DAS1_Status_AEBDecelReq_Value : 27|7@0+ (0.08,-10.08) [-10.08|0] "m/s2" ABSESP
+ SG_ DAS1_Status_FCW_DBSReq : 46|3@0+ (1,0) [0|7] "" ABSESP
+ SG_ DAS1_Status_AEBJerkWarning_Lvl : 33|3@0+ (1,0) [0|7] "" ABSESP
+ SG_ DAS1_Counter_Message : 51|4@0+ (1,0) [0|15] "" ABSESP
+ SG_ DAS1_Check_Sum : 63|8@0+ (1,0) [0|255] "" ABSESP
+ SG_ DAS1_Req_ACCDriveOff : 7|1@0+ (1,0) [0|1] "" ABSESP
+ SG_ DAS1_Status_ACCTorqueReq : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DAS1_Status_ACCDecelerateReq : 9|1@0+ (1,0) [0|1] "" ABSESP
+
+BO_ 624 DAS2: 8 DAS
+ SG_ DAS2_Status_ACC : 12|3@0+ (1,0) [0|7] "" ABSESP,SRS
+ SG_ DAS2_Status_ACCControlVehicle : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DAS2_Req_IHCMainbeam_OnOff : 14|1@0+ (1,0) [0|1] "" BCM_SF,BCM_PEPS_SF
+ SG_ DAS2_Status_AEB : 1|3@0+ (1,0) [0|7] "" ABSESP,SRS
+ SG_ DAS2_Status_TSRTargetSpeedLimit : 9|8@0+ (1,0) [0|254] "km/h" Vector__XXX
+ SG_ DAS2_Status_MCS_Error : 3|2@0+ (1,0) [0|3] "" ABSESP,EPS
+ SG_ DAS2_Status_SCC : 17|3@0+ (1,0) [0|7] "" ABSESP,EPS
+ SG_ DAS2_Status_LDWLine_Curvature : 28|13@0+ (1,-3150) [-3150|3150] "m" Vector__XXX
+ SG_ DAS2_Counter_Message : 51|4@0+ (1,0) [0|15] "" ABSESP,EPS
+ SG_ DAS2_Status_LKA : 7|3@0+ (1,0) [0|7] "" EPS
+ SG_ DAS2_Check_Sum : 63|8@0+ (1,0) [0|255] "" ABSESP,EPS
+
+BO_ 656 DAS3: 8 DAS
+ SG_ DAS3_Set_CruiseSpeed_Value : 7|8@0+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ DAS3_Status_ACCCancelReq : 14|2@0+ (1,0) [0|3] "" ABSESP
+ SG_ DAS3_Status_ACCOverrideIndReq : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DAS3_Status_ACCTakeoverIndReq : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DAS3_Status_ACCGoIndicateReq : 17|1@0+ (1,0) [0|1] "" ABSESP
+ SG_ DAS3_Status_CIPVIndicateReq : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DAS3_Status_FCW : 21|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS3_Status_FCWWarning_Lvl : 23|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Status_IHC : 25|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Status_LDW : 29|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS3_Status_LDWWarning : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Status_LDWLineDetect : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS3_Status_TSR : 37|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS3_Status_HandsOffWarning : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DAS3_Status_LKATakeoverReq : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DAS3_Fdbk_AEB_OnOff : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Fdbk_IHC_OnOff : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Fdbk_TSR_OnOff : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Fdbk_FCWSensitivity_Level : 47|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Fdbk_LDWSensitivity_Level : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Fdbk_FCW_OnOff : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Fdbk_LDW_OnOff : 55|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS3_Data_RealACCHeadway_Lvl : 49|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS3_Set_ACCHeadway : 10|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 776 Engine3: 8 GW_SF
+ SG_ Accelerator_ActPedPos : 7|8@0+ (0.4,0) [0|101.6] "%" DAS,SRS,PSC,PSC_AVM
+ SG_ Engine3_Status_ExtFunctionValid : 35|1@0+ (1,0) [0|1] "" DAS
+ SG_ Mech_Loss_Eng_Torq : 33|13@0+ (0.25,-500) [-500|1547.5] "Nm" DAS
+
+BO_ 787 DAS4: 8 DAS
+ SG_ DAS4_Status_LKATorqueReq_Value : 6|10@0+ (0.01,-5) [-5|5] "Nm" EPS
+ SG_ DAS4_Counter_Message : 51|4@0+ (1,0) [0|15] "" EPS
+ SG_ DAS4_Check_Sum : 63|8@0+ (1,0) [0|255] "" EPS
+ SG_ DAS4_Status_LKATorqueReq : 7|1@0+ (1,0) [0|1] "" EPS
+
+BO_ 796 SRS1: 8 SRS
+ SG_ Psngr_Seat_Belt_Sts : 1|2@0+ (1,0) [0|3] "" DAS
+ SG_ Driver_Seat_Belt_Sts : 3|2@0+ (1,0) [0|3] "" ABSESP,DAS,PSC,PSC_AVM
+ SG_ Air_Bag_Fail_Sts : 7|2@0+ (1,0) [0|3] "" DAS
+ SG_ SRS1_live_counter : 15|4@0+ (1,0) [0|15] "" DAS,BCM_SF,BCM_PEPS_SF
+
+BO_ 833 APA1: 8 PSC
+ SG_ APA1_Status_FunctionMode : 2|3@0+ (1,0) [0|7] "" ABSESP,DAS
+
+BO_ 872 DAS5: 8 DAS
+ SG_ DAS5_Status_ACCFrontObjt1_Dx : 6|8@0+ (1,0) [0|254] "m" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt1_Color : 18|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt1_Type : 21|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt1_Dy : 13|8@0+ (0.1,-12.7) [-12.7|12.7] "m" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt1_Pose : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt2_Dx : 28|8@0+ (1,0) [0|254] "m" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt2_Type : 43|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt2_Dy : 35|8@0+ (0.1,-12.7) [-12.7|12.7] "m" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt2_Pose : 52|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS5_Status_ACCFrontObjt2_Color : 40|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS5_Status_LDWLeftLine_Color : 58|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS5_Status_LDWLeftLine_Type : 60|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS5_Status_LDWLeftLine_Dy : 50|6@0+ (0.1,0) [0|6.3] "m" Vector__XXX
+
+BO_ 874 DAS6: 8 DAS
+ SG_ DAS6_Status_ACCLeftFrontObjt_Dx : 6|8@0+ (1,0) [0|254] "m" Vector__XXX
+ SG_ DAS6_Status_ACCLeftFrontObjt_Color : 18|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS6_Status_ACCLeftFrontObjt_Type : 21|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS6_Status_ACCLeftFrontObjt_Dy : 13|8@0+ (0.1,-12.7) [-12.7|12.7] "m" Vector__XXX
+ SG_ DAS6_Status_ACCLeftFrontObjt_Pose : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS6_Status_ACCRightFrontObjt_Dx : 28|8@0+ (1,0) [0|254] "m" Vector__XXX
+ SG_ DAS6_Status_ACCRightFrontObjt_Type : 43|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS6_Status_ACCRightFrontObjt_Dy : 35|8@0+ (0.1,-12.7) [-12.7|12.7] "m" Vector__XXX
+ SG_ DAS6_Status_ACCRightFrontObjt_Pose : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS6_Status_ACCRightFrontObjt_Color : 40|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ DAS6_Status_LDWRightLine_Color : 59|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS6_Status_LDWRightLine_Type : 61|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DAS6_Status_LDWRightLine_Dy : 51|6@0+ (0.1,0) [0|6.3] "m" Vector__XXX
+
+BO_ 945 ICE2: 8 GW_SF
+ SG_ ICE2_Set_AEB_OnOff : 1|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_Set_IHC_OnOff : 3|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_Set_TSR_OnOff : 5|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_Set_FCWSensitivity_Level : 7|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_Set_LDWSensitivity_Level : 11|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_Set_FCW_OnOff : 13|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_Set_LDW_OnOff : 15|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_CMD_CtrlCruiseSpeed_Value : 31|8@0+ (1,0) [0|254] "km/h" DAS
+ SG_ ICE2_CMD_CtrlACC_OnOff : 37|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_CMD_ACCHeadway_IncDec : 39|2@0+ (1,0) [0|3] "" DAS
+ SG_ ICE2_Counter_Message : 51|4@0+ (1,0) [0|15] "" DAS,AVM,PSC_AVM
+ SG_ ICE2_Check_Sum : 63|8@0+ (1,0) [0|255] "" DAS,AVM,PSC_AVM
+
+BO_ 1345 IC5: 8 GW_SF
+ SG_ IC5_Set_AEB_OnOff : 19|2@0+ (1,0) [0|3] "" DAS
+ SG_ IC5_Set_FCW_OnOff : 21|2@0+ (1,0) [0|3] "" DAS
+ SG_ IC5_Set_LDW_OnOff : 23|2@0+ (1,0) [0|3] "" DAS
+ SG_ IC5_Status_ICDisVehSpd_Value : 37|8@0+ (1,0) [0|220] "km/h" DAS
+
+BO_ 1544 Engine5: 8 GW_SF
+ SG_ Engine5_Status_ACCDistIncSwt : 16|1@0+ (1,0) [0|1] "" DAS
+ SG_ Engine5_Status_ACCDistDecSwt : 17|1@0+ (1,0) [0|1] "" DAS
+ SG_ Engine5_Status_ACCSpdIncOrResSwt : 18|1@0+ (1,0) [0|1] "" DAS
+ SG_ Engine5_Status_ACCSpdDecOrSetSwt : 19|1@0+ (1,0) [0|1] "" DAS
+ SG_ Engine5_Status_DASSwt_Validity : 42|1@0+ (1,0) [0|1] "" DAS
+ SG_ Engine5_Status_ACCMainSwt : 43|1@0+ (1,0) [0|1] "" DAS
+ SG_ Engine5_Status_ACCCnclSwt : 44|1@0+ (1,0) [0|1] "" DAS
+
+BO_ 194 SAS1: 8 EPS
+ SG_ SAS1_msg_counter : 3|4@0+ (1,0) [0|15] "" ABSESP,DAS,BCM_SF,BCM_PEPS_SF,AVM,PSC,PSC_AVM
+ SG_ SAS1_checksum : 7|4@0+ (1,0) [0|15] "" ABSESP,DAS,BCM_SF,BCM_PEPS_SF,AVM,PSC,PSC_AVM
+ SG_ steering_angle_valid : 8|1@0+ (1,0) [0|1] "" ABSESP,DAS,BCM_SF,BCM_PEPS_SF,AVM,PSC,PSC_AVM
+ SG_ calibrated_status : 9|1@0+ (1,0) [0|1] "" ABSESP,DAS,BCM_SF,BCM_PEPS_SF,AVM,PSC,PSC_AVM
+ SG_ trimming_status : 10|1@0+ (1,0) [0|1] "" ABSESP,DAS,AVM,PSC,PSC_AVM
+ SG_ steering_angle_spd : 23|8@0+ (4,0) [0|1016] "deg/s" ABSESP,DAS,AVM,PSC_AVM
+ SG_ steering_angle : 31|16@0+ (0.1,-780) [-780|779.9] "deg" ABSESP,DAS,BCM_SF,BCM_PEPS_SF,SRS,AVM,PSC,PSC_AVM
+
+BO_ 196 EPS1: 8 EPS
+ SG_ EPS1_APA_AvailSts : 3|2@0+ (1,0) [0|3] "" DAS,PSC,PSC_AVM
+ SG_ EPS1_LKA_AvailSts : 7|3@0+ (1,0) [0|4] "" DAS
+ SG_ EPS1_IND_LKAOverlayTorque_Value : 14|15@0+ (0.01,-90) [-90|90] "Nm" DAS
+ SG_ EPS1_IND_DriverTorque_Value : 39|8@0+ (0.08,-10) [-10|10] "Nm" DAS
+ SG_ EPS1_Status_Handsoff : 40|1@0+ (1,0) [0|1] "" DAS
+ SG_ EPS1_Status_HandsoffValid : 41|1@0+ (1,0) [0|1] "" DAS
+ SG_ EPS1_Msg_Count : 47|4@0+ (1,0) [0|15] "" DAS,PSC,PSC_AVM
+ SG_ EPS1_CRC_check : 63|8@0+ (1,0) [0|255] "" DAS,PSC,PSC_AVM
+
+
+BO_TX_BU_ 368 : GW_SF,BCM_SF,BCM_PEPS_SF;
+
+BO_TX_BU_ 384 : BCM_SF,BCM_PEPS_SF;
+
+BO_TX_BU_ 833 : PSC,PSC_AVM;
+
+
+CM_ " ";
+
+CM_ SG_ 560 DAS1_Status_ACCTorqueReq_Value "Powertrain Torque request value for ACC（flywheel torque）
+ACC传动扭矩请求数值";
+CM_ SG_ 560 DAS1_Status_DBS_Enable "Indicate if DBS function is enable
+指示DAS是否使能DBS功能";
+CM_ SG_ 560 DAS1_Status_ACCStandstillReq "Indicate if there is a standstill request for ACC
+指示DAS是否有ACC standstill刹停请求";
+CM_ SG_ 560 DAS1_Status_ACCDecelReq_Value "ACC decelerate request value
+ACC减速请求值";
+CM_ SG_ 560 DAS1_Status_PrefillReq "Indicate if there is a prefill request 
+指示DAS是否有制动预充压请求";
+CM_ SG_ 560 DAS1_Status_AEBJerkReq "Indicate if there is a jerk request for AEB
+指示DAS是否有制动抖动请求";
+CM_ SG_ 560 DAS1_Status_AEBDecelerateReq "Indicate if there is a AEB decelerate request
+指示DAS是否有AEB减速请求";
+CM_ SG_ 560 DAS1_Status_AEBDecelReq_Value "AEB decelerate request value
+AEB减速请求值";
+CM_ SG_ 560 DAS1_Status_FCW_DBSReq "DAS request to order ESP promote driver brake sensitivity level
+DAS对ESP提高驾驶员制动灵敏度的请求";
+CM_ SG_ 560 DAS1_Status_AEBJerkWarning_Lvl "DAS request AEB jerk warning level
+DAS请求AEB的制动急刹等级";
+CM_ SG_ 560 DAS1_Counter_Message "Message Rolling Counter 报文计数";
+CM_ SG_ 560 DAS1_Check_Sum "Message CheckSum 报文校验
+check sum:Byte6×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0 ";
+CM_ SG_ 560 DAS1_Req_ACCDriveOff "Indicate if there is a ACC drive off request
+指示DAS是否有ACC起步请求";
+CM_ SG_ 560 DAS1_Status_ACCTorqueReq "Indicate if there is a Powertrain Torque request for ACC
+指示DAS是否有ACC传动扭矩请求";
+CM_ SG_ 560 DAS1_Status_ACCDecelerateReq "Indicate if there is a ACC decelerate request
+指示DAS是否有ACC减速请求";
+CM_ SG_ 624 DAS2_Status_ACC "Indicate ACC system working state
+ACC系统的工作状态";
+CM_ SG_ 624 DAS2_Status_ACCControlVehicle "indicate if  ACC is controlling vehicle
+指示ACC是否正在控制车辆";
+CM_ SG_ 624 DAS2_Req_IHCMainbeam_OnOff "Turn on or shut down high beam request
+打开或关闭远光灯请求";
+CM_ SG_ 624 DAS2_Status_AEB "Indicate AEB system working state
+AEB系统的工作状态";
+CM_ SG_ 624 DAS2_Status_TSRTargetSpeedLimit "Current available speed limit for TSR
+当前允许交通标识限速";
+CM_ SG_ 624 DAS2_Status_MCS_Error "Indicate camera system error status
+摄像头系统的故障状态";
+CM_ SG_ 624 DAS2_Status_SCC "Indicate SCC system working state
+SCC系统的工作状态";
+CM_ SG_ 624 DAS2_Status_LDWLine_Curvature "Line radius of curvature
+车道曲率半径。";
+CM_ SG_ 624 DAS2_Counter_Message "Message Rolling Counter 报文计数";
+CM_ SG_ 624 DAS2_Status_LKA "Indicate LKA system working state
+LKA系统的工作状态";
+CM_ SG_ 624 DAS2_Check_Sum "Message CheckSum 报文校验
+check sum:Byte6×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0 ";
+CM_ SG_ 656 DAS3_Set_CruiseSpeed_Value "Driver selected cruise speed
+驾驶员巡航速度设置";
+CM_ SG_ 656 DAS3_Status_ACCCancelReq "Indicate cancel operation for ACC
+ACC功能取消操作";
+CM_ SG_ 656 DAS3_Status_ACCOverrideIndReq "Indicate driver accelerator pedal override for ACC
+驾驶员加速踏板超控指示";
+CM_ SG_ 656 DAS3_Status_ACCTakeoverIndReq "Indicate driver takeover operation for ACC
+驾驶员接管指示";
+CM_ SG_ 656 DAS3_Status_ACCGoIndicateReq "'GO' notifier for ACC stop & go function
+ACC停止和出发功能的'GO'通知";
+CM_ SG_ 656 DAS3_Status_CIPVIndicateReq "Indicate CIPV（closest in path vehicle） detection status
+最近在径前车有无状态检测";
+CM_ SG_ 656 DAS3_Status_FCW "Indicate FCW system working state
+FCW系统的工作状态";
+CM_ SG_ 656 DAS3_Status_FCWWarning_Lvl "Indicate the current FCW warning level
+当前FCW警告等级";
+CM_ SG_ 656 DAS3_Status_IHC "Indicate IHC system working state
+IHC系统的工作状态";
+CM_ SG_ 656 DAS3_Status_LDW "Indicate LDW system working state
+LDW系统的工作状态";
+CM_ SG_ 656 DAS3_Status_LDWWarning "Indicate the current warning direction
+指示当前警告方向";
+CM_ SG_ 656 DAS3_Status_LDWLineDetect "Indicate system lane mark detection status
+车道线标识检测";
+CM_ SG_ 656 DAS3_Status_TSR "Indicate TSR system working state
+TSR系统的工作状态";
+CM_ SG_ 656 DAS3_Status_HandsOffWarning "Warning when hands off detected for LKA
+提示驾驶员操作方向盘
+";
+CM_ SG_ 656 DAS3_Status_LKATakeoverReq "Warning when system detect current situation beyond LKA system limit
+提示驾驶员接管LKA系统";
+CM_ SG_ 656 DAS3_Fdbk_AEB_OnOff "Feedback on setting AEB Function
+AEB设置状态反馈";
+CM_ SG_ 656 DAS3_Fdbk_IHC_OnOff "Feedback on setting IHC Function
+IHC设置状态反馈";
+CM_ SG_ 656 DAS3_Fdbk_TSR_OnOff "Feedback on setting TSR Function
+TSR设置状态反馈";
+CM_ SG_ 656 DAS3_Fdbk_FCWSensitivity_Level "Feedback on setting FCW sensitivity level
+FCW敏感性等级设置状态反馈";
+CM_ SG_ 656 DAS3_Fdbk_LDWSensitivity_Level "Feedback on setting LDW sensitivity level
+LDW灵敏度等级设置状态反馈";
+CM_ SG_ 656 DAS3_Fdbk_FCW_OnOff "Feedback on setting FCW Function
+FCW设置状态反馈";
+CM_ SG_ 656 DAS3_Fdbk_LDW_OnOff "Feedback on setting LDW Function
+LDW设置状态反馈";
+CM_ SG_ 656 DAS3_Data_RealACCHeadway_Lvl "Real headway for ACC
+ACC功能前车实际距离车距";
+CM_ SG_ 656 DAS3_Set_ACCHeadway "Driver selected follow headway for ACC
+ACC功能前车距离设置";
+CM_ SG_ 787 DAS4_Status_LKATorqueReq_Value "Steering wheel torque request value for LKA
+LKA方向盘扭矩请求值";
+CM_ SG_ 787 DAS4_Counter_Message "Message Rolling Counter 报文计数";
+CM_ SG_ 787 DAS4_Check_Sum "Message CheckSum 报文校验
+check sum:Byte6×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0 ";
+CM_ SG_ 787 DAS4_Status_LKATorqueReq "Indicate if there is a steering wheel torque request
+指示DAS是否有方向盘扭矩请求";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt1_Dx "The distance between the target vehicle 1 and its own vehicle in the X direction 。
+前方目标车辆1与自身车辆X方向距离。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt1_Color "The color of  the target vehicle1. 
+前方目标车辆1的颜色。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt1_Type "Type of target vehicle1. 
+前方目标车辆1的类型。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt1_Dy "The distance between the target vehicle 1 and its own vehicle in the Y direction 。
+前方目标车辆1与自身车辆Y方向距离。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt1_Pose "The pose of the target vehicle1. 
+前方目标车辆1的姿态。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt2_Dx "The distance between the target vehicle 2 and its own vehicle in the X direction 
+前方目标车辆2与自身车辆X方向距离。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt2_Type "Type of target vehicle2. 
+前方目标车辆2的类型。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt2_Dy "The distance between the target vehicle 2 and its own vehicle in the Y direction 
+前方目标车辆2与自身车辆Y方向距离。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt2_Pose "The pose of the target vehicle2. 
+前方目标车辆2的姿态。";
+CM_ SG_ 872 DAS5_Status_ACCFrontObjt2_Color "The color of  the target vehicle2. 
+前方目标车辆2的颜色。";
+CM_ SG_ 872 DAS5_Status_LDWLeftLine_Color "The color of  the left line. 
+左侧车道线的颜色。";
+CM_ SG_ 872 DAS5_Status_LDWLeftLine_Type "The type of left line
+左侧车道线的类型。";
+CM_ SG_ 872 DAS5_Status_LDWLeftLine_Dy "The distance between left line and its own vehicle in  the Y direction .
+左侧车道线与本车Y轴距离。";
+CM_ SG_ 874 DAS6_Status_ACCLeftFrontObjt_Dx "The distance between the Left front vehicle  and its own vehicle in the X direction 。
+左前方目标车辆与自身车辆X方向距离。";
+CM_ SG_ 874 DAS6_Status_ACCLeftFrontObjt_Color "The color of   theLeft front vehicle
+左前方目标车辆的颜色。";
+CM_ SG_ 874 DAS6_Status_ACCLeftFrontObjt_Type "Type of  the Left front vehicle
+左前方目标车辆的类型。";
+CM_ SG_ 874 DAS6_Status_ACCLeftFrontObjt_Dy "The distance between the Left  front vehicle  and its own vehicle in the Y direction 。
+左前方目标车辆与自身车辆Y方向距离。";
+CM_ SG_ 874 DAS6_Status_ACCLeftFrontObjt_Pose "
+The pose of the Left front vehicle. 
+左前方目标车辆的姿态。
+";
+CM_ SG_ 874 DAS6_Status_ACCRightFrontObjt_Dx "The distance between the right front vehicle  and its own vehicle in the X direction 。
+右前方目标车辆与自身车辆X方向距离。";
+CM_ SG_ 874 DAS6_Status_ACCRightFrontObjt_Type "Type of  the right front vehicle
+右前方目标车辆的类型。";
+CM_ SG_ 874 DAS6_Status_ACCRightFrontObjt_Dy "The distance between the right front vehicle  and its own vehicle in the Y direction 。
+右前方目标车辆与自身车辆Y方向距离。";
+CM_ SG_ 874 DAS6_Status_ACCRightFrontObjt_Pose "
+The pose of the right  front vehicle. 
+右前方目标车辆的姿态。";
+CM_ SG_ 874 DAS6_Status_ACCRightFrontObjt_Color "The color of   the right front vehicle
+右前方目标车辆的颜色。";
+CM_ SG_ 874 DAS6_Status_LDWRightLine_Color "The color of  the Right  line. 
+右侧车道线的颜色。";
+CM_ SG_ 874 DAS6_Status_LDWRightLine_Type "The type of Right line
+右侧车道线的类型。";
+CM_ SG_ 874 DAS6_Status_LDWRightLine_Dy "The distance between Right line and its own vehicle in  the Y direction .
+右侧车道线与本车Y轴距离。";
+CM_ SG_ 384 BCM_DrDoorLockSwStatus "司机左侧门锁状态";
+CM_ SG_ 384 BCM_DriverDoorSt "司机侧门状态";
+CM_ SG_ 384 BCM_PassDoorSt "副司机侧门状态";
+CM_ SG_ 384 BCM_RLDoorSt "左后门状态";
+CM_ SG_ 384 BCM_RRDoorSt "右后门状态";
+CM_ SG_ 384 BCM_LuggageDoorSt "行李箱门状态";
+CM_ SG_ 384 BCM1_IND_HighBeamSwt_OnOff "远光灯开关信号";
+CM_ SG_ 384 Front_Wiper_Status "前雨刮信号";
+CM_ SG_ 384 Left_Turn_Lamp_Status "左转向状态";
+CM_ SG_ 384 Right_Turn_Lamp_Status "右转向状态";
+CM_ SG_ 384 Low_Beam_Status "近光灯信号";
+CM_ SG_ 384 High_Beam_Status "远光灯信号";
+CM_ SG_ 384 Front_Fog_Lamp_Status "前雾灯信号 ";
+CM_ SG_ 384 Rear_Fog_Lamp_Status "后雾灯信号";
+CM_ SG_ 384 BCM_IgnKeyPOS "IGN Key Position just for Non-PEPS Vehicle 
+点火开关状态（仅适用非PEPS车型）";
+CM_ SG_ 384 BCM1_Status_LKAMainSwt_reserved "LKA main switch status(reserved)
+LKA主开关的状态";
+CM_ SG_ 384 BCM1_Status_AutoLightSwt_OnOff "To show the Status of Auto light
+自动灯光开关状态";
+CM_ SG_ 384 BCM1_Rain_Intensity "This signal delivers information about rain intensity.
+降雨强度";
+CM_ SG_ 384 BCM1_Status_ACCSwt "ACC  switch status 
+ACC相关功能开关状态";
+CM_ SG_ 384 BCM1_IND_OvertakinglampSwt_OnOff "超车灯开关信号";
+CM_ SG_ 368 PEPS_Ign_Key_POS "IGN Key Position just for PEPS Vehicle 
+电源状态（仅适用PEPS车型）";
+CM_ SG_ 368 PEPS_checksum "校验算法Byte6×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0   ";
+CM_ SG_ 400 AC1_Status_AmbientTemp_Lvl "Ambient temperature
+外部温度";
+CM_ SG_ 329 odometer_value "odometer value";
+CM_ SG_ 1345 IC5_Set_AEB_OnOff "To set AEB Switch Status   
+AEB系统开关设置状态";
+CM_ SG_ 1345 IC5_Set_FCW_OnOff "To set FCW Function
+FCW系统开关设置状态";
+CM_ SG_ 1345 IC5_Set_LDW_OnOff "To set LDW Function
+LDW系统开关设置状态";
+CM_ SG_ 1345 IC5_Status_ICDisVehSpd_Value "Vehicle Speed From Instrument Cluster
+车速仪表显示值";
+CM_ SG_ 945 ICE2_Set_AEB_OnOff "To set AEB Function
+AEB系统开关设置状态";
+CM_ SG_ 945 ICE2_Set_IHC_OnOff "To set IHC Function
+IHC系统开关设置状态";
+CM_ SG_ 945 ICE2_Set_TSR_OnOff "To set TSR Function
+TSR系统开关设置状态";
+CM_ SG_ 945 ICE2_Set_FCWSensitivity_Level "To set FCW sensitivity level 
+FCW敏感性等级设置状态";
+CM_ SG_ 945 ICE2_Set_LDWSensitivity_Level "To set LDW sensitivity level 
+LDW灵敏度等级设置状态";
+CM_ SG_ 945 ICE2_Set_FCW_OnOff "To set FCW Function
+FCW系统开关设置状态";
+CM_ SG_ 945 ICE2_Set_LDW_OnOff "To set LDW Function
+LDW系统开关设置状态";
+CM_ SG_ 945 ICE2_CMD_CtrlCruiseSpeed_Value "Command for Controlling Cruise Speed
+巡航速度控制命令";
+CM_ SG_ 945 ICE2_CMD_CtrlACC_OnOff "Command for Controlling ACC
+ACC控制命令";
+CM_ SG_ 945 ICE2_CMD_ACCHeadway_IncDec "Command for Increasing/Decreasing Follow Headway for ACC
+ACC功能前车距离增大/减小命令";
+CM_ SG_ 945 ICE2_Counter_Message "Message Rolling Counter 报文计数";
+CM_ SG_ 945 ICE2_Check_Sum "Message CheckSum 报文校验
+Checksum(Byte7)= Byte0 XOR Byte1 XOR Byte2 XOR Byte3 XOR Byte4 XOR Byte5 XOR Byte6";
+CM_ SG_ 528 Accelerator_Effective_Position "Accelerator effective position,    (0x0-0xFA):   (0%-100%)
+When accelerator effective position>100%，Accelerator_Effective_Position=0xFE
+加速踏板有效位置";
+CM_ SG_ 528 kick_down "kick down condition:  gas Pedal position >100% & Brake pedal not pressed & Limphome not true.";
+CM_ SG_ 528 Engine1_IND_AccelPadel_Override "This signal indicates if acceleration pedal torque is larger than ACC torque request
+指示加速踏板扭矩是否大于ACC要求的扭矩";
+CM_ SG_ 528 Engine1_Status_DASReq_Resp "The signal indicates if EMS is responsing the DAS request or not
+指示EMS是否响应DAS的请求";
+CM_ SG_ 530 engine_revolution_speed "engine revolution speed";
+CM_ SG_ 530 Engine_Status "Indicate different Engine status.";
+CM_ SG_ 530 brake_pedal_status "brake pedal switch status
+（由EMS诊断双触点制动灯开关的信号有效性，制动灯开关进入临界区域的有效时间内不应将0x3发出。0x3仅表示制动灯开关出现失效或故障)
+1、While(brake_pedal_BLS_active=0  & brake_pedal_BTS_active=1), brake_pedal_status=0;   While(BLS=1  & BTS=0), brake_pedal_status=1; 
+2、当brake_pedal_parity=0，并且持续时间大于双路制动开关临界区域的有效时间，brake_pedal_status=3;  其中制动开关临界区域的有效时间为50ms";
+CM_ SG_ 776 Accelerator_ActPedPos "Accelerator Actual Pedal Position,(0x0-0xFA):   (0%-100%)
+When Accelerator Actual Pedal Position>100%，Accelerator_ActPedPos=0xFE";
+CM_ SG_ 776 Engine3_Status_ExtFunctionValid "Extended EMS Function Validity,ACC,etc.
+EMS扩展功能有效性，如ACC等";
+CM_ SG_ 776 Mech_Loss_Eng_Torq "This signal describes the actual torque losses caused by engine mechanical losses, gas exchange and torque demands";
+CM_ SG_ 532 actual_powertrain_torque "Powertrain actual torque at flywheel(not including engine torque loss)";
+CM_ SG_ 532 Powertrain_Torque_Validity "Valid flag for all torque signals in message Engine4";
+CM_ SG_ 532 minimum_powertrain_torque "minimum powertrain torque";
+CM_ SG_ 532 maximum_powertrain_torque "maximum powertrain torque";
+CM_ SG_ 1544 Engine5_Status_ACCDistIncSwt "ACC distance increase switch status 
+设置增加ACC跟车距离的开关状态";
+CM_ SG_ 1544 Engine5_Status_ACCDistDecSwt "ACC distance decrease switch status
+设置缩短ACC跟车距离的开关状态";
+CM_ SG_ 1544 Engine5_Status_ACCSpdIncOrResSwt "ACC speed  increase or reset ACC switch status 
+设置增加ACC跟车车速或重启ACC的开关状态";
+CM_ SG_ 1544 Engine5_Status_ACCSpdDecOrSetSwt "ACC speed decrease or set ACC switch status
+设置减小ACC跟车车速或激活ACC的开关状态";
+CM_ SG_ 1544 Engine5_Status_DASSwt_Validity "Indicate if related DAS function switches are available
+指示DAS相关功能开关的有效性";
+CM_ SG_ 1544 Engine5_Status_ACCMainSwt "ACC main switch status
+ACC主开关的状态";
+CM_ SG_ 1544 Engine5_Status_ACCCnclSwt "ACC cancel switch status
+ACC 取消开关的状态";
+CM_ SG_ 16 ShiftLeverPos "Gear Selector Display: actual transmission Gear lever position based on the Transmission range selected by driver.";
+CM_ SG_ 16 TCU2_Status_TransFailure "Transmission Non Emissions Related Malfunction Active
+变速箱非排放相关故障指示";
+CM_ SG_ 16 TargetGear "Target gear: during the shifting process this value informs about the gear which is expected to be engaged in the gear box after the shifting process. Therefore it switches to the expected gear state with the beginning of the shifting process";
+CM_ SG_ 16 ActualGear "Actual Gear: shows the transmission gear being currently engaged in the gear box.";
+CM_ SG_ 16 TCU2_rolling_counter "every message increments the counter";
+CM_ SG_ 16 TCU2_checksum "byte6×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0              ";
+CM_ SG_ 512 ABS_active "indicates  ABS intervention active.";
+CM_ SG_ 512 ABS_fault "ABS system has detected a failure which does not allow a reliable ABS regulation and is therefore switched off";
+CM_ SG_ 512 EBD_fault "ABS system has detected a heavy fault, which does not even allow a reliable electronic brake distribution and is therefore completely shut down";
+CM_ SG_ 512 vehicle_speed "vehicle reference speed";
+CM_ SG_ 512 ABS1_RotDir_FL "To show the Rotation Direction of Wheel FL
+前左轮转动方向";
+CM_ SG_ 512 ABS1_RotDir_FR "To show the Rotation Direction of Wheel FR
+前右轮转动方向";
+CM_ SG_ 512 ABS1_RotDir_RL "To show the Rotation Direction of Wheel RL
+后左轮转动方向";
+CM_ SG_ 512 ABS1_RotDir_RR "To show the Rotation Direction of Wheel RR
+后右轮转动方向";
+CM_ SG_ 512 ABS1_checksum "vehicle reference speed checksum（车速校验信号).
+vehicle check sum:Byte7×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0 ";
+CM_ SG_ 512 ABS1_message_counter "every message increments the counter";
+CM_ SG_ 520 wheel_speed_FL "wheel speed front left";
+CM_ SG_ 520 wheel_speed_FR "wheel speed front right";
+CM_ SG_ 520 wheel_speed_RL "wheel speed rear left";
+CM_ SG_ 520 wheel_speed_RR_fault "wheel speed rear right error status";
+CM_ SG_ 520 wheel_speed_RL_fault "wheel speed rear left error status";
+CM_ SG_ 520 wheel_speed_FR_fault "wheel speed front right error status";
+CM_ SG_ 520 wheel_speed_FL_fault "wheel speed front left error status";
+CM_ SG_ 520 wheel_speed_RR "wheel speed rear right";
+CM_ SG_ 520 ABS2_message_counter "every message increments the counter";
+CM_ SG_ 338 ABS3_FLWhlPulseCnt_Valid "Front left wheel pulse counter validity
+前左轮轮速脉冲计数值有效性";
+CM_ SG_ 338 ABS3_WhlPulseCnt_FL "Front left wheel pulse rising edge and falling edge counter
+左前轮轮速脉冲上升沿、下降沿数";
+CM_ SG_ 338 ABS3_FRWhlPulseCnt_Valid "Front right wheel pulse counter validity
+前右轮轮速脉冲计数值有效性";
+CM_ SG_ 338 ABS3_WhlPulseCnt_FR "Front right wheel pulse rising edge and falling edge counter
+前右轮轮速脉冲上升沿、下降沿数";
+CM_ SG_ 338 ABS3_WhlPulseCnt_RL "Rear left wheel pulse rising edge and falling edge counter
+后左轮轮速脉冲上升沿、下降沿数";
+CM_ SG_ 338 ABS3_RLWhlPulseCnt_Valid "Rear left wheel pulse counter validity
+后左轮轮速脉冲计数值有效性";
+CM_ SG_ 338 ABS3_RRWhlPulseCnt_Valid "Rear right wheel pulse counter validity
+后右轮轮速脉冲计数值有效性";
+CM_ SG_ 338 ABS3_WhlPulseCnt_RR "Rear right wheel pulse rising edge and falling edge counter
+后右轮轮速脉冲上升沿、下降沿数";
+CM_ SG_ 338 ABS3_Counter_Message "Message Rolling Counter 报文计数";
+CM_ SG_ 338 ABS3_Check_Sum "Message CheckSum 报文校验
+check sum:Byte6×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0 ";
+CM_ SG_ 355 APB_Status "Status of APB system.APB系统状态";
+CM_ SG_ 355 APB_IND_Error "Error indication of APB system. APB系统的错误警示";
+CM_ SG_ 355 ESP_Status_ACCInfo_Error "Indicate if the Info from ACC is Wrong 
+指示ESP检测到ACC发出的信息是否有误
+（例如checksum, alivecount, timeout）";
+CM_ SG_ 355 ESP_Status_ACC_Available "Indicate if ACC is Available
+指示ACC功能是否可用";
+CM_ SG_ 355 ESP_Status_AEB_Available "Indicate if AEB is Available
+指示AEB功能是否可用";
+CM_ SG_ 355 ESP_Status_Prefill_Response "The signal indicates if ESP responsed prefill request or not
+指示ESP是否响应制动预充压请求";
+CM_ SG_ 355 ESP_Status_AEBJerk_Response "The signal indicates if ESP responsed AEB Jerk request or not
+指示ESP是否响应AEB制动抖动请求";
+CM_ SG_ 355 ESP_Status_FCW_DBS_Response "The signal indicates if ESP responsed FCW DBS request or not
+指示ESP是否响应FCW DBS请求";
+CM_ SG_ 355 ESP_Status_ACCReq_Response "The signal indicates if ESP responsed ACC decelerate request or not
+指示ESP是否响应ACC的减速请求";
+CM_ SG_ 355 ESP_Status_AEBReq_Response "The signal indicates if ESP responsed AEB decelerate request or not
+指示ESP是否响应AEB的减速请求";
+CM_ SG_ 355 ESP_Status_Hold "The signal indicates if ESP can hold the vehicle in standstill
+表示ESP是否将车辆保持在静止状态";
+CM_ SG_ 355 ESP_Status_AEBJerk_Available "Indicate if AEB Jerk is Available
+指示AEB Jerk功能是否可用";
+CM_ SG_ 355 ESP_Status_FCW_DBS_Available "Indicate if FCW DBS（ driver brake sensitivity） is Available
+指示FCW DBS功能是否可用";
+CM_ SG_ 355 ESP_Status_Prefill_Available "Indicate if Prefill is Available
+指示响应制动预充压功能是否可用";
+CM_ SG_ 339 TCS_active "indicates  TCS intervention active，TCS will detect spinning wheels and request torque reduction/limitation";
+CM_ SG_ 339 VDC_active "indicates  ESP intervention active，ESP will detect other vehicle slip/slide situations, and brake individual wheels to counteract the vehicle slide";
+CM_ SG_ 339 ESP_EnableSts "ESPOFF SW  close,ESP function passive";
+CM_ SG_ 339 ESP1_rolling_counter "every message increments the counter";
+CM_ SG_ 339 VDC_Fault "VDC malfunction";
+CM_ SG_ 339 TCS_Fault "TCS malfunction";
+CM_ SG_ 339 ESP1_checksum "byte6×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0 ";
+CM_ SG_ 340 ax "Longitudinal acceleration";
+CM_ SG_ 340 ay "Lateral acceleration";
+CM_ SG_ 340 ax_fault "longitudinal acceleration signal fault";
+CM_ SG_ 340 ay_fault "lateral acceleration signal fault";
+CM_ SG_ 340 yrs_fault "yaw rate signal fault";
+CM_ SG_ 340 yrs "yaw rate";
+CM_ SG_ 340 ESP2_rolling_counter "every message increments the counter";
+CM_ SG_ 340 ESP2_checksum "byte6×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0              ";
+CM_ SG_ 196 EPS1_APA_AvailSts "Indicate the Electrical Power Steering Availability Status for APA
+该信号表示EPS的APA系统功能状态";
+CM_ SG_ 196 EPS1_LKA_AvailSts "Indicate the Electrical Power Steering Availability Status for LKA
+该信号表示EPS的LKA系统功能状态";
+CM_ SG_ 196 EPS1_IND_LKAOverlayTorque_Value "LKA Applied Torque on the Steering Column
+表示LKA下EPS电机端等效在转向管柱上的输出扭矩";
+CM_ SG_ 196 EPS1_IND_DriverTorque_Value "driver applied torque on the steering wheel
+驾驶员作用在方向盘的扭矩";
+CM_ SG_ 196 EPS1_Status_Handsoff "Takeing Hands off Steering Wheel 
+该信号用于通知DAS系统，驾驶员的双手是否离开了方向盘";
+CM_ SG_ 196 EPS1_Status_HandsoffValid "Takeing Hands off Steering Wheel Validity
+该信号用于判断“EPS1_Status_Handsoff'信号的有效性";
+CM_ SG_ 196 EPS1_Msg_Count "This signal increments by one count each time this message is sent.";
+CM_ SG_ 196 EPS1_CRC_check "According SAE J1850, The CRC Check will be implemented to match the values calculated in the attached macro.";
+CM_ SG_ 194 SAS1_msg_counter "Message counter.";
+CM_ SG_ 194 SAS1_checksum "Byte 1 up to Byte 4 and low nibble of Byte 0 of message SAS1 is used to calculate the check sum；       
+temp_result= Byte1 XOR Byte2 XOR Byte3 XOR Byte4；
+SAS1_checksum=higher nibble(temp_result) XOR lower nibble(temp_result) XOR SAS1_msg_counter";
+CM_ SG_ 194 steering_angle_valid "1:senser information valid;                    0: senser information invalid, an internal sensor fault occurred. ";
+CM_ SG_ 194 calibrated_status "1: sensor calibrated;        0:sensor not calibrated.";
+CM_ SG_ 194 trimming_status "1: sensor trimmed;    0:sensor not trimmed, this is handled as a sensor failure(steering angle  valid data=0)";
+CM_ SG_ 796 Psngr_Seat_Belt_Sts "Indicate Front passenger seat belt status
+前排乘客座椅安全带状态";
+CM_ SG_ 796 Driver_Seat_Belt_Sts "Indicate Front driver seat belt status
+前排驾驶员座椅安全带状态";
+CM_ SG_ 796 Air_Bag_Fail_Sts "Indicate airbag ECU failure status";
+CM_ SG_ 796 SRS1_live_counter "every message increments the counter";
+CM_ SG_ 833 APA1_Status_FunctionMode "APA  Function Mod
+APA功能模式";
+
+
+BA_DEF_ BO_  "NmMessage" ENUM "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cycle","NoSendType","IfActive";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cycle","OnChange","OnWrite","IfActive","OnChangeWithRepetition","OnWriteWithRepetition","IfActiveWithRepetition";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 1000000000;
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "DiagStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmNode" ENUM  "Not","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 65535;
+BA_DEF_ BU_  "NmCAN" INT 0 2;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "NmBaseAddress" HEX 0 2047;
+BA_DEF_  "NmMessageCount" INT 0 255;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v3_0" INT 0 0;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v2_3" INT 0 0;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v3_1" INT 0 0;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v2_2" INT 0 0;
+BA_DEF_ BO_  "_Cdb_Sc_CTm_FAW_v2_1" INT 0 0;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_  "BusType" STRING ;
+
+
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgSendType" "Cycle";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cycle";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "ILUsed" "No";
+BA_DEF_DEF_  "DiagStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "Not";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmCAN" 0;
+BA_DEF_DEF_  "Manufacturer" "";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "NmMessageCount" 128;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v3_0" 0;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v2_3" 0;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v3_1" 0;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v2_2" 0;
+BA_DEF_DEF_  "_Cdb_Sc_CTm_FAW_v2_1" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "No";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "SFCAN";
+BA_ "GenMsgCycleTime" BO_ 16 10;
+BA_ "GenSigStartValue" SG_ 16 ShiftLeverPos 7;
+BA_ "GenSigStartValue" SG_ 16 TargetGear 15;
+BA_ "GenSigStartValue" SG_ 16 ActualGear 15;
+BA_ "GenMsgCycleTime" BO_ 329 10;
+BA_ "GenMsgCycleTime" BO_ 338 10;
+BA_ "GenMsgCycleTime" BO_ 339 10;
+BA_ "GenSigStartValue" SG_ 339 ESP_EnableSts 1;
+BA_ "GenSigStartValue" SG_ 339 VDC_Fault 1;
+BA_ "GenSigStartValue" SG_ 339 TCS_Fault 1;
+BA_ "GenMsgCycleTime" BO_ 340 20;
+BA_ "GenSigStartValue" SG_ 340 ax 3298;
+BA_ "GenSigStartValue" SG_ 340 ay 3298;
+BA_ "GenSigStartValue" SG_ 340 yrs 3112;
+BA_ "GenMsgCycleTime" BO_ 355 20;
+BA_ "GenMsgCycleTime" BO_ 368 100;
+BA_ "GenMsgCycleTimeFast" BO_ 368 20;
+BA_ "GenMsgNrOfRepetition" BO_ 368 5;
+BA_ "GenMsgDelayTime" BO_ 368 20;
+BA_ "GenMsgCycleTime" BO_ 384 100;
+BA_ "GenMsgCycleTimeFast" BO_ 384 20;
+BA_ "GenMsgNrOfRepetition" BO_ 384 1;
+BA_ "GenMsgDelayTime" BO_ 384 20;
+BA_ "GenSigSendType" SG_ 384 Left_Turn_Lamp_Status 1;
+BA_ "GenSigSendType" SG_ 384 Right_Turn_Lamp_Status 1;
+BA_ "GenMsgCycleTime" BO_ 400 100;
+BA_ "GenMsgCycleTimeFast" BO_ 400 20;
+BA_ "GenMsgNrOfRepetition" BO_ 400 3;
+BA_ "GenMsgDelayTime" BO_ 400 20;
+BA_ "GenSigStartValue" SG_ 400 AC1_Status_AmbientTemp_Lvl 255;
+BA_ "GenMsgCycleTime" BO_ 512 20;
+BA_ "GenSigStartValue" SG_ 512 ABS_fault 1;
+BA_ "GenSigStartValue" SG_ 512 EBD_fault 1;
+BA_ "GenSigStartValue" SG_ 512 vehicle_speed 8190;
+BA_ "GenMsgCycleTime" BO_ 520 20;
+BA_ "GenSigStartValue" SG_ 520 wheel_speed_FL 8190;
+BA_ "GenSigStartValue" SG_ 520 wheel_speed_FR 8190;
+BA_ "GenSigStartValue" SG_ 520 wheel_speed_RL 8190;
+BA_ "GenSigStartValue" SG_ 520 wheel_speed_RR_fault 1;
+BA_ "GenSigStartValue" SG_ 520 wheel_speed_RL_fault 1;
+BA_ "GenSigStartValue" SG_ 520 wheel_speed_FR_fault 1;
+BA_ "GenSigStartValue" SG_ 520 wheel_speed_FL_fault 1;
+BA_ "GenSigStartValue" SG_ 520 wheel_speed_RR 8190;
+BA_ "GenMsgCycleTime" BO_ 528 10;
+BA_ "GenSigStartValue" SG_ 528 Accelerator_Effective_Position 255;
+BA_ "GenMsgCycleTime" BO_ 530 10;
+BA_ "GenSigStartValue" SG_ 530 engine_revolution_speed 65535;
+BA_ "GenSigStartValue" SG_ 530 brake_pedal_status 3;
+BA_ "GenMsgCycleTime" BO_ 532 10;
+BA_ "GenSigStartValue" SG_ 532 actual_powertrain_torque 8191;
+BA_ "GenSigStartValue" SG_ 532 minimum_powertrain_torque 8191;
+BA_ "GenSigStartValue" SG_ 532 maximum_powertrain_torque 8191;
+BA_ "GenMsgCycleTime" BO_ 560 20;
+BA_ "GenMsgCycleTime" BO_ 624 50;
+BA_ "GenSigStartValue" SG_ 624 DAS2_Status_TSRTargetSpeedLimit 255;
+BA_ "GenMsgCycleTime" BO_ 656 50;
+BA_ "GenMsgCycleTimeFast" BO_ 656 20;
+BA_ "GenMsgNrOfRepetition" BO_ 656 3;
+BA_ "GenMsgDelayTime" BO_ 656 20;
+BA_ "GenSigSendType" SG_ 656 DAS3_Fdbk_AEB_OnOff 4;
+BA_ "GenSigSendType" SG_ 656 DAS3_Fdbk_IHC_OnOff 4;
+BA_ "GenSigSendType" SG_ 656 DAS3_Fdbk_TSR_OnOff 4;
+BA_ "GenSigSendType" SG_ 656 DAS3_Fdbk_FCWSensitivity_Level 4;
+BA_ "GenSigSendType" SG_ 656 DAS3_Fdbk_LDWSensitivity_Level 4;
+BA_ "GenSigSendType" SG_ 656 DAS3_Fdbk_FCW_OnOff 4;
+BA_ "GenSigSendType" SG_ 656 DAS3_Fdbk_LDW_OnOff 4;
+BA_ "GenSigStartValue" SG_ 656 DAS3_Data_RealACCHeadway_Lvl 7;
+BA_ "GenSigStartValue" SG_ 656 DAS3_Set_ACCHeadway 4;
+BA_ "GenMsgCycleTime" BO_ 776 20;
+BA_ "GenSigStartValue" SG_ 776 Accelerator_ActPedPos 255;
+BA_ "GenSigStartValue" SG_ 776 Engine3_Status_ExtFunctionValid 1;
+BA_ "GenSigStartValue" SG_ 776 Mech_Loss_Eng_Torq 8191;
+BA_ "GenMsgCycleTime" BO_ 787 20;
+BA_ "GenMsgCycleTime" BO_ 796 500;
+BA_ "GenMsgCycleTimeFast" BO_ 796 20;
+BA_ "GenMsgNrOfRepetition" BO_ 796 10;
+BA_ "GenMsgDelayTime" BO_ 796 20;
+BA_ "GenSigStartValue" SG_ 796 Psngr_Seat_Belt_Sts 2;
+BA_ "GenSigStartValue" SG_ 796 Driver_Seat_Belt_Sts 2;
+BA_ "GenSigStartValue" SG_ 796 Air_Bag_Fail_Sts 2;
+BA_ "GenMsgCycleTime" BO_ 833 20;
+BA_ "GenMsgCycleTime" BO_ 872 50;
+BA_ "GenMsgCycleTime" BO_ 874 50;
+BA_ "GenMsgCycleTime" BO_ 945 100;
+BA_ "GenMsgCycleTimeFast" BO_ 945 20;
+BA_ "GenMsgNrOfRepetition" BO_ 945 3;
+BA_ "GenMsgDelayTime" BO_ 945 20;
+BA_ "GenSigSendType" SG_ 945 ICE2_Set_AEB_OnOff 4;
+BA_ "GenSigSendType" SG_ 945 ICE2_Set_IHC_OnOff 4;
+BA_ "GenSigSendType" SG_ 945 ICE2_Set_TSR_OnOff 4;
+BA_ "GenSigSendType" SG_ 945 ICE2_Set_FCWSensitivity_Level 4;
+BA_ "GenSigSendType" SG_ 945 ICE2_Set_LDWSensitivity_Level 4;
+BA_ "GenSigSendType" SG_ 945 ICE2_Set_FCW_OnOff 4;
+BA_ "GenSigSendType" SG_ 945 ICE2_Set_LDW_OnOff 4;
+BA_ "GenSigSendType" SG_ 945 ICE2_CMD_CtrlCruiseSpeed_Value 4;
+BA_ "GenSigStartValue" SG_ 945 ICE2_CMD_CtrlCruiseSpeed_Value 255;
+BA_ "GenSigSendType" SG_ 945 ICE2_CMD_CtrlACC_OnOff 4;
+BA_ "GenSigSendType" SG_ 945 ICE2_CMD_ACCHeadway_IncDec 4;
+BA_ "GenMsgCycleTime" BO_ 1345 500;
+BA_ "GenSigStartValue" SG_ 1345 IC5_Status_ICDisVehSpd_Value 255;
+BA_ "GenMsgCycleTime" BO_ 1544 100;
+BA_ "GenMsgCycleTime" BO_ 194 10;
+BA_ "GenMsgCycleTime" BO_ 196 20;
+BA_ "GenSigStartValue" SG_ 196 EPS1_LKA_AvailSts 1;
+VAL_ 560 DAS1_Status_ACCTorqueReq_Value 8191 "Invalid" ;
+VAL_ 560 DAS1_Status_DBS_Enable 1 "Enable" 0 "Disable" ;
+VAL_ 560 DAS1_Status_ACCStandstillReq 1 "Request" 0 "No Request" ;
+VAL_ 560 DAS1_Status_ACCDecelReq_Value 127 "Invalid" ;
+VAL_ 560 DAS1_Status_PrefillReq 1 "Request" 0 "No Request" ;
+VAL_ 560 DAS1_Status_AEBJerkReq 1 "Request" 0 "No Request" ;
+VAL_ 560 DAS1_Status_AEBDecelerateReq 1 "Request" 0 "No Request" ;
+VAL_ 560 DAS1_Status_AEBDecelReq_Value 127 "Invalid" ;
+VAL_ 560 DAS1_Status_FCW_DBSReq 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Level 3" 2 "Level 2" 1 "Level 1" 0 "No level" ;
+VAL_ 560 DAS1_Status_AEBJerkWarning_Lvl 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Level 4" 3 "Level 3" 2 "Level 2" 1 "Level 1" 0 "No level" ;
+VAL_ 560 DAS1_Req_ACCDriveOff 1 "Request" 0 "No Request" ;
+VAL_ 560 DAS1_Status_ACCTorqueReq 1 "Request" 0 "No Request" ;
+VAL_ 560 DAS1_Status_ACCDecelerateReq 1 "Request" 0 "No Request" ;
+VAL_ 624 DAS2_Status_ACC 4 "Exit" 3 "Active" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 624 DAS2_Status_ACCControlVehicle 1 "True" 0 "False" ;
+VAL_ 624 DAS2_Req_IHCMainbeam_OnOff 1 "On" 0 "Off" ;
+VAL_ 624 DAS2_Status_AEB 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 624 DAS2_Status_TSRTargetSpeedLimit 255 "Invalid" ;
+VAL_ 624 DAS2_Status_MCS_Error 3 "Reserved" 2 "Camera Block" 1 "Error" 0 "No error" ;
+VAL_ 624 DAS2_Status_SCC 7 "Reserved" 6 "Exit" 5 "Active XY" 4 "Actice X" 3 "Standby(inhibit)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 624 DAS2_Status_LDWLine_Curvature 8191 "Invalid" ;
+VAL_ 624 DAS2_Status_LKA 5 "Exit" 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 656 DAS3_Status_ACCCancelReq 3 "Reserved" 2 "Request" 1 "Condition dissatisfy" 0 "No Request" ;
+VAL_ 656 DAS3_Status_ACCOverrideIndReq 1 "Request" 0 "No Request" ;
+VAL_ 656 DAS3_Status_ACCTakeoverIndReq 1 "Request" 0 "No Request" ;
+VAL_ 656 DAS3_Status_ACCGoIndicateReq 1 "Request" 0 "No Request" ;
+VAL_ 656 DAS3_Status_CIPVIndicateReq 1 "Active" 0 "Inactive" ;
+VAL_ 656 DAS3_Status_FCW 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 656 DAS3_Status_FCWWarning_Lvl 3 "Reserved" 2 "Warning Level 2" 1 "Warning Level 1" 0 "No warning" ;
+VAL_ 656 DAS3_Status_IHC 3 "Active" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 656 DAS3_Status_LDW 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 656 DAS3_Status_LDWWarning 3 "Reserved" 2 "Right Warning" 1 "Left Warning" 0 "No warning" ;
+VAL_ 656 DAS3_Status_LDWLineDetect 3 "Both side lane marks detected" 2 "Right side lane mark detected" 1 "Left side lane mark detected" 0 "Neither side lane mark detected" ;
+VAL_ 656 DAS3_Status_TSR 4 "Active" 3 "Active (no intervention)" 2 "Standby" 1 "Off" 0 "Unavailable state" ;
+VAL_ 656 DAS3_Status_HandsOffWarning 1 "Warning" 0 "No warning" ;
+VAL_ 656 DAS3_Status_LKATakeoverReq 1 "Request" 0 "No Request" ;
+VAL_ 656 DAS3_Fdbk_AEB_OnOff 3 "Reserved" 2 "AEB On" 1 "AEB Off" 0 "Invalid" ;
+VAL_ 656 DAS3_Fdbk_IHC_OnOff 3 "Reserved" 2 "IHC On" 1 "IHC Off" 0 "Invalid" ;
+VAL_ 656 DAS3_Fdbk_TSR_OnOff 3 "Reserved" 2 "TSR On" 1 "TSR Off" 0 "Invalid" ;
+VAL_ 656 DAS3_Fdbk_FCWSensitivity_Level 3 "Late" 2 "Normal" 1 "Early" 0 "Invalid" ;
+VAL_ 656 DAS3_Fdbk_LDWSensitivity_Level 3 "Late" 2 "Normal" 1 "Early" 0 "Invalid" ;
+VAL_ 656 DAS3_Fdbk_FCW_OnOff 3 "Reserved" 2 "FCW On" 1 "FCW Off" 0 "Invalid" ;
+VAL_ 656 DAS3_Fdbk_LDW_OnOff 3 "Reserved" 2 "LDW On" 1 "LDW Off" 0 "Invalid" ;
+VAL_ 656 DAS3_Data_RealACCHeadway_Lvl 7 "Invalid" 6 "Reserved" 5 "Reserved" 4 "Distance stage 4" 3 "Distance stage 3" 2 "Distance stage 2" 1 "Distance stage 1" 0 "No gap set" ;
+VAL_ 656 DAS3_Set_ACCHeadway 7 "Invalid value" 6 "Reserved" 5 "Reserved" 4 "Distance stage 4" 3 "Distance stage 3" 2 "Distance stage 2" 1 "Distance stage 1" 0 "No gap set" ;
+VAL_ 787 DAS4_Status_LKATorqueReq_Value 1023 "Invalid" ;
+VAL_ 787 DAS4_Status_LKATorqueReq 1 "Torque request" 0 "No torque request" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt1_Dx 255 "Invalid" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt1_Color 7 "Reserved" 6 "Reserved" 5 "Orange (Reserved)" 4 "White (Reserved)" 3 "Red" 2 "Yellow" 1 "Blue" 0 "Grey" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt1_Type 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Bikecycle" 3 "Truck" 2 "Pedestrian" 1 "Car" 0 "No display" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt1_Dy 255 "Invalid" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt1_Pose 3 "Reserved" 2 "Right_lean" 1 "Left_lean" 0 "Straight" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt2_Dx 255 "Invalid" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt2_Type 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Bikecycle" 3 "Truck" 2 "Pedestrian" 1 "Car" 0 "No display" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt2_Dy 255 "Invalid" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt2_Pose 3 "Reserved" 2 "Right_lean" 1 "Left_lean" 0 "Straight" ;
+VAL_ 872 DAS5_Status_ACCFrontObjt2_Color 7 "Reserved" 6 "Reserved" 5 "Orange (Reserved)" 4 "White (Reserved)" 3 "Red" 2 "Yellow" 1 "Blue" 0 "Grey" ;
+VAL_ 872 DAS5_Status_LDWLeftLine_Color 3 "Red" 2 "Blue" 1 "White" 0 "Grey" ;
+VAL_ 872 DAS5_Status_LDWLeftLine_Type 3 "Reserved" 2 "dash lane" 1 "Solid lane" 0 "No display" ;
+VAL_ 872 DAS5_Status_LDWLeftLine_Dy 63 "Invalid" ;
+VAL_ 874 DAS6_Status_ACCLeftFrontObjt_Dx 255 "Invalid" ;
+VAL_ 874 DAS6_Status_ACCLeftFrontObjt_Color 7 "Reserved" 6 "Reserved" 5 "Orange (Reserved)" 4 "White" 3 "Red(Reserved)" 2 "Yellow(Reserved)" 1 "Blue(Reserved)" 0 "Grey" ;
+VAL_ 874 DAS6_Status_ACCLeftFrontObjt_Type 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Bikecycle" 3 "Truck" 2 "Pedestrian" 1 "Car" 0 "No display" ;
+VAL_ 874 DAS6_Status_ACCLeftFrontObjt_Dy 255 "Invalid" ;
+VAL_ 874 DAS6_Status_ACCLeftFrontObjt_Pose 3 "Reserved" 2 "Right_lean" 1 "Left_lean" 0 "Straight" ;
+VAL_ 874 DAS6_Status_ACCRightFrontObjt_Dx 255 "Invalid" ;
+VAL_ 874 DAS6_Status_ACCRightFrontObjt_Type 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Bikecycle" 3 "Truck" 2 "Pedestrian" 1 "Car" 0 "No display" ;
+VAL_ 874 DAS6_Status_ACCRightFrontObjt_Dy 255 "Invalid" ;
+VAL_ 874 DAS6_Status_ACCRightFrontObjt_Pose 3 "Reserved" 2 "Right_lean" 1 "Left_lean" 0 "Straight" ;
+VAL_ 874 DAS6_Status_ACCRightFrontObjt_Color 7 "Reserved" 6 "Reserved" 5 "Orange (Reserved)" 4 "White" 3 "Red(Reserved)" 2 "Yellow(Reserved)" 1 "Blue(Reserved)" 0 "Grey" ;
+VAL_ 874 DAS6_Status_LDWRightLine_Color 3 "Red" 2 "Blue" 1 "White" 0 "Grey" ;
+VAL_ 874 DAS6_Status_LDWRightLine_Type 3 "Reserved" 2 "dash lane" 1 "Solid lane" 0 "No display" ;
+VAL_ 874 DAS6_Status_LDWRightLine_Dy 63 "Invalid" ;
+VAL_ 384 BCM_DrDoorLockSwStatus 1 "UnLock" 0 "Lock" ;
+VAL_ 384 BCM_DriverDoorSt 1 "Open" 0 "Closed" ;
+VAL_ 384 BCM_PassDoorSt 1 "Open" 0 "Closed" ;
+VAL_ 384 BCM_RLDoorSt 1 "Open" 0 "Closed" ;
+VAL_ 384 BCM_RRDoorSt 1 "Open" 0 "Closed" ;
+VAL_ 384 BCM_LuggageDoorSt 1 "Open" 0 "Closed" ;
+VAL_ 384 BCM1_IND_HighBeamSwt_OnOff 1 "ON" 0 "OFF" ;
+VAL_ 384 Front_Wiper_Status 3 "ContinuousFast" 2 "ContinuousSlow" 1 "Intermittent" 0 "OFF" ;
+VAL_ 384 Left_Turn_Lamp_Status 1 "Active" 0 "Not active" ;
+VAL_ 384 Right_Turn_Lamp_Status 1 "Active" 0 "Not active" ;
+VAL_ 384 Low_Beam_Status 1 "Active" 0 "Not active" ;
+VAL_ 384 High_Beam_Status 1 "Active" 0 "Not active" ;
+VAL_ 384 Front_Fog_Lamp_Status 1 "Active" 0 "Not active" ;
+VAL_ 384 Rear_Fog_Lamp_Status 1 "Active" 0 "Not active" ;
+VAL_ 384 BCM_IgnKeyPOS 3 "Start" 2 "ON" 1 "ACC" 0 "Lock" ;
+VAL_ 384 BCM1_Status_LKAMainSwt_reserved 1 "Pressed" 0 "No Press" ;
+VAL_ 384 BCM1_Status_AutoLightSwt_OnOff 1 "ON" 0 "OFF" ;
+VAL_ 384 BCM1_Rain_Intensity 3 "Heavy Rain" 2 "Middle Rain" 1 "Light Rain" 0 "No Rain" ;
+VAL_ 384 BCM1_Status_ACCSwt 7 "Reserve" 6 "ACCDistChaSwt  Pressed（6.6KΩ）" 5 "ACCLKAMainSwt Pressed（2.2KΩ）" 4 "ACCSpdIncOrResSwt  Pressed（680Ω）" 3 "ACCSpdDecOrSetSwt Pressed（330Ω）" 2 "ACCCnclSwt  Pressed（120Ω）" 1 "ACCMainSwt  Pressed（0Ω）" 0 "No Press" ;
+VAL_ 384 BCM1_IND_OvertakinglampSwt_OnOff 1 "ON" 0 "OFF" ;
+VAL_ 368 PEPS_Ign_Key_POS 3 "Start" 2 "ON" 1 "ACC" 0 "Lock" ;
+VAL_ 400 AC1_Status_AmbientTemp_Lvl 255 "Invalid" ;
+VAL_ 329 odometer_value 16777215 "Invalid" ;
+VAL_ 1345 IC5_Set_AEB_OnOff 3 "Reserved" 2 "AEB On" 1 "AEB Off" 0 "Invalid" ;
+VAL_ 1345 IC5_Set_FCW_OnOff 3 "Reserved" 2 "FCW On" 1 "FCW Off" 0 "Invalid" ;
+VAL_ 1345 IC5_Set_LDW_OnOff 3 "Reserved" 2 "LDW On" 1 "LDW Off" 0 "Invalid" ;
+VAL_ 1345 IC5_Status_ICDisVehSpd_Value 255 "Invalid" ;
+VAL_ 945 ICE2_Set_AEB_OnOff 3 "Reserved" 2 "AEB On" 1 "AEB Off" 0 "Invalid" ;
+VAL_ 945 ICE2_Set_IHC_OnOff 3 "Reserved" 2 "IHC On" 1 "IHC Off" 0 "Invalid" ;
+VAL_ 945 ICE2_Set_TSR_OnOff 3 "Reserved" 2 "TSR On" 1 "TSR Off" 0 "Invalid" ;
+VAL_ 945 ICE2_Set_FCWSensitivity_Level 3 "Late" 2 "Normal" 1 "Early" 0 "Invalid" ;
+VAL_ 945 ICE2_Set_LDWSensitivity_Level 3 "Late" 2 "Normal" 1 "Early" 0 "Invalid" ;
+VAL_ 945 ICE2_Set_FCW_OnOff 3 "Reserved" 2 "FCW On" 1 "FCW Off" 0 "Invalid" ;
+VAL_ 945 ICE2_Set_LDW_OnOff 3 "Reserved" 2 "LDW On" 1 "LDW Off" 0 "Invalid" ;
+VAL_ 945 ICE2_CMD_CtrlCruiseSpeed_Value 255 "Invalid" ;
+VAL_ 945 ICE2_CMD_CtrlACC_OnOff 3 "Active" 2 "ON" 1 "OFF" 0 "Invalid" ;
+VAL_ 945 ICE2_CMD_ACCHeadway_IncDec 3 "Reserved" 2 "Decrease" 1 "Increase" 0 "Invalid" ;
+VAL_ 528 Accelerator_Effective_Position 255 "Invalid" ;
+VAL_ 528 kick_down 1 "Kickdown active" 0 "No kickdown" ;
+VAL_ 528 Engine1_IND_AccelPadel_Override 1 "Override" 0 "No override" ;
+VAL_ 528 Engine1_Status_DASReq_Resp 1 "Response" 0 "No response" ;
+VAL_ 530 engine_revolution_speed 65535 "Invalid" ;
+VAL_ 530 Engine_Status 7 "Fault detected" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Eninge running" 2 "Reserved" 1 "Cranking" 0 "Engine stop, not running" ;
+VAL_ 530 brake_pedal_status 3 "Invalid" 2 "Not specified" 1 "Brake actuated" 0 "Brake not actuated" ;
+VAL_ 776 Accelerator_ActPedPos 255 "Invalid" ;
+VAL_ 776 Engine3_Status_ExtFunctionValid 1 "Unavaiable" 0 "Avaiable" ;
+VAL_ 776 Mech_Loss_Eng_Torq 8191 "Invalid" ;
+VAL_ 532 actual_powertrain_torque 8191 "Invalid" ;
+VAL_ 532 Powertrain_Torque_Validity 1 "Valid" 0 "Invalid" ;
+VAL_ 532 minimum_powertrain_torque 8191 "Invalid" ;
+VAL_ 532 maximum_powertrain_torque 8191 "Invalid" ;
+VAL_ 1544 Engine5_Status_ACCDistIncSwt 1 "Pressed" 0 "No Press" ;
+VAL_ 1544 Engine5_Status_ACCDistDecSwt 1 "Pressed" 0 "No Press" ;
+VAL_ 1544 Engine5_Status_ACCSpdIncOrResSwt 1 "Pressed" 0 "No Press" ;
+VAL_ 1544 Engine5_Status_ACCSpdDecOrSetSwt 1 "Pressed" 0 "No Press" ;
+VAL_ 1544 Engine5_Status_DASSwt_Validity 1 "Available" 0 "Unavailable" ;
+VAL_ 1544 Engine5_Status_ACCMainSwt 1 "Pressed" 0 "No Press" ;
+VAL_ 1544 Engine5_Status_ACCCnclSwt 1 "Pressed" 0 "No Press" ;
+VAL_ 16 ShiftLeverPos 7 "Invalid" 6 "M-（GJT:Reserved）" 5 "M+（GJT:Reserved）" 4 "M" 3 "R" 2 "N" 1 "D" 0 "P" ;
+VAL_ 16 TCU2_Status_TransFailure 1 "Active" 0 "Inactive" ;
+VAL_ 16 TargetGear 15 "Invalid" 14 "Reserved" 13 "Request_gear_P" 12 "Reserved" 11 "Request_gear_R" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Request_gear_7" 6 "Request_gear_6" 5 "Request_gear_5" 4 "Request_gear_4" 3 "Request_gear_3" 2 "Request_gear_2" 1 "Request_gear_1" 0 "Request_gear_N" ;
+VAL_ 16 ActualGear 15 "Invalid" 14 "Reserved" 13 "Current_gear_P" 12 "Reserved" 11 "Current_gear_R" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Current_gear_7" 6 "Current_gear_6" 5 "Current_gear_5" 4 "Current_gear_4" 3 "Current_gear_3" 2 "Current_gear_2" 1 "Current_gear_1" 0 "Current_gear_N" ;
+VAL_ 512 ABS_active 1 "ABS intervention active" 0 "No ABS intervention" ;
+VAL_ 512 ABS_fault 1 "Failure detected" 0 "No failure" ;
+VAL_ 512 EBD_fault 1 "Heavy fault detected" 0 "No failure" ;
+VAL_ 512 vehicle_speed 8191 "Invalid" ;
+VAL_ 512 ABS1_RotDir_FL 3 "Invalid" 2 "Backward" 1 "Forward" 0 "Stop" ;
+VAL_ 512 ABS1_RotDir_FR 3 "Invalid" 2 "Backward" 1 "Forward" 0 "Stop" ;
+VAL_ 512 ABS1_RotDir_RL 3 "Invalid" 2 "Backward" 1 "Forward" 0 "Stop" ;
+VAL_ 512 ABS1_RotDir_RR 3 "Invalid" 2 "Backward" 1 "Forward" 0 "Stop" ;
+VAL_ 520 wheel_speed_FL 8191 "Invalid" ;
+VAL_ 520 wheel_speed_FR 8191 "Invalid" ;
+VAL_ 520 wheel_speed_RL 8191 "Invalid" ;
+VAL_ 520 wheel_speed_RR_fault 1 "Fault detected" 0 "No fault" ;
+VAL_ 520 wheel_speed_RL_fault 1 "Fault detected" 0 "No fault" ;
+VAL_ 520 wheel_speed_FR_fault 1 "Fault detected" 0 "No fault" ;
+VAL_ 520 wheel_speed_FL_fault 1 "Fault detected" 0 "No fault" ;
+VAL_ 520 wheel_speed_RR 8191 "Invalid" ;
+VAL_ 338 ABS3_FLWhlPulseCnt_Valid 1 "Valid" 0 "Invalid" ;
+VAL_ 338 ABS3_WhlPulseCnt_FL 255 "Invalid" ;
+VAL_ 338 ABS3_FRWhlPulseCnt_Valid 1 "Valid" 0 "Invalid" ;
+VAL_ 338 ABS3_WhlPulseCnt_FR 255 "Invalid" ;
+VAL_ 338 ABS3_WhlPulseCnt_RL 255 "Invalid" ;
+VAL_ 338 ABS3_RLWhlPulseCnt_Valid 1 "Valid" 0 "Invalid" ;
+VAL_ 338 ABS3_RRWhlPulseCnt_Valid 1 "Valid" 0 "Invalid" ;
+VAL_ 338 ABS3_WhlPulseCnt_RR 255 "Invalid" ;
+VAL_ 355 APB_Status 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Locking（卡钳正处于夹紧过程中）" 3 "Releasing（卡钳正处于释放过程中）" 2 "Closed（卡钳处于夹紧状态）" 1 "Released（卡钳处于释放状态）" 0 "Reserved" ;
+VAL_ 355 APB_IND_Error 3 "Diagnosis （诊断）" 2 "Error （故障）" 1 "No Error （无故障）" 0 "Reserved" ;
+VAL_ 355 ESP_Status_ACCInfo_Error 3 "Reserved" 2 "Reserved" 1 "Error" 0 "Not error" ;
+VAL_ 355 ESP_Status_ACC_Available 1 "Available" 0 "Unavailable" ;
+VAL_ 355 ESP_Status_AEB_Available 1 "Available" 0 "Unavailable" ;
+VAL_ 355 ESP_Status_Prefill_Response 1 "Response" 0 "No response" ;
+VAL_ 355 ESP_Status_AEBJerk_Response 1 "Response" 0 "No response" ;
+VAL_ 355 ESP_Status_FCW_DBS_Response 1 "Response" 0 "No response" ;
+VAL_ 355 ESP_Status_ACCReq_Response 1 "Response" 0 "No response" ;
+VAL_ 355 ESP_Status_AEBReq_Response 1 "Response" 0 "No response" ;
+VAL_ 355 ESP_Status_Hold 1 "Hold" 0 "Unhold" ;
+VAL_ 355 ESP_Status_AEBJerk_Available 1 "Available" 0 "Unavailable" ;
+VAL_ 355 ESP_Status_FCW_DBS_Available 1 "Available" 0 "Unavailable" ;
+VAL_ 355 ESP_Status_Prefill_Available 1 "Available" 0 "Unavailable" ;
+VAL_ 339 TCS_active 1 "TCS   active" 0 "TCS inactive" ;
+VAL_ 339 VDC_active 1 "VDC   active" 0 "VDC inactive" ;
+VAL_ 339 ESP_EnableSts 1 "ESP enable" 0 "ESP disable" ;
+VAL_ 339 VDC_Fault 1 "Failure" 0 "Not failure" ;
+VAL_ 339 TCS_Fault 1 "Failure" 0 "Not failure" ;
+VAL_ 340 ax 4095 "Invalid" ;
+VAL_ 340 ay 4095 "Invalid" ;
+VAL_ 340 ax_fault 1 "Falut" 0 "No fault" ;
+VAL_ 340 ay_fault 1 "Falut" 0 "No fault" ;
+VAL_ 340 yrs_fault 1 "Falut" 0 "No fault" ;
+VAL_ 340 yrs 4095 "Invalid" ;
+VAL_ 340 brake_pressure 255 "Invalid" ;
+VAL_ 196 EPS1_APA_AvailSts 3 "Permanently failed" 2 "Active" 1 "Available for control" 0 "Temporary inhibit" ;
+VAL_ 196 EPS1_LKA_AvailSts 4 "Permanently failed" 3 "Active" 2 "Available for control" 1 "Temporary inhibit" 0 "Not configured" ;
+VAL_ 196 EPS1_IND_LKAOverlayTorque_Value 255 "Invalid" ;
+VAL_ 196 EPS1_IND_DriverTorque_Value 255 "Invalid" ;
+VAL_ 196 EPS1_Status_Handsoff 1 "Hands on" 0 "Hands off" ;
+VAL_ 196 EPS1_Status_HandsoffValid 1 "Valid" 0 "Invalid" ;
+VAL_ 194 steering_angle_valid 1 "Senser information valid" 0 "Senser information invalid" ;
+VAL_ 194 calibrated_status 1 "Sensor calibrated" 0 "Sensor not calibrated" ;
+VAL_ 194 trimming_status 1 "Sensor trimmed" 0 "Sensor not trimmed" ;
+VAL_ 194 steering_angle_spd 255 "Invalid" ;
+VAL_ 194 steering_angle 65535 "Invalid" ;
+VAL_ 796 Psngr_Seat_Belt_Sts 3 "Not Used" 2 "Unbuckled" 1 "Reserved" 0 "Buckled" ;
+VAL_ 796 Driver_Seat_Belt_Sts 3 "Not Used" 2 "Unbuckled" 1 "Reserved" 0 "Buckled" ;
+VAL_ 796 Air_Bag_Fail_Sts 3 "Not Used" 2 "Fail present, lamp on" 1 "Reserved" 0 "Fail no present, lamp off" ;
+VAL_ 833 APA1_Status_FunctionMode 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Reserved" 2 "Reserved" 1 "ParkAssist_AutomaticPark" 0 "No action" ;
