@@ -1,0 +1,450 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ADASC MP5 HMI FRadar
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ MP5_HU_SlotUserSelected : 0|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1120 Object_Data: 8 ADASC
+ SG_ Back_Object_Right : 51|2@0+ (1,0) [0|3] ""  HMI
+ SG_ Back_Object_Left : 49|2@0+ (1,0) [0|3] ""  HMI
+ SG_ Front_Object06_Class : 46|3@0+ (1,0) [0|7] ""  HMI
+ SG_ Front_Object06_Zone : 43|4@0+ (1,0) [0|15] ""  HMI
+ SG_ Front_Object05_Class : 38|3@0+ (1,0) [0|7] ""  HMI
+ SG_ Front_Object05_Zone : 35|4@0+ (1,0) [0|15] ""  HMI
+ SG_ Front_Object04_Class : 30|3@0+ (1,0) [0|7] ""  HMI
+ SG_ Front_Object04_Zone : 27|4@0+ (1,0) [0|15] ""  HMI
+ SG_ Front_Object03_Class : 22|3@0+ (1,0) [0|7] ""  HMI
+ SG_ Front_Object03_Zone : 19|4@0+ (1,0) [0|15] ""  HMI
+ SG_ Front_Object02_Class : 14|3@0+ (1,0) [0|7] ""  HMI
+ SG_ Front_Object02_Zone : 11|4@0+ (1,0) [0|15] ""  HMI
+ SG_ Front_Object01_Class : 6|3@0+ (1,0) [0|7] ""  HMI
+ SG_ Front_Object01_Zone : 3|4@0+ (1,0) [0|15] ""  HMI
+
+BO_ 1271 HS2_ACC_AEB_HMI_4F7: 8 ADASC
+ SG_ HWA_Mode : 47|3@0+ (1,0) [0|7] ""  HMI
+ SG_ HWA_TurnInd_Disp : 49|2@0+ (1,0) [0|3] ""  HMI
+ SG_ ICA_HMI_Txt_Disp : 35|4@0+ (1,0) [0|15] ""  HMI
+ SG_ ICA_Status_Icon : 39|3@0+ (1,0) [0|7] ""  HMI
+ SG_ AEB_Switch_Status : 13|2@0+ (1,0) [0|3] ""  HMI
+ SG_ AEB_Fault_Status : 28|2@0+ (1,0) [0|3] ""  HMI
+ SG_ AEB_Alert_Req : 15|2@0+ (1,0) [0|3] ""  HMI
+ SG_ ACC_Desired_Cruise_Speed : 23|8@0+ (1,0) [0|254] ""  HMI
+ SG_ AEB_HMI_Txt_Disp : 26|3@0+ (1,0) [0|7] ""  HMI
+ SG_ ACC_HMI_Txt_Disp : 11|4@0+ (1,0) [0|15] ""  HMI
+ SG_ ACC_HMI_SetSpd_Disp : 2|3@0+ (1,0) [0|7] ""  HMI
+ SG_ ACC_HMI_Icon_Disp : 42|3@0+ (1,0) [0|7] ""  HMI
+ SG_ ACC_HMI_HwyDisp_FLG : 4|1@0+ (1,0) [0|1] ""  HMI
+ SG_ ACC_Desired_Headway : 6|2@0+ (1,0) [0|3] ""  HMI
+
+BO_ 809 HS2_LKAStatus_CVM_329: 8 ADASC
+ SG_ Hands_off_warning : 18|1@0+ (1,0) [0|1] ""  HMI
+ SG_ HMI_DisplaySts : 11|4@0+ (1,0) [0|15] ""  HMI
+ SG_ HMI_ELKSts : 38|2@0+ (1,0) [0|3] ""  HMI
+ SG_ HMI_LCASts : 23|2@0+ (1,0) [0|3] ""  HMI
+ SG_ HMI_LDWSts : 4|2@0+ (1,0) [0|3] ""  HMI
+ SG_ HMI_LKASts : 6|2@0+ (1,0) [0|3] ""  HMI
+ SG_ HMI_PopupSts : 63|4@0+ (1,0) [0|15] ""  HMI
+ SG_ HWA_ActionSts : 47|2@0+ (1,0) [0|3] ""  HMI
+ SG_ ISA_Popup_text : 30|3@0+ (1,0) [0|7] ""  HMI
+ SG_ ISA_Sign_Type : 42|3@0+ (1,0) [0|7] ""  HMI
+ SG_ ISA_Status : 45|3@0+ (1,0) [0|7] ""  HMI
+ SG_ ISA_Value : 36|5@0+ (1,0) [0|31] ""  HMI
+ SG_ LCA_PopupSts : 59|4@0+ (1,0) [0|15] ""  HMI
+ SG_ LDW_CHIME_Flag : 17|2@0+ (1,0) [0|3] ""  HMI
+ SG_ TSR_Sign_Type : 55|8@0+ (1,0) [0|255] ""  HMI
+
+BO_ 1051 HS2_LANE_DATA_41B: 8 ADASC
+ SG_ EGO_LANE_TYPE : 7|2@0+ (1,0) [0|3] ""  HMI
+ SG_ R0_LINE_TYPE : 5|3@0+ (1,0) [0|7] ""  HMI
+ SG_ L0_LINE_TYPE : 2|3@0+ (1,0) [0|7] ""  HMI
+
+BO_ 844 SDE_SRR_RF: 8 ADASC
+ SG_ SRR_RF_FCTAWarning : 10|1@0+ (1,0) [0|1] ""  HMI
+ SG_ SRR_RF_ErrorSt : 9|1@0+ (1,0) [0|1] ""  HMI
+
+BO_ 843 SDE_SRR_LF: 8 ADASC
+ SG_ SRR_LF_ErrorSt : 9|1@0+ (1,0) [0|1] ""  HMI
+ SG_ SRR_LF_FCTAWarning : 10|1@0+ (1,0) [0|1] ""  HMI
+
+BO_ 836 SDE_BSD_S_State: 8 ADASC
+ SG_ BSD_S_RCTAWarning : 16|1@0+ (1,0) [0|1] ""  HMI
+ SG_ BSD_S_DoorOpenWarning : 15|2@0+ (1,0) [0|3] ""  HMI
+ SG_ BSD_S_LCAWarning : 11|2@0+ (1,0) [0|3] ""  HMI
+ SG_ BSD_S_ErrorSt : 9|1@0+ (1,0) [0|1] ""  HMI
+
+BO_ 835 SDE_BSD_State: 8 ADASC
+ SG_ BSD_RCTAWarning : 16|1@0+ (1,0) [0|1] ""  HMI
+ SG_ BSD_DoorOpenWarning : 15|2@0+ (1,0) [0|3] ""  HMI
+ SG_ BSD_LCAWarning : 11|2@0+ (1,0) [0|3] ""  HMI
+ SG_ BSD_ErrorSt : 9|1@0+ (1,0) [0|1] ""  HMI
+
+BO_ 136 GW_EMS10: 8 ADASC
+ SG_ EMS_AccPedalPositionRaw : 39|8@0+ (0.3937,0) [0|99.9998] "%"  FRadar
+
+BO_ 291 ESC6: 8 ADASC
+ SG_ ESC_VehDrivingDirection : 31|2@0+ (1,0) [0|3] ""  FRadar
+
+BO_ 570 IBCM2: 8 ADASC
+ SG_ BCM_RightlightSt : 3|1@0+ (1,0) [0|1] ""  FRadar
+ SG_ BCM_LeftlightSt : 1|1@0+ (1,0) [0|1] ""  FRadar
+
+BO_ 147 GW_TCU1: 8 ADASC
+ SG_ TCU_ActialGear : 15|8@0+ (1,0) [0|255] ""  FRadar
+ SG_ TCU_PRNDLStatus : 55|8@0+ (1,0) [0|255] ""  FRadar
+ SG_ TCU_ShiftLeverPosValidFlag : 7|1@0+ (1,0) [0|1] ""  MP5
+ SG_ Checksum_GW_TCU1 : 63|8@0+ (1,0) [0|255] ""  MP5
+ SG_ Rollingcount_GW_TCU1 : 43|4@0+ (1,0) [0|15] ""  MP5
+
+BO_ 224 GW_EMS5: 8 ADASC
+ SG_ EMS_AccPedalPos : 63|8@0+ (0.5,0) [0|100] "%"  FRadar
+ SG_ EMS_BrakePedalSignal : 6|2@0+ (1,0) [0|3] ""  FRadar
+
+BO_ 165 SAS_Info: 8 ADASC
+ SG_ SAS_SteeringAngle : 7|16@0- (0.1,0) [-780|779.9] "deg"  FRadar
+ SG_ SAS_SASfailureSts : 31|1@0+ (1,0) [0|1] ""  FRadar
+
+BO_ 290 ESC5: 8 ADASC
+ SG_ ESC_LongitudinalAccelervalidity : 47|1@0+ (1,0) [0|1] ""  FRadar
+ SG_ ESC_YawrateValidity : 23|1@0+ (1,0) [0|1] ""  FRadar
+ SG_ ESC_LateralAccelarationValidity : 22|1@0+ (1,0) [0|1] ""  FRadar
+ SG_ ESC_LongitudinalAcceleration : 46|11@0+ (0.03,-15.36) [-15.36|15.36] "m/s2"  FRadar
+ SG_ ESC_LateralAccelaration : 19|12@0+ (0.01,-12.45) [-12.45|12.45] "m/s2"  FRadar
+ SG_ ESC_YawRate : 7|16@0+ (0.01,-81.91) [-81.91|81.91] ""  FRadar
+
+BO_ 289 ESC3: 8 ADASC
+ SG_ ESC_RRWDirection : 47|2@0+ (1,0) [0|3] ""  FRadar
+ SG_ ESC_RLWDirection : 45|2@0+ (1,0) [0|3] ""  FRadar
+ SG_ ESC_FRWDirection : 35|2@0+ (1,0) [0|3] ""  FRadar
+ SG_ ESC_FLWDirection : 33|2@0+ (1,0) [0|3] ""  FRadar
+
+BO_ 160 ESC2: 8 ADASC
+ SG_ ESC_VeSpd : 55|16@0+ (0.01,0) [0|300] "km/h"  FRadar
+ SG_ ESC_VehSpdValidFlag : 25|1@0+ (1,0) [0|1] ""  FRadar
+
+BO_ 1008 GW_Tbox_1: 8 MP5
+ SG_ Tbox_APAModeSelect : 4|4@0+ (1,0) [0|15] ""  MP5
+ SG_ Tbox_Checksum : 63|8@0+ (1,0) [0|255] ""  MP5
+ SG_ Tbox_RollingCount : 51|4@0+ (1,0) [0|15] ""  MP5
+ SG_ Tbox_BluetoothConnectSt : 10|3@0+ (1,0) [0|7] ""  MP5
+ SG_ Tbox_DrawCircleSignal : 7|2@0+ (1,0) [0|3] ""  MP5
+ SG_ Tbox_APASwitch : 5|1@0+ (1,0) [0|1] ""  MP5
+
+BO_ 902 FAPA_DMS2: 8 ADASC
+ SG_ DMS_failure_reason : 23|8@0+ (1,0) [0|255] ""  MP5
+ SG_ DMS_feedback_user_No : 11|4@0+ (1,0) [0|15] ""  MP5
+ SG_ Message_type : 4|5@0+ (1,0) [0|31] ""  MP5
+
+BO_ 901 FAPA_DMS1: 8 ADASC
+ SG_ DMS_setting2 : 63|8@0+ (1,0) [0|255] ""  MP5
+ SG_ DMS_setting1 : 55|8@0+ (1,0) [0|255] ""  MP5
+ SG_ DMS_recongnized_user_No : 19|4@0+ (1,0) [0|15] ""  MP5
+ SG_ DMS_UserFaceDataValid : 47|8@0+ (1,0) [0|255] ""  MP5
+ SG_ Driver_drowsiness_Level : 34|3@0+ (1,0) [0|7] ""  MP5
+ SG_ DMS_Drive_time_Minute : 29|6@0+ (1,0) [0|63] "minute"  MP5
+ SG_ DMS_Drive_time_hour : 23|4@0+ (1,0) [0|15] "hour"  MP5
+ SG_ DMS_eye_Direction : 39|4@0+ (1,0) [0|15] ""  MP5
+ SG_ DMS_alarm_beep : 13|3@0+ (1,0) [0|7] ""  MP5
+ SG_ DMS_alarm_lamp : 10|3@0+ (1,0) [0|7] ""  MP5
+ SG_ DMS_status : 4|5@0+ (1,0) [0|31] ""  MP5
+
+BO_ 915 CGW_MP5_STATE: 8 MP5
+ SG_ MP5_AVMBodyColor : 51|4@0+ (1,0) [0|15] ""  ADASC
+ SG_ MP5_AVMPathMode : 45|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_AVMUltrasonicRadarActive : 42|1@0+ (1,0) [0|1] ""  ADASC
+ SG_ MP5_AVMUltrasonicRadarDisplay : 41|1@0+ (1,0) [0|1] ""  ADASC
+ SG_ MP5_AVM2D3DMode : 40|1@0+ (1,0) [0|1] ""  ADASC
+ SG_ MP5_Touch_ButtonPress : 47|1@0+ (1,0) [0|1] ""  ADASC
+ SG_ MP5_AVMLineSetSwitch : 43|1@0+ (1,0) [0|1] ""  ADASC
+ SG_ MP5_Touch_Y_Coordinate : 31|16@0+ (1,0) [0|480] ""  ADASC
+ SG_ MP5_Touch_X_Coordinate : 15|16@0+ (1,0) [0|800] ""  ADASC
+ SG_ MP5_Sideview_Control : 7|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_Pupose_Key : 3|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_Da_screen_state : 5|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_Active_commnd : 1|2@0+ (1,0) [0|3] ""  ADASC
+
+BO_ 903 CGW_MP5_DMS: 8 MP5
+ SG_ MP5_DMS_UserAccount : 34|3@0+ (1,0) [0|7] ""  ADASC
+ SG_ MP5_DMS_Monitor_Smoking : 25|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_DMS_Monitor_DrinkWater : 27|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_DMS_Monitor_UsingPhone : 23|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_DMS_Monitor_SideView : 21|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_DMS_Monitor_LongtimeDrive : 19|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_DMS_Monitor_EyeFatigue : 17|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_DMS_sensity : 15|3@0+ (1,0) [0|7] ""  ADASC
+ SG_ MP5_DMS_deleteUser_No : 10|3@0+ (1,0) [0|7] ""  ADASC
+ SG_ MP5_DMS_SystemEnable : 7|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_MDS_Message_type : 3|4@0+ (1,0) [0|15] ""  ADASC
+
+BO_ 917 CGW_MP5_3: 8 MP5
+ SG_ MP5_RequestAVM : 23|8@0+ (1,0) [0|255] ""  ADASC
+ SG_ MP5_AVM_Calibrate_Start : 7|8@0+ (1,0) [0|255] ""  ADASC
+
+BO_ 1242 GW_TBOX_Time: 8 MP5
+ SG_ TBOX_LocalTimeMounth : 7|4@0+ (1,0) [1|12] "mounth"  MP5
+ SG_ TBOX_LocalTimeValid : 15|1@0+ (1,0) [0|1] ""  MP5
+ SG_ TBOX_LocalTimeSecond : 37|6@0+ (1,0) [0|59] "second"  MP5
+ SG_ TBOX_LocalTimeMinute : 29|6@0+ (1,0) [0|59] ""  MP5
+ SG_ TBOX_LocalTimeHour : 20|5@0+ (1,0) [0|23] "hour"  MP5
+ SG_ TBOX_LocalTimeDate : 12|5@0+ (1,0) [1|31] "day"  MP5
+ SG_ TBOX_LocalTimeYear : 3|4@0+ (1,2018) [2018|2033] "year"  MP5
+
+BO_ 870 GW_MP5_2: 8 MP5
+ SG_ MP5_BSD_LCW_Activation : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MP5_Language_Set : 18|3@0+ (1,0) [0|7] ""  ADASC
+ SG_ MP5_APASwitch : 53|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_HU_ULS_FLK_ACTIVATION : 33|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_UPA_switch : 23|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_HU_APAModeSelect : 15|3@0+ (1,0) [0|7] ""  ADASC
+ SG_ MP5_WorkSt : 4|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_AEBSwitch : 49|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MP5_FCWSwitch : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MP5_FCW_Sensitivity : 59|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ MP5_JASwitch : 44|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 828 GW_IBCM3: 8 ADASC
+ SG_ BCM_IgnitionSt : 1|2@0+ (1,0) [0|3] ""  MP5
+
+BO_ 916 FAPA_AVM: 8 ADASC
+ SG_ AVM_Fault : 23|8@0+ (1,0) [0|255] ""  MP5
+ SG_ AVM_LogStatus : 11|4@0+ (1,0) [0|15] ""  MP5
+ SG_ AVM_360_DisplayViewStatus : 4|5@0+ (1,0) [0|31] ""  MP5
+
+BO_ 889 APA3: 8 ADASC
+ SG_ APA_MPAParkNotice : 23|6@0+ (1,0) [0|63] ""  MP5
+ SG_ APA_MPAReadyStFeedback : 31|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_MPAStFeedback : 28|5@0+ (1,0) [0|31] ""  MP5
+ SG_ APA_CheckSum_APA3 : 63|8@0+ (1,0) [0|255] ""  MP5
+ SG_ APA_RollingCounter_APA3 : 51|4@0+ (1,0) [0|15] ""  MP5
+ SG_ APA_UPA_Error_Status : 15|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_LRF_Sector_Dist : 7|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_UPA_HMI_Active : 17|1@0+ (1,0) [0|1] ""  MP5
+ SG_ APA_RRF_Sector_Dist : 13|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_RM_Sector_Dist : 11|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_RFF_Sector_Dist : 9|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_LM_Sector_Dist : 5|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_LFF_Sector_Dist : 3|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_UPA_FLK_MODE : 1|2@0+ (1,0) [0|3] ""  MP5
+
+BO_ 886 APA2: 8 ADASC
+ SG_ APA_ParkAssistantFrontRegion4 : 31|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_ParkAssistantFrontRegion3 : 15|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_ParkAssistantRearRegion4 : 52|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_ParkAssistantRearRegion3 : 55|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_Park_RearExtendDistance : 33|10@0+ (1,0) [0|1023] "cm"  MP5
+ SG_ APA_ParkAssistantRearRegion2 : 36|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_ParkAssistantRearRegion1 : 39|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_ChimeRequest : 28|5@0+ (1,0) [0|31] ""  MP5
+ SG_ APA_Park_FrontExtendDistance : 9|10@0+ (1,0) [0|1023] "cm"  MP5
+ SG_ APA_ParkAssistantFrontRegion2 : 12|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_ParkAssistantFrontRegion1 : 6|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_ParkAssistantRearSys_Status : 3|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_ParkAssistantFrontSys_Status : 1|2@0+ (1,0) [0|3] ""  MP5
+
+BO_ 885 APA1: 8 ADASC
+ SG_ APA_TurnLightcommand : 63|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_indication : 61|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_CheckSum_APA1 : 55|8@0+ (1,0) [0|255] ""  MP5
+ SG_ APA_RollingCounter_APA1 : 47|4@0+ (1,0) [0|15] ""  MP5
+ SG_ APA_SlotNotice : 43|4@0+ (1,0) [0|15] ""  MP5
+ SG_ APA_right_slot_2_type : 39|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_right_slot_1_type : 37|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_left_slot_2_type : 35|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_left_slot_1_type : 33|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_APAOnOff : 31|1@0+ (1,0) [0|1] ""  MP5
+ SG_ APA_ParkingBarPercentage : 30|7@0+ (1,0) [0|100] ""  MP5
+ SG_ APA_Acivation_Status : 23|3@0+ (1,0) [0|7] ""  MP5
+ SG_ APA_ErrorStatus : 20|1@0+ (1,0) [0|1] ""  MP5
+ SG_ APA_RequestDisplayStatus : 17|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_ParkingBarSt : 9|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_AdvancedParkingAssist : 15|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_AdvancedParkingPode : 7|2@0+ (1,0) [0|3] ""  MP5
+ SG_ APA_PArkNotice_4 : 5|6@0+ (1,0) [0|63] ""  MP5
+
+BO_ 1043 GW_MP5_8: 5 MP5
+ SG_ MP5_ESASwitch : 39|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ Mp5_LSS_main_SW : 5|1@0+ (1,0) [0|1] ""  ADASC
+ SG_ Mp5_ISA_Switch : 4|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ Mp5_TSR_Switch : 2|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ Mp5_ISA_Mode : 11|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ Mp5_LDW_Warning_Mode : 13|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ Mp5_LSS_Mode : 31|3@0+ (1,0) [0|7] ""  ADASC
+ SG_ MP5_FCTAActivation : 9|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_TLCModeSelection : 21|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_DOWActivation : 33|2@0+ (1,0) [0|3] ""  ADASC
+ SG_ MP5_RCTAActivation : 35|2@0+ (1,0) [0|3] ""  ADASC
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ EV_  "GenEnvAutoGenCtrl" ENUM  "No","Yes";
+BA_DEF_ EV_  "GenEnvMsgOffset" INT 0 999999999;
+BA_DEF_ EV_  "GenEnvMsgName" STRING ;
+BA_DEF_ EV_  "GenEnvControlType" ENUM  "NoControl","SliderHoriz","SliderVert","PushButton","Edit","BitmapSwitch";
+BA_DEF_ SG_  "GenSigReceiveSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigConditionalSend" STRING ;
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAssignSetting" STRING ;
+BA_DEF_ SG_  "GenSigAltSetting" STRING ;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BO_  "GenMsgPreSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgEVName" STRING ;
+BA_DEF_ BO_  "GenMsgConditionalSend" STRING ;
+BA_DEF_ BO_  "GenMsgAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAltSetting" STRING ;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","cyclicIfActive","spontaneousWithDelay","cyclicAndSpontaneous","cyclicAndSpontaneousWithDelay","spontaneousWithRepetition","cyclicIfActiveAndSpontaneousWD";
+BA_DEF_ BO_  "GenMsgNrOfRepetitions" INT 1 999999;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 1 1000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 2 50000;
+BA_DEF_ BU_  "GenNodAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "GenNodSleepTime" INT 0 1000000;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenNWMTalkNM" STRING ;
+BA_DEF_  "GenNWMSleepTime" INT 0 1000000;
+BA_DEF_  "GenNWMGotoMode_BusSleep" STRING ;
+BA_DEF_  "GenNWMGotoMode_Awake" STRING ;
+BA_DEF_  "GenNWMApCanWakeUp" STRING ;
+BA_DEF_  "GenNWMApCanSleep" STRING ;
+BA_DEF_  "GenNWMApCanOn" STRING ;
+BA_DEF_  "GenNWMApCanOff" STRING ;
+BA_DEF_  "GenNWMApCanNormal" STRING ;
+BA_DEF_  "GenNWMApBusSleep" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenEnvAutoGenCtrl" "No";
+BA_DEF_DEF_  "GenEnvMsgOffset" 0;
+BA_DEF_DEF_  "GenEnvMsgName" "";
+BA_DEF_DEF_  "GenEnvControlType" "";
+BA_DEF_DEF_  "GenSigReceiveSetting" "";
+BA_DEF_DEF_  "GenSigPreSetting" "";
+BA_DEF_DEF_  "GenSigPreIfSetting" "";
+BA_DEF_DEF_  "GenSigPostSetting" "";
+BA_DEF_DEF_  "GenSigPostIfSetting" "";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigConditionalSend" "";
+BA_DEF_DEF_  "GenSigAutoGenSnd" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "";
+BA_DEF_DEF_  "GenSigAssignSetting" "";
+BA_DEF_DEF_  "GenSigAltSetting" "";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgPreSetting" "";
+BA_DEF_DEF_  "GenMsgPreIfSetting" "";
+BA_DEF_DEF_  "GenMsgPostSetting" "";
+BA_DEF_DEF_  "GenMsgPostIfSetting" "";
+BA_DEF_DEF_  "GenMsgEVName" "";
+BA_DEF_DEF_  "GenMsgConditionalSend" "";
+BA_DEF_DEF_  "GenMsgAutoGenSnd" "";
+BA_DEF_DEF_  "GenMsgAutoGenDsp" "";
+BA_DEF_DEF_  "GenMsgAltSetting" "";
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgNrOfRepetitions" 1;
+BA_DEF_DEF_  "GenMsgDelayTime" 1;
+BA_DEF_DEF_  "GenMsgCycleTime" 33;
+BA_DEF_DEF_  "GenNodAutoGenSnd" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "GenNodSleepTime" 0;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "GenEnvVarPrefix" "Env";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "_";
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "Dsp_";
+BA_DEF_DEF_  "GenNWMTalkNM" "TalkNM()";
+BA_DEF_DEF_  "GenNWMSleepTime" 0;
+BA_DEF_DEF_  "GenNWMGotoMode_BusSleep" "GotoMode_BusSleep()";
+BA_DEF_DEF_  "GenNWMGotoMode_Awake" "GotoMode_Awake()";
+BA_DEF_DEF_  "GenNWMApCanWakeUp" "apCanWakeUp()";
+BA_DEF_DEF_  "GenNWMApCanSleep" "apCanSleep()";
+BA_DEF_DEF_  "GenNWMApCanOn" "apCanOn()";
+BA_DEF_DEF_  "GenNWMApCanOff" "apCanOff()";
+BA_DEF_DEF_  "GenNWMApCanNormal" "apCanNormal()";
+BA_DEF_DEF_  "GenNWMApBusSleep" "apBusSleep()";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "";
+BA_ "DBName" "CAN5_T5EVO_ADASC_v10";
+BA_ "GenMsgCycleTime" BO_ 1120 100;
+BA_ "GenMsgCycleTime" BO_ 1271 100;
+BA_ "GenMsgCycleTime" BO_ 809 100;
+BA_ "GenMsgCycleTime" BO_ 1051 55;
+BA_ "GenMsgCycleTime" BO_ 844 100;
+BA_ "GenMsgCycleTime" BO_ 843 100;
+BA_ "GenMsgCycleTime" BO_ 836 100;
+BA_ "GenMsgCycleTime" BO_ 835 100;
+BA_ "GenMsgCycleTime" BO_ 136 10;
+BA_ "GenMsgCycleTime" BO_ 291 20;
+BA_ "GenMsgCycleTime" BO_ 570 40;
+BA_ "GenMsgCycleTime" BO_ 147 10;
+BA_ "GenMsgCycleTime" BO_ 224 20;
+BA_ "GenMsgCycleTime" BO_ 165 10;
+BA_ "GenMsgCycleTime" BO_ 290 20;
+BA_ "GenMsgCycleTime" BO_ 289 20;
+BA_ "GenMsgCycleTime" BO_ 160 10;
+BA_ "GenMsgCycleTime" BO_ 1008 500;
+BA_ "GenMsgCycleTime" BO_ 902 500;
+BA_ "GenMsgCycleTime" BO_ 901 200;
+BA_ "GenMsgCycleTime" BO_ 915 500;
+BA_ "GenMsgCycleTime" BO_ 903 200;
+BA_ "GenMsgCycleTime" BO_ 917 100;
+BA_ "GenMsgCycleTime" BO_ 1242 1000;
+BA_ "GenMsgCycleTime" BO_ 870 500;
+BA_ "GenMsgCycleTime" BO_ 828 100;
+BA_ "GenMsgCycleTime" BO_ 916 500;
+BA_ "GenMsgCycleTime" BO_ 889 100;
+BA_ "GenMsgCycleTime" BO_ 886 100;
+BA_ "GenMsgCycleTime" BO_ 885 100;
+BA_ "GenMsgCycleTime" BO_ 1043 500;
+BA_ "GenSigStartValue" SG_ 1242 TBOX_LocalTimeMounth 1;
+BA_ "GenSigStartValue" SG_ 1242 TBOX_LocalTimeDate 1;
+
