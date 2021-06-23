@@ -1,0 +1,1179 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: AMP PDC ESM IBCM A_Camera TBox BDC IVI A_Radar Mp5 EMS TCU IC ADAS ACU EPS SAS ESC
+VAL_TABLE_ VitSig_APA_SysSts 7 "Reserved" 6 "Failure" 5 "Abort" 4 "Suspend" 3 "ManeuverFinished" 2 "Active" 1 "Standby" 0 "Init" ;
+VAL_TABLE_ Vtsig_ESC_APA_VMCStatus 8 "Reserved" 7 "Failure" 6 "Abort" 5 "Reserved" 4 "DriverBrakeToStop" 3 "BrakeHold" 2 "Active_AutomaticPark" 1 "Standby" 0 "Unavailable" ;
+
+
+BO_ 1073 ESC7: 8 ESC
+ SG_ ESC_DDSSystemStatus : 15|4@0+ (1,0) [0|15] ""  ACU,IC,Mp5,TBox,ADAS
+ SG_ ESC_ITPMSWarningStatus : 9|1@0+ (1,0) [0|1] ""  IC,TBox,ADAS
+ SG_ ESC_ITPMSMalfunctionStatus : 8|1@0+ (1,0) [0|1] ""  ADAS,IC,TBox
+
+BO_ 1139 Camera_obj04: 8 ADAS
+ SG_ ADAS_OBJ04_MsgCount : 35|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_OBJ04_LgtDis : 13|14@0+ (0.025,-10) [-10|399.575] "m"  IC
+ SG_ ADAS_OBJ04_LatDis : 7|10@0- (0.029325513,0) [-15.014662656|14.985337143] "m"  IC
+ SG_ ADAS_OBJ04_Lane : 41|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_OBJ04_ID : 31|8@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_OBJ04_Class : 39|3@0+ (1,0) [0|7] ""  IC
+
+BO_ 357 EPS_APA: 8 EPS
+ SG_ EPS_APA_Status : 20|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ EPS_APA_ProhibitedReason : 18|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ EPS_APA_CheckSum : 15|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ EPS_APA_RollingCount : 3|4@0+ (1,0) [0|15] ""  ADAS
+
+BO_ 796 EPS3: 8 EPS
+ SG_ EPS_CheckSum_EPS3 : 63|8@0+ (1,0) [0|255] ""  ADAS,A_Camera
+ SG_ EPS_RollingCount_EPS3 : 51|4@0+ (1,0) [0|15] ""  ADAS,A_Camera
+ SG_ EPS_LKACurrentOverlay : 31|16@0- (0.04,0) [-80|80] ""  ADAS,A_Camera
+ SG_ EPS_ESAState : 23|3@0+ (1,0) [0|7] ""  ADAS,A_Camera
+ SG_ EPS_LKAState : 20|3@0+ (1,0) [0|7] ""  ADAS,A_Camera
+ SG_ EPS_SteeringHoldState : 17|1@0+ (1,0) [0|1] ""  ADAS,A_Camera
+ SG_ EPS_TorqueLimitationState : 16|1@0+ (1,0) [0|1] ""  ADAS,A_Camera
+ SG_ EPS_DriverInitializedESA : 9|1@0+ (1,0) [0|1] ""  ADAS,A_Camera
+ SG_ EPS_DriverOverride : 8|1@0+ (1,0) [0|1] ""  ADAS,A_Camera
+
+BO_ 378 EPS2: 8 EPS
+ SG_ EPS_CheckSum_EPS2 : 63|8@0+ (1,0) [0|255] ""  ADAS,A_Camera
+ SG_ EPS_RollingCount_EPS2 : 51|4@0+ (1,0) [0|15] ""  ADAS,A_Camera
+ SG_ EPS_SteeringTorqueValue : 7|8@0+ (0.1794,-22.78) [-22.78|22.967] ""  ADAS,A_Camera,EMS
+ SG_ EPS_SteeringAngle : 23|16@0- (0.0625,0) [-780|779.9] "deg"  ADAS,A_Camera
+ SG_ EPS_SteeringAngle_Flag : 14|1@0+ (1,0) [0|1] ""  ADAS,A_Camera
+ SG_ EPS_SteerintTorqueSensorSt : 15|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,EMS
+
+BO_ 565 EPS_Info: 2 EPS
+ SG_ EPS_ElectPowerConsumption : 15|8@0+ (0.5,0) [0|127] "A"  ADAS,A_Camera,EMS
+ SG_ EPS_WarmingLampSt : 1|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,IC,TBox
+
+BO_ 794 ESC_EPB1: 8 ESC
+ SG_ ESC_CheckSum_EPB : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ ESC_RollingCount_EPB : 51|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ ESC_EPBErrorStatus : 35|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,A_Radar,EMS,TBox
+ SG_ ESC_EPBStaus : 10|3@0+ (1,0) [0|7] ""  ADAS,A_Camera,A_Radar,ACU,EMS,TBox,TCU
+ SG_ ESC_EPBSwitchStaticsValidity : 11|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,IC
+ SG_ ESC_EPBSwitchStatics : 13|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,A_Radar,IC,TBox
+ SG_ ESC_EPBWarmingIndicationReq : 3|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,A_Radar,IC
+ SG_ ESC_EPBDisplayMessageReq : 7|3@0+ (1,0) [0|7] ""  ADAS,A_Camera,A_Radar,IBCM,IC
+
+BO_ 1008 GW_TBOX_1: 8 BDC
+ SG_ Tbox_Checksum : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ Tbox_RollingCount : 51|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ Tbox_BluetoothConnectSt : 10|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ Tbox_DrawCircleSignal : 7|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Tbox_APASwitch : 5|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ Tbox_APAModeSelect : 4|4@0+ (1,0) [0|15] ""  ADAS
+
+BO_ 1043 GW_MP5_8: 8 BDC
+ SG_ MP5_AutoPilotSwitch : 41|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_ESASwitch : 39|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_RCTAActivation : 35|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_DOWActivation : 33|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Mp5_LSSMode : 31|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ MP5_ADASSpeedLimit : 28|5@0+ (1,0) [0|31] ""  ADAS
+ SG_ MP5_TLCModeSelection : 21|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Mp5_LDWWarningMode : 13|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Mp5_ISAMode : 11|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_FCTAActivation : 9|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Mp5_TSRSwitch : 2|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Mp5_ISASwitch : 4|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ Mp5_LSSSwitch : 5|1@0+ (1,0) [0|1] ""  ADAS
+
+BO_ 782 ADASC1: 8 ADAS
+ SG_ ADAS_LightControlVaild : 21|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_RightLightControl : 22|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_LeftLightControl : 23|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_RightLEDWarningSt : 11|2@0+ (1,0) [0|3] ""  BDC
+ SG_ ADAS_LeftLEDWarningSt : 9|2@0+ (1,0) [0|3] ""  BDC
+ SG_ ADAS_SRR_SystemState : 15|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_State : 7|8@0+ (1,0) [0|255] ""  IC
+
+BO_ 64 IBCM_PEPS2: 2 BDC
+ SG_ PEPS_DoorLockReq : 9|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ PEPS_RKECommand : 7|4@0+ (1,0) [0|15] ""  ADAS
+
+BO_ 829 IBCM5: 8 BDC
+ SG_ BCM_IHBC_Function_Enable : 8|1@0+ (1,0) [0|1] ""  ADAS,A_Camera
+
+BO_ 844 ADASC_SRR_RF: 8 ADAS
+ SG_ ADAS_SRR_RF_ErrorSt : 10|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_SRR_RF_FCTAWarning : 9|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_SRR_RF_SystemWorkingSt : 8|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_SRR_RF_SystemStateInfo : 7|4@0+ (1,0) [0|15] ""  BDC
+
+BO_ 843 ADASC_SRR_LF: 8 ADAS
+ SG_ ADAS_SRR_LF_FCTAWarning : 10|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_SRR_LF_ErrorSt : 9|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_SRR_LF_SystemWorkingSt : 8|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_SRR_LF_SystemStateInfo : 7|4@0+ (1,0) [0|15] ""  BDC
+
+BO_ 836 ADASC_BSD_S_State: 8 ADAS
+ SG_ ADAS_BSD_S_RCTAWorkingSt : 19|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_S_DOWWorkingst : 18|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_S_RCTAWarning : 16|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_S_DoorOpenWarning : 15|2@0+ (1,0) [0|3] ""  BDC
+ SG_ ADAS_BSD_S_LCAWarning : 11|2@0+ (1,0) [0|3] ""  BDC
+ SG_ ADAS_BSD_S_ErrorSt : 9|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_S_LCWWorkingSt : 8|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_S_SystemStateInfo : 7|4@0+ (1,0) [0|15] ""  BDC
+
+BO_ 835 ADASC_BSD_State: 8 ADAS
+ SG_ ADAS_BSD_RCTAWorkingSt : 19|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_DOWWorkingst : 18|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_RCTAWarning : 16|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_DoorOpenWarning : 15|2@0+ (1,0) [0|3] ""  BDC
+ SG_ ADAS_BSD_LCAWarning : 11|2@0+ (1,0) [0|3] ""  BDC
+ SG_ ADAS_BSD_ErrorSt : 9|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_LCWWorkingSt : 8|1@0+ (1,0) [0|1] ""  BDC
+ SG_ ADAS_BSD_SystemStateInfo : 7|4@0+ (1,0) [0|15] ""  BDC
+
+BO_ 777 GW_IVI_SCC1: 8 BDC
+ SG_ SCC_RightSteeringWheelSwitchSig : 15|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ SCC_LeftSteeringWheelSwitchSig : 7|8@0+ (1,0) [0|255] ""  ADAS
+
+BO_ 330 GW_EMS_p2: 8 BDC
+ SG_ EMS_WhetherACCRequestRealized : 58|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ EMS_ACCcontrolGearAvailable : 59|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ EMS_ACCcontrolTorqueAvailable : 60|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ EMS_HighestGearMinTorque : 55|11@0+ (8,-4000) [-4000|11000] ""  ADAS
+ SG_ EMS_ACCResponseStatus : 44|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ EMS_LowerestGearMaxTorque : 39|11@0+ (8,-4000) [-4000|11000] ""  ADAS
+ SG_ EMS_CheckSum_EMS_P2 : 31|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ EMS_RollingCount_EMS_P2 : 19|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ EMS_ACCFunctionIhibition : 9|1@0+ (1,0) [0|1] ""  ADAS
+
+BO_ 382 GW_EMS_P1: 8 BDC
+ SG_ EMS_CheckSum_EMS_P1 : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ EMS_RollingCount_EMS_P1 : 51|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ EMS_NotControlableMinPowertra : 34|11@0+ (1,0) [0|4000] ""  ADAS
+ SG_ EMS_MinPowertrainWheelTorque : 31|13@0+ (2,-4000) [0|11000] ""  ADAS
+ SG_ EMS_NotControlableMaxPowertra : 10|11@0+ (2,0) [0|4000] "Nm"  ADAS
+ SG_ EMS_MaxPowertrainWheeltorque : 7|13@0+ (2,-4000) [-4000|11000] "Nm"  ADAS
+
+BO_ 136 GW_EMS10: 8 BDC
+ SG_ EMS_AccPedalPositionRaw : 39|8@0+ (0.3937,0) [0|99.9998] "%"  ADAS
+
+BO_ 134 GW_EMS7: 8 BDC
+ SG_ EMS_CheckSum_EMS7 : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ EMS_RollingCount_EMS7 : 51|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ EMS_EngActualFlwTorque : 31|12@0+ (0.125,-100) [-100|411.75] "Nm"  ADAS
+ SG_ EMS_EngActualIndTorque : 11|12@0+ (0.125,-100) [-100|411.875] "Nm"  ADAS
+ SG_ EMS_DriverTorque : 7|12@0+ (0.125,-100) [-100|411.75] "Nm"  ADAS
+
+BO_ 1141 Camera_obj06: 8 ADAS
+ SG_ ADAS_OBJ06_MsgCount : 35|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_OBJ06_LgtDis : 13|14@0+ (0.025,-10) [-10|399.575] "m"  IC
+ SG_ ADAS_OBJ06_LatDis : 7|10@0- (0.029325513,0) [-15.014662656|14.985337143] "m"  IC
+ SG_ ADAS_OBJ06_Lane : 41|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_OBJ06_ID : 31|8@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_OBJ06_Class : 39|3@0+ (1,0) [0|7] ""  IC
+
+BO_ 1140 Camera_obj05: 8 ADAS
+ SG_ ADAS_OBJ05_Lane : 41|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_OBJ05_LgtDis : 13|14@0+ (0.025,-10) [-10|399.575] "m"  IC
+ SG_ ADAS_OBJ05_MsgCount : 35|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_OBJ05_LatDis : 7|10@0- (0.029325513,0) [-15.014662656|14.985337143] "m"  IC
+ SG_ ADAS_OBJ05_ID : 31|8@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_OBJ05_Class : 39|3@0+ (1,0) [0|7] ""  IC
+
+BO_ 1138 Camera_obj03: 8 ADAS
+ SG_ ADAS_OBJ03_MsgCount : 35|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_OBJ03_LgtDis : 13|14@0+ (0.025,-10) [-10|399.575] "m"  IC
+ SG_ ADAS_OBJ03_LatDis : 7|10@0- (0.029325513,0) [-15.014662656|14.985337143] "m"  IC
+ SG_ ADAS_OBJ03_Lane : 41|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_OBJ03_ID : 31|8@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_OBJ03_Class : 39|3@0+ (1,0) [0|7] ""  IC
+
+BO_ 1137 Camera_obj02: 8 ADAS
+ SG_ ADAS_OBJ02_Class : 39|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_OBJ02_Lane : 41|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_OBJ02_ID : 31|8@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_OBJ02_MsgCount : 35|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_OBJ02_LgtDis : 13|14@0+ (0.025,-10) [-10|399.575] "m"  IC
+ SG_ ADAS_OBJ02_LatDis : 7|10@0- (0.029325513,0) [-15.014662656|14.985337143] "m"  IC
+
+BO_ 1136 Camera_obj01: 8 ADAS
+ SG_ ADAS_OBJ01_Lane : 41|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_OBJ01_MsgCount : 35|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_OBJ01_ID : 31|8@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_OBJ01_Class : 39|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_OBJ01_LgtDis : 13|14@0+ (0.025,-10) [-10|399.575] "m"  IC
+ SG_ ADAS_OBJ01_LatDis : 7|10@0- (0.029325513,0) [-15.014662656|14.985337143] "m"  IC
+
+BO_ 1099 Camera_rightlane: 8 ADAS
+ SG_ ADAS_R0_MSG_COUNT_LL0DAT1 : 58|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_R0_LINE_TYPE : 62|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_R0_C3_COEF : 34|20@0+ (5E-008,-0.024) [-0.024|0.024] ""  IC
+ SG_ ADAS_R0_C2_COEF : 17|15@0+ (1.6E-005,-0.25) [-0.25|0.25] ""  IC
+ SG_ ADAS_R0_C1_COEF : 10|9@0+ (0.01,-2) [-2|2] ""  IC
+ SG_ ADAS_R0_C0_COEF : 7|13@0+ (0.01,-30) [-30|30] ""  IC
+
+BO_ 1067 Camera_leftlane: 8 ADAS
+ SG_ ADAS_L0_MSG_COUNT_LL0DAT1 : 58|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_L0_LINE_TYPE : 62|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_L0_C3_COEF : 34|20@0+ (5E-008,-0.024) [-0.024|0.024] ""  IC
+ SG_ ADAS_L0_C2_COEF : 17|15@0+ (1.6E-005,-0.25) [-0.25|0.25] ""  IC
+ SG_ ADAS_L0_C1_COEF : 10|9@0+ (0.01,-2) [-2|2] ""  IC
+ SG_ ADAS_L0_C0_COEF : 7|13@0+ (0.01,-30) [-30|30] ""  IC
+
+BO_ 1120 Camera_obj: 8 ADAS
+ SG_ ADAS_FrontObject06Zone : 43|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject06Class : 46|3@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject05Zone : 35|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject05Class : 38|3@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject04Zone : 27|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject04Class : 30|3@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject03Zone : 19|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject03Class : 22|3@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject02Zone : 11|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject02Class : 14|3@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_RollingCounter_460 : 59|4@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_BackObjectRight : 51|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_BackObjectLeft : 49|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_FrontObject01Class : 6|3@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_FrontObject01Zone : 3|4@0+ (1,0) [0|15] ""  IC
+
+BO_ 1051 Camera_lane: 8 ADAS
+ SG_ ADAS_RollingCounter_41B : 59|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_LineCurveType : 17|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_R1LineType : 15|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_L1LineType : 11|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_R0LineType : 7|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_L0LineType : 3|4@0+ (1,0) [0|15] ""  IC
+
+BO_ 809 Camera2: 8 ADAS
+ SG_ ADAS_LCAPopupMessage : 59|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_TSRSignType : 55|8@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_HWAActionSts : 47|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_ISAStatus : 45|3@0+ (1,0) [0|7] ""  A_Radar,IC
+ SG_ ADAS_ISASignType : 42|3@0+ (1,0) [0|7] ""  A_Radar,IC
+ SG_ ADAS_ELKSts : 38|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_ISAValue : 36|5@0+ (1,0) [0|31] ""  IC
+ SG_ ADAS_ISAPopupMessage : 30|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_OperationStatus : 27|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_LCAStatusDisplay : 23|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_LKASwitchState : 21|1@0+ (1,0) [0|1] ""  Mp5
+ SG_ ADAS_LKAMode : 20|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_Handoffwarning : 18|1@0+ (1,0) [0|1] ""  IC
+ SG_ ADAS_LDWWarningSt : 17|2@0+ (1,0) [0|0] ""  IC
+ SG_ ADAS_HMIPopupMassage : 63|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_IHBC_Fuction_Status : 15|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_IHBC_High_Beam_Req : 13|1@0+ (1,0) [0|1] ""  IC
+ SG_ ADAS_VehicleLaneDisplay : 12|5@0+ (1,0) [0|31] ""  IC
+ SG_ ADAS_LKAStatusDisplay : 6|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_LDWStatusDisplay : 4|2@0+ (1,0) [0|3] ""  IC
+
+BO_ 387 Camera1: 8 ADAS
+ SG_ ADAS_ESATorqueReq : 39|11@0+ (0.01,-10.23) [-10.23|10.24] "Nm"  EPS
+ SG_ ADAS_CheckSum_Camera1 : 63|8@0+ (1,0) [0|255] ""  EPS
+ SG_ ADAS_RollingCounter_Camera1 : 51|4@0+ (1,0) [0|15] ""  EPS
+ SG_ ADAS_LKAAngleReq : 23|14@0- (0.1,0) [-780|780] "deg"  EPS
+ SG_ ADAS_ESARequest : 25|1@0+ (1,0) [0|1] ""  EPS
+ SG_ ADAS_LKATorqFactReq : 15|7@0+ (0.01,0) [0|1] ""  EPS
+ SG_ ADAS_LKAActivation : 1|2@0+ (1,0) [0|3] ""  EPS
+ SG_ ADAS_ESAState : 7|3@0+ (1,0) [0|7] ""  EPS
+ SG_ ADAS_LKAState : 4|3@0+ (1,0) [0|7] ""  EPS
+
+BO_ 1271 Radar3: 8 ADAS
+ SG_ ADAS_JAFault : 55|3@0+ (1,0) [0|7] ""  ACU,IC
+ SG_ ADAS_ESAFault : 52|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_HWATurnOnIndicator : 49|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_HWAMode : 47|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_ISL_CDriverRemind : 44|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_ISAMessageDisp : 35|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_ICAStatusIcon : 39|3@0+ (1,0) [0|7] ""  Mp5,IC
+ SG_ ADAS_AEBMessageDisp : 26|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_AEBFaultStatus : 28|2@0+ (1,0) [0|3] ""  ACU,IC
+ SG_ ADAS_ISLCState : 31|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_AEBSwitchStatus : 13|2@0+ (1,0) [0|3] ""  ACU,IC
+ SG_ ADAS_AEBAlertReq : 15|2@0+ (1,0) [0|3] ""  ACU,IC
+ SG_ ADAS_ACCSetSpeed : 23|8@0+ (1,0) [0|254] "km/h"  IC
+ SG_ ADAS_ACCMessagePrompt : 11|4@0+ (1,0) [0|15] ""  IC
+ SG_ ADAS_ACC_RVVRequestType : 7|1@0+ (1,0) [0|1] ""  IC
+ SG_ ADAS_ACCHeadwayDisplay : 6|2@0+ (1,0) [0|3] ""  IC
+ SG_ ADAS_ACCHeadwayIcon : 4|1@0+ (1,0) [0|1] ""  IC
+ SG_ ADAS_ACCSetSpeedDisplay : 2|3@0+ (1,0) [0|7] ""  IC
+ SG_ ADAS_ACCStatusIconDisplay : 42|3@0+ (1,0) [0|7] ""  IC
+
+BO_ 244 Radar2: 8 ADAS
+ SG_ ADAS_Checksum_F4 : 63|8@0+ (1,0) [0|255] ""  TCU,EMS,ESC
+ SG_ ADAS_RollingCount_F4 : 51|4@0+ (1,0) [0|15] ""  TCU,EMS,ESC
+ SG_ ADAS_EngineStopPremitForSTT : 47|1@0+ (1,0) [0|1] ""  EMS
+ SG_ ADAS_EngineStartRequestForSTT : 46|1@0+ (1,0) [0|1] ""  EMS
+ SG_ ADAS_TargetPosition : 45|3@0+ (1,0) [0|7] ""  ESC
+ SG_ ADAS_BrakeRequest : 42|1@0+ (1,0) [0|1] ""  ACU,ESC
+ SG_ ADAS_ACCRequestEPB : 41|1@0+ (1,0) [0|1] ""  ESC
+ SG_ ADAS_ACCLateralDistance : 31|8@0- (1,0) [-63|63] ""  IC
+ SG_ ADAS_AEBBrakingProgress : 20|1@0+ (1,0) [0|1] ""  EMS
+ SG_ ADAS_DecelerationType : 22|2@0+ (1,0) [0|3] ""  TCU
+ SG_ ADAS_ESCHoldReq : 23|1@0+ (1,0) [0|1] ""  ESC
+ SG_ ADAS_ACCLongitudialDistance : 15|8@0+ (1,0) [0|255] ""  IC
+ SG_ ADAS_Radar_State : 6|3@0+ (1,0) [0|7] ""  ESC
+ SG_ ADAS_AEBState : 3|3@0+ (1,0) [0|7] ""  ESC
+ SG_ ADAS_HMITargetDispFlag : 0|1@0+ (1,0) [0|1] ""  ESC
+ SG_ ADAS_HapticAlarmRequest : 7|1@0+ (1,0) [0|1] ""  ESC
+
+BO_ 242 Radar1: 8 ADAS
+ SG_ ADAS_Checksum_F2 : 63|8@0+ (1,0) [0|255] ""  EMS,TCU,ESC
+ SG_ ADAS_RollingCount_F2 : 51|4@0+ (1,0) [0|15] ""  EMS,TCU,ESC
+ SG_ ADAS_ESCDriveOff : 52|1@0+ (1,0) [0|1] ""  ESC
+ SG_ ADAS_DecelerationControlReq : 53|1@0+ (1,0) [0|1] ""  ESC
+ SG_ ADAS_UpDownGearChange : 54|1@0+ (1,0) [0|1] ""  ESC
+ SG_ ADAS_PrefillRequest : 55|1@0+ (1,0) [0|1] ""  ESC
+ SG_ ADAS_PowerWheelTorqueActiveReq : 41|2@0+ (1,0) [0|3] ""  EMS,TCU
+ SG_ ADAS_ACCTorqueReq : 39|14@0+ (1,-4000) [-4000|11000] "Nm"  EMS,TCU
+ SG_ ADAS_ACCState : 27|4@0+ (1,0) [0|15] ""  ACU,EMS,TCU,ESC
+ SG_ ADAS_DownorUpGearMinTime : 15|6@0+ (0.1,0) [0|6.2] ""  ESC
+ SG_ ADAS_DecelerationSetpoint : 7|8@0+ (0.05,-10.65) [-10.65|2] ""  ESC
+
+BO_ 291 ESC6: 8 ESC
+ SG_ ESC_ACCavailable : 34|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_AEBActive : 33|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_Checksum_ESC6 : 63|8@0+ (1,0) [0|255] ""  A_Camera,A_Radar,TCU,ADAS
+ SG_ ESC_RollingCount_ESC6 : 51|4@0+ (1,0) [0|15] ""  A_Camera,A_Radar,TCU,ADAS
+ SG_ ESC_VehicleHoldStatus : 37|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_ACCActive : 35|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_AEBAvailable : 32|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_VehDrivingDirection : 31|2@0+ (1,0) [0|3] ""  A_Camera,A_Radar,ADAS
+ SG_ ESC_DynamicSlope : 29|6@0+ (1,-30) [-30|30] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_BrakingEffort : 14|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,TCU
+ SG_ ESC_MSRinRegulation : 13|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EMS,ADAS
+ SG_ ESC_BrakeReleasedFailsafe : 12|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_UnfilteredYawRate : 11|12@0+ (0.08,-163.84) [-163.84|163.68] "Degree/s"  A_Camera,A_Radar,ADAS
+ SG_ ESC_DynamicSlopeAccuracy : 7|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_AVHStatus : 2|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,TCU
+ SG_ ESC_BLRequest : 0|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,ACU,EMS,IBCM,TBox
+
+BO_ 800 GW_IC1: 8 BDC
+ SG_ IC_CheckSum_IC1 : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ IC_RollingCount_IC1 : 51|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ IC_TotalOdemeter : 3|20@0+ (1,0) [0|999999] "km"  ADAS
+
+BO_ 902 FAPA_DMS2: 8 ADAS
+ SG_ DMS_FailureReason : 23|8@0+ (1,0) [0|255] ""  BDC
+ SG_ DMS_FeedbackUserNum : 11|4@0+ (1,0) [0|15] ""  BDC
+ SG_ DMS_Message_type : 4|5@0+ (1,0) [0|31] ""  BDC
+
+BO_ 905 FAPA_DMS1: 8 ADAS
+ SG_ DMS_Setting2 : 63|8@0+ (1,0) [0|0] ""  BDC
+ SG_ DMS_Setting1 : 55|8@0+ (1,0) [0|255] ""  BDC
+ SG_ DMS_UserFaceDataValidity : 47|8@0+ (1,0) [0|255] ""  BDC
+ SG_ DMS_RecognizedUserNum : 19|4@0+ (1,0) [0|15] ""  BDC
+ SG_ DMS_DriveFatigueMonitor : 34|3@0+ (1,0) [0|7] ""  BDC
+ SG_ DMS_Drivetime_Minute : 29|6@0+ (1,0) [0|63] "minute"  BDC
+ SG_ DMS_Drivetime_hour : 23|4@0+ (1,0) [0|15] "hour"  BDC
+ SG_ DMS_EyeDirection : 39|4@0+ (1,0) [0|15] ""  BDC
+ SG_ DMS_AlarmBeep : 13|3@0+ (1,0) [0|7] ""  BDC
+ SG_ DMS_AlarmLamp : 10|3@0+ (1,0) [0|7] ""  BDC
+ SG_ DMS_Status : 4|5@0+ (1,0) [0|31] ""  BDC
+
+BO_ 915 GW_MP5_STATE: 8 BDC
+ SG_ MP5_AVMUltrasonicRadarActive : 42|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ MP5_AVMBodyColor : 51|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ MP5_AVMPathMode : 45|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_AVMUltrasonicRadarDisplay : 41|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ MP5_AVM2D3DMode : 40|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ MP5_TouchButtonPress : 47|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ MP5_AVMLineSetSwitch : 43|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ MP5_TouchYCoordinate : 31|16@0+ (1,0) [0|480] ""  ADAS
+ SG_ MP5_TouchXCoordinate : 15|16@0+ (1,0) [0|800] ""  ADAS
+ SG_ MP5_SideviewControl : 7|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_PuposeKey : 3|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_ScreenState : 5|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_AVMActivation : 1|2@0+ (1,0) [0|3] ""  ADAS
+
+BO_ 903 GW_MP5_DMS: 8 BDC
+ SG_ MP5_DMS_UserAccount : 34|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ MP5_DMS_SmokingMonitor : 25|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_DMS_DrinkWaterMonitor : 27|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_DMS_UsingPhoneMonitor : 23|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_DMS_SideViewMonitor : 21|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_DMS_LongtimeDriveMonitor : 19|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_DMS_EyeFatigueMonitor : 17|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_DMS_sensity : 15|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ MP5_DMS_DeleteUserNum : 10|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ MP5_DMS_SystemEnable : 7|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_MDS_Message_type : 3|4@0+ (1,0) [0|15] ""  ADAS
+
+BO_ 917 GW_MP5_3: 8 BDC
+ SG_ MP5_RequestAVM : 23|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ MP5_AVM_Calibrate_Start : 7|8@0+ (1,0) [0|255] ""  ADAS
+
+BO_ 1242 GW_TBOX_Time: 8 BDC
+ SG_ TBOX_LocalTimeMounth : 7|4@0+ (1,0) [1|12] "mounth"  ADAS
+ SG_ TBOX_LocalTimeValid : 15|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ TBOX_LocalTimeSecond : 37|6@0+ (1,0) [0|59] "second"  ADAS
+ SG_ TBOX_LocalTimeMinute : 29|6@0+ (1,0) [0|59] ""  ADAS
+ SG_ TBOX_LocalTimeHour : 20|5@0+ (1,0) [0|23] "hour"  ADAS
+ SG_ TBOX_LocalTimeDate : 12|5@0+ (1,0) [1|31] "day"  ADAS
+ SG_ TBOX_LocalTimeYear : 3|4@0+ (1,2018) [2018|2033] "year"  ADAS
+
+BO_ 870 GW_MP5_2: 8 BDC
+ SG_ MP5_FCWSensitivity : 59|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_FCWSwitch : 51|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_AEBSwitch : 49|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_JASwitch : 44|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_BSD_LCW_Activation : 35|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_FLKAActivation : 33|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_APAModeSelect : 15|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ MP5_Language_Set : 18|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ MP5_UPA_switch : 23|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ MP5_WorkSt : 4|2@0+ (1,0) [0|3] ""  ADAS
+
+BO_ 802 AC1: 8 BDC
+ SG_ AC_AmbTemp : 7|8@0+ (0.5,-40) [-40|80] ""  ADAS,ESC
+
+BO_ 833 IBCM6: 8 BDC
+ SG_ BCM_BattVolt : 7|10@0+ (0.05,0) [0|28] "V"  AMP,ESM,IBCM,PDC,A_Camera,A_Radar,ACU,ADAS,BDC,EMS,EPS,ESC,IC,IVI,Mp5,SAS,TBox,TCU
+
+BO_ 828 IBCM3: 8 BDC
+ SG_ BCM_BrakeLampStaus : 47|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,A_Radar
+ SG_ BCM_CHMSLStaus : 45|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,A_Radar
+ SG_ BCM_DoorLockSt : 2|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ BCM_FrontWiperSwitchSt : 15|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ BCM_IgnitionSt : 1|2@0+ (1,0) [0|3] ""  AMP,ESM,IBCM,PDC,A_Camera,A_Radar,ACU,ADAS,BDC,EMS,EPS,ESC,IC,IVI,Mp5,SAS,TBox,TCU
+
+BO_ 570 IBCM2: 8 BDC
+ SG_ BCM_FrontWiperWorkSt : 41|2@0+ (1,0) [0|3] ""  ADAS,A_Camera,A_Radar
+ SG_ BCM_HighBeamStatus : 7|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ADAS
+ SG_ BCM_RightlightSt : 3|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ADAS
+ SG_ BCM_RightTurnSwitchSt : 23|2@0+ (1,0) [0|3] ""  A_Camera,A_Radar,ACU,ADAS
+ SG_ BCM_LeftTurnSwitchSt : 21|2@0+ (1,0) [0|3] ""  A_Camera,A_Radar,ACU,ADAS
+ SG_ BCM_LowBeamStatus : 8|1@0+ (1,0) [0|1] ""  ADAS,A_Camera
+ SG_ BCM_HazardLampSt : 6|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ACU,ADAS
+ SG_ BCM_LeftlightSt : 1|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ADAS
+ SG_ BCM_LRDoorSwitchSt : 14|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ADAS
+ SG_ BCM_RRDoorSwitchSt : 13|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ADAS
+ SG_ BCM_RFDoorSwitchSt : 12|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ADAS
+ SG_ BCM_LFDoorSwitchSt : 11|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ADAS
+ SG_ BCM_TrunkSt : 0|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ADAS
+
+BO_ 916 FAPA_AVM: 8 ADAS
+ SG_ AVM_Fault : 23|8@0+ (1,0) [0|255] ""  BDC
+ SG_ AVM_LogStatus : 11|4@0+ (1,0) [0|15] ""  BDC
+ SG_ AVM_360_DisplayViewStatus : 4|5@0+ (1,0) [0|31] ""  BDC
+
+BO_ 148 GW_TCU2: 8 BDC
+ SG_ TCU_CheckSum_TCU2 : 55|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ TCU_RollingCount_TCU2 : 19|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ TCU_GearEngagement : 1|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ GW_TCU_DCTClutchStatus : 46|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ TCU_TCUAvailable : 3|1@0+ (1,0) [0|1] ""  ADAS
+
+BO_ 331 GW_EMS_P3: 8 BDC
+ SG_ EMS_CheckSum_EMS_P3 : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ EMS_RollingCount_EMS_P3 : 51|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ EMS_RealizedPowertrainWheelTorq : 10|14@0+ (1,-4000) [-4000|11000] ""  ADAS
+ SG_ EMS_PowertrainControlSt : 28|2@0+ (1,0) [0|3] ""  ADAS
+
+BO_ 147 GW_TCU1: 8 BDC
+ SG_ TCU_ATFailure : 6|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ TCU_TargetGear : 47|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ TCU_ActialGear : 15|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ TCU_SelectedATMode : 2|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ TCU_PRNDLStatus : 55|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ TCU_ShiftLeverPosValidFlag : 7|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ TCU_Checksum_GW_TCU1 : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ TCU_Rollingcount_GW_TCU1 : 43|4@0+ (1,0) [0|15] ""  ADAS
+
+BO_ 224 GW_EMS5: 8 BDC
+ SG_ EMS_AccPedalPos : 63|8@0+ (0.5,0) [0|100] "%"  ADAS
+ SG_ EMS_CheckSum_EMS5 : 55|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ EMS_RollingCount_EMS5 : 45|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ EMS_AccPedalFaultBit : 40|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ EMS_EngRunningStatus : 28|3@0+ (1,0) [0|7] ""  ADAS
+ SG_ EMS_BrakePedalSignal : 6|2@0+ (1,0) [0|3] ""  ADAS
+
+BO_ 131 GW_EMS1: 8 BDC
+ SG_ EMS_CheckSum_EMS1 : 63|8@0+ (1,0) [0|255] ""  ADAS
+ SG_ EMS_RollingCount_EMS1 : 51|4@0+ (1,0) [0|15] ""  ADAS
+ SG_ EMS_EngSpd : 23|16@0+ (0.125,0) [0|8191.875] "rpm"  ADAS
+
+BO_ 889 APA3: 8 ADAS
+ SG_ APA_MPAReadyStFeedback : 31|3@0+ (1,0) [0|7] ""  TBox
+ SG_ APA_CheckSum_APA3 : 63|8@0+ (1,0) [0|255] ""  IC
+ SG_ APA_RollingCounter_APA3 : 51|4@0+ (1,0) [0|15] ""  IC
+ SG_ APA_MPAStFeedback : 28|5@0+ (1,0) [0|31] ""  IC
+ SG_ APA_MPAParkNotice : 23|6@0+ (1,0) [0|63] ""  TBox
+ SG_ APA_UPA_Error_Status : 15|2@0+ (1,0) [0|3] ""  IC
+ SG_ APA_LRF_Sector_Dist : 7|2@0+ (1,0) [0|3] ""  IC
+ SG_ APA_UPA_HMI_Active : 17|1@0+ (1,0) [0|1] ""  IC
+ SG_ APA_RRF_Sector_Dist : 13|2@0+ (1,0) [0|3] ""  IC
+ SG_ APA_RM_Sector_Dist : 11|2@0+ (1,0) [0|3] ""  IC
+ SG_ APA_RFF_Sector_Dist : 9|2@0+ (1,0) [0|3] ""  IC
+ SG_ APA_LM_Sector_Dist : 5|2@0+ (1,0) [0|3] ""  IC
+ SG_ APA_LFF_Sector_Dist : 3|2@0+ (1,0) [0|3] ""  IC
+ SG_ APA_UPA_FLK_MODE : 1|2@0+ (1,0) [0|3] ""  IC
+
+BO_ 886 APA2: 8 ADAS
+ SG_ APA_ParkAssistantFrontRegion4 : 31|3@0+ (1,0) [0|7] ""  IC
+ SG_ APA_ParkAssistantFrontRegion3 : 15|3@0+ (1,0) [0|7] ""  IC
+ SG_ APA_ParkAssistantRearRegion4 : 52|3@0+ (1,0) [0|7] ""  IC
+ SG_ APA_ParkAssistantRearRegion3 : 55|3@0+ (1,0) [0|7] ""  IC
+ SG_ APA_ParkingRearExtendDistance : 33|10@0+ (1,0) [0|1023] "cm"  IC
+ SG_ APA_ParkAssistantRearRegion2 : 36|3@0+ (1,0) [0|7] ""  IC
+ SG_ APA_ParkAssistantRearRegion1 : 39|3@0+ (1,0) [0|7] ""  IC
+ SG_ APA_ChimeRequest : 28|5@0+ (1,0) [0|31] ""  Mp5,IC
+ SG_ APA_ParkingFrontExtendDistance : 9|10@0+ (1,0) [0|1023] "cm"  IC
+ SG_ APA_ParkAssistantFrontRegion2 : 12|3@0+ (1,0) [0|7] ""  IC
+ SG_ APA_ParkAssistantFrontRegion1 : 6|3@0+ (1,0) [0|7] ""  IC
+ SG_ APA_ParkAssistantRearSys_Status : 3|2@0+ (1,0) [0|3] ""  IC
+ SG_ APA_ParkAssistantFrontSys_Status : 1|2@0+ (1,0) [0|3] ""  IC
+
+BO_ 885 APA1: 8 ADAS
+ SG_ APA_TurnLightscommand : 63|2@0+ (1,0) [0|3] ""  BDC,IVI
+ SG_ APA_Indication : 61|3@0+ (1,0) [0|7] ""  IVI
+ SG_ APA_CheckSum_APA1 : 55|8@0+ (1,0) [0|255] ""  IVI
+ SG_ APA_RollingCounter_APA1 : 47|4@0+ (1,0) [0|15] ""  IVI
+ SG_ APA_SlotNoticeSignal : 43|4@0+ (1,0) [0|15] ""  IVI
+ SG_ APA_RightSlot2Type : 39|2@0+ (1,0) [0|3] ""  IVI
+ SG_ APA_RightSlot1Type : 37|2@0+ (1,0) [0|3] ""  IVI
+ SG_ APA_LeftSlot2Type : 35|2@0+ (1,0) [0|3] ""  IVI
+ SG_ APA_LeftSlot1Type : 33|2@0+ (1,0) [0|3] ""  IVI
+ SG_ APA_APAOnOff : 31|1@0+ (1,0) [0|1] ""  BDC,IVI
+ SG_ APA_ParkingBarPercentage : 30|7@0+ (1,0) [0|100] ""  IVI
+ SG_ APA_AcivationStatus : 23|3@0+ (1,0) [0|7] ""  IVI
+ SG_ APA_ErrorStatus : 20|1@0+ (1,0) [0|1] ""  IVI
+ SG_ APA_RequestDisplaySt : 17|2@0+ (1,0) [0|3] ""  IVI
+ SG_ APA_ParkingBarSt : 9|2@0+ (1,0) [0|3] ""  IVI
+ SG_ APA_AdvancedParkingWorkingSt : 15|2@0+ (1,0) [0|3] ""  IVI
+ SG_ APA_AdvancedParkingPode : 7|2@0+ (1,0) [0|3] ""  BDC,IVI
+ SG_ APA_AutomaticParkingProcessSig : 5|6@0+ (1,0) [0|63] ""  IVI
+
+BO_ 353 APA_ESC: 8 ADAS
+ SG_ APA_ESC_CheckSum : 63|8@0+ (1,0) [0|255] ""  TCU,ESC
+ SG_ APA_ESC_RollingCounter : 51|4@0+ (1,0) [0|15] ""  TCU,ESC
+ SG_ APA_DistanceToStop : 17|10@0+ (1,0) [0|1023] "cm"  TCU,ESC
+ SG_ APA_EPBRequestValidty : 23|1@0+ (1,0) [0|1] ""  ESC
+ SG_ APA_RequestTargetGear : 20|3@0+ (1,0) [0|7] ""  ESC
+ SG_ APA_FailureBrakeMode : 22|2@0+ (1,0) [0|3] ""  ESC
+ SG_ APA_BrakeTargetMaxspd : 15|8@0+ (0.1,0) [0|25.5] "km/h"  TCU,ESC
+ SG_ APA_EPB_Request : 7|2@0+ (1,0) [0|3] ""  ESC
+ SG_ APA_SystemSts : 5|3@0+ (1,0) [0|7] ""  EMS,ESC
+ SG_ APA_LongtiudinalControlReq : 2|3@0+ (1,0) [0|7] ""  ESC
+
+BO_ 352 APA_EPS: 8 ADAS
+ SG_ APA_EPS_CheckSum : 63|8@0+ (1,0) [0|255] ""  EPS
+ SG_ APA_EPS_RollingCounter : 51|4@0+ (1,0) [0|15] ""  EPS
+ SG_ APA_ReqEPSTargetAngle : 39|16@0- (0.1,0) [-780|780] "degree"  EPS
+ SG_ APA_ReqControlEPS : 3|2@0+ (1,0) [0|3] ""  EPS
+
+BO_ 780 ACU_Crash: 8 ACU
+ SG_ ACU_CheckSum_ACU : 63|8@0+ (1,0) [0|255] ""  ADAS,A_Camera,A_Radar,EMS,IC,TBox
+ SG_ ACU_RollingCount_ACU : 7|4@0+ (1,0) [0|15] ""  ADAS,A_Camera,A_Radar,EMS,IBCM,TBox
+ SG_ ACU_RearRightBeltSwitchSig : 12|1@0+ (1,0) [0|1] ""  ADAS,IC
+ SG_ ACU_RearMiddleBeltSwitchSig : 11|1@0+ (1,0) [0|1] ""  ADAS,IC
+ SG_ ACU_RearLeftBeltSwitchSig : 10|1@0+ (1,0) [0|1] ""  ADAS,IC
+ SG_ ACU_PassengerBeltSwitchSig : 9|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,IC
+ SG_ ACU_DriverBeltSwitchSig : 8|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,ESC,IC,TBox,TCU
+
+BO_ 165 SAS_Info: 8 SAS
+ SG_ SAS_SteeringAngle : 7|16@0- (0.1,0) [-780|779.9] "deg"  A_Camera,A_Radar,ACU,EMS,EPS,ESC,Mp5,SAS,TBox,TCU,ADAS
+ SG_ SAS_RollingCount_SAS1 : 39|4@0+ (1,0) [0|15] ""  A_Camera,A_Radar,EPS,ESC,TBox,TCU,ADAS
+ SG_ SAS_CheckSum_SAS1 : 35|4@0+ (1,0) [0|15] ""  A_Camera,A_Radar,EPS,ESC,TBox,TCU,ADAS
+ SG_ SAS_SASfailureSts : 31|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EPS,ESC,TBox,ADAS
+ SG_ SAS_CalibratedStatus : 30|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EPS,ESC,TBox,ADAS
+ SG_ SAS_TrimmingStatus : 29|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EPS,TBox,ADAS
+ SG_ SAS_SteeringRotspd : 23|8@0+ (4,0) [0|1016] "deg/s"  ADAS,A_Camera,A_Radar,EPS,TBox
+
+BO_ 293 ESC8: 8 ESC
+ SG_ ESC_CheckSum_ESC8 : 63|8@0+ (1,0) [0|255] ""  ADAS,EMS,ESM,TCU
+ SG_ ESC_Rollingcount_ESC8 : 51|4@0+ (1,0) [0|15] ""  ADAS,EMS,ESM,TCU
+ SG_ ESC_APABrakSysLongiCtlSt : 31|4@0+ (1,0) [0|15] ""  ADAS,TCU
+ SG_ ESC_APALongictlFailureSt : 23|4@0+ (1,0) [0|15] ""  ADAS
+
+BO_ 290 ESC5: 8 ESC
+ SG_ ESC_RollingCount_ESC5 : 51|4@0+ (1,0) [0|15] ""  A_Camera,A_Radar,TCU,ADAS
+ SG_ ESC_LongitudinalAccelervalidity : 47|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ACU,EMS,TBox,TCU,ADAS
+ SG_ ESC_YawrateValidity : 23|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,ACU
+ SG_ ESC_CheckSum_ESC5 : 63|8@0+ (1,0) [0|255] ""  A_Camera,A_Radar,TCU,ADAS
+ SG_ ESC_LateralAccelarationValidity : 22|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ACU,TBox,TCU,ADAS
+ SG_ ESC_LongitudinalAcceleration : 46|11@0+ (0.03,-15.36) [-15.36|15.36] "m/s2"  EMS,A_Camera,A_Radar,ACU,TCU,ADAS
+ SG_ ESC_Static_slope : 37|6@0+ (1,-30) [0|30] "%"  ADAS,A_Camera,A_Radar,ACU,TCU
+ SG_ ESC_LateralAccelaration : 19|12@0+ (0.01,-12.45) [-12.45|12.45] "m/s2"  ADAS
+ SG_ ESC_YawRate : 7|16@0+ (0.01,-81.91) [-81.91|81.91] ""  ADAS,A_Camera,A_Radar,ACU,TBox
+
+BO_ 166 ESC4: 8 ESC
+ SG_ ESC_CheckSum_ESC4 : 63|8@0+ (1,0) [0|255] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_RollingCount_ESC4 : 51|4@0+ (1,0) [0|15] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_FLWHeelPulseCounter : 7|10@0+ (1,0) [0|1023] "counts"  ADAS,A_Camera,A_Radar
+ SG_ ESC_RRWHeelPulseCounterValidity : 44|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_RLWHeelPulseCounterValidity : 45|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_FRWHeelPulseCounterValidity : 46|1@0+ (1,0) [0|1] "counts"  ADAS,A_Camera,A_Radar
+ SG_ ESC_FLWHeelPulseCounterValidity : 47|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_RRWHeelPulseCounter : 25|10@0+ (1,0) [0|1023] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_RLWHeelPulseCounter : 19|10@0+ (1,0) [0|1023] ""  ADAS,A_Camera,A_Radar
+ SG_ ESC_FRWHeelPulseCounter : 13|10@0+ (1,0) [0|1023] ""  ADAS,A_Camera,A_Radar
+
+BO_ 289 ESC3: 8 ESC
+ SG_ ESC_CheckSum_ESC3 : 63|8@0+ (1,0) [0|255] ""  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_RollingCount_ESC3 : 51|4@0+ (1,0) [0|15] ""  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_TCSCtlActive : 5|2@0+ (1,0) [0|3] ""  A_Camera,A_Radar,ACU,EMS,TCU,ADAS
+ SG_ ESC_ESCAlarmSig : 3|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,ACU,IC,Mp5,TBox,ADAS
+ SG_ ESC_ESCWorkStatus : 2|1@0+ (1,0) [0|1] ""  EMS,IC,TCU,A_Camera,A_Radar,ACU,EPS,ADAS
+ SG_ ESC_VehicleStandstill : 53|2@0+ (1,0) [0|3] ""  A_Camera,A_Radar,ADAS
+ SG_ ESC_RRWDirection : 47|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ ESC_RLWDirection : 45|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ ESC_TCSErrorStatus : 41|1@0+ (1,0) [0|1] ""  ADAS
+ SG_ ESC_FRWDirection : 35|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ ESC_FLWDirection : 33|2@0+ (1,0) [0|3] ""  ADAS
+ SG_ ESC_ESCOFF : 0|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EMS,IC,Mp5,ADAS
+
+BO_ 160 ESC2: 8 ESC
+ SG_ ESC_ABSAlarmSig : 27|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,IC,Mp5,TBox,ADAS
+ SG_ ESC_ABSValidity : 26|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,ACU,IC
+ SG_ ESC_ABSWorkLable : 19|1@0+ (1,0) [0|1] ""  IBCM,A_Camera,A_Radar,ACU,EMS,TBox,TCU,ADAS
+ SG_ ESC_EBDAlarmSig : 24|1@0+ (1,0) [0|1] ""  ADAS,A_Camera,A_Radar,IC
+ SG_ ESC_CheckSum_ESC2 : 47|8@0+ (1,0) [0|255] ""  A_Camera,A_Radar,TCU,ADAS
+ SG_ ESC_RollingCount_ESC2 : 11|4@0+ (1,0) [0|15] ""  A_Camera,A_Radar,TCU,ADAS
+ SG_ ESC_BrakeOilPress : 7|11@0+ (0.01,0) [0|20] ""  A_Camera,A_Radar,EMS,TBox,TCU,ADAS
+ SG_ ESC_VeSpd : 55|16@0+ (0.01,0) [0|300] "km/h"  A_Camera,A_Radar,ACU,AMP,BDC,EMS,EPS,ESC,ESM,IBCM,IC,IVI,Mp5,PDC,TBox,TCU,ADAS
+ SG_ ESC_VehSpdValidFlag : 25|1@0+ (1,0) [0|1] ""  AMP,ESM,PDC,A_Camera,A_Radar,EMS,EPS,IBCM,IC,TCU,ADAS
+
+BO_ 161 ESC_Wheelspd: 8 ESC
+ SG_ ESC_Checksum : 63|8@0+ (1,0) [0|255] ""  A_Camera,A_Radar,TCU,ADAS
+ SG_ ESC_RollingCount : 51|4@0+ (1,0) [0|15] ""  A_Camera,A_Radar,TCU,ADAS
+ SG_ ESC_RRWHeelSpdFaultSignal : 55|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_RearRightWHeelSpd : 35|12@0+ (0.05,0) [0|204.75] "km/h"  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_RLWHeelSpdFaultSignal : 54|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_FRWHeelSpdFaultSignal : 53|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_RearLeftWHeelSpd : 31|12@0+ (0.05,0) [0|204.75] "km/h"  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_FrontRightWheelSpd : 11|12@0+ (0.05,0) [0|204.75] "km/h"  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_FLWHeelSpdFaultSignal : 52|1@0+ (1,0) [0|1] ""  A_Camera,A_Radar,EMS,TCU,ADAS
+ SG_ ESC_FrontLeftWHeelSpd : 7|12@0+ (0.05,0) [0|204.75] "km/h"  EMS,TCU,A_Camera,A_Radar,ADAS
+
+
+
+BA_DEF_ EV_  "GenEnvControlType" ENUM  "NoControl","SliderHoriz","SliderVert","PushButton","Edit","BitmapSwitch";
+BA_DEF_ EV_  "GenEnvMsgName" STRING ;
+BA_DEF_ EV_  "GenEnvMsgOffset" INT 0 999999999;
+BA_DEF_ EV_  "GenEnvAutoGenCtrl" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 100000;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigAltSetting" STRING ;
+BA_DEF_ SG_  "GenSigAssignSetting" STRING ;
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigConditionalSend" STRING ;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_ SG_  "GenSigPostIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPostSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreIfSetting" STRING ;
+BA_DEF_ SG_  "GenSigPreSetting" STRING ;
+BA_DEF_ SG_  "GenSigReceiveSetting" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 2 50000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 1 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetitions" INT 1 999999;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","Event","spontaneous","cyclicIfActive","spontaneousWithDelay","cyclicAndSpontaneous","cyclicAndSpontaneousWithDelay","spontaneousWithRepetition","cyclicIfActiveAndSpontaneousWD";
+BA_DEF_ BO_  "GenMsgAltSetting" STRING ;
+BA_DEF_ BO_  "GenMsgAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgConditionalSend" STRING ;
+BA_DEF_ BO_  "GenMsgEVName" STRING ;
+BA_DEF_ BO_  "GenMsgPostIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPostSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreIfSetting" STRING ;
+BA_DEF_ BO_  "GenMsgPreSetting" STRING ;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_ BU_  "GenNodSleepTime" INT 0 1000000;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "GenNodAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "GenNWMApBusSleep" STRING ;
+BA_DEF_  "GenNWMApCanNormal" STRING ;
+BA_DEF_  "GenNWMApCanOff" STRING ;
+BA_DEF_  "GenNWMApCanOn" STRING ;
+BA_DEF_  "GenNWMApCanSleep" STRING ;
+BA_DEF_  "GenNWMApCanWakeUp" STRING ;
+BA_DEF_  "GenNWMGotoMode_Awake" STRING ;
+BA_DEF_  "GenNWMGotoMode_BusSleep" STRING ;
+BA_DEF_  "GenNWMSleepTime" INT 0 1000000;
+BA_DEF_  "GenNWMTalkNM" STRING ;
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_DEF_  "GenEnvControlType" "";
+BA_DEF_DEF_  "GenEnvMsgName" "";
+BA_DEF_DEF_  "GenEnvMsgOffset" 0;
+BA_DEF_DEF_  "GenEnvAutoGenCtrl" "No";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigAltSetting" "";
+BA_DEF_DEF_  "GenSigAssignSetting" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "";
+BA_DEF_DEF_  "GenSigAutoGenSnd" "";
+BA_DEF_DEF_  "GenSigConditionalSend" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_DEF_DEF_  "GenSigPostIfSetting" "";
+BA_DEF_DEF_  "GenSigPostSetting" "";
+BA_DEF_DEF_  "GenSigPreIfSetting" "";
+BA_DEF_DEF_  "GenSigPreSetting" "";
+BA_DEF_DEF_  "GenSigReceiveSetting" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 20;
+BA_DEF_DEF_  "GenMsgDelayTime" 1;
+BA_DEF_DEF_  "GenMsgNrOfRepetitions" 1;
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_DEF_DEF_  "GenMsgAltSetting" "";
+BA_DEF_DEF_  "GenMsgAutoGenDsp" "";
+BA_DEF_DEF_  "GenMsgAutoGenSnd" "";
+BA_DEF_DEF_  "GenMsgConditionalSend" "";
+BA_DEF_DEF_  "GenMsgEVName" "";
+BA_DEF_DEF_  "GenMsgPostIfSetting" "";
+BA_DEF_DEF_  "GenMsgPostSetting" "";
+BA_DEF_DEF_  "GenMsgPreIfSetting" "";
+BA_DEF_DEF_  "GenMsgPreSetting" "";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "GenNodSleepTime" 0;
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "GenNodAutoGenSnd" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenNWMApBusSleep" "apBusSleep()";
+BA_DEF_DEF_  "GenNWMApCanNormal" "apCanNormal()";
+BA_DEF_DEF_  "GenNWMApCanOff" "apCanOff()";
+BA_DEF_DEF_  "GenNWMApCanOn" "apCanOn()";
+BA_DEF_DEF_  "GenNWMApCanSleep" "apCanSleep()";
+BA_DEF_DEF_  "GenNWMApCanWakeUp" "apCanWakeUp()";
+BA_DEF_DEF_  "GenNWMGotoMode_Awake" "GotoMode_Awake()";
+BA_DEF_DEF_  "GenNWMGotoMode_BusSleep" "GotoMode_BusSleep()";
+BA_DEF_DEF_  "GenNWMSleepTime" 0;
+BA_DEF_DEF_  "GenNWMTalkNM" "TalkNM()";
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "Dsp_";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "_";
+BA_DEF_DEF_  "GenEnvVarPrefix" "Env";
+BA_ "DBName" "G59L3";
+BA_ "GenMsgCycleTime" BO_ 1073 1000;
+BA_ "GenMsgCycleTime" BO_ 1139 100;
+BA_ "GenMsgCycleTime" BO_ 357 10;
+BA_ "GenMsgCycleTime" BO_ 796 100;
+BA_ "GenMsgCycleTime" BO_ 378 20;
+BA_ "GenMsgCycleTime" BO_ 565 40;
+BA_ "GenMsgCycleTime" BO_ 794 100;
+BA_ "GenMsgCycleTime" BO_ 1008 500;
+BA_ "GenMsgCycleTime" BO_ 1043 500;
+BA_ "GenMsgCycleTime" BO_ 782 100;
+BA_ "GenMsgCycleTime" BO_ 64 500;
+BA_ "GenMsgSendType" BO_ 64 1;
+BA_ "GenMsgCycleTime" BO_ 829 100;
+BA_ "GenMsgCycleTime" BO_ 844 100;
+BA_ "GenMsgCycleTime" BO_ 843 100;
+BA_ "GenMsgCycleTime" BO_ 836 100;
+BA_ "GenMsgCycleTime" BO_ 835 100;
+BA_ "GenMsgCycleTime" BO_ 777 100;
+BA_ "GenMsgCycleTime" BO_ 330 20;
+BA_ "GenMsgCycleTime" BO_ 382 20;
+BA_ "GenMsgCycleTime" BO_ 136 10;
+BA_ "GenMsgCycleTime" BO_ 134 10;
+BA_ "GenMsgCycleTime" BO_ 1141 100;
+BA_ "GenMsgCycleTime" BO_ 1140 100;
+BA_ "GenMsgCycleTime" BO_ 1138 100;
+BA_ "GenMsgCycleTime" BO_ 1137 100;
+BA_ "GenMsgCycleTime" BO_ 1136 100;
+BA_ "GenMsgCycleTime" BO_ 1067 55;
+BA_ "GenMsgCycleTime" BO_ 1120 100;
+BA_ "GenMsgCycleTime" BO_ 1051 100;
+BA_ "GenMsgCycleTime" BO_ 1271 100;
+BA_ "GenMsgCycleTime" BO_ 244 20;
+BA_ "GenMsgCycleTime" BO_ 242 20;
+BA_ "GenMsgCycleTime" BO_ 291 20;
+BA_ "GenMsgCycleTime" BO_ 800 100;
+BA_ "GenMsgSendType" BO_ 902 1;
+BA_ "GenMsgCycleTime" BO_ 902 500;
+BA_ "GenMsgCycleTime" BO_ 905 200;
+BA_ "GenMsgCycleTime" BO_ 915 500;
+BA_ "GenMsgCycleTime" BO_ 903 200;
+BA_ "GenMsgCycleTime" BO_ 917 100;
+BA_ "GenMsgCycleTime" BO_ 1242 1000;
+BA_ "GenMsgCycleTime" BO_ 870 500;
+BA_ "GenMsgCycleTime" BO_ 802 100;
+BA_ "GenMsgCycleTime" BO_ 833 100;
+BA_ "GenMsgCycleTime" BO_ 828 100;
+BA_ "GenMsgSendType" BO_ 570 0;
+BA_ "GenMsgCycleTime" BO_ 570 40;
+BA_ "GenMsgCycleTime" BO_ 916 500;
+BA_ "GenMsgCycleTime" BO_ 148 10;
+BA_ "GenMsgCycleTime" BO_ 331 20;
+BA_ "GenMsgCycleTime" BO_ 147 10;
+BA_ "GenMsgCycleTime" BO_ 224 20;
+BA_ "GenMsgCycleTime" BO_ 131 10;
+BA_ "GenMsgCycleTime" BO_ 889 100;
+BA_ "GenMsgCycleTime" BO_ 886 100;
+BA_ "GenMsgCycleTime" BO_ 885 100;
+BA_ "GenMsgCycleTime" BO_ 353 20;
+BA_ "GenMsgCycleTime" BO_ 352 20;
+BA_ "GenMsgCycleTime" BO_ 780 100;
+BA_ "GenMsgCycleTime" BO_ 165 10;
+BA_ "GenMsgCycleTime" BO_ 293 20;
+BA_ "GenMsgCycleTime" BO_ 290 20;
+BA_ "GenMsgCycleTime" BO_ 166 10;
+BA_ "GenMsgCycleTime" BO_ 289 20;
+BA_ "GenMsgCycleTime" BO_ 160 10;
+BA_ "GenMsgCycleTime" BO_ 161 20;
+BA_ "GenSigStartValue" SG_ 1139 ADAS_OBJ04_LgtDis 400;
+BA_ "GenSigStartValue" SG_ 378 EPS_SteeringTorqueValue 127;
+BA_ "GenSigStartValue" SG_ 330 EMS_HighestGearMinTorque 500;
+BA_ "GenSigStartValue" SG_ 330 EMS_LowerestGearMaxTorque 500;
+BA_ "GenSigStartValue" SG_ 382 EMS_MinPowertrainWheelTorque 2000;
+BA_ "GenSigStartValue" SG_ 382 EMS_MaxPowertrainWheeltorque 2000;
+BA_ "GenSigStartValue" SG_ 134 EMS_EngActualFlwTorque 800;
+BA_ "GenSigStartValue" SG_ 134 EMS_EngActualIndTorque 800;
+BA_ "GenSigStartValue" SG_ 134 EMS_DriverTorque 800;
+BA_ "GenSigStartValue" SG_ 1141 ADAS_OBJ06_LgtDis 400;
+BA_ "GenSigStartValue" SG_ 1140 ADAS_OBJ05_LgtDis 400;
+BA_ "GenSigStartValue" SG_ 1138 ADAS_OBJ03_LgtDis 400;
+BA_ "GenSigStartValue" SG_ 1137 ADAS_OBJ02_LgtDis 400;
+BA_ "GenSigStartValue" SG_ 1136 ADAS_OBJ01_LgtDis 400;
+BA_ "GenSigStartValue" SG_ 1099 ADAS_R0_C3_COEF 480000;
+BA_ "GenSigStartValue" SG_ 1099 ADAS_R0_C2_COEF 15625;
+BA_ "GenSigStartValue" SG_ 1099 ADAS_R0_C1_COEF 200;
+BA_ "GenSigStartValue" SG_ 1099 ADAS_R0_C0_COEF 3000;
+BA_ "GenSigStartValue" SG_ 1067 ADAS_L0_C3_COEF 480000;
+BA_ "GenSigStartValue" SG_ 1067 ADAS_L0_C2_COEF 15625;
+BA_ "GenSigStartValue" SG_ 1067 ADAS_L0_C1_COEF 200;
+BA_ "GenSigStartValue" SG_ 1067 ADAS_L0_C0_COEF 3000;
+BA_ "GenSigStartValue" SG_ 387 ADAS_ESATorqueReq 1023;
+BA_ "GenSigStartValue" SG_ 242 ADAS_ACCTorqueReq 4000;
+BA_ "GenSigStartValue" SG_ 242 ADAS_DecelerationSetpoint 213;
+BA_ "GenSigStartValue" SG_ 291 ESC_DynamicSlope 30;
+BA_ "GenSigStartValue" SG_ 291 ESC_UnfilteredYawRate 2048;
+BA_ "GenSigStartValue" SG_ 1242 TBOX_LocalTimeMounth 1;
+BA_ "GenSigStartValue" SG_ 1242 TBOX_LocalTimeDate 1;
+BA_ "GenSigStartValue" SG_ 331 EMS_RealizedPowertrainWheelTorq 4000;
+BA_ "GenSigStartValue" SG_ 290 ESC_LongitudinalAcceleration 512;
+BA_ "GenSigStartValue" SG_ 290 ESC_Static_slope 30;
+VAL_ 1073 ESC_ITPMSWarningStatus 1 "Lamp on" 0 "Lamp off" ;
+VAL_ 1073 ESC_ITPMSMalfunctionStatus 1 "Malfunction" 0 "No Malfunction" ;
+VAL_ 1139 ADAS_OBJ04_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+unidentification" ;
+VAL_ 1139 ADAS_OBJ04_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
+VAL_ 357 EPS_APA_Status 3 "invalid" 2 "control in progress" 1 "Available" 0 "unavailable " ;
+VAL_ 357 EPS_APA_ProhibitedReason 6 "no_error" 5 "DAEthermal_safety_catch_EPS" 4 "EPS_failure" 3 "Obstacle_at_the_wheel" 2 "Vehicle_speed_too_high" 1 "Pick_up_driver" 0 "No_control_interruption" ;
+VAL_ 796 EPS_ESAState 4 "Reserved" 3 "Fault" 2 "Active" 1 "Waiting" 0 "Inhibit" ;
+VAL_ 796 EPS_LKAState 7 "reserved" 6 "reserved" 5 "reserved" 4 "defect" 3 "active" 2 "available" 1 "authorized" 0 "unauthorized" ;
+VAL_ 796 EPS_SteeringHoldState 1 "steering activity detected" 0 "no steering activity detected " ;
+VAL_ 796 EPS_TorqueLimitationState 1 "Saturation effective" 0 "no saturation" ;
+VAL_ 796 EPS_DriverInitializedESA 1 "Active" 0 "No active" ;
+VAL_ 796 EPS_DriverOverride 1 "Override" 0 "No override" ;
+VAL_ 378 EPS_SteeringAngle_Flag 1 "vaild" 0 "Invaild" ;
+VAL_ 378 EPS_SteerintTorqueSensorSt 1 "abnormal" 0 "normal" ;
+VAL_ 565 EPS_WarmingLampSt 3 "reserved" 2 "minor failure" 1 "major failure" 0 "normal" ;
+VAL_ 794 ESC_EPBErrorStatus 3 "Error" 2 "Reserve" 1 "Reserve" 0 "No error" ;
+VAL_ 794 ESC_EPBStaus 7 "undefined" 6 "reserved" 5 "reserved" 4 "dynamic braking in progress" 3 "park brake static release" 2 "park brake static locking" 1 "park brake locked" 0 "Park brake released" ;
+VAL_ 794 ESC_EPBSwitchStaticsValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 794 ESC_EPBSwitchStatics 2 "Apply" 1 "Release" 0 "Not Active" ;
+VAL_ 794 ESC_EPBWarmingIndicationReq 3 "Flash rate #2 Indication" 2 "Flash rate #1 Indication" 1 "Continuous Indication" 0 "No Indication" ;
+VAL_ 794 ESC_EPBDisplayMessageReq 5 "message#5" 4 "message#4" 3 "message#3" 2 "message#2" 1 "message#1" 0 "off" ;
+VAL_ 1008 Tbox_DrawCircleSignal 3 "Reserved" 2 "Continue to draw" 1 "To suspend a circle" 0 "Idle" ;
+VAL_ 1008 Tbox_APASwitch 1 "Enter remote fusion parking" 0 "Idle" ;
+VAL_ 1008 Tbox_APAModeSelect 6 "quit" 5 "reserved" 4 "backward" 3 "forward" 2 "Park horizontally on the right" 1 "Park horizontally on the left" 0 "Idle" ;
+VAL_ 1043 Mp5_ISAMode 3 "Reserved" 2 "ISLC" 1 "ISA" 0 "Reserved" ;
+VAL_ 1043 MP5_FCTAActivation 3 "Reserved" 2 "Off" 1 "On" 0 "inactive" ;
+VAL_ 1043 Mp5_LSSSwitch 1 "LSS ON" 0 "LSS OFF" ;
+VAL_ 782 ADAS_RightLEDWarningSt 3 "reserved" 2 "blink" 1 "on" 0 "go out" ;
+VAL_ 782 ADAS_LeftLEDWarningSt 3 "reserved" 2 "blink" 1 "on" 0 "go out" ;
+VAL_ 782 ADAS_State 255 "HWA_Undefined" 128 "HWA_DISABLED" 64 "HWA_SAFE_STOP" 32 "HWA_MRM" 31 "HWA_SHUTDOWN" 16 "HWA_HAND_OVER" 15 "HWA_ERROR" 8 "HWA_ACTIVE" 4 "HWA_STANDBY" 2 "HWA_INACTIVE" 1 "HWA_INIT" 0 "HWA_OFF" ;
+VAL_ 64 PEPS_DoorLockReq 3 "reserved" 2 "PE high car shutting request" 1 "PE shutting request" 0 "no request" ;
+VAL_ 64 PEPS_RKECommand 8 "unused" 7 "window stop" 6 "window close" 5 "window open" 4 "Trunk release" 3 "Door lock" 2 "Door unlock" 1 "Vehicle search" 0 "No command" ;
+VAL_ 829 BCM_IHBC_Function_Enable 1 "enable" 0 "disable" ;
+VAL_ 844 ADAS_SRR_RF_ErrorSt 1 "error" 0 "no error" ;
+VAL_ 844 ADAS_SRR_RF_FCTAWarning 1 "Active" 0 "Inactive" ;
+VAL_ 844 ADAS_SRR_RF_SystemWorkingSt 1 "ON" 0 "OFF" ;
+VAL_ 844 ADAS_SRR_RF_SystemStateInfo 6 "SW_PREPARE_SHUTDOWN" 5 "SW_PREPARE_RESET" 4 "SW_FAILURE_PERMANENT" 3 "SW_FAILURE_TEMPORARY" 2 "SW_POWER_SAVE" 1 "SW_ACTIVE" 0 "SW_ENTRY" ;
+VAL_ 843 ADAS_SRR_LF_FCTAWarning 1 "Active" 0 "Inactive" ;
+VAL_ 843 ADAS_SRR_LF_ErrorSt 1 "error" 0 "no error" ;
+VAL_ 843 ADAS_SRR_LF_SystemWorkingSt 1 "ON" 0 "OFF" ;
+VAL_ 843 ADAS_SRR_LF_SystemStateInfo 6 "SW_PREPARE_SHUTDOWN" 5 "SW_PREPARE_RESET" 4 "SW_FAILURE_PERMANENT" 3 "SW_FAILURE_TEMPORARY" 2 "SW_POWER_SAVE" 1 "SW_ACTIVE" 0 "SW_ENTRY" ;
+VAL_ 836 ADAS_BSD_S_RCTAWorkingSt 1 "ON" 0 "OFF" ;
+VAL_ 836 ADAS_BSD_S_DOWWorkingst 1 "ON" 0 "OFF" ;
+VAL_ 836 ADAS_BSD_S_RCTAWarning 1 "Active" 0 "Inactive" ;
+VAL_ 836 ADAS_BSD_S_DoorOpenWarning 3 "Invalid" 2 "Warning level 2" 1 "Warning level 1" 0 "Inactive" ;
+VAL_ 836 ADAS_BSD_S_LCAWarning 3 "Invalid" 2 "Warning level 2" 1 "Warning level 1" 0 "Inactive" ;
+VAL_ 836 ADAS_BSD_S_ErrorSt 1 "error" 0 "no error" ;
+VAL_ 836 ADAS_BSD_S_LCWWorkingSt 1 "on" 0 "off" ;
+VAL_ 836 ADAS_BSD_S_SystemStateInfo 6 "SW_PREPARE_SHUTDOWM" 5 "SW_PREPARE_RESET" 4 "SW_FAILURE_PERMANENT" 3 "SW_FAILURE_TEMPORARY" 2 "SW_POWER_SAVE" 1 "SW_ACTIVE" 0 "SW_ENTRY" ;
+VAL_ 835 ADAS_BSD_RCTAWorkingSt 1 "ON" 0 "OFF" ;
+VAL_ 835 ADAS_BSD_DOWWorkingst 1 "ON" 0 "OFF" ;
+VAL_ 835 ADAS_BSD_RCTAWarning 1 "Active" 0 "Inactive" ;
+VAL_ 835 ADAS_BSD_DoorOpenWarning 3 "Invalid" 2 "Warning level 2" 1 "Warning level 1" 0 "Inactive" ;
+VAL_ 835 ADAS_BSD_LCAWarning 3 "Invalid" 2 "Warning level 2" 1 "Warning level 1" 0 "Inactive" ;
+VAL_ 835 ADAS_BSD_ErrorSt 1 "error" 0 "no error" ;
+VAL_ 835 ADAS_BSD_LCWWorkingSt 1 "on" 0 "off" ;
+VAL_ 835 ADAS_BSD_SystemStateInfo 6 "SW_PREPARE_SHUTDOWM" 5 "SW_PREPARE_RESET" 4 "SW_FAILURE_PERMANENT" 3 "SW_FAILURE_TEMPORARY" 2 "SW_POWER_SAVE" 1 "SW_ACTIVE" 0 "SW_ENTRY" ;
+VAL_ 777 SCC_LeftSteeringWheelSwitchSig 254 "ACC error" 13 "TJA/HWA main switch pressed" 12 "ACC headway set" 11 "ACC Cancel pressed" 10 "ACC set/-  pressed" 9 "ACC reset/+  pressed" 8 "ACC OPEN pressed" 7 "MUTE pressed" 6 "Speech recognition key pressed" 5 "SET- pressed" 4 "RES+ pressed" 3 "CANCEL pressed" 2 "CURISE off pressed" 1 "CRUISE pressed" 0 "No buttons down" ;
+VAL_ 330 EMS_WhetherACCRequestRealized 1 "request is realized" 0 "request is not realized " ;
+VAL_ 330 EMS_ACCcontrolGearAvailable 1 "available" 0 "not available" ;
+VAL_ 330 EMS_ACCcontrolTorqueAvailable 1 "available" 0 "not available" ;
+VAL_ 330 EMS_ACCResponseStatus 7 "Failure" 6 "Reserved" 5 "Active effective" 4 "Active not effective" 3 "Waiting" 2 "Inhibit" 1 "Initialization" 0 "Shut down" ;
+VAL_ 1141 ADAS_OBJ06_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+unidentification" ;
+VAL_ 1141 ADAS_OBJ06_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
+VAL_ 1140 ADAS_OBJ05_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+unidentification" ;
+VAL_ 1140 ADAS_OBJ05_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
+VAL_ 1138 ADAS_OBJ03_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+unidentification" ;
+VAL_ 1138 ADAS_OBJ03_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
+VAL_ 1137 ADAS_OBJ02_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
+VAL_ 1137 ADAS_OBJ02_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+unidentification" ;
+VAL_ 1136 ADAS_OBJ01_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+unidentification" ;
+VAL_ 1136 ADAS_OBJ01_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
+VAL_ 1099 ADAS_R0_LINE_TYPE 13 "cones poles" 12 "curb" 11 "elevated_structure" 10 "rode edge" 9 "hov lane" 8 "deceleration" 7 "botts" 6 "double dashed dashed" 5 "double solid soild" 4 "double dashed soild " 3 "double soild dashed" 2 "dashed" 1 "solid" 0 "undecided" ;
+VAL_ 1067 ADAS_L0_LINE_TYPE 13 "cones poles" 12 "curb" 11 "elevated_structure" 10 "rode edge" 9 "hov lane" 8 "deceleration" 7 "botts" 6 "double dashed dashed" 5 "double solid soild" 4 "double dashed soild " 3 "double soild dashed" 2 "dashed" 1 "solid" 0 "undecided" ;
+VAL_ 1120 ADAS_FrontObject06Zone 9 "Zone9" 8 "Zone8" 7 "Zone7" 6 "Zone6" 5 "Zone5" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "No Zone" ;
+VAL_ 1120 ADAS_FrontObject06Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicyle" 3 "motobike" 2 "truck" 1 "car" 0 "Unknow" ;
+VAL_ 1120 ADAS_FrontObject05Zone 9 "Zone9" 8 "Zone8" 7 "Zone7" 6 "Zone6" 5 "Zone5" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "No Zone" ;
+VAL_ 1120 ADAS_FrontObject05Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicyle" 3 "motobike" 2 "truck" 1 "car" 0 "Unknow" ;
+VAL_ 1120 ADAS_FrontObject04Zone 9 "Zone9" 8 "Zone8" 7 "Zone7" 6 "Zone6" 5 "Zone5" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "No Zone" ;
+VAL_ 1120 ADAS_FrontObject04Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicyle" 3 "motobike" 2 "truck" 1 "car" 0 "Unknow" ;
+VAL_ 1120 ADAS_FrontObject03Zone 9 "Zone9" 8 "Zone8" 7 "Zone7" 6 "Zone6" 5 "Zone5" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "No Zone" ;
+VAL_ 1120 ADAS_FrontObject03Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicyle" 3 "motobike" 2 "truck" 1 "car" 0 "Unknow" ;
+VAL_ 1120 ADAS_FrontObject02Zone 9 "Zone9" 8 "Zone8" 7 "Zone7" 6 "Zone6" 5 "Zone5" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "No Zone" ;
+VAL_ 1120 ADAS_FrontObject02Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicyle" 3 "motobike" 2 "truck" 1 "car" 0 "Unknow" ;
+VAL_ 1120 ADAS_BackObjectRight 3 "Reserved" 2 "Exist object" 1 "No object" 0 "Default Value" ;
+VAL_ 1120 ADAS_BackObjectLeft 3 "Reserved" 2 "Exist object" 1 "No object" 0 "Default Value" ;
+VAL_ 1120 ADAS_FrontObject01Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicyle" 3 "motobike" 2 "truck" 1 "car" 0 "Unknow" ;
+VAL_ 1120 ADAS_FrontObject01Zone 9 "Zone9" 8 "Zone8" 7 "Zone7" 6 "Zone6" 5 "Zone5" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "No Zone" ;
+VAL_ 1051 ADAS_LineCurveType 3 "rught curve" 2 "straght" 1 "left curve" 0 "Default value" ;
+VAL_ 1051 ADAS_R1LineType 13 "cones poles" 12 "Curb" 11 "Elevated struckture" 10 "Road edge" 9 "Hov_lane" 8 "Deceleration" 7 "Botts" 6 "Double dashed dashed" 5 "double soild soild" 4 "Double Dashed soild" 3 "Double soild dashed" 2 "Dashed" 1 "Solid" 0 "Undecided" ;
+VAL_ 1051 ADAS_L1LineType 13 "cones poles" 12 "Curb" 11 "Elevated struckture" 10 "Road edge" 9 "Hov_lane" 8 "Deceleration" 7 "Botts" 6 "Double dashed dashed" 5 "double soild soild" 4 "Double Dashed soild" 3 "Double soild dashed" 2 "Dashed" 1 "Solid" 0 "Undecided" ;
+VAL_ 1051 ADAS_R0LineType 13 "cones poles" 12 "Curb" 11 "Elevated struckture" 10 "Road edge" 9 "Hov_lane" 8 "Deceleration" 7 "Botts" 6 "Double dashed dashed" 5 "double soild soild" 4 "Double Dashed soild" 3 "Double soild dashed" 2 "Dashed" 1 "Solid" 0 "Undecided" ;
+VAL_ 1051 ADAS_L0LineType 13 "cones poles" 12 "Curb" 11 "Elevated struckture" 10 "Road edge" 9 "Hov_lane" 8 "Deceleration" 7 "Botts" 6 "Double dashed dashed" 5 "double soild soild" 4 "Double Dashed soild" 3 "Double soild dashed" 2 "Dashed" 1 "Solid" 0 "Undecided" ;
+VAL_ 809 ADAS_HWAActionSts 3 "reserved" 2 "active and lane change on right" 1 "active and lane change on left " 0 "Default" ;
+VAL_ 809 ADAS_ISAStatus 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "system fault" 2 "ISA sign flash" 1 "ISA ON with limit value" 0 "ISA OFF" ;
+VAL_ 809 ADAS_ISASignType 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "End of speed limit sign" 2 "Speed limit sign with spd" 1 "Speed limit sign without spd" 0 "Default value" ;
+VAL_ 809 ADAS_ELKSts 3 "Invalid" 2 "ELK+LKA ON,fault detected" 1 "ELK+LKA ON,no fault" 0 "ELK+LKA OFF" ;
+VAL_ 809 ADAS_ISAValue 31 "reserved" 30 "reserved" 29 "145km/h" 28 "135km/h" 27 "125km/h" 26 "115km/h" 25 "105km/h" 24 "95km/h" 23 "85km/h" 22 "75km/h" 21 "65km/h" 20 "55km/h" 19 "45km/h" 18 "35km/h" 17 "25km/h" 16 "15km/h" 15 "5km/h" 14 "140km/h" 13 "130km/h" 12 "120km/h" 11 "110km/h" 10 "100km/h" 9 "90km/h" 8 "80km/h" 7 "70km/h" 6 "60km/h" 5 "50km/h" 4 "40km/h" 3 "30km/h" 2 "20km/h" 1 "10km/h" 0 "no speed limit" ;
+VAL_ 809 ADAS_ISAPopupMessage 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "fault" 2 "OFF" 1 "ISA system ON" 0 "No popup" ;
+VAL_ 809 ADAS_OperationStatus 15 "Invalid" 14 "reserved" 13 "reserved" 12 "reserved" 11 "reserved" 10 "Service Alignment in processing" 9 "System fully operational" 8 "reserved" 7 "ADAS Degraded" 6 "reserved" 5 "ADAS blocked /No image" 4 "reserved" 3 "ADAS not calibrated" 2 "System Initialization/warning up" 1 "Status not available" 0 "system error" ;
+VAL_ 809 ADAS_LCAStatusDisplay 2 "LCA_LDW on and fault detected" 1 "LCA+LDW on and no fault" 0 "LCA+LDW OFF" ;
+VAL_ 809 ADAS_LKASwitchState 1 "ON" 0 "OFF" ;
+VAL_ 809 ADAS_LKAMode 3 "LCA+LDW(resolved)" 2 "LKA+LDW" 1 "LDW only" 0 "OFF" ;
+VAL_ 809 ADAS_Handoffwarning 1 "HandOff warning" 0 "No HandOff warning" ;
+VAL_ 809 ADAS_LDWWarningSt 3 "Invalid" 2 "Right LDW warning" 1 "Left LDW warning" 0 "No LDW warning" ;
+VAL_ 809 ADAS_IHBC_Fuction_Status 3 "Reserved" 2 "Fault" 1 "ON" 0 "OFF" ;
+VAL_ 809 ADAS_IHBC_High_Beam_Req 1 "On" 0 "OFF" ;
+VAL_ 809 ADAS_LKAStatusDisplay 3 "Invalid" 2 "LKA+LDW ON and fualt detected" 1 "LKA+LDW ON and no fault" 0 "LKA+LDW OFF" ;
+VAL_ 809 ADAS_LDWStatusDisplay 3 "invalid" 2 "on and fault detected,icon red" 1 "On and no fault,icon green" 0 "LDW only OFF,no icon display" ;
+VAL_ 387 ADAS_ESARequest 1 "Control request" 0 "No control request" ;
+VAL_ 387 ADAS_ESAState 7 "Reserved" 6 "Reserved" 5 "Fault" 4 "Active" 3 "waiting" 2 "Inhibit" 1 "Initialization" 0 "Unavailable" ;
+VAL_ 387 ADAS_LKAState 7 "Invalid" 6 "Collision risk" 5 "Defect" 4 "Active" 3 "Autorized" 2 "Selected" 1 "Unselected" 0 "Unavailable" ;
+VAL_ 1271 ADAS_JAFault 7 "reserved" 6 "reserved" 5 "reserved" 4 "JA system off" 3 "JA Unavailable" 2 "JA fault" 1 "JA system on" 0 "No display" ;
+VAL_ 1271 ADAS_ESAFault 7 "reserved" 6 "reserved" 5 "reserved" 4 "ESA system off" 3 "ESA Unavailable" 2 "ESA fault" 1 "ESA system on" 0 "No display" ;
+VAL_ 1271 ADAS_HWATurnOnIndicator 3 "Reserved" 2 "Right indicator ON" 1 "Left indicator ON" 0 "Default value" ;
+VAL_ 1271 ADAS_HWAMode 6 "Reserved" 5 "HWA_Error" 4 "HWA_SL_SRR_Fail" 3 "HWA_ALC" 2 "HWA_TLC" 1 "HWA Unavailable" 0 "Default Value" ;
+VAL_ 1271 ADAS_ISL_CDriverRemind 3 "Reserved" 2 "Plz driver confirmation contious" 1 "Please driver confirmation blink" 0 "No information" ;
+VAL_ 1271 ADAS_ISAMessageDisp 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "ICA/HWA degraded" 11 "ICA/HWA off" 10 "ICA/HWA Canceled" 9 "take over the car immediately" 8 "Please hold the steering wheel" 7 "Please take over the car" 6 "ICA/HWA go request" 5 "ICA/HWA Active" 4 "ICA/HWA Activation Unsatisfied" 3 "ICA/HWA Fault" 2 "Radar Blocked" 1 "ICA/HWA ON" 0 "no display" ;
+VAL_ 1271 ADAS_ICAStatusIcon 7 "reserved" 6 "reserved" 5 "reserved" 4 "red" 3 "Orange" 2 "Green" 1 "Gray" 0 "No_display" ;
+VAL_ 1271 ADAS_AEBMessageDisp 7 "Emergency_Braking_OFF" 6 "Emergency_Braking_Fault" 5 "Emergency_Braking_Unavailable" 4 "Forward_Collision_Warning_OFF" 3 "Forward_Collision_Warning_Fault" 2 "Emergency_Braking_System_ON" 1 "Forward_Collision_Warning_ON" 0 "No_display" ;
+VAL_ 1271 ADAS_AEBFaultStatus 3 "AEB_FCW_Fault" 2 "AEB_Fault" 1 "FCW_Fault" 0 "No fault" ;
+VAL_ 1271 ADAS_ISLCState 7 "reserved" 6 "reserved" 5 "reserved" 4 "reserved" 3 "reserved" 2 "system on with fault" 1 "System on without fault" 0 "System off" ;
+VAL_ 1271 ADAS_AEBSwitchStatus 3 "AEB_FCW_off" 2 "AEB_off" 1 "FCW_off" 0 "AEB_FCW_ON" ;
+VAL_ 1271 ADAS_AEBAlertReq 3 "JA_Alert_Req(E4)" 2 "AEB_Alert_Req" 1 "FCW_Alert_Req" 0 "No Req" ;
+VAL_ 1271 ADAS_ACCMessagePrompt 15 "reserved" 14 "reserved" 13 "reserved" 12 "reserved" 11 "ISLC Fault" 10 "ACC OFF" 9 "ACC Canceled" 8 "take over the car immediately" 7 "please take over the car" 6 "ACC go request" 5 "ACC Active" 4 "ACC Activation Unsatisfied" 3 "ACC Fault" 2 "Radar Blocked" 1 "ACC ON" 0 "No Pop Up Message" ;
+VAL_ 1271 ADAS_ACC_RVVRequestType 1 "RVV or ACC request" 0 "No RVV or ACC request" ;
+VAL_ 1271 ADAS_ACCHeadwayDisplay 3 "Far" 2 "Medium" 1 "Near" 0 "Invalid" ;
+VAL_ 1271 ADAS_ACCHeadwayIcon 1 "on" 0 "off" ;
+VAL_ 1271 ADAS_ACCSetSpeedDisplay 7 "reserved" 6 "reserved" 5 "reserved" 4 "value blink" 3 "short dash line without value" 2 "value without strikethrough line" 1 "value with a strikethrough line" 0 "No display" ;
+VAL_ 1271 ADAS_ACCStatusIconDisplay 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Reserved" 3 "Red" 2 "Green" 1 "Gray" 0 "No Display" ;
+VAL_ 244 ADAS_EngineStopPremitForSTT 1 "permit" 0 "not permit" ;
+VAL_ 244 ADAS_EngineStartRequestForSTT 1 "request" 0 "no request" ;
+VAL_ 244 ADAS_TargetPosition 7 "Invalid" 6 "POS7 Not PRESENT" 5 "POS6" 4 "POS5 VFAR" 3 "POS4 FAR" 2 "POS3 SPOTON" 1 "POS2 CLOSE" 0 "POS1 VCLOSE" ;
+VAL_ 244 ADAS_BrakeRequest 1 "control request" 0 "no control request" ;
+VAL_ 244 ADAS_ACCRequestEPB 1 "ACC request EPB after hold" 0 "Default value" ;
+VAL_ 244 ADAS_AEBBrakingProgress 1 "braking in progress" 0 "not braking in progress" ;
+VAL_ 244 ADAS_DecelerationType 3 "Low Speed automatic braking" 2 "High Speed automatic braking" 1 "ACC braking" 0 "no Braking" ;
+VAL_ 244 ADAS_ESCHoldReq 1 "hold" 0 "not hold" ;
+VAL_ 244 ADAS_Radar_State 7 "Fault" 6 "Blocked" 5 "Learning" 4 "Simulation" 3 "Reduce visibility" 2 "Actif" 1 "Stand by" 0 "Init" ;
+VAL_ 244 ADAS_AEBState 7 "value not used" 6 "active" 5 "value not used" 4 "value not used" 3 "value not used" 2 "value not used" 1 "value not used" 0 "unavailable" ;
+VAL_ 244 ADAS_HMITargetDispFlag 1 "on" 0 "off" ;
+VAL_ 244 ADAS_HapticAlarmRequest 1 "request haptic alarm" 0 "no request haptic alarm" ;
+VAL_ 242 ADAS_ESCDriveOff 1 "Drive off" 0 "No drive off" ;
+VAL_ 242 ADAS_DecelerationControlReq 1 "control request UCF" 0 "no control request UCF" ;
+VAL_ 242 ADAS_UpDownGearChange 1 "Increase" 0 "Decrease" ;
+VAL_ 242 ADAS_PrefillRequest 1 "prefill request" 0 "No prefill request" ;
+VAL_ 242 ADAS_PowerWheelTorqueActiveReq 3 "Not used" 2 "Lower bound request" 1 "Upper bound Request" 0 "No request" ;
+VAL_ 242 ADAS_ACCState 7 "waiting rise" 6 "Brake only" 5 "Suspended" 4 "Active" 3 "Waiting" 2 "Inhibited" 1 "OFF" 0 "Initialization" ;
+VAL_ 291 ESC_ACCavailable 1 "Available" 0 "Unavailable" ;
+VAL_ 291 ESC_AEBActive 1 "active" 0 "unactive" ;
+VAL_ 291 ESC_VehicleHoldStatus 3 "reserved" 2 "hold due to security function" 1 "hold due to comfort function" 0 "No hold due to ADAS" ;
+VAL_ 291 ESC_ACCActive 1 "Active" 0 "Unactive" ;
+VAL_ 291 ESC_AEBAvailable 1 "Available" 0 "Unavailable" ;
+VAL_ 291 ESC_VehDrivingDirection 3 "invalid" 2 "Rear toward" 1 "Front toward" 0 "Undefined(standstill)" ;
+VAL_ 291 ESC_BrakingEffort 1 "Brake force generated" 0 "No brake force generated" ;
+VAL_ 291 ESC_MSRinRegulation 1 "Regulation active" 0 "no regulation" ;
+VAL_ 291 ESC_BrakeReleasedFailsafe 1 "Releasing the brakes" 0 "No need to release" ;
+VAL_ 291 ESC_DynamicSlopeAccuracy 3 "undefined" 2 "low" 1 "mid" 0 "high" ;
+VAL_ 291 ESC_AVHStatus 1 "work" 0 "not work" ;
+VAL_ 291 ESC_BLRequest 1 "on" 0 "off" ;
+VAL_ 902 DMS_FeedbackUserNum 5 "user number" 4 "user number" 3 "user number" 2 "user number" 1 "user number" 0 "invalid" ;
+VAL_ 905 DMS_EyeDirection 5 "Head down" 4 "Head upper" 3 "Head to the right" 2 "Head to the left" 1 "Normal driving" 0 "Data unavailable" ;
+VAL_ 905 DMS_AlarmBeep 4 "Rapid periodic buzzes" 3 "Slow cycle buzzers" 2 "buzzer one time（500ms ）" 1 "buzzer one time（ 500ms）" 0 "no buzzing" ;
+VAL_ 905 DMS_AlarmLamp 3 "DMS warning" 2 "DMS Function close" 1 "DMS fault" 0 "DMS no fault" ;
+VAL_ 905 DMS_Status 17 "long time driving" 16 "drinking" 15 "smoking" 14 "using phone" 13 "inattention" 12 "Face absences" 11 "fatigue driving" 10 "Face recognition failure" 9 "Face recognition success" 8 "face recognition" 7 "reserved" 6 "reserved" 5 "camera is blocked." 4 "DMS system shutdown" 3 "DMS camera is not connected" 2 "DMS Camera failure" 1 "DMS Controller failure" 0 "no fault" ;
+VAL_ 915 MP5_AVMBodyColor 7 "reserved" 6 "orange" 5 "gray" 4 "red" 3 "black" 2 "white" 1 "default color" 0 "no request or invalid" ;
+VAL_ 915 MP5_AVMLineSetSwitch 1 "dont show" 0 "show " ;
+VAL_ 915 MP5_SideviewControl 1 "open" 0 "close" ;
+VAL_ 915 MP5_PuposeKey 3 "reserved" 2 "reserved" 1 "push Pupose" 0 "release Pupose" ;
+VAL_ 915 MP5_ScreenState 3 "reserved" 2 "reserved" 1 "AVM" 0 "MP5（default）" ;
+VAL_ 915 MP5_AVMActivation 3 "reserved" 2 "reserved" 1 "push camera" 0 "release camera" ;
+VAL_ 903 MP5_DMS_SmokingMonitor 1 "enable" 0 "unable" ;
+VAL_ 903 MP5_DMS_DrinkWaterMonitor 1 "enable" 0 "unable" ;
+VAL_ 903 MP5_DMS_UsingPhoneMonitor 1 "enable" 0 "unable" ;
+VAL_ 903 MP5_DMS_SideViewMonitor 1 "enable" 0 "unable" ;
+VAL_ 903 MP5_DMS_LongtimeDriveMonitor 1 "enable" 0 "unable" ;
+VAL_ 903 MP5_DMS_EyeFatigueMonitor 1 "enable" 0 "unable" ;
+VAL_ 903 MP5_DMS_sensity 3 "insensitivity" 2 "standard" 1 "reserved" 0 "invalid" ;
+VAL_ 903 MP5_DMS_DeleteUserNum 7 "Visitor" 6 "Reserved" 5 "user number" 4 "user number" 3 "user number" 2 "user number" 1 "user number" 0 "Invalid" ;
+VAL_ 903 MP5_DMS_SystemEnable 3 "reserved" 2 "enable" 1 "unable" 0 "invalid" ;
+VAL_ 903 MP5_MDS_Message_type 8 "Reserved" 7 "Reserved" 6 " request DMS calibration" 5 "Request to change user DMS par" 4 "Request to create user file" 3 "Request to delete user" 2 "Request face recognition" 1 "Request face entry" 0 "invalid" ;
+VAL_ 1242 TBOX_LocalTimeValid 1 "Not_Valid" 0 "Valid" ;
+VAL_ 870 MP5_BSD_LCW_Activation 3 "reserved" 2 "off" 1 "on" 0 "inactive" ;
+VAL_ 870 MP5_FLKAActivation 3 "reserved" 2 "off" 1 "on" 0 "inactive" ;
+VAL_ 870 MP5_APAModeSelect 7 "Invalid" 6 "Remote Parking" 5 "Auto Parking" 4 "home button: function off" 3 "Right Park out" 2 "Left Park out" 1 "Par&Pen Parking in" 0 "No selection" ;
+VAL_ 870 MP5_Language_Set 4 "Reserved" 3 "Russian" 2 "English" 1 "Chinese" 0 "no input" ;
+VAL_ 870 MP5_UPA_switch 3 "reserved" 2 "Off" 1 "On" 0 "inactive" ;
+VAL_ 870 MP5_WorkSt 3 "invalid" 2 "MP5 working" 1 "MP5 not work" 0 "no input" ;
+VAL_ 828 BCM_DoorLockSt 1 "lock" 0 "no lock" ;
+VAL_ 828 BCM_FrontWiperSwitchSt 3 "Continuous_fast" 2 "Continuous_slow" 1 "AUTO_or_INT" 0 "OFF" ;
+VAL_ 828 BCM_IgnitionSt 3 "START" 2 "ON" 1 "ACC" 0 "OFF" ;
+VAL_ 570 BCM_HighBeamStatus 1 "on" 0 "off" ;
+VAL_ 570 BCM_RightlightSt 1 "on" 0 "off" ;
+VAL_ 570 BCM_RightTurnSwitchSt 3 "invalid" 2 "fault" 1 "ON" 0 "OFF" ;
+VAL_ 570 BCM_LeftTurnSwitchSt 3 "invalid" 2 "fault" 1 "ON" 0 "OFF" ;
+VAL_ 570 BCM_LowBeamStatus 1 "light on" 0 "light off" ;
+VAL_ 570 BCM_HazardLampSt 1 "light off" 0 "light on" ;
+VAL_ 570 BCM_LeftlightSt 1 "on" 0 "off" ;
+VAL_ 570 BCM_LRDoorSwitchSt 1 "on" 0 "off" ;
+VAL_ 570 BCM_RRDoorSwitchSt 1 "on" 0 "off" ;
+VAL_ 570 BCM_RFDoorSwitchSt 1 "on" 0 "off" ;
+VAL_ 570 BCM_LFDoorSwitchSt 1 "on" 0 "off" ;
+VAL_ 570 BCM_TrunkSt 1 "on" 0 "off" ;
+VAL_ 916 AVM_LogStatus 11 "Log export failed" 10 "Log export successful" 9 "Log export" 8 "Logs do not qualify for export" 7 "reserved" 6 "reserved" 5 "upgrade failed" 4 "upgraded successfully" 3 "Usb flash drive in upgrade" 2 "Ready for upgrade" 1 "No eligible for upgrade" 0 "invalid " ;
+VAL_ 916 AVM_360_DisplayViewStatus 18 "Calibration" 17 "3D_AnyAngle" 16 "3D_Planform_Rear" 15 "3D_Planform_Front" 14 "3D_Right_Rear" 13 "3D_Left_Rear" 12 "3D_Right_Front" 11 "3D_Left_Front" 10 "3D_Right" 9 "3D_Left" 8 "3D_Rear" 7 "3D_Front" 6 "Right" 5 "Left" 4 "Rear" 3 "Front" 2 "Rear_Wide" 1 "Front_wide" 0 "No_Display" ;
+VAL_ 148 TCU_GearEngagement 1 "clutched" 0 "not clutched" ;
+VAL_ 148 GW_TCU_DCTClutchStatus 2 "no_slip(incl.u-slip)" 1 "Slip" 0 "Fully_Desengaged" ;
+VAL_ 331 EMS_PowertrainControlSt 3 "Inactive" 2 "Active" 1 "Waiting" 0 "Unvalaible" ;
+VAL_ 147 TCU_ATFailure 1 "AT fault" 0 "no fault" ;
+VAL_ 147 TCU_TargetGear 9 "7th gear" 8 "6th gear" 7 "5th gear" 6 "Reserved" 5 "P range" 4 "4th gear" 3 "3st gear" 2 "2st gear" 1 "1st gear" 0 "Neutral" ;
+VAL_ 147 TCU_ActialGear 9 "7th gear" 8 "6th gear" 7 "5th gear" 6 "Reserve" 5 "P range" 4 "4th gear" 3 "3rd gear" 2 "2nd gear" 1 "1st gear" 0 "Neutral" ;
+VAL_ 147 TCU_SelectedATMode 3 "winter" 2 "ECO" 1 "sport" 0 "normal " ;
+VAL_ 147 TCU_PRNDLStatus 10 "M-" 9 "M+" 8 "M" 7 "Remake" 6 "Unreliable" 5 "park" 4 "D range" 3 "3 range" 2 "2 rangge " 1 "L range" 0 "Neutral" ;
+VAL_ 147 TCU_ShiftLeverPosValidFlag 1 "invalid" 0 "valid" ;
+VAL_ 224 EMS_AccPedalFaultBit 1 "Abnormal" 0 "Normal" ;
+VAL_ 224 EMS_EngRunningStatus 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Engine_STALL" 3 "Engine_RUN" 2 "Engine_CRANK" 1 "Engine_KEYON" 0 "Engine_OFF" ;
+VAL_ 224 EMS_BrakePedalSignal 3 "abnormal" 2 "Reserved" 1 "Press" 0 "release" ;
+VAL_ 889 APA_UPA_Error_Status 3 "reserved" 2 "Blind spot detection failure" 1 "Parking assistance failure" 0 "No fault" ;
+VAL_ 889 APA_LRF_Sector_Dist 3 "Sensor fault" 2 "Zone2" 1 "Zone1" 0 "No obstacle" ;
+VAL_ 889 APA_UPA_HMI_Active 1 "Active显示UPA界面" 0 "Inactive不显示UPA界面" ;
+VAL_ 889 APA_RRF_Sector_Dist 3 "Sensor fault" 2 "Zone2" 1 "Zone1" 0 "No obstacle" ;
+VAL_ 889 APA_RM_Sector_Dist 3 "Sensor fault" 2 "Zone2" 1 "Zone1" 0 "No obstacle" ;
+VAL_ 889 APA_RFF_Sector_Dist 3 "Sensor fault" 2 "Zone2" 1 "Zone1" 0 "No obstacle" ;
+VAL_ 889 APA_LM_Sector_Dist 3 "Sensor fault" 2 "Zone2" 1 "Zone1" 0 "No obstacle" ;
+VAL_ 889 APA_LFF_Sector_Dist 3 "Sensor fault" 2 "Zone2" 1 "Zone1" 0 "No obstacle" ;
+VAL_ 889 APA_UPA_FLK_MODE 3 "System_Failure" 2 "Standby" 1 "Enable" 0 "Disable" ;
+VAL_ 886 APA_ParkAssistantFrontRegion4 7 "无效" 6 "Reserved" 5 "探头故障" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "无" ;
+VAL_ 886 APA_ParkAssistantFrontRegion3 7 "无效" 6 "Reserved" 5 "探头故障" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "无" ;
+VAL_ 886 APA_ParkAssistantRearRegion4 7 "无效" 6 "Reserved" 5 "探头故障" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "无" ;
+VAL_ 886 APA_ParkAssistantRearRegion3 7 "无效" 6 "Reserved" 5 "探头故障" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "无" ;
+VAL_ 886 APA_ParkAssistantRearRegion2 7 "无效" 6 "Reserved" 5 "探头故障" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "无" ;
+VAL_ 886 APA_ParkAssistantRearRegion1 7 "无效" 6 "Reserved" 5 "探头故障" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "无" ;
+VAL_ 886 APA_ChimeRequest 20 "reserved" 19 "Side UPA singing " 18 "Side UPA singing 1（4Hz）" 17 "Side UPA singing 2（2Hz）" 16 "Side UPA singing 3（1Hz）" 15 "Rear UPA singing " 14 "Rear UPA singing 1（4Hz）" 13 "Rear UPA singing 2（2Hz）" 12 "Rear UPA singing 3（1Hz）" 11 "BSD warning（4Hz，0.75s）" 10 "Power on self-check beep" 9 "system failure " 8 "warning tone4" 7 "warning tone3" 6 "warning tone2" 5 "warning tone1" 4 "Front UPA singing " 3 "Front UPA singing 1（4Hz）" 2 "Front UPA singing 2（2Hz）" 1 "Front UPA singing 3（1Hz）" 0 "Soundless request" ;
+VAL_ 886 APA_ParkAssistantFrontRegion2 7 "无效" 6 "Reserved" 5 "探头故障" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "无" ;
+VAL_ 886 APA_ParkAssistantFrontRegion1 7 "无效" 6 "Reserved" 5 "探头故障" 4 "Zone4" 3 "Zone3" 2 "Zone2" 1 "Zone1" 0 "无" ;
+VAL_ 886 APA_ParkAssistantRearSys_Status 3 "System_Failure" 2 "Standby" 1 "Enable" 0 "Disable" ;
+VAL_ 886 APA_ParkAssistantFrontSys_Status 3 "System_Failure" 2 "Standby" 1 "Enable" 0 "Disable" ;
+VAL_ 885 APA_TurnLightscommand 3 "DoubleLightsOn" 2 "RightLight_On" 1 "LeftLight_On" 0 "No_Request" ;
+VAL_ 885 APA_Indication 5 "Invalid" 4 "ePSC_is_active" 3 "POC_is_active" 2 "CPSC_is_active" 1 "pPSC_is_active" 0 "No_function_is_active" ;
+VAL_ 885 APA_SlotNoticeSignal 15 "Invalid" 14 "reserved" 13 "R_Par_slot2" 12 "L_par_slot2" 11 "R_per_slot2" 10 "L_Per_Slot2" 9 "PMO_select" 8 "Reserved" 7 "R_Parking_out_indication" 6 "L_Parking_out_indication" 5 "R_Par_slot1" 4 "L_Par_slot1" 3 "R_Per_slot1" 2 "L_Per_slot1" 1 "Searching_Slot" 0 "IDLE" ;
+VAL_ 885 APA_RightSlot2Type 3 "Reserved" 2 "parallel_slot" 1 "vetical_slot" 0 "unvailable" ;
+VAL_ 885 APA_RightSlot1Type 3 "Reserved" 2 "parallel_slot" 1 "vetical_slot" 0 "unvailable" ;
+VAL_ 885 APA_LeftSlot2Type 3 "Reserved" 2 "parallel_slot" 1 "vetical_slot" 0 "unvailable" ;
+VAL_ 885 APA_LeftSlot1Type 3 "Reserved" 2 "parallel_slot" 1 "vetical_slot" 0 "unvailable" ;
+VAL_ 885 APA_APAOnOff 1 "ON" 0 "OFF" ;
+VAL_ 885 APA_AcivationStatus 7 "Reserved" 6 "Reserved" 5 "Abort" 4 "Suspend" 3 "ManeuverFinished" 2 "Active" 1 "Standby" 0 "Init" ;
+VAL_ 885 APA_ErrorStatus 1 "Error" 0 "No_Error" ;
+VAL_ 885 APA_RequestDisplaySt 1 "Enable" 0 "Disable" ;
+VAL_ 885 APA_AdvancedParkingWorkingSt 3 "failure" 2 "active" 1 "enabled" 0 "Disabled" ;
+VAL_ 885 APA_AdvancedParkingPode 2 "ParkingExit" 1 "PerpendicularParking" 0 "Parallel_Parking" ;
+VAL_ 885 APA_AutomaticParkingProcessSig 52 "Speed_too_high" 51 "Parking_Mode_selection" 50 "Parkout_failure" 49 "Parkin_failure" 48 "Reserved" 47 "Reserved" 46 "Reserved" 45 "Slop_toolarge_for_park_out" 44 "Slop_too_large_for_park_in" 43 "Shift_to_N_gear" 42 "EPB_not_clamp" 41 "Gear_not_P" 40 "Vehicle_not_standstill" 39 "Park_Off_Speed_toofast" 38 "Slot_search_off_speed_too_high" 37 "Speed_too_high_please_slow_down" 36 "successful_PMO" 35 "PMO_canceled" 34 "Park_out_resume" 33 "PMO_suspend_EPB_ON" 32 "PMO_suspend_dooropen" 31 "PMO_suspend_seatbelt_unfastened" 30 "PMO_suspend_Gear_change" 29 "PMO_suspend_ACC_Padel_pressed" 28 "Parking_out" 27 "Start_PMO_Release_Brake" 26 "Fp4U_button_longpressed_and_" 25 "Reserve" 24 "Close_the_door_park_out" 23 "Fasten_seat_belts_park_out" 22 "Reserved" 21 "PMO_side_selection" 20 "PMO_slot_too_small" 19 "PMO_slot_too_big" 18 "Successful_Park_in" 17 "Parking_in_canceled" 16 "Park_in_suspend_resume" 15 "Park_in_suspend_EPB_ON" 14 "Park_in_suspend_dooropen" 13 "Park_insuspend_seatbelt_unfasten" 12 "Park_in_suspend_Handle_Gearshift" 11 "Park_insuspend_ACC_pedal_pressed" 10 "Parking_in" 9 "Rele_Bra_Park" 8 "Brake_and_Long_Button" 7 "Reserved" 6 "No_standstill_Brake_park_in" 5 "Close_the_door_parkin" 4 "Fasten_seat_belts_for_park_in" 3 "Parking_Modeselection" 2 "Stop_the_car" 1 "Search_Slot" 0 "IDLE" ;
+VAL_ 353 APA_EPBRequestValidty 1 "Valid" 0 "Invalid" ;
+VAL_ 353 APA_RequestTargetGear 7 "Invalid" 6 "reserved" 5 "reserved" 4 "D" 3 "N" 2 "R" 1 "Target_gear_P" 0 "No_request" ;
+VAL_ 353 APA_FailureBrakeMode 3 "Reserved" 2 "Emergency" 1 "Comfortable" 0 "Idle(No_Braking)" ;
+VAL_ 353 APA_EPB_Request 3 "Reserve" 2 "Release_request" 1 "Lock_request" 0 "No_request" ;
+VAL_ 353 APA_SystemSts 7 "Reserved" 6 "Failure" 5 "Abort" 4 "Suspend" 3 "ManeuverFinished" 2 "Active" 1 "Standby" 0 "Init" ;
+VAL_ 353 APA_LongtiudinalControlReq 4 "Reserved" 3 "AutomaticPick" 2 "Reserved" 1 "Reserved" 0 "No Action" ;
+VAL_ 352 APA_ReqControlEPS 3 "Invalid" 2 "control_request" 1 "reserve" 0 "No_request" ;
+VAL_ 780 ACU_RearRightBeltSwitchSig 1 "Not fasten seat belt" 0 "Fasten seat belt" ;
+VAL_ 780 ACU_RearMiddleBeltSwitchSig 1 "Not fasten seat belt" 0 "Fasten seat belt" ;
+VAL_ 780 ACU_RearLeftBeltSwitchSig 1 "Not fasten seat belt" 0 "Fasten seat belt" ;
+VAL_ 780 ACU_PassengerBeltSwitchSig 1 "Not fasten seat belt" 0 "Fasten seat belt" ;
+VAL_ 780 ACU_DriverBeltSwitchSig 1 "Not fasten  seat belt" 0 "Fasten  seat belt" ;
+VAL_ 165 SAS_SASfailureSts 1 "no fault" 0 "fault" ;
+VAL_ 165 SAS_CalibratedStatus 1 "sensor calibrated" 0 "sensor not calibrated" ;
+VAL_ 165 SAS_TrimmingStatus 1 "trimmed" 0 "sensor not trimmed" ;
+VAL_ 293 ESC_APABrakSysLongiCtlSt 8 "reserved" 7 "Failure" 6 "Abort" 5 "reserved" 4 "DriverBrakeToStop" 3 "BrakeHold" 2 "Active_AutomaticPark" 1 "Standby" 0 "Unavailable" ;
+VAL_ 293 ESC_APALongictlFailureSt 15 "reserved" 14 "Driver_unpresent" 13 "Time_out" 12 "ESC_Failure" 11 "Static_slope_Out_of_Range" 10 "Ubexpected_APAFailure" 9 "Unexpected_TCUFailure" 8 "Unexpected_EngineFailure" 7 "Unexpected_DriverAcceleration" 6 "Unexpected_GearIntervention" 5 "Unexpected_SpeedLimitation" 4 "Unexpected_TravelDistance" 3 "Unexpected_EPB_Action" 2 "Unexpected_GearPosition" 1 "Vehicle_blocked" 0 "no error" ;
+VAL_ 290 ESC_LongitudinalAccelervalidity 1 "unvalid" 0 "Valid" ;
+VAL_ 290 ESC_YawrateValidity 1 "unvalid" 0 "valid" ;
+VAL_ 290 ESC_LateralAccelarationValidity 1 "invalid" 0 "Valid" ;
+VAL_ 166 ESC_RRWHeelPulseCounterValidity 1 "invalid" 0 "valid" ;
+VAL_ 166 ESC_FRWHeelPulseCounterValidity 1 "invalid" 0 "valid" ;
+VAL_ 166 ESC_FLWHeelPulseCounterValidity 1 "invalid" 0 "valid" ;
+VAL_ 289 ESC_TCSCtlActive 2 "fault" 1 "not work" 0 "work" ;
+VAL_ 289 ESC_ESCAlarmSig 1 "on" 0 "off" ;
+VAL_ 289 ESC_ESCWorkStatus 1 "work" 0 "not work" ;
+VAL_ 289 ESC_VehicleStandstill 2 "invalid" 1 "not standstill" 0 "standstill" ;
+VAL_ 289 ESC_RRWDirection 3 "Invalid" 2 "Stop" 1 "Backward" 0 "Forward" ;
+VAL_ 289 ESC_RLWDirection 3 "Invalid" 2 "Stop" 1 "Backward" 0 "Forward" ;
+VAL_ 289 ESC_TCSErrorStatus 1 "Error" 0 "No Error" ;
+VAL_ 289 ESC_FRWDirection 3 "Invalid" 2 "Stop" 1 "Backward" 0 "Foeward" ;
+VAL_ 289 ESC_FLWDirection 3 "Invalid" 2 "Stop" 1 "Backward" 0 "Forward" ;
+VAL_ 289 ESC_ESCOFF 1 "ON" 0 "OFF" ;
+VAL_ 160 ESC_ABSWorkLable 1 "ABS is in the  states" 0 "ABS is not in the states" ;
+VAL_ 160 ESC_VehSpdValidFlag 1 "error" 0 "no error" ;
+VAL_ 161 ESC_RRWHeelSpdFaultSignal 1 "fault" 0 "no fault" ;
+VAL_ 161 ESC_RLWHeelSpdFaultSignal 1 "fault" 0 "no fault" ;
+VAL_ 161 ESC_FRWHeelSpdFaultSignal 1 "fault" 0 "no fault" ;
+VAL_ 161 ESC_FLWHeelSpdFaultSignal 1 "fault" 0 "no fault" ;
+
