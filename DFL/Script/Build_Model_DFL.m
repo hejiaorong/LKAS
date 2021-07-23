@@ -21,10 +21,14 @@ warning('off');
 ModelSavePath = strcat(path,'\ModelSave');
 binPath = strcat(path,'\bin');
 filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
-slbuild(filename,'StandaloneRTWTarget','ForceTopModelBuild',true)
-close_system(filename);
+movefile(strcat(pwd,'\LKAS.slx'),strcat(pwd,'\LKAS.slx.bak'))
+movefile(strcat(pwd,'\DFL\',getFileName),strcat(pwd,'\DFL\','LKAS.slx'))
+slbuild('LKAS','StandaloneRTWTarget','ForceTopModelBuild',true)
+close_system('LKAS');
+movefile(strcat(pwd,'\DFL\','LKAS.slx'),strcat(pwd,'\DFL\',getFileName))
+movefile(strcat(pwd,'\LKAS.slx.bak'),strcat(pwd,'\LKAS.slx'))
 zipfile = strcat(filename,'_',datestr(now,'yyyymmdd'));
-ziplist = {strcat(binPath,'\',filename,'_autosar_rtw')};
+ziplist = {strcat(binPath,'\','LKAS','_autosar_rtw')};
 zip(strcat(zipfile,'.zip'),ziplist);
 movefile(strcat(zipfile,'.zip'),ModelSavePath); 
 proj = simulinkproject;
