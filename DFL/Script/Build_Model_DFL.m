@@ -18,6 +18,7 @@ else
     return;
 end
 warning('off');
+rmpath('D:\ProgramFiles\MATLAB\toolbox\rtw\targets\asap2\asap2\CANape_user')
 ModelSavePath = strcat(path,'\ModelSave');
 binPath = strcat(path,'\bin');
 filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
