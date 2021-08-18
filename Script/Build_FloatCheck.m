@@ -17,6 +17,7 @@ while feof(fpn) ~= 1                %用于判断文件指针p在其所指的文件中的位置，如
       count = [];
       count = [count,regexp(line,'[Ff]loat64')];
       count = [count,regexp(line,'FLOAT64')];
+      count = [count,regexp(line,'real64_T')];
       count = [count,regexp(line,'[0-9]\.[0-9][),; ]')];
       count = [count,regexp(line,'[0-9]E[0-9][),; ]')];
       count = [count,regexp(line,'[0-9]\.[0-9]E[0-9][),; ]')];
