@@ -1,4 +1,4 @@
-eval('clear all');
+% eval('clear all');
 eval('clc');
 %% 1.根据目录确定slx文件名称
 path = cd;
