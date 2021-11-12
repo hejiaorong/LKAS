@@ -1,0 +1,9 @@
+.svn
+.git
+bin
+cache
+.SimulinkProject
+log
+Tools/CANMaster/
+*.ini
+*.stcfg
