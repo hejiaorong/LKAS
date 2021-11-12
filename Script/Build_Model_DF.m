@@ -24,12 +24,18 @@ binPath = strcat(path,'\bin');
 filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
 slbuild(filename,'StandaloneRTWTarget','ForceTopModelBuild',true)
 close_system(filename);
+date1 = datestr(now,'yyyymmdd_HHMM');
+newSWCfile = strcat(filename,'_AutoSave_DF_',date1);
+getNewSWCName = strcat(newSWCfile,'.slx');
+copyfile(getFileName,ModelSavePath);
+eval(strcat('!rename',32,ModelSavePath,'\',getFileName,32,getNewSWCName));
 zipfile = strcat(filename,'_',datestr(now,'yyyymmdd'));
 ziplist = {strcat(binPath,'\',filename,'_autosar_rtw')};
 zip(strcat(zipfile,'.zip'),ziplist);
 movefile(strcat(zipfile,'.zip'),ModelSavePath); 
 proj = simulinkproject;
 addFile(proj,strcat(ModelSavePath,'\',zipfile,'.zip'));
+addFile(proj,strcat(ModelSavePath,'\',getNewSWCName));
 delete(strcat(filename,'.slxc'));
 delete(strcat(filename,'_autosar_rtw'));
 eval('clear all');
