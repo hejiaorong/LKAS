@@ -1,0 +1,1922 @@
+<polyspace-code-prover-nodesktop R2018b PID25676 PGID25676>
+
+Polyspace verification of LKAS project.
+Starting at 12/10/2021, 10h10.
+
+
+Verifying sources compliance ...
+
+Options used with Verifier:
+-lang=C
+-compiler=generic
+-polyspace-version=9.10 (R2018b)
+-date=10/12/2021
+
+User:
+-data-range-specifications=D:\LKAS\results_LKAS\LKAS\LKAS_drs.xml
+-D1=main=main_rtwec
+-D2=__restrict__=
+-D3=MODEL=LKAS
+-D4=NUMST=2
+-D5=NCSTATES=0
+-D6=HAVESTDIO
+-D7=MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0
+-D8=CLASSIC_INTERFACE=0
+-D9=ALLOCATIONFCN=0
+-D10=TID01EQ=0
+-D11=TERMFCN=0
+-D12=ONESTEPFCN=1
+-D13=MAT_FILE=0
+-D14=MULTI_INSTANCE_CODE=0
+-D15=INTEGER_CODE=0
+-D16=MT=1
+-float-rounding-mode=to-nearest
+-mbd=true
+-I1=D:\LKAS\bin
+-I2=D:\LKAS\bin\LKAS_autosar_rtw
+-I3=D:\LKAS
+-I4=C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\coder\autosar\rte
+-I5=D:\LKAS\bin\LKAS_autosar_rtw\stub
+-I6=D:\ProgramFiles\MATLAB\R2018b\extern\include
+-I7=D:\ProgramFiles\MATLAB\R2018b\simulink\include
+-I8=D:\ProgramFiles\MATLAB\R2018b\rtw\c\src
+-I9=D:\ProgramFiles\MATLAB\R2018b\rtw\c\src\ext_mode\common
+-I10=D:\ProgramFiles\MATLAB\R2018b\rtw\c\ert
+-I11=D:\ProgramFiles\MATLAB\R2018b\toolbox\shared\can\src\scanutil
+-I12=D:\LKAS\bin\slprj\autosar\_sharedutils
+-long-is-32bits=true
+-target=x86_64
+-dos=true
+-align=64
+-O=-O2
+-to=Software Safety Analysis level 2
+-stub-embedded-coder-lookup-table-functions=true
+-functions-to-stub=[rtIsNaN,rtIsInf,rtIsNaNF,rtIsInfF]
+-results-dir=D:\LKAS\results_LKAS\LKAS
+-verif-version=1.0
+-author=xiaoyang
+-prog=LKAS
+-unsigned-integer-overflows=allow
+-signed-integer-overflows=warn-with-wrap-around
+-functions-called-in-loop=custom=Runnable_LKAS_Step
+-functions-called-before-loop=[Runnable_LKAS_Init]
+-variables-written-in-loop=none
+-variables-written-before-loop=none
+-main-generator=true
+-check-subnormal=allow
+-uncalled-function-checks=none
+-allow-negative-operand-in-shift=true
+
+
+Verifying host configuration:
+Number of cores:                4
+Processor type:                 amd64
+Processor model:                11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+Processor frequency:            2.803 GHz
+Memory > 4 GB:                                                  15.71 GB
+Tmp space available in C:\Users\xiaoyang\AppData\Local\Temp:    268.94 GB
+
+Remark: 4 core(s) detected. The verification creates 4 process(es).
+*** Configuration of the host :	OK
+
+
+Type D:\LKAS\results_LKAS\LKAS\kill-rte-kernel.bat on host DESKTOP-LG to halt Verifier process
+
+
+Polyspace C verification
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri Dec 10 10:10:39 2021
+Host: MINGW64_NTx_64-6.2 DESKTOP-LG 0 amd64
+User: xiaoyang
+**********************************************************
+***
+*** Verifying C sources
+***
+**********************************************************
+
+Verifying sources ...
+Verifying LKAS_calib.c (1/3)
+Verifying LKAS_data.c (2/3)
+Verifying LKAS.c (3/3)
+Global compilation phase...
+
+Number of files                  : 3
+Number of lines                  : 13584
+Number of lines without comments : 5670
+
+Verifying cross-files ANSI C compliance
+
+Stubbing standard library functions ...
+Stubbing unknown functions ...
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_FDMMve_d_LkaFcnConf_FDMMve_d_LkaFcnConf.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Main_Switch_IMAPve_d_LKA_Main_Switch.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Mode_IMAPve_d_LKA_Mode.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LDW_Warn_Mode_IMAPve_d_LDW_Warn_Mode.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_APA_AutoPark_WorkSt_IMAPve_d_APA_AutoPark_WorkSt.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_MP5_Work_State_IMAPve_d_MP5_Work_State.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_LKA_State_IMAPve_d_EPS_LKA_State.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SW_Trq_IMAPve_g_EPS_SW_Trq.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Trq_State_IMAPve_d_EPS_Trq_State.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Clb_State_IMAPve_d_SAS_Clb_State.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Trim_State_IMAPve_d_SAS_Trim_State.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SWS_Failure_Status_IMAPve_d_SWS_Failure_Status.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_TrqLim_State_IMAPve_d_EPS_TrqLim_State.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_LKA_Current_IMAPve_g_EPS_LKA_Current.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Steer_Hold_State_IMAPve_d_EPS_Steer_Hold_State.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Driver_Override_IMAPve_d_EPS_Driver_Override.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_ESA_State_IMAPve_d_EPS_ESA_State.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_SteeringAngle_Flag_IMAPve_d_EPS_SteeringAngle_Flag.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SteeringAngle_IMAPve_g_EPS_SteeringAngle.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_IMAPve_g_SW_Angle.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_Speed_IMAPve_g_SW_Angle_Speed.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LatAcc_IMAPve_g_ESC_LatAcc.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LatAcc_Valid_IMAPve_d_ESC_LatAcc_Valid.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_YawRate_IMAPve_g_ESC_YawRate.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_YawRate_Valid_IMAPve_d_ESC_YawRate_Valid.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_UnYawRate_IMAPve_g_ESC_UnYawRate.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_VehSpd_IMAPve_g_ESC_VehSpd.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LonAcc_IMAPve_g_ESC_LonAcc.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LonAcc_Valid_IMAPve_d_ESC_LonAcc_Valid.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_Brake_Press_IMAPve_g_ESC_Brake_Press.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_VehSpd_Valid_IMAPve_d_ESC_VehSpd_Valid.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_IMAPve_d_BCM_HazardLamp.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Left_Light_IMAPve_d_BCM_Left_Light.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Right_Light_IMAPve_d_BCM_Right_Light.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_LeftTurn_Switch_IMAPve_d_BCM_LeftTurn_Switch.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_RightTurn_Switch_IMAPve_d_BCM_RightTurn_Switch.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_Switch_IMAPve_d_BCM_HazardLamp_Switch.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EMS_RealPedal_IMAPve_g_EMS_RealPedal.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_Actual_Gear_IMAPve_d_TCU_Actual_Gear.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_TCU_Available_IMAPve_d_TCU_TCU_Available.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_ASWFaultStatus_ADIAve_g_ASWFaultStatus.return' in [0..4294967295] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_BSWFaultStatus_ADIAve_g_BSWFaultStatus.return' in [0..4294967295] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_d_FuncFaultStatus_ADIAve_d_FuncFaultStatus.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Camera_Status_IMAPve_d_Camera_Status.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Sensor_Status_IMAPve_d_Sensor_Status.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Fusion_Status_IMAPve_d_Fusion_Status.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C0_IMAPve_g_L0_C0.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C1_IMAPve_g_L0_C1.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C2_IMAPve_g_L0_C2.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C3_IMAPve_g_L0_C3.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_VR_IMAPve_g_L0_VR.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Q_IMAPve_d_L0_Q.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Type_IMAPve_d_L0_Type.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_W_IMAPve_g_L0_W.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C0_IMAPve_g_R0_C0.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C1_IMAPve_g_R0_C1.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C2_IMAPve_g_R0_C2.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C3_IMAPve_g_R0_C3.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_VR_IMAPve_g_R0_VR.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Q_IMAPve_d_R0_Q.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Type_IMAPve_d_R0_Type.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_W_IMAPve_g_R0_W.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C0_IMAPve_g_L1_C0.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C1_IMAPve_g_L1_C1.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C2_IMAPve_g_L1_C2.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C3_IMAPve_g_L1_C3.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_VR_IMAPve_g_L1_VR.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Q_IMAPve_d_L1_Q.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Type_IMAPve_d_L1_Type.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_W_IMAPve_g_L1_W.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C0_IMAPve_g_R1_C0.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C1_IMAPve_g_R1_C1.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C2_IMAPve_g_R1_C2.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C3_IMAPve_g_R1_C3.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_VR_IMAPve_g_R1_VR.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Q_IMAPve_d_R1_Q.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Type_IMAPve_d_R1_Type.return' in [0..65535] (permanent)
+data-range-specifications: 'Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_W_IMAPve_g_R1_W.return' in [-3.402823466E+38F..3.402823466E+38F] (permanent)
+* Function cosf is pure.
+           Returns an initialized value.
+           Const parameters (nb params=1): #1.
+
+* Function sinf is pure.
+           Returns an initialized value.
+           Const parameters (nb params=1): #1.
+
+* Function powf is pure.
+           Returns an initialized value.
+           Const parameters (nb params=2): (#1, #2).
+
+* Function sqrtf is pure.
+           Returns an initialized value.
+           Const parameters (nb params=1): #1.
+
+* Function fabsf is pure.
+           Returns an initialized value.
+           Const parameters (nb params=1): #1.
+
+* Function fmaxf is pure.
+           Returns an initialized value.
+           Const parameters (nb params=2): (#1, #2).
+
+* Function fminf is pure.
+           Returns an initialized value.
+           Const parameters (nb params=2): (#1, #2).
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_d_FuncFaultStatus_ADIAve_d_FuncFaultStatus is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_ASWFaultStatus_ADIAve_g_ASWFaultStatus is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_BSWFaultStatus_ADIAve_g_BSWFaultStatus is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_FDMMve_d_LkaFcnConf_FDMMve_d_LkaFcnConf is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_APA_AutoPark_WorkSt_IMAPve_d_APA_AutoPark_WorkSt is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_IMAPve_d_BCM_HazardLamp is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_Switch_IMAPve_d_BCM_HazardLamp_Switch is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_LeftTurn_Switch_IMAPve_d_BCM_LeftTurn_Switch is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Left_Light_IMAPve_d_BCM_Left_Light is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_RightTurn_Switch_IMAPve_d_BCM_RightTurn_Switch is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Right_Light_IMAPve_d_BCM_Right_Light is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Camera_Status_IMAPve_d_Camera_Status is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Driver_Override_IMAPve_d_EPS_Driver_Override is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_ESA_State_IMAPve_d_EPS_ESA_State is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_LKA_State_IMAPve_d_EPS_LKA_State is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Steer_Hold_State_IMAPve_d_EPS_Steer_Hold_State is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_SteeringAngle_Flag_IMAPve_d_EPS_SteeringAngle_Flag is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_TrqLim_State_IMAPve_d_EPS_TrqLim_State is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Trq_State_IMAPve_d_EPS_Trq_State is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LatAcc_Valid_IMAPve_d_ESC_LatAcc_Valid is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LonAcc_Valid_IMAPve_d_ESC_LonAcc_Valid is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_VehSpd_Valid_IMAPve_d_ESC_VehSpd_Valid is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_YawRate_Valid_IMAPve_d_ESC_YawRate_Valid is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Fusion_Status_IMAPve_d_Fusion_Status is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Q_IMAPve_d_L0_Q is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Type_IMAPve_d_L0_Type is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Q_IMAPve_d_L1_Q is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Type_IMAPve_d_L1_Type is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LDW_Warn_Mode_IMAPve_d_LDW_Warn_Mode is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Main_Switch_IMAPve_d_LKA_Main_Switch is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Mode_IMAPve_d_LKA_Mode is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_MP5_Work_State_IMAPve_d_MP5_Work_State is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Q_IMAPve_d_R0_Q is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Type_IMAPve_d_R0_Type is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Q_IMAPve_d_R1_Q is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Type_IMAPve_d_R1_Type is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Clb_State_IMAPve_d_SAS_Clb_State is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Trim_State_IMAPve_d_SAS_Trim_State is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SWS_Failure_Status_IMAPve_d_SWS_Failure_Status is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Sensor_Status_IMAPve_d_Sensor_Status is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_Actual_Gear_IMAPve_d_TCU_Actual_Gear is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_TCU_Available_IMAPve_d_TCU_TCU_Available is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EMS_RealPedal_IMAPve_g_EMS_RealPedal is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_LKA_Current_IMAPve_g_EPS_LKA_Current is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SW_Trq_IMAPve_g_EPS_SW_Trq is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SteeringAngle_IMAPve_g_EPS_SteeringAngle is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_Brake_Press_IMAPve_g_ESC_Brake_Press is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LatAcc_IMAPve_g_ESC_LatAcc is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LonAcc_IMAPve_g_ESC_LonAcc is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_UnYawRate_IMAPve_g_ESC_UnYawRate is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_VehSpd_IMAPve_g_ESC_VehSpd is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_YawRate_IMAPve_g_ESC_YawRate is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C0_IMAPve_g_L0_C0 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C1_IMAPve_g_L0_C1 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C2_IMAPve_g_L0_C2 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C3_IMAPve_g_L0_C3 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_VR_IMAPve_g_L0_VR is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_W_IMAPve_g_L0_W is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C0_IMAPve_g_L1_C0 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C1_IMAPve_g_L1_C1 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C2_IMAPve_g_L1_C2 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C3_IMAPve_g_L1_C3 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_VR_IMAPve_g_L1_VR is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_W_IMAPve_g_L1_W is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C0_IMAPve_g_R0_C0 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C1_IMAPve_g_R0_C1 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C2_IMAPve_g_R0_C2 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C3_IMAPve_g_R0_C3 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_VR_IMAPve_g_R0_VR is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_W_IMAPve_g_R0_W is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C0_IMAPve_g_R1_C0 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C1_IMAPve_g_R1_C1 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C2_IMAPve_g_R1_C2 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C3_IMAPve_g_R1_C3 is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_VR_IMAPve_g_R1_VR is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_W_IMAPve_g_R1_W is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_IMAPve_g_SW_Angle is pure.
+           Returns an initialized value.
+
+* Function Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_Speed_IMAPve_g_SW_Angle_Speed is pure.
+           Returns an initialized value.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Vehicle_Lane_Display_LKASve_y_Vehicle_Lane_Display is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Status_Display_LKASve_y_LDW_Status_Display is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Status_Display_LKASve_y_LKA_Status_Display is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Flag_LKASve_y_LDW_Flag is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Hands_Off_Warning_LKASve_y_Hands_Off_Warning is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Action_Indication_LKASve_y_LKA_Action_Indication is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_HMI_Popup_Status_LKASve_y_HMI_Popup_Status is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKATorqueReq_LKASve_y_LKATorqueReq is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKATorqueReq_Value_LKASve_g_LKATorqueReq_Value is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_State_Control_LKASve_y_EPS_State_Control is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKA_SWA_Control_LKASve_g_LKA_SWA_Control is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_EPS_Factor_Control_LKASve_g_EPS_Factor_Control is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_LKA_Control_LKASve_y_EPS_LKA_Control is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5H_10_LKASve_g_ob5H_10 is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5L_10_LKASve_g_ob5L_10 is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6H_10_LKASve_g_ob6H_10 is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6L_10_LKASve_g_ob6L_10 is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob07H_100_LKASve_g_ob07H_100 is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob07L_100_LKASve_g_ob07L_100 is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob08H_100_LKASve_g_ob08H_100 is pure.
+           Const parameters (nb params=1): #1.
+
+* Function Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob08L_100_LKASve_g_ob08L_100 is pure.
+           Const parameters (nb params=1): #1.
+
+
+Generating the Main ...
+
+Generating call to function: Runnable_LKAS_Step
+Generating call to initialization function: Runnable_LKAS_Init
+Remark: The generated default DRS XML file "drs-template.xml" can be found in <result_dir> folder.
+Doing code transformations ...
+
+
+
+
+Packing compilation data
+done.
+
+**********************************************************
+***
+*** C sources verification done
+***
+**********************************************************
+Ending at: Fri Dec 10 10:10:47 2021
+User time for compilation: 00:00:08.28 (8.29real, 8.29u + 0s (0.12gc))
+
+Polyspace C verification
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri Dec 10 10:10:47 2021
+Host: MINGW64_NTx_64-6.2 DESKTOP-LG 0 amd64
+User: xiaoyang
+**********************************************************
+***
+*** Beginning C to intermediate language translation
+***
+**********************************************************
+**** C to intermediate language translation - 1 (P_SP)
+**** C to intermediate language translation - 1 (P_SP) took 2.3real, 2.3u + 0s (0.53gc)
+**** C to intermediate language translation - 2 (P_SIA)
+**** C to intermediate language translation - 2 (P_SIA) took 0.15real, 0.15u + 0s (0.03gc)
+* Function 'fabsf' successfully recognized as standard function.
+* Function 'sqrtf' successfully recognized as standard function.
+* Function 'powf' successfully recognized as standard function.
+* Function 'fmaxf' successfully recognized as standard function.
+* Function 'fminf' successfully recognized as standard function.
+* Function 'cosf' successfully recognized as standard function.
+* Function 'sinf' successfully recognized as standard function.
+**** C to intermediate language translation - 3 (P_CMS)
+Total complexity = 79805
+**** C to intermediate language translation - 3 (P_CMS) took 0.1real, 0.1u + 0s (0.02gc)
+**** C to intermediate language translation - 4 (P_SFNPV)
+***** C to intermediate language translation - 4.1 (P_PA)
+****** C to intermediate language translation - 4.1.1 (P_ATA)
+****** C to intermediate language translation - 4.1.1 (P_ATA) took 0.11real, 0.11u + 0s (0.02gc)
+Topology of the code:
+- number of globals: int=1 (addr_taken=0), float=3, struct=9, array=0, pointer=0
+- number of locals : int=155 (addr_taken=3), float=340, struct=0, array=2, pointer=35
+- number of reads  : scalars=441, floats=1586, fields=871, derefs=120, direct_complex_access=8
+- number of writes : scalars=225, floats=747, fields=675, derefs=283, direct_complex_access=0
+****** C to intermediate language translation - 4.1.2 (P_AP)
+****** C to intermediate language translation - 4.1.2 (P_AP) took 0.13real, 0.13u + 0s (0.03gc)
+****** C to intermediate language translation - 4.1.3 (P_ITFP)
+****** C to intermediate language translation - 4.1.3 (P_ITFP) took 0.03real, 0.03u + 0s (0.02gc)
+****** C to intermediate language translation - 4.1.4 (P_CA)
+******* C to intermediate language translation - 4.1.4.1 (P_STS)
+******* C to intermediate language translation - 4.1.4.1 (P_STS) took 0.03real, 0.03u + 0s
+******* C to intermediate language translation - 4.1.4.2 (P_RR)
+******* C to intermediate language translation - 4.1.4.2 (P_RR) took 0real, 0u + 0s
+Some stats on aliases computation:
+  Number of aliases sets:       19
+  Number of couples of aliases: 2083
+  Number of elements in the biggest alias sets: 1st=48, 2nd=37, 3rd=20, 4th=5, 5th=5
+****** C to intermediate language translation - 4.1.4 (P_CA) took 0.04real, 0.04u + 0s
+***** C to intermediate language translation - 4.1 (P_PA) took 0.4real, 0.4u + 0s (0.08gc)
+***** C to intermediate language translation - 4.2 (P_AAA)
+Nb repl: 546
+1 ptr - 1 var: 62
+***** C to intermediate language translation - 4.2 (P_AAA) took 0.33real, 0.33u + 0s (0.12gc)
+***** C to intermediate language translation - 4.3 (P_SL)
+Nb syms removed: 49
+***** C to intermediate language translation - 4.3 (P_SL) took 0.13real, 0.13u + 0s
+***** C to intermediate language translation - 4.4 (P_SSet)
+***** C to intermediate language translation - 4.4 (P_SSet) took 0.87real, 0.87u + 0s (0.02gc)
+***** C to intermediate language translation - 4.5 (P_GA)
+****** C to intermediate language translation - 4.5.1 (P_FPGA)
+(* assert *)
+****** C to intermediate language translation - 4.5.1 (P_FPGA) took 0.04real, 0.04u + 0s
+****** C to intermediate language translation - 4.5.2 (P_GCPTS)
+******* C to intermediate language translation - 4.5.2.1 (P_GAA3)
+******** C to intermediate language translation - 4.5.2.1.1 (Loading)
+******** C to intermediate language translation - 4.5.2.1.1 (Loading) took 0real, 0u + 0s
+[1356 -> 1522]
+****** C to intermediate language translation - 4.5.2 (P_GCPTS) took 0.29real, 0.29u + 0s (0.03gc)
+****** C to intermediate language translation - 4.5.3 (P_MNPV)
+****** C to intermediate language translation - 4.5.3 (P_MNPV) took 0.24real, 0.24u + 0s (0.12gc)
+******** C to intermediate language translation - 4.5.2.1.2 (P_GAA_SC)
+********* C to intermediate language translation - 4.5.2.1.2.1 (P_GAA_VI)
+********* C to intermediate language translation - 4.5.2.1.2.1 (P_GAA_VI) took 0real, 0u + 0s
+********* C to intermediate language translation - 4.5.2.1.2.2 (P_GAA_SDC)
+********* C to intermediate language translation - 4.5.2.1.2.2 (P_GAA_SDC) took 0real, 0u + 0s
+********* C to intermediate language translation - 4.5.2.1.2.3 (P_GAA_RS)
+********* C to intermediate language translation - 4.5.2.1.2.3 (P_GAA_RS) took 0real, 0u + 0s
+********* C to intermediate language translation - 4.5.2.1.2.4 (P_GAA_DGS)
+* ovw-n = 0, cut-e = 0
+********* C to intermediate language translation - 4.5.2.1.2.4 (P_GAA_DGS) took 0real, 0u + 0s
+******** C to intermediate language translation - 4.5.2.1.2 (P_GAA_SC) took 0real, 0u + 0s
+* inlining LKAS_ifaction could decrease the number of aliases of parameter #2 from 187 to 39
+* inlining LKAS_IfActionSubsystem2 could decrease the number of aliases of parameter #1 from 81 to 3
+***** C to intermediate language translation - 4.5 (P_GA) took 0.7real, 0.7u + 0s (0.16gc)
+***** C to intermediate language translation - 4.6 (P_AA)
+****** C to intermediate language translation - 4.6.1 (P_AC)
+Some stats on points to analysis:
+  Number of optimized point_to edges: 63
+****** C to intermediate language translation - 4.6.1 (P_AC) took 0real, 0u + 0s
+***** C to intermediate language translation - 4.6 (P_AA) took 0real, 0u + 0s
+***** C to intermediate language translation - 4.7 (P_PFF)
+Found 117 polymorphic functions
+***** C to intermediate language translation - 4.7 (P_PFF) took 0real, 0u + 0s
+***** C to intermediate language translation - 4.8 (P_LGR)
+***** C to intermediate language translation - 4.8 (P_LGR) took 0real, 0u + 0s
+**** C to intermediate language translation - 4 (P_SFNPV) took 2.45real, 2.45u + 0s (0.38gc)
+**** C to intermediate language translation - 5 (P_PA)
+***** C to intermediate language translation - 5.1 (P_ATA)
+***** C to intermediate language translation - 5.1 (P_ATA) took 0.03real, 0.03u + 0s
+***** C to intermediate language translation - 5.2 (P_AP)
+***** C to intermediate language translation - 5.2 (P_AP) took 0.05real, 0.05u + 0s (0.02gc)
+***** C to intermediate language translation - 5.3 (P_ITFP)
+***** C to intermediate language translation - 5.3 (P_ITFP) took 0.02real, 0.02u + 0s
+***** C to intermediate language translation - 5.4 (P_CA)
+****** C to intermediate language translation - 5.4.1 (P_STS)
+****** C to intermediate language translation - 5.4.1 (P_STS) took 0.02real, 0.02u + 0s
+****** C to intermediate language translation - 5.4.2 (P_RR)
+****** C to intermediate language translation - 5.4.2 (P_RR) took 0real, 0u + 0s
+Some stats on aliases computation:
+  Number of aliases sets:       19
+  Number of couples of aliases: 475
+  Number of elements in the biggest alias sets: 1st=25, 2nd=14, 3rd=8, 4th=5, 5th=5
+***** C to intermediate language translation - 5.4 (P_CA) took 0.03real, 0.03u + 0s
+**** C to intermediate language translation - 5 (P_PA) took 0.12real, 0.12u + 0s (0.02gc)
+**** C to intermediate language translation - 6 (P_SIA)
+**** C to intermediate language translation - 6 (P_SIA) took 0.07real, 0.07u + 0s
+**** C to intermediate language translation - 7 (P_O)
+***** C to intermediate language translation - 7.1 (P_SSet)
+***** C to intermediate language translation - 7.1 (P_SSet) took 0.82real, 0.82u + 0s (0.05gc)
+**** C to intermediate language translation - 7 (P_O) took 1.04real, 1.04u + 0s (0.12gc)
+**** C to intermediate language translation - 8 (P_CGA)
+**** C to intermediate language translation - 8 (P_CGA) took 0.03real, 0.03u + 0s
+**** C to intermediate language translation - 9 (P_G)
+**** C to intermediate language translation - 9 (P_G) took 0.3real, 0.3u + 0s (0.05gc)
+**** C to intermediate language translation - 10 (P_DDTB)
+**** C to intermediate language translation - 10 (P_DDTB) took 0real, 0u + 0s
+**** C to intermediate language translation - 11 (P_TT)
+**** C to intermediate language translation - 11 (P_TT) took 0real, 0u + 0s
+**** C to intermediate language translation - 12 (P_VT)
+**** C to intermediate language translation - 12 (P_VT) took 0real, 0u + 0s
+**** C to intermediate language translation - 13 (P_PT)
+fawi 140
+fawma 0
+fawn 7
+ - translating procedure _init_globals (1 / 148)
+ - translating procedure _init_globals (2 / 148)
+ - translating procedure __PST__MAIN__ENTRY__POINT__ (3 / 148)
+ - translating procedure main (4 / 148)
+ - translating procedure Runnable_LKAS_Init (5 / 148)
+ - translating procedure Runnable_LKAS_Step (6 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob08L_100_LKASve_g_ob08L_100 (7 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob08H_100_LKASve_g_ob08H_100 (8 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob07L_100_LKASve_g_ob07L_100 (9 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob07H_100_LKASve_g_ob07H_100 (10 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6L_10_LKASve_g_ob6L_10 (11 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6H_10_LKASve_g_ob6H_10 (12 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5L_10_LKASve_g_ob5L_10 (13 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5H_10_LKASve_g_ob5H_10 (14 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_LKA_Control_LKASve_y_EPS_LKA_Control (15 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_EPS_Factor_Control_LKASve_g_EPS_Factor_Control (16 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKA_SWA_Control_LKASve_g_LKA_SWA_Control (17 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_State_Control_LKASve_y_EPS_State_Control (18 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKATorqueReq_Value_LKASve_g_LKATorqueReq_Value (19 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKATorqueReq_LKASve_y_LKATorqueReq (20 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_HMI_Popup_Status_LKASve_y_HMI_Popup_Status (21 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Action_Indication_LKASve_y_LKA_Action_Indication (22 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Hands_Off_Warning_LKASve_y_Hands_Off_Warning (23 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Flag_LKASve_y_LDW_Flag (24 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Status_Display_LKASve_y_LKA_Status_Display (25 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Status_Display_LKASve_y_LDW_Status_Display (26 / 148)
+ - translating procedure Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Vehicle_Lane_Display_LKASve_y_Vehicle_Lane_Display (27 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_W_IMAPve_g_R1_W (28 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_VR_IMAPve_g_R1_VR (29 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C3_IMAPve_g_R1_C3 (30 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C2_IMAPve_g_R1_C2 (31 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C1_IMAPve_g_R1_C1 (32 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C0_IMAPve_g_R1_C0 (33 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_W_IMAPve_g_L1_W (34 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_VR_IMAPve_g_L1_VR (35 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C3_IMAPve_g_L1_C3 (36 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C2_IMAPve_g_L1_C2 (37 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C1_IMAPve_g_L1_C1 (38 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C0_IMAPve_g_L1_C0 (39 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_YawRate_IMAPve_g_ESC_YawRate (40 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_UnYawRate_IMAPve_g_ESC_UnYawRate (41 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_Brake_Press_IMAPve_g_ESC_Brake_Press (42 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SteeringAngle_IMAPve_g_EPS_SteeringAngle (43 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_LKA_Current_IMAPve_g_EPS_LKA_Current (44 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EMS_RealPedal_IMAPve_g_EMS_RealPedal (45 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_TCU_Available_IMAPve_d_TCU_TCU_Available (46 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Sensor_Status_IMAPve_d_Sensor_Status (47 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SWS_Failure_Status_IMAPve_d_SWS_Failure_Status (48 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Trim_State_IMAPve_d_SAS_Trim_State (49 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Clb_State_IMAPve_d_SAS_Clb_State (50 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Type_IMAPve_d_R1_Type (51 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_MP5_Work_State_IMAPve_d_MP5_Work_State (52 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Type_IMAPve_d_L1_Type (53 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Fusion_Status_IMAPve_d_Fusion_Status (54 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_YawRate_Valid_IMAPve_d_ESC_YawRate_Valid (55 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_VehSpd_Valid_IMAPve_d_ESC_VehSpd_Valid (56 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LonAcc_Valid_IMAPve_d_ESC_LonAcc_Valid (57 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LatAcc_Valid_IMAPve_d_ESC_LatAcc_Valid (58 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Trq_State_IMAPve_d_EPS_Trq_State (59 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_TrqLim_State_IMAPve_d_EPS_TrqLim_State (60 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_SteeringAngle_Flag_IMAPve_d_EPS_SteeringAngle_Flag (61 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Steer_Hold_State_IMAPve_d_EPS_Steer_Hold_State (62 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_ESA_State_IMAPve_d_EPS_ESA_State (63 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Driver_Override_IMAPve_d_EPS_Driver_Override (64 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_Switch_IMAPve_d_BCM_HazardLamp_Switch (65 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_APA_AutoPark_WorkSt_IMAPve_d_APA_AutoPark_WorkSt (66 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_BSWFaultStatus_ADIAve_g_BSWFaultStatus (67 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_ASWFaultStatus_ADIAve_g_ASWFaultStatus (68 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_d_FuncFaultStatus_ADIAve_d_FuncFaultStatus (69 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LDW_Warn_Mode_IMAPve_d_LDW_Warn_Mode (70 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_W_IMAPve_g_L0_W (71 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_W_IMAPve_g_R0_W (72 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Q_IMAPve_d_R1_Q (73 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_VR_IMAPve_g_L0_VR (74 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_VR_IMAPve_g_R0_VR (75 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Q_IMAPve_d_L1_Q (76 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LatAcc_IMAPve_g_ESC_LatAcc (77 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_Speed_IMAPve_g_SW_Angle_Speed (78 / 148)
+ - translating predefined procedure sinf (79 / 148)
+ - translating predefined procedure cosf (80 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_Actual_Gear_IMAPve_d_TCU_Actual_Gear (81 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_RightTurn_Switch_IMAPve_d_BCM_RightTurn_Switch (82 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Right_Light_IMAPve_d_BCM_Right_Light (83 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_LeftTurn_Switch_IMAPve_d_BCM_LeftTurn_Switch (84 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Left_Light_IMAPve_d_BCM_Left_Light (85 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_IMAPve_d_BCM_HazardLamp (86 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_IMAPve_g_SW_Angle (87 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LonAcc_IMAPve_g_ESC_LonAcc (88 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_VehSpd_IMAPve_g_ESC_VehSpd (89 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SW_Trq_IMAPve_g_EPS_SW_Trq (90 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_LKA_State_IMAPve_d_EPS_LKA_State (91 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Camera_Status_IMAPve_d_Camera_Status (92 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C3_IMAPve_g_R0_C3 (93 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C3_IMAPve_g_L0_C3 (94 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C1_IMAPve_g_R0_C1 (95 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C1_IMAPve_g_L0_C1 (96 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Type_IMAPve_d_R0_Type (97 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Type_IMAPve_d_L0_Type (98 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C0_IMAPve_g_R0_C0 (99 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C2_IMAPve_g_R0_C2 (100 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C2_IMAPve_g_L0_C2 (101 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C0_IMAPve_g_L0_C0 (102 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Q_IMAPve_d_R0_Q (103 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Q_IMAPve_d_L0_Q (104 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Main_Switch_IMAPve_d_LKA_Main_Switch (105 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Mode_IMAPve_d_LKA_Mode (106 / 148)
+ - translating procedure Rte_IRead_LKAS_Runnable_LKAS_Step_FDMMve_d_LkaFcnConf_FDMMve_d_LkaFcnConf (107 / 148)
+ - translating procedure LKAS_Count_5s1 (108 / 148)
+ - translating procedure LKAS_Count_5s1_Disable (109 / 148)
+ - translating procedure LKAS_Count_5s1_Reset (110 / 148)
+ - translating procedure LKAS_Count_5s1_Init (111 / 148)
+ - translating procedure LKAS_MATLABFunction (112 / 148)
+ - translating predefined procedure fminf (113 / 148)
+ - translating predefined procedure fmaxf (114 / 148)
+ - translating procedure LKAS_IfActionSubsystem_n (115 / 148)
+ - translating procedure LKAS_IfActionSubsystem4 (116 / 148)
+ - translating procedure LKAS_IfActionSubsystem3 (117 / 148)
+ - translating procedure LKAS_Ph3SWA_f (118 / 148)
+ - translating procedure LKAS_Ph3SWA (119 / 148)
+ - translating procedure LKAS_Ph2SWA (120 / 148)
+ - translating procedure LKAS_Ph1SWA (121 / 148)
+ - translating procedure LKAS_LKA_State_Machine (122 / 148)
+ - translating procedure LKAS_LKA_State_Machine_Reset (123 / 148)
+ - translating procedure LKAS_LDW_State_Machine (124 / 148)
+ - translating procedure LKAS_LDW_State_Machine_Reset (125 / 148)
+ - translating procedure LKAS_IfActionSubsystem2_e (126 / 148)
+ - translating procedure LKAS_IfActionSubsystem_f (127 / 148)
+ - translating procedure LKAS_ifaction_i (128 / 148)
+ - translating procedure LKAS_IfActionSubsystem_a (129 / 148)
+ - translating procedure LKAS_SaturableGainLutSatGainLut (130 / 148)
+ - translating procedure LKAS_IfActionSubsystem (131 / 148)
+ - translating procedure LKAS_ifaction (132 / 148)
+ - translating procedure LKAMotionPlanningCalculationLKA (133 / 148)
+ - translating predefined procedure powf (134 / 148)
+ - translating procedure LKAMotionPlanningCalculat_Reset (135 / 148)
+ - translating procedure LKAMotionPlanningCalculati_Init (136 / 148)
+ - translating procedure LKAS_ifaction3 (137 / 148)
+ - translating procedure LKAS_SumCondition (138 / 148)
+ - translating procedure LKAS_SumCondition_Disable (139 / 148)
+ - translating procedure LKAS_SumCondition_Reset (140 / 148)
+ - translating procedure LKAS_SumCondition_Init (141 / 148)
+ - translating procedure LKAS_MovingStandardDeviation2 (142 / 148)
+ - translating predefined procedure sqrtf (143 / 148)
+ - translating predefined procedure fabsf (144 / 148)
+ - translating unknown procedure assert (145 / 148)
+ - translating procedure MovingStandardDeviation2_Reset (146 / 148)
+ - translating procedure L_MovingStandardDeviation2_Init (147 / 148)
+ - translating procedure LKAS_IfActionSubsystem2 (148 / 148)
+Some stats on aliases use:
+  Number of alias writes:         601
+  Number of must-alias writes:    601
+  Number of pma writes:           601
+  Number of random alias writes:  0
+  Number of top ste:              0
+  Number of top gaa:              0
+  Number of top res:              0
+  Number of improved sets:        56
+  Number of alias reads:          0 / 0
+  Number of invisibles:           53
+  Number of high-order calls:     0
+  Number of bad high-order calls: 0
+**** C to intermediate language translation - 13 (P_PT) took 1.64real, 1.64u + 0s (0.31gc)
+******* C to intermediate language translation - 4.5.2.1 (P_GAA3) took 3.89real, 3.89u + 0s (0.12gc)
+Internal statistics:
+| 140 functions (no information on cycle)
+| biggest functions:  Runnable_LKAS_Step (41268 ilc), LKAS_MovingStandardDeviation2 (3533 ilc), LKAMotionPlanningCalculationLKA (2751 ilc), LKAS_LDW_State_Machine (1983 ilc), 
+|                    LKAS_LKA_State_Machine (1840 ilc)
+| biggest files:      LKAS.c (57429 ilc), C-STUBS/pst_stubs_0.c (1595 ilc), LKAS_data.c (142 ilc), C-STUBS/__polyspace_main.c (67 ilc)
+| stats with 118 functions: 501 ilc, 3802
+| v-assigns:          Runnable_LKAS_Step (12645+0 vol), LKAMotionPlanningCalculationLKA (841+0 vol), LKAS_LDW_State_Machine (626+0 vol), LKAS_MovingStandardDeviation2 (623+0 vol), 
+|                    LKAS_LKA_State_Machine (568+0 vol)
+| d-assigns:          Runnable_LKAS_Step (148531+0 vol), Runnable_LKAS_Init (22772+0 vol), LKAMotionPlanningCalculationLKA (1057+0 vol), LKAS_MovingStandardDeviation2 (627+0 vol), 
+|                    LKAS_LDW_State_Machine (626+0 vol)
+| d-assigns per file: LKAS.c (175342), C-STUBS/__polyspace_main.c (469), C-STUBS/pst_stubs_0.c (427), LKAS_data.c (56)
+| variable per func:  Runnable_LKAS_Step (7976+0 par), LKAMotionPlanningCalculationLKA (531+4 par), LKAS_LDW_State_Machine (404+0 par), LKAS_LKA_State_Machine (366+0 par), 
+|                    LKAS_MovingStandardDeviation2 (276+3 par)
+| data per func:      Runnable_LKAS_Step (66480), Runnable_LKAS_Init (9723), LKAMotionPlanningCalculationLKA (679), LKAS_MovingStandardDeviation2 (442), LKAS_LDW_State_Machine (404)
+| data per file:      LKAS.c (79362), C-STUBS/pst_stubs_0.c (369), LKAS_data.c (28), C-STUBS/__polyspace_main.c (4)
+| 145 globals, with 849 data
+| max type nesting: 2, max type complexity: 1225
+*mmu 147
+**********************************************************
+***
+*** C to intermediate language translation done
+***
+**********************************************************
+Ending at: Fri Dec 10 10:10:57 2021
+User time for iabc-c2if: 00:00:10.24 (10.25real, 10.25u + 0s (0.02gc))
+
+Polyspace C verification
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri Dec 10 10:10:57 2021
+Host: MINGW64_NTx_64-6.2 DESKTOP-LG 0 amd64
+User: xiaoyang
+**********************************************************
+***
+*** Beginning Software Safety Analysis Level 0
+***
+**********************************************************
+**** Software Safety Analysis Level 0 - 1 (Load Program)
+**** Software Safety Analysis Level 0 - 1 (Load Program) took 0.33real, 0.33u + 0s (0.05gc)
+**** Software Safety Analysis Level 0 - 2 (P_CSD)
+**** Software Safety Analysis Level 0 - 2 (P_CSD) took 0.42real, 0.42u + 0s (0.28gc)
+**** Software Safety Analysis Level 0 - 3 (P_NS)
+**** Software Safety Analysis Level 0 - 3 (P_NS) took 0.08real, 0.08u + 0s
+**** Software Safety Analysis Level 0 - 4 (P_ISP)
+**** Software Safety Analysis Level 0 - 4 (P_ISP) took 0.19real, 0.19u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 5 (P_DRP)
+**** Software Safety Analysis Level 0 - 5 (P_DRP) took 0real, 0u + 0s
+**** Software Safety Analysis Level 0 - 6 (P_DR)
+**** Software Safety Analysis Level 0 - 6 (P_DR) took 0real, 0u + 0s
+**** Software Safety Analysis Level 0 - 7 (P_AG)
+0 constructions broken due to gotos
+**** Software Safety Analysis Level 0 - 7 (P_AG) took 0.09real, 0.09u + 0s
+**** Software Safety Analysis Level 0 - 8 (P_SENUP)
+0 empty procedure(s) removed
+**** Software Safety Analysis Level 0 - 8 (P_SENUP) took 0real, 0u + 0s
+**** Software Safety Analysis Level 0 - 9 (P_CSD)
+**** Software Safety Analysis Level 0 - 9 (P_CSD) took 0.03real, 0.03u + 0s
+**** Software Safety Analysis Level 0 - 10 (P_DAL)
+**** Software Safety Analysis Level 0 - 10 (P_DAL) took 0.08real, 0.08u + 0s
+**** Software Safety Analysis Level 0 - 11 (P_CSD)
+**** Software Safety Analysis Level 0 - 11 (P_CSD) took 0.07real, 0.07u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 12 (P_SULV)
+669 dv, 0 pr, 729 ad, 16 trfd, 0 dvf
+**** Software Safety Analysis Level 0 - 12 (P_SULV) took 0.52real, 0.52u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 13 (P_DGL)
+31 unused global variables deleted
+**** Software Safety Analysis Level 0 - 13 (P_DGL) took 0.08real, 0.08u + 0s
+**** Software Safety Analysis Level 0 - 14 (P_NS)
+**** Software Safety Analysis Level 0 - 14 (P_NS) took 0.09real, 0.09u + 0s
+**** Software Safety Analysis Level 0 - 15 (P_R)
+**** Software Safety Analysis Level 0 - 15 (P_R) took 0.06real, 0.06u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 16 (P_CSD)
+**** Software Safety Analysis Level 0 - 16 (P_CSD) took 0.04real, 0.04u + 0s
+**** Software Safety Analysis Level 0 - 17 (P_CSE)
+* 10947 cse
+**** Software Safety Analysis Level 0 - 17 (P_CSE) took 0.56real, 0.56u + 0s (0.11gc)
+**** Software Safety Analysis Level 0 - 18 (P_PP)
+* 707 pp, 0 ppp.
+**** Software Safety Analysis Level 0 - 18 (P_PP) took 0.21real, 0.21u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 19 (P_ILA)
+**** Software Safety Analysis Level 0 - 19 (P_ILA) took 0.17real, 0.17u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 20 (P_PGC)
+* 6325 tdl.
+**** Software Safety Analysis Level 0 - 20 (P_PGC) took 0.32real, 0.32u + 0s (0.05gc)
+**** Software Safety Analysis Level 0 - 21 (P_SENUP)
+0 empty procedure(s) removed
+**** Software Safety Analysis Level 0 - 21 (P_SENUP) took 0real, 0u + 0s
+**** Software Safety Analysis Level 0 - 22 (P_CSD)
+**** Software Safety Analysis Level 0 - 22 (P_CSD) took 0.02real, 0.02u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 23 (P_PM)
+**** Software Safety Analysis Level 0 - 23 (P_PM) took 0.05real, 0.05u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 24 (P_CSD)
+**** Software Safety Analysis Level 0 - 24 (P_CSD) took 0.03real, 0.03u + 0s
+**** Software Safety Analysis Level 0 - 25 (P_SLI)
+* 3 sad
+**** Software Safety Analysis Level 0 - 25 (P_SLI) took 0.32real, 0.32u + 0s (0.14gc)
+**** Software Safety Analysis Level 0 - 26 (P_CSE)
+* 1644 cse
+**** Software Safety Analysis Level 0 - 26 (P_CSE) took 0.24real, 0.24u + 0s (0.05gc)
+**** Software Safety Analysis Level 0 - 27 (P_CSD)
+**** Software Safety Analysis Level 0 - 27 (P_CSD) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 28 (P_ICSP)
+* 650 cd, 11372 cf, 0 rc, 0 ed. 
+**** Software Safety Analysis Level 0 - 28 (P_ICSP) took 0.38real, 0.38u + 0s (0.08gc)
+**** Software Safety Analysis Level 0 - 29 (P_ISP)
+**** Software Safety Analysis Level 0 - 29 (P_ISP) took 0.11real, 0.11u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 30 (P_CSD)
+**** Software Safety Analysis Level 0 - 30 (P_CSD) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 31 (P_NIV)
+* i 0/147
+**** Software Safety Analysis Level 0 - 31 (P_NIV) took 8.16real, 8.16u + 0s (1.48gc)
+**** Software Safety Analysis Level 0 - 32 (P_REC)
+* nb_cc: 2970
+**** Software Safety Analysis Level 0 - 32 (P_REC) took 0.16real, 0.16u + 0s (0.08gc)
+**** Software Safety Analysis Level 0 - 33 (P_ILA)
+**** Software Safety Analysis Level 0 - 33 (P_ILA) took 0.12real, 0.12u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 34 (P_PGC)
+* 1998 tdl.
+**** Software Safety Analysis Level 0 - 34 (P_PGC) took 0.16real, 0.16u + 0s
+**** Software Safety Analysis Level 0 - 35 (P_SULV)
+1494 dv, 0 pr, 1 ad, 107 trfd, 0 dvf
+**** Software Safety Analysis Level 0 - 35 (P_SULV) took 0.16real, 0.16u + 0s
+**** Software Safety Analysis Level 0 - 36 (P_SENUP)
+0 empty procedure(s) removed
+**** Software Safety Analysis Level 0 - 36 (P_SENUP) took 0real, 0u + 0s
+**** Software Safety Analysis Level 0 - 37 (P_CSD)
+**** Software Safety Analysis Level 0 - 37 (P_CSD) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 38 (P_ISP)
+**** Software Safety Analysis Level 0 - 38 (P_ISP) took 0.11real, 0.11u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 39 (P_ENVT)
+* g-ap=18, r-ap=0 lp=63 dc=0
+**** Software Safety Analysis Level 0 - 39 (P_ENVT) took 0.75real, 0.75u + 0s (0.11gc)
+**** Software Safety Analysis Level 0 - 40 (P_IIP)
+* 1700 cd, 4055 cf, 0 rc.
+**** Software Safety Analysis Level 0 - 40 (P_IIP) took 4.04real, 4.04u + 0s (0.56gc)
+**** Software Safety Analysis Level 0 - 41 (P_ICPP)
+**** Software Safety Analysis Level 0 - 41 (P_ICPP) took 0.91real, 0.91u + 0s (0.08gc)
+**** Software Safety Analysis Level 0 - 42 (P_CSD)
+**** Software Safety Analysis Level 0 - 42 (P_CSD) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 43 (P_PP)
+* 86 pp, 0 ppp.
+**** Software Safety Analysis Level 0 - 43 (P_PP) took 0.12real, 0.12u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 44 (P_SRC)
+* 2113 rcd, 11 tpd.
+**** Software Safety Analysis Level 0 - 44 (P_SRC) took 2.64real, 2.64u + 0s (0.41gc)
+**** Software Safety Analysis Level 0 - 45 (P_RPTR)
+**** Software Safety Analysis Level 0 - 45 (P_RPTR) took 0.12real, 0.12u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 46 (P_NS)
+**** Software Safety Analysis Level 0 - 46 (P_NS) took 0.04real, 0.04u + 0s
+**** Software Safety Analysis Level 0 - 47 (P_ILA)
+**** Software Safety Analysis Level 0 - 47 (P_ILA) took 0.16real, 0.16u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 48 (P_PGC)
+* 6919 tdl.
+* nb vres: 1835
+**** Software Safety Analysis Level 0 - 48 (P_PGC) took 0.26real, 0.26u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 49 (P_RE)
+220 rexp for p
+220 rexp for a0
+***** Software Safety Analysis Level 0 - 49.1 (P_CSD)
+***** Software Safety Analysis Level 0 - 49.1 (P_CSD) took 0.02real, 0.02u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 49 (P_RE) took 0.6real, 0.6u + 0s (0.09gc)
+**** Software Safety Analysis Level 0 - 50 (P_CSD)
+**** Software Safety Analysis Level 0 - 50 (P_CSD) took 0.01real, 0.01u + 0s
+**** Software Safety Analysis Level 0 - 51 (P_SLI)
+* 109 sad
+**** Software Safety Analysis Level 0 - 51 (P_SLI) took 0.17real, 0.17u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 52 (P_CSD)
+**** Software Safety Analysis Level 0 - 52 (P_CSD) took 0.02real, 0.02u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 53 (P_NIV)
+* i 0/147
+**** Software Safety Analysis Level 0 - 53 (P_NIV) took 6.13real, 6.13u + 0s (1.14gc)
+**** Software Safety Analysis Level 0 - 54 (P_REC)
+* nb_cc: 0
+**** Software Safety Analysis Level 0 - 54 (P_REC) took 0.08real, 0.08u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 55 (P_RVA)
+**** Software Safety Analysis Level 0 - 55 (P_RVA) took 0.04real, 0.04u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 56 (P_ISP)
+**** Software Safety Analysis Level 0 - 56 (P_ISP) took 0.06real, 0.06u + 0s
+**** Software Safety Analysis Level 0 - 57 (P_SULV)
+15 dv, 0 pr, 29 ad, 69 trfd, 0 dvf
+**** Software Safety Analysis Level 0 - 57 (P_SULV) took 0.09real, 0.09u + 0s
+**** Software Safety Analysis Level 0 - 58 (P_DAL)
+**** Software Safety Analysis Level 0 - 58 (P_DAL) took 0.03real, 0.03u + 0s
+**** Software Safety Analysis Level 0 - 59 (P_CSD)
+**** Software Safety Analysis Level 0 - 59 (P_CSD) took 0.01real, 0.01u + 0s
+**** Software Safety Analysis Level 0 - 60 (P_ILOI)
+**** Software Safety Analysis Level 0 - 60 (P_ILOI) took 0.04real, 0.04u + 0s
+**** Software Safety Analysis Level 0 - 61 (P_ENVT)
+* g-ap=0, r-ap=0 lp=29 dc=0
+**** Software Safety Analysis Level 0 - 61 (P_ENVT) took 11.42real, 11.42u + 0s (0.16gc)
+**** Software Safety Analysis Level 0 - 62 (P_IIP)
+* 1013 cd, 646 cf, 0 rc.
+**** Software Safety Analysis Level 0 - 62 (P_IIP) took 3.51real, 3.51u + 0s (0.61gc)
+**** Software Safety Analysis Level 0 - 63 (P_FTI)
+**** Software Safety Analysis Level 0 - 63 (P_FTI) took 0.13real, 0.13u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 64 (P_ICPP)
+**** Software Safety Analysis Level 0 - 64 (P_ICPP) took 0.41real, 0.41u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 65 (P_CSD)
+**** Software Safety Analysis Level 0 - 65 (P_CSD) took 0.01real, 0.01u + 0s
+**** Software Safety Analysis Level 0 - 66 (P_ILA)
+**** Software Safety Analysis Level 0 - 66 (P_ILA) took 0.07real, 0.07u + 0s
+**** Software Safety Analysis Level 0 - 67 (P_PGC)
+* 1316 tdl.
+**** Software Safety Analysis Level 0 - 67 (P_PGC) took 0.12real, 0.12u + 0s
+**** Software Safety Analysis Level 0 - 68 (P_PES)
+ii added: 0
+**** Software Safety Analysis Level 0 - 68 (P_PES) took 0.01real, 0.01u + 0s
+**** Software Safety Analysis Level 0 - 69 (P_SRC)
+* 83 rcd, 0 tpd.
+**** Software Safety Analysis Level 0 - 69 (P_SRC) took 0.8real, 0.8u + 0s (0.06gc)
+**** Software Safety Analysis Level 0 - 70 (P_ISP)
+**** Software Safety Analysis Level 0 - 70 (P_ISP) took 0.06real, 0.06u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 71 (P_MO)
+**** Software Safety Analysis Level 0 - 71 (P_MO) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 72 (P_DAL)
+**** Software Safety Analysis Level 0 - 72 (P_DAL) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 73 (P_ICSP)
+* 1896 cd, 387 cf, 0 rc, 0 ed. 
+**** Software Safety Analysis Level 0 - 73 (P_ICSP) took 0.18real, 0.18u + 0s (0.03gc)
+**** Software Safety Analysis Level 0 - 74 (P_ICPP)
+**** Software Safety Analysis Level 0 - 74 (P_ICPP) took 0.36real, 0.36u + 0s (0.08gc)
+**** Software Safety Analysis Level 0 - 75 (P_CSD)
+**** Software Safety Analysis Level 0 - 75 (P_CSD) took 0.03real, 0.03u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 76 (P_ILOI)
+**** Software Safety Analysis Level 0 - 76 (P_ILOI) took 0.04real, 0.04u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 77 (P_SULV)
+190 dv, 0 pr, 203 ad, 13 trfd, 0 dvf
+**** Software Safety Analysis Level 0 - 77 (P_SULV) took 0.1real, 0.1u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 78 (P_CSE)
+* 992 cse
+**** Software Safety Analysis Level 0 - 78 (P_CSE) took 0.25real, 0.25u + 0s (0.14gc)
+**** Software Safety Analysis Level 0 - 79 (P_ILA)
+**** Software Safety Analysis Level 0 - 79 (P_ILA) took 0.09real, 0.09u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 80 (P_PGC)
+* 65 tdl.
+* nb vres: 1863
+**** Software Safety Analysis Level 0 - 80 (P_PGC) took 0.13real, 0.13u + 0s
+**** Software Safety Analysis Level 0 - 81 (P_ISP)
+**** Software Safety Analysis Level 0 - 81 (P_ISP) took 0.06real, 0.06u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 82 (P_SENUP)
+2 empty procedure(s) removed
+**** Software Safety Analysis Level 0 - 82 (P_SENUP) took 0real, 0u + 0s
+**** Software Safety Analysis Level 0 - 83 (P_CSD)
+**** Software Safety Analysis Level 0 - 83 (P_CSD) took 0.01real, 0.01u + 0s
+**** Software Safety Analysis Level 0 - 84 (P_HB)
+* Split of procedure Runnable_LKAS_Step has failed (internal size = 22832)
+  The analysis goes on but with possible scaling troubles in this function.
+  In case of scaling troubles in this function, you may try to split it manually.
+nbc: 0
+**** Software Safety Analysis Level 0 - 84 (P_HB) took 0.07real, 0.07u + 0s
+**** Software Safety Analysis Level 0 - 85 (P_CSD)
+**** Software Safety Analysis Level 0 - 85 (P_CSD) took 0.01real, 0.01u + 0s
+**** Software Safety Analysis Level 0 - 86 (P_ISP)
+**** Software Safety Analysis Level 0 - 86 (P_ISP) took 0.03real, 0.03u + 0s
+**** Software Safety Analysis Level 0 - 87 (P_NS)
+**** Software Safety Analysis Level 0 - 87 (P_NS) took 0.04real, 0.04u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 88 (P_SULV)
+0 dv, 0 pr, 18 ad, 6 trfd, 0 dvf
+**** Software Safety Analysis Level 0 - 88 (P_SULV) took 0.05real, 0.05u + 0s
+**** Software Safety Analysis Level 0 - 89 (P_R)
+**** Software Safety Analysis Level 0 - 89 (P_R) took 0real, 0u + 0s
+**** Software Safety Analysis Level 0 - 90 (P_DGL)
+24 unused global variables deleted
+**** Software Safety Analysis Level 0 - 90 (P_DGL) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 91 (P_CSD)
+**** Software Safety Analysis Level 0 - 91 (P_CSD) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 92 (P_PP)
+* 3 pp, 0 ppp.
+**** Software Safety Analysis Level 0 - 92 (P_PP) took 0.06real, 0.06u + 0s
+**** Software Safety Analysis Level 0 - 93 (P_IIP)
+* i 0/145
+**** Software Safety Analysis Level 0 - 93 (P_IIP) took 6.84real, 6.84u + 0s (0.81gc)
+**** Software Safety Analysis Level 0 - 94 (P_REC)
+* nb_cc: 0
+**** Software Safety Analysis Level 0 - 94 (P_REC) took 0.06real, 0.06u + 0s
+**** Software Safety Analysis Level 0 - 95 (P_DAL)
+**** Software Safety Analysis Level 0 - 95 (P_DAL) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 96 (P_PI)
+* 51 ps, 1 cf, 0 dr, 5 ri
+**** Software Safety Analysis Level 0 - 96 (P_PI) took 5.17real, 5.17u + 0s (0.69gc)
+**** Software Safety Analysis Level 0 - 97 (P_REC)
+* nb_cc: 1
+**** Software Safety Analysis Level 0 - 97 (P_REC) took 0.08real, 0.08u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 98 (P_ICSP)
+* 3748 cd, 131 cf, 54 rc, 0 ed. 
+**** Software Safety Analysis Level 0 - 98 (P_ICSP) took 0.47real, 0.47u + 0s (0.2gc)
+**** Software Safety Analysis Level 0 - 99 (P_SRC)
+* 64 rcd, 0 tpd.
+**** Software Safety Analysis Level 0 - 99 (P_SRC) took 0.92real, 0.92u + 0s (0.08gc)
+**** Software Safety Analysis Level 0 - 100 (P_ILA)
+**** Software Safety Analysis Level 0 - 100 (P_ILA) took 0.09real, 0.09u + 0s (0.02gc)
+**** Software Safety Analysis Level 0 - 101 (P_PGC)
+* 86 tdl.
+**** Software Safety Analysis Level 0 - 101 (P_PGC) took 0.07real, 0.07u + 0s
+**** Software Safety Analysis Level 0 - 102 (P_ISP)
+**** Software Safety Analysis Level 0 - 102 (P_ISP) took 0.04real, 0.04u + 0s
+**** Software Safety Analysis Level 0 - 103 (P_ILOI)
+**** Software Safety Analysis Level 0 - 103 (P_ILOI) took 0.03real, 0.03u + 0s
+**** Software Safety Analysis Level 0 - 104 (P_SULV)
+86 dv, 0 pr, 0 ad, 0 trfd, 0 dvf
+**** Software Safety Analysis Level 0 - 104 (P_SULV) took 0.07real, 0.07u + 0s
+**** Software Safety Analysis Level 0 - 105 (P_DGL)
+87 unused global variables deleted
+**** Software Safety Analysis Level 0 - 105 (P_DGL) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 106 (P_SENUP)
+0 empty procedure(s) removed
+**** Software Safety Analysis Level 0 - 106 (P_SENUP) took 0real, 0u + 0s
+**** Software Safety Analysis Level 0 - 107 (P_CSD)
+**** Software Safety Analysis Level 0 - 107 (P_CSD) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 108 (P_NS)
+**** Software Safety Analysis Level 0 - 108 (P_NS) took 0.02real, 0.02u + 0s
+**** Software Safety Analysis Level 0 - 109 (P_C)
+**** Software Safety Analysis Level 0 - 109 (P_C) took 0.07real, 0.07u + 0s
+**** Software Safety Analysis Level 0 - 110 (P_R)
+**** Software Safety Analysis Level 0 - 110 (P_R) took 0.02real, 0.02u + 0s
+*mmu 227
+
+Generating GUI files
+
+Checks statistics: (including internal files)
+ - IRV      => Green :   155, Orange :     0, Red :     0   (100%)
+ - OVFL     => Green :   452, Orange :   226, Red :     0   (67%)
+ - STD_LIB  => Green :    72, Orange :     2, Red :     0   (97%)
+ - NIP      => Green :   254, Orange :     0, Red :     0   (100%)
+ - NIVL     => Green :  1848, Orange :    30, Red :     0   (98%)
+ - NIV      => Green :   819, Orange :     0, Red :     0   (100%)
+ - OBAI     => Green :   155, Orange :     0, Red :     0   (100%)
+ - ZDV      => Green :    67, Orange :    17, Red :     0   (80%)
+ - SHF      => Green :    36, Orange :     0, Red :     0   (100%)
+ - IDP      => Green :   246, Orange :     0, Red :     0   (100%)
+
+TOTAL:    => Green :  4104, Orange :   275, Red :     0   (94%)
+
+Number of NTL : 0
+Number of NTC : 0
+Number of UNR : 243
+Number of functions defined but never called    : 0 / 37
+Number of functions called from unreachable code: 0 / 37
+
+
+
+Classification of orange checks:
+  Orange checks not classified        : 275
+  Orange checks from imprecise sources: 0
+
+First orange checks to review:
+  - Number of orange checks that are path-related issues              : 0
+  - Number of orange checks that are bounded input issues             : 0
+
+GUI files generation completed in 1.73real
+
+**********************************************************
+***
+*** Software Safety Analysis Level 0 done
+***
+**********************************************************
+Ending at: Fri Dec 10 10:12:03 2021
+User time for pass0: 00:01:05 (65.41real, 65.41u + 0s (0.03gc))
+
+Polyspace C verification
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri Dec 10 10:12:03 2021
+Host: MINGW64_NTx_64-6.2 DESKTOP-LG 0 amd64
+User: xiaoyang
+**********************************************************
+***
+*** Beginning Software Safety Analysis Level 1
+***
+**********************************************************
+**** Software Safety Analysis Level 1 - 1 (Load Program)
+**** Software Safety Analysis Level 1 - 1 (Load Program) took 0.37real, 0.37u + 0s (0.08gc)
+**** Software Safety Analysis Level 1 - 1 (P_ILBE)
+***** Software Safety Analysis Level 1 - 1.1 (P_CSD)
+***** Software Safety Analysis Level 1 - 1.1 (P_CSD) took 0.46real, 0.46u + 0s (0.34gc)
+***** Software Safety Analysis Level 1 - 1.2 (P_ISP)
+***** Software Safety Analysis Level 1 - 1.2 (P_ISP) took 0.1real, 0.1u + 0s (0.02gc)
+***** Software Safety Analysis Level 1 - 1.3 (P_IT)
+***** Software Safety Analysis Level 1 - 1.3 (P_IT) took 0.08real, 0.08u + 0s
+***** Software Safety Analysis Level 1 - 1.4 (P_BRT)
+***** Software Safety Analysis Level 1 - 1.4 (P_BRT) took 0.19real, 0.19u + 0s
+***** Software Safety Analysis Level 1 - 1.5 (P_AE)
+***** Software Safety Analysis Level 1 - 1.5 (P_AE) took 0.14real, 0.14u + 0s
+***** Software Safety Analysis Level 1 - 1.6 (P_ER)
+***** Software Safety Analysis Level 1 - 1.6 (P_ER) took 0.06real, 0.06u + 0s
+***** Software Safety Analysis Level 1 - 1.7 (P_NS)
+***** Software Safety Analysis Level 1 - 1.7 (P_NS) took 0.04real, 0.04u + 0s
+***** Software Safety Analysis Level 1 - 1.8 (P_CSD)
+***** Software Safety Analysis Level 1 - 1.8 (P_CSD) took 0.11real, 0.11u + 0s (0.03gc)
+***** Software Safety Analysis Level 1 - 1.9 (P_AM)
+***** Software Safety Analysis Level 1 - 1.9 (P_AM) took 0.61real, 0.61u + 0s
+***** Software Safety Analysis Level 1 - 1.10 (P_ISP)
+***** Software Safety Analysis Level 1 - 1.10 (P_ISP) took 0.1real, 0.1u + 0s (0.02gc)
+***** Software Safety Analysis Level 1 - 1.11 (P_NS)
+***** Software Safety Analysis Level 1 - 1.11 (P_NS) took 0.08real, 0.08u + 0s
+***** Software Safety Analysis Level 1 - 1.12 (P_CSD)
+***** Software Safety Analysis Level 1 - 1.12 (P_CSD) took 0.01real, 0.01u + 0s
+***** Software Safety Analysis Level 1 - 1.13 (P_DAL)
+***** Software Safety Analysis Level 1 - 1.13 (P_DAL) took 0.04real, 0.04u + 0s
+***** Software Safety Analysis Level 1 - 1.14 (P_ILB)
+***** Software Safety Analysis Level 1 - 1.14 (P_ILB) took 0.07real, 0.07u + 0s
+***** Software Safety Analysis Level 1 - 1.15 (P_CSD)
+***** Software Safety Analysis Level 1 - 1.15 (P_CSD) took 0.01real, 0.01u + 0s
+***** Software Safety Analysis Level 1 - 1.16 (P_SLI)
+* 224 sad
+***** Software Safety Analysis Level 1 - 1.16 (P_SLI) took 0.14real, 0.14u + 0s (0.02gc)
+***** Software Safety Analysis Level 1 - 1.17 (P_SULV)
+0 dv, 0 pr, 0 ad, 527 trfd, 0 dvf
+***** Software Safety Analysis Level 1 - 1.17 (P_SULV) took 0.07real, 0.07u + 0s
+***** Software Safety Analysis Level 1 - 1.18 (P_ICSP)
+* 1879 cd, 885 cf, 57 rc, 0 ed. 
+***** Software Safety Analysis Level 1 - 1.18 (P_ICSP) took 0.37real, 0.37u + 0s (0.03gc)
+***** Software Safety Analysis Level 1 - 1.19 (P_ICPP)
+***** Software Safety Analysis Level 1 - 1.19 (P_ICPP) took 0.27real, 0.27u + 0s (0.02gc)
+***** Software Safety Analysis Level 1 - 1.20 (P_CSD)
+***** Software Safety Analysis Level 1 - 1.20 (P_CSD) took 0.01real, 0.01u + 0s
+***** Software Safety Analysis Level 1 - 1.21 (P_SULV)
+710 dv, 0 pr, 710 ad, 3 trfd, 0 dvf
+***** Software Safety Analysis Level 1 - 1.21 (P_SULV) took 0.09real, 0.09u + 0s (0.02gc)
+***** Software Safety Analysis Level 1 - 1.22 (P_IIP)
+* 1134 cd, 3269 cf, 119 rc.
+***** Software Safety Analysis Level 1 - 1.22 (P_IIP) took 0.75real, 0.75u + 0s (0.12gc)
+***** Software Safety Analysis Level 1 - 1.23 (P_ISP)
+***** Software Safety Analysis Level 1 - 1.23 (P_ISP) took 0.04real, 0.04u + 0s (0.02gc)
+***** Software Safety Analysis Level 1 - 1.24 (P_ILA)
+***** Software Safety Analysis Level 1 - 1.24 (P_ILA) took 0.07real, 0.07u + 0s
+***** Software Safety Analysis Level 1 - 1.25 (P_PGC)
+* 21 tdl.
+* nb vres: 1532
+***** Software Safety Analysis Level 1 - 1.25 (P_PGC) took 0.15real, 0.15u + 0s (0.02gc)
+***** Software Safety Analysis Level 1 - 1.26 (P_SR)
+***** Software Safety Analysis Level 1 - 1.26 (P_SR) took 0.14real, 0.14u + 0s
+***** Software Safety Analysis Level 1 - 1.27 (P_CSD)
+***** Software Safety Analysis Level 1 - 1.27 (P_CSD) took 0.01real, 0.01u + 0s
+***** Software Safety Analysis Level 1 - 1.28 (P_ENVT)
+* g-ap=0, r-ap=0 lp=737 dc=0
+***** Software Safety Analysis Level 1 - 1.28 (P_ENVT) took 18.02real, 18.02u + 0s (0.16gc)
+***** Software Safety Analysis Level 1 - 1.29 (P_SULV)
+6 dv, 0 pr, 6 ad, 0 trfd, 0 dvf
+***** Software Safety Analysis Level 1 - 1.29 (P_SULV) took 0.08real, 0.08u + 0s
+***** Software Safety Analysis Level 1 - 1.30 (P_DGL)
+2 unused global variables deleted
+***** Software Safety Analysis Level 1 - 1.30 (P_DGL) took 0.02real, 0.02u + 0s
+***** Software Safety Analysis Level 1 - 1.31 (P_ISP)
+***** Software Safety Analysis Level 1 - 1.31 (P_ISP) took 0.03real, 0.03u + 0s
+***** Software Safety Analysis Level 1 - 1.32 (P_SENUP)
+0 empty procedure(s) removed
+***** Software Safety Analysis Level 1 - 1.32 (P_SENUP) took 0real, 0u + 0s
+***** Software Safety Analysis Level 1 - 1.33 (P_CSD)
+***** Software Safety Analysis Level 1 - 1.33 (P_CSD) took 0.02real, 0.02u + 0s
+***** Software Safety Analysis Level 1 - 1.34 (P_NS)
+***** Software Safety Analysis Level 1 - 1.34 (P_NS) took 0.03real, 0.03u + 0s
+***** Software Safety Analysis Level 1 - 1.35 (P_ILA)
+***** Software Safety Analysis Level 1 - 1.35 (P_ILA) took 0.13real, 0.13u + 0s (0.02gc)
+***** Software Safety Analysis Level 1 - 1.36 (P_PGC)
+* 251 tdl.
+***** Software Safety Analysis Level 1 - 1.36 (P_PGC) took 0.06real, 0.06u + 0s (0.02gc)
+**** Software Safety Analysis Level 1 - 1 (P_ILBE) took 23.27real, 23.27u + 0s (1.12gc)
+*mmu 188
+
+
+
+**** Software Safety Analysis Level 1 - 1 (P_LF)
+**** Software Safety Analysis Level 1 - 1 (P_LF) took 0.54real, 0.54u + 0s (0.28gc)
+**** Software Safety Analysis Level 1 - 2 (P_CSD)
+**** Software Safety Analysis Level 1 - 2 (P_CSD) took 0.01real, 0.01u + 0s
+**** Software Safety Analysis Level 1 - 3 (P_RI)
+***** Software Safety Analysis Level 1 - 3.1 (pass1)
+****** Software Safety Analysis Level 1 - 3.1.1 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_LeftTurn_Switch_IMAPve_d_BCM_LeftTurn_Switch)
+****** Software Safety Analysis Level 1 - 3.1.1 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_LeftTurn_Switch_IMAPve_d_BCM_LeftTurn_Switch) took 0.01real, 0.01u + 0s
+****** Software Safety Analysis Level 1 - 3.1.1 (* analyzing LKAS_Ph2SWA)
+****** Software Safety Analysis Level 1 - 3.1.1 (* analyzing LKAS_Ph2SWA) took 0.01real, 0.01u + 0s
+****** Software Safety Analysis Level 1 - 3.1.1 (* analyzing LKAMotionPlanningCalculat_Reset)
+****** Software Safety Analysis Level 1 - 3.1.1 (* analyzing LKAMotionPlanningCalculat_Reset) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.2 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_State_Control_LKASve_y_EPS_State_Control)
+****** Software Safety Analysis Level 1 - 3.1.2 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_State_Control_LKASve_y_EPS_State_Control) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.2 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Type_IMAPve_d_R0_Type)
+****** Software Safety Analysis Level 1 - 3.1.2 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Type_IMAPve_d_R0_Type) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5L_10_LKASve_g_ob5L_10)
+****** Software Safety Analysis Level 1 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5L_10_LKASve_g_ob5L_10) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.2 (* analyzing LKAS_IfActionSubsystem_n)
+****** Software Safety Analysis Level 1 - 3.1.2 (* analyzing LKAS_IfActionSubsystem_n) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.4 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_LKA_State_IMAPve_d_EPS_LKA_State)
+****** Software Safety Analysis Level 1 - 3.1.4 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_LKA_State_IMAPve_d_EPS_LKA_State) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.3 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Left_Light_IMAPve_d_BCM_Left_Light)
+****** Software Safety Analysis Level 1 - 3.1.3 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Left_Light_IMAPve_d_BCM_Left_Light) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.5 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C0_IMAPve_g_L0_C0)
+****** Software Safety Analysis Level 1 - 3.1.5 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C0_IMAPve_g_L0_C0) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.3 (* analyzing LKAS_IfActionSubsystem_a)
+****** Software Safety Analysis Level 1 - 3.1.3 (* analyzing LKAS_IfActionSubsystem_a) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.4 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Q_IMAPve_d_L0_Q)
+****** Software Safety Analysis Level 1 - 3.1.4 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Q_IMAPve_d_L0_Q) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.4 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Clb_State_IMAPve_d_SAS_Clb_State)
+****** Software Safety Analysis Level 1 - 3.1.4 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Clb_State_IMAPve_d_SAS_Clb_State) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.5 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_YawRate_IMAPve_g_ESC_YawRate)
+****** Software Safety Analysis Level 1 - 3.1.5 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_YawRate_IMAPve_g_ESC_YawRate) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.5 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob07H_100_LKASve_g_ob07H_100)
+****** Software Safety Analysis Level 1 - 3.1.5 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob07H_100_LKASve_g_ob07H_100) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.6 (* analyzing LKAS_SaturableGainLutSatGainLut)
+****** Software Safety Analysis Level 1 - 3.1.6 (* analyzing LKAS_SaturableGainLutSatGainLut) took 0.01real, 0.01u + 0s
+****** Software Safety Analysis Level 1 - 3.1.6 (* analyzing cosf)
+****** Software Safety Analysis Level 1 - 3.1.6 (* analyzing cosf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.7 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKATorqueReq_LKASve_y_LKATorqueReq)
+****** Software Safety Analysis Level 1 - 3.1.7 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKATorqueReq_LKASve_y_LKATorqueReq) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.6 (* analyzing fmaxf)
+****** Software Safety Analysis Level 1 - 3.1.6 (* analyzing fmaxf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.8 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Mode_IMAPve_d_LKA_Mode)
+****** Software Safety Analysis Level 1 - 3.1.8 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Mode_IMAPve_d_LKA_Mode) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.7 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob07L_100_LKASve_g_ob07L_100)
+****** Software Safety Analysis Level 1 - 3.1.7 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob07L_100_LKASve_g_ob07L_100) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.9 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_LKA_Current_IMAPve_g_EPS_LKA_Current)
+****** Software Safety Analysis Level 1 - 3.1.9 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_LKA_Current_IMAPve_g_EPS_LKA_Current) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.7 (* analyzing LKAS_SumCondition_Init)
+****** Software Safety Analysis Level 1 - 3.1.7 (* analyzing LKAS_SumCondition_Init) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.1 (* analyzing LKAS_LKA_State_Machine)
+****** Software Safety Analysis Level 1 - 3.1.1 (* analyzing LKAS_LKA_State_Machine) took 0.04real, 0.04u + 0s
+****** Software Safety Analysis Level 1 - 3.1.10 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C1_IMAPve_g_R1_C1)
+****** Software Safety Analysis Level 1 - 3.1.10 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C1_IMAPve_g_R1_C1) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.8 (* analyzing fabsf)
+****** Software Safety Analysis Level 1 - 3.1.8 (* analyzing fabsf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.11 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_RightTurn_Switch_IMAPve_d_BCM_RightTurn_Switch)
+****** Software Safety Analysis Level 1 - 3.1.11 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_RightTurn_Switch_IMAPve_d_BCM_RightTurn_Switch) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.8 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_ASWFaultStatus_ADIAve_g_ASWFaultStatus)
+****** Software Safety Analysis Level 1 - 3.1.8 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_ASWFaultStatus_ADIAve_g_ASWFaultStatus) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.2 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_Speed_IMAPve_g_SW_Angle_Speed)
+****** Software Safety Analysis Level 1 - 3.1.2 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_Speed_IMAPve_g_SW_Angle_Speed) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.12 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SWS_Failure_Status_IMAPve_d_SWS_Failure_Status)
+****** Software Safety Analysis Level 1 - 3.1.12 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SWS_Failure_Status_IMAPve_d_SWS_Failure_Status) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.9 (* analyzing LKAS_ifaction)
+****** Software Safety Analysis Level 1 - 3.1.9 (* analyzing LKAS_ifaction) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.13 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Right_Light_IMAPve_d_BCM_Right_Light)
+****** Software Safety Analysis Level 1 - 3.1.13 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_Right_Light_IMAPve_d_BCM_Right_Light) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.9 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_UnYawRate_IMAPve_g_ESC_UnYawRate)
+****** Software Safety Analysis Level 1 - 3.1.9 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_UnYawRate_IMAPve_g_ESC_UnYawRate) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Status_Display_LKASve_y_LDW_Status_Display)
+****** Software Safety Analysis Level 1 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Status_Display_LKASve_y_LDW_Status_Display) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.14 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_VR_IMAPve_g_R0_VR)
+****** Software Safety Analysis Level 1 - 3.1.14 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_VR_IMAPve_g_R0_VR) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.10 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C2_IMAPve_g_L0_C2)
+****** Software Safety Analysis Level 1 - 3.1.10 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C2_IMAPve_g_L0_C2) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.15 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_VR_IMAPve_g_R1_VR)
+****** Software Safety Analysis Level 1 - 3.1.15 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_VR_IMAPve_g_R1_VR) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.10 (* analyzing LKAS_ifaction3)
+****** Software Safety Analysis Level 1 - 3.1.10 (* analyzing LKAS_ifaction3) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.4 (* analyzing LKAS_ifaction_i)
+****** Software Safety Analysis Level 1 - 3.1.4 (* analyzing LKAS_ifaction_i) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.16 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C3_IMAPve_g_R1_C3)
+****** Software Safety Analysis Level 1 - 3.1.16 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C3_IMAPve_g_R1_C3) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.11 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C3_IMAPve_g_R0_C3)
+****** Software Safety Analysis Level 1 - 3.1.11 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C3_IMAPve_g_R0_C3) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.17 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5H_10_LKASve_g_ob5H_10)
+****** Software Safety Analysis Level 1 - 3.1.17 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5H_10_LKASve_g_ob5H_10) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.11 (* analyzing LKAS_IfActionSubsystem_f)
+****** Software Safety Analysis Level 1 - 3.1.11 (* analyzing LKAS_IfActionSubsystem_f) took 0.03real, 0.03u + 0s (0.02gc)
+****** Software Safety Analysis Level 1 - 3.1.5 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Sensor_Status_IMAPve_d_Sensor_Status)
+****** Software Safety Analysis Level 1 - 3.1.5 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Sensor_Status_IMAPve_d_Sensor_Status) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.18 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_TrqLim_State_IMAPve_d_EPS_TrqLim_State)
+****** Software Safety Analysis Level 1 - 3.1.18 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_TrqLim_State_IMAPve_d_EPS_TrqLim_State) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.12 (* analyzing LKAS_Count_5s1_Reset)
+****** Software Safety Analysis Level 1 - 3.1.12 (* analyzing LKAS_Count_5s1_Reset) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.19 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SteeringAngle_IMAPve_g_EPS_SteeringAngle)
+****** Software Safety Analysis Level 1 - 3.1.19 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SteeringAngle_IMAPve_g_EPS_SteeringAngle) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.12 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_LKA_Control_LKASve_y_EPS_LKA_Control)
+****** Software Safety Analysis Level 1 - 3.1.12 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_LKA_Control_LKASve_y_EPS_LKA_Control) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.6 (* analyzing LKAS_SumCondition_Disable)
+****** Software Safety Analysis Level 1 - 3.1.6 (* analyzing LKAS_SumCondition_Disable) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.20 (* analyzing sinf)
+****** Software Safety Analysis Level 1 - 3.1.20 (* analyzing sinf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.13 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C2_IMAPve_g_R0_C2)
+****** Software Safety Analysis Level 1 - 3.1.13 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C2_IMAPve_g_R0_C2) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.13 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EMS_RealPedal_IMAPve_g_EMS_RealPedal)
+****** Software Safety Analysis Level 1 - 3.1.13 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EMS_RealPedal_IMAPve_g_EMS_RealPedal) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.21 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LonAcc_IMAPve_g_ESC_LonAcc)
+****** Software Safety Analysis Level 1 - 3.1.21 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LonAcc_IMAPve_g_ESC_LonAcc) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.14 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob08L_100_LKASve_g_ob08L_100)
+****** Software Safety Analysis Level 1 - 3.1.14 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob08L_100_LKASve_g_ob08L_100) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.14 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_SteeringAngle_Flag_IMAPve_d_EPS_SteeringAngle_Flag)
+****** Software Safety Analysis Level 1 - 3.1.14 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_SteeringAngle_Flag_IMAPve_d_EPS_SteeringAngle_Flag) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.22 (* analyzing LKAS_Ph1SWA)
+****** Software Safety Analysis Level 1 - 3.1.22 (* analyzing LKAS_Ph1SWA) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.15 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LDW_Warn_Mode_IMAPve_d_LDW_Warn_Mode)
+****** Software Safety Analysis Level 1 - 3.1.15 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LDW_Warn_Mode_IMAPve_d_LDW_Warn_Mode) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.23 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C1_IMAPve_g_L1_C1)
+****** Software Safety Analysis Level 1 - 3.1.23 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C1_IMAPve_g_L1_C1) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.15 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_Switch_IMAPve_d_BCM_HazardLamp_Switch)
+****** Software Safety Analysis Level 1 - 3.1.15 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_Switch_IMAPve_d_BCM_HazardLamp_Switch) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.24 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Trq_State_IMAPve_d_EPS_Trq_State)
+****** Software Safety Analysis Level 1 - 3.1.24 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Trq_State_IMAPve_d_EPS_Trq_State) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.16 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6L_10_LKASve_g_ob6L_10)
+****** Software Safety Analysis Level 1 - 3.1.16 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6L_10_LKASve_g_ob6L_10) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.25 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_IMAPve_g_SW_Angle)
+****** Software Safety Analysis Level 1 - 3.1.25 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_SW_Angle_IMAPve_g_SW_Angle) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.16 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Q_IMAPve_d_L1_Q)
+****** Software Safety Analysis Level 1 - 3.1.16 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Q_IMAPve_d_L1_Q) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.7 (* analyzing MovingStandardDeviation2_Reset)
+****** Software Safety Analysis Level 1 - 3.1.7 (* analyzing MovingStandardDeviation2_Reset) took 0.03real, 0.03u + 0s
+****** Software Safety Analysis Level 1 - 3.1.26 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_YawRate_Valid_IMAPve_d_ESC_YawRate_Valid)
+****** Software Safety Analysis Level 1 - 3.1.26 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_YawRate_Valid_IMAPve_d_ESC_YawRate_Valid) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.17 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_ESA_State_IMAPve_d_EPS_ESA_State)
+****** Software Safety Analysis Level 1 - 3.1.17 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_ESA_State_IMAPve_d_EPS_ESA_State) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.17 (* analyzing LKAS_Ph3SWA_f)
+****** Software Safety Analysis Level 1 - 3.1.17 (* analyzing LKAS_Ph3SWA_f) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.27 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Action_Indication_LKASve_y_LKA_Action_Indication)
+****** Software Safety Analysis Level 1 - 3.1.27 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Action_Indication_LKASve_y_LKA_Action_Indication) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.8 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_W_IMAPve_g_L0_W)
+****** Software Safety Analysis Level 1 - 3.1.8 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_W_IMAPve_g_L0_W) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.28 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C3_IMAPve_g_L0_C3)
+****** Software Safety Analysis Level 1 - 3.1.28 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C3_IMAPve_g_L0_C3) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.18 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Type_IMAPve_d_L0_Type)
+****** Software Safety Analysis Level 1 - 3.1.18 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L0_Type_IMAPve_d_L0_Type) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.18 (* analyzing LKAS_LDW_State_Machine_Reset)
+****** Software Safety Analysis Level 1 - 3.1.18 (* analyzing LKAS_LDW_State_Machine_Reset) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.29 (* analyzing LKAS_IfActionSubsystem)
+****** Software Safety Analysis Level 1 - 3.1.29 (* analyzing LKAS_IfActionSubsystem) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.19 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_HMI_Popup_Status_LKASve_y_HMI_Popup_Status)
+****** Software Safety Analysis Level 1 - 3.1.19 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_HMI_Popup_Status_LKASve_y_HMI_Popup_Status) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.19 (* analyzing LKAS_IfActionSubsystem4)
+****** Software Safety Analysis Level 1 - 3.1.19 (* analyzing LKAS_IfActionSubsystem4) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.20 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_W_IMAPve_g_L1_W)
+****** Software Safety Analysis Level 1 - 3.1.20 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_W_IMAPve_g_L1_W) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.30 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C2_IMAPve_g_R1_C2)
+****** Software Safety Analysis Level 1 - 3.1.30 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C2_IMAPve_g_R1_C2) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.20 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Q_IMAPve_d_R0_Q)
+****** Software Safety Analysis Level 1 - 3.1.20 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R0_Q_IMAPve_d_R0_Q) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.31 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LatAcc_Valid_IMAPve_d_ESC_LatAcc_Valid)
+****** Software Safety Analysis Level 1 - 3.1.31 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LatAcc_Valid_IMAPve_d_ESC_LatAcc_Valid) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.21 (* analyzing LKAS_IfActionSubsystem3)
+****** Software Safety Analysis Level 1 - 3.1.21 (* analyzing LKAS_IfActionSubsystem3) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.32 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKATorqueReq_Value_LKASve_g_LKATorqueReq_Value)
+****** Software Safety Analysis Level 1 - 3.1.32 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKATorqueReq_Value_LKASve_g_LKATorqueReq_Value) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.21 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C0_IMAPve_g_R1_C0)
+****** Software Safety Analysis Level 1 - 3.1.21 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_C0_IMAPve_g_R1_C0) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.9 (* analyzing L_MovingStandardDeviation2_Init)
+****** Software Safety Analysis Level 1 - 3.1.9 (* analyzing L_MovingStandardDeviation2_Init) took 0.03real, 0.03u + 0s
+****** Software Safety Analysis Level 1 - 3.1.33 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Type_IMAPve_d_L1_Type)
+****** Software Safety Analysis Level 1 - 3.1.33 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_L1_Type_IMAPve_d_L1_Type) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.22 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_VehSpd_IMAPve_g_ESC_VehSpd)
+****** Software Safety Analysis Level 1 - 3.1.22 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_VehSpd_IMAPve_g_ESC_VehSpd) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.34 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LatAcc_IMAPve_g_ESC_LatAcc)
+****** Software Safety Analysis Level 1 - 3.1.34 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_LatAcc_IMAPve_g_ESC_LatAcc) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.22 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Main_Switch_IMAPve_d_LKA_Main_Switch)
+****** Software Safety Analysis Level 1 - 3.1.22 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_LKA_Main_Switch_IMAPve_d_LKA_Main_Switch) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.10 (* analyzing LKAS_IfActionSubsystem2)
+****** Software Safety Analysis Level 1 - 3.1.10 (* analyzing LKAS_IfActionSubsystem2) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.35 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_W_IMAPve_g_R1_W)
+****** Software Safety Analysis Level 1 - 3.1.35 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R1_W_IMAPve_g_R1_W) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.23 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_d_FuncFaultStatus_ADIAve_d_FuncFaultStatus)
+****** Software Safety Analysis Level 1 - 3.1.23 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_d_FuncFaultStatus_ADIAve_d_FuncFaultStatus) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.36 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_IMAPve_d_BCM_HazardLamp)
+****** Software Safety Analysis Level 1 - 3.1.36 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_BCM_HazardLamp_IMAPve_d_BCM_HazardLamp) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.23 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKA_SWA_Control_LKASve_g_LKA_SWA_Control)
+****** Software Safety Analysis Level 1 - 3.1.23 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKA_SWA_Control_LKASve_g_LKA_SWA_Control) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.11 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6H_10_LKASve_g_ob6H_10)
+****** Software Safety Analysis Level 1 - 3.1.11 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6H_10_LKASve_g_ob6H_10) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.37 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_EPS_Factor_Control_LKASve_g_EPS_Factor_Control)
+****** Software Safety Analysis Level 1 - 3.1.37 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_EPS_Factor_Control_LKASve_g_EPS_Factor_Control) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.24 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C0_IMAPve_g_L1_C0)
+****** Software Safety Analysis Level 1 - 3.1.24 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C0_IMAPve_g_L1_C0) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.38 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_VR_IMAPve_g_L0_VR)
+****** Software Safety Analysis Level 1 - 3.1.38 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_VR_IMAPve_g_L0_VR) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.24 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Fusion_Status_IMAPve_d_Fusion_Status)
+****** Software Safety Analysis Level 1 - 3.1.24 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Fusion_Status_IMAPve_d_Fusion_Status) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.12 (* analyzing LKAS_Ph3SWA)
+****** Software Safety Analysis Level 1 - 3.1.12 (* analyzing LKAS_Ph3SWA) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.39 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Hands_Off_Warning_LKASve_y_Hands_Off_Warning)
+****** Software Safety Analysis Level 1 - 3.1.39 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Hands_Off_Warning_LKASve_y_Hands_Off_Warning) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.25 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C1_IMAPve_g_R0_C1)
+****** Software Safety Analysis Level 1 - 3.1.25 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C1_IMAPve_g_R0_C1) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.40 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Camera_Status_IMAPve_d_Camera_Status)
+****** Software Safety Analysis Level 1 - 3.1.40 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_Camera_Status_IMAPve_d_Camera_Status) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.25 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_Actual_Gear_IMAPve_d_TCU_Actual_Gear)
+****** Software Safety Analysis Level 1 - 3.1.25 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_Actual_Gear_IMAPve_d_TCU_Actual_Gear) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.13 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C3_IMAPve_g_L1_C3)
+****** Software Safety Analysis Level 1 - 3.1.13 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C3_IMAPve_g_L1_C3) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.41 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_APA_AutoPark_WorkSt_IMAPve_d_APA_AutoPark_WorkSt)
+****** Software Safety Analysis Level 1 - 3.1.41 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_APA_AutoPark_WorkSt_IMAPve_d_APA_AutoPark_WorkSt) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.26 (* analyzing LKAS_SumCondition_Reset)
+****** Software Safety Analysis Level 1 - 3.1.26 (* analyzing LKAS_SumCondition_Reset) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.42 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C1_IMAPve_g_L0_C1)
+****** Software Safety Analysis Level 1 - 3.1.42 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L0_C1_IMAPve_g_L0_C1) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.26 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_MP5_Work_State_IMAPve_d_MP5_Work_State)
+****** Software Safety Analysis Level 1 - 3.1.26 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_MP5_Work_State_IMAPve_d_MP5_Work_State) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.27 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SW_Trq_IMAPve_g_EPS_SW_Trq)
+****** Software Safety Analysis Level 1 - 3.1.27 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_EPS_SW_Trq_IMAPve_g_EPS_SW_Trq) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.43 (* analyzing LKAS_IfActionSubsystem2_e)
+****** Software Safety Analysis Level 1 - 3.1.43 (* analyzing LKAS_IfActionSubsystem2_e) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.14 (* analyzing sqrtf)
+****** Software Safety Analysis Level 1 - 3.1.14 (* analyzing sqrtf) took 0.01real, 0.01u + 0s
+****** Software Safety Analysis Level 1 - 3.1.44 (* analyzing LKAS_Count_5s1_Disable)
+****** Software Safety Analysis Level 1 - 3.1.44 (* analyzing LKAS_Count_5s1_Disable) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.28 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Trim_State_IMAPve_d_SAS_Trim_State)
+****** Software Safety Analysis Level 1 - 3.1.28 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_SAS_Trim_State_IMAPve_d_SAS_Trim_State) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.45 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_VehSpd_Valid_IMAPve_d_ESC_VehSpd_Valid)
+****** Software Safety Analysis Level 1 - 3.1.45 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_VehSpd_Valid_IMAPve_d_ESC_VehSpd_Valid) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.46 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LonAcc_Valid_IMAPve_d_ESC_LonAcc_Valid)
+****** Software Safety Analysis Level 1 - 3.1.46 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_ESC_LonAcc_Valid_IMAPve_d_ESC_LonAcc_Valid) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.47 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_Brake_Press_IMAPve_g_ESC_Brake_Press)
+****** Software Safety Analysis Level 1 - 3.1.47 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_ESC_Brake_Press_IMAPve_g_ESC_Brake_Press) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.48 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Steer_Hold_State_IMAPve_d_EPS_Steer_Hold_State)
+****** Software Safety Analysis Level 1 - 3.1.48 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Steer_Hold_State_IMAPve_d_EPS_Steer_Hold_State) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.27 (* analyzing LKAS_SumCondition)
+****** Software Safety Analysis Level 1 - 3.1.27 (* analyzing LKAS_SumCondition) took 0.03real, 0.03u + 0s (0.02gc)
+****** Software Safety Analysis Level 1 - 3.1.49 (* analyzing LKAS_LKA_State_Machine_Reset)
+****** Software Safety Analysis Level 1 - 3.1.49 (* analyzing LKAS_LKA_State_Machine_Reset) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.28 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Q_IMAPve_d_R1_Q)
+****** Software Safety Analysis Level 1 - 3.1.28 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Q_IMAPve_d_R1_Q) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.50 (* analyzing powf)
+****** Software Safety Analysis Level 1 - 3.1.50 (* analyzing powf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.29 (* analyzing LKAS_Count_5s1)
+****** Software Safety Analysis Level 1 - 3.1.29 (* analyzing LKAS_Count_5s1) took 0.02real, 0.02u + 0s
+****** Software Safety Analysis Level 1 - 3.1.51 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Status_Display_LKASve_y_LKA_Status_Display)
+****** Software Safety Analysis Level 1 - 3.1.51 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Status_Display_LKASve_y_LKA_Status_Display) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.29 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C2_IMAPve_g_L1_C2)
+****** Software Safety Analysis Level 1 - 3.1.29 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_C2_IMAPve_g_L1_C2) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.52 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Flag_LKASve_y_LDW_Flag)
+****** Software Safety Analysis Level 1 - 3.1.52 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Flag_LKASve_y_LDW_Flag) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.30 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_W_IMAPve_g_R0_W)
+****** Software Safety Analysis Level 1 - 3.1.30 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_W_IMAPve_g_R0_W) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.53 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_FDMMve_d_LkaFcnConf_FDMMve_d_LkaFcnConf)
+****** Software Safety Analysis Level 1 - 3.1.53 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_FDMMve_d_LkaFcnConf_FDMMve_d_LkaFcnConf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.31 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Type_IMAPve_d_R1_Type)
+****** Software Safety Analysis Level 1 - 3.1.31 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_R1_Type_IMAPve_d_R1_Type) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.54 (* analyzing LKAS_Count_5s1_Init)
+****** Software Safety Analysis Level 1 - 3.1.54 (* analyzing LKAS_Count_5s1_Init) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.32 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_TCU_Available_IMAPve_d_TCU_TCU_Available)
+****** Software Safety Analysis Level 1 - 3.1.32 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_TCU_TCU_Available_IMAPve_d_TCU_TCU_Available) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.55 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_VR_IMAPve_g_L1_VR)
+****** Software Safety Analysis Level 1 - 3.1.55 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_L1_VR_IMAPve_g_L1_VR) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.33 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_BSWFaultStatus_ADIAve_g_BSWFaultStatus)
+****** Software Safety Analysis Level 1 - 3.1.33 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_ADIAve_g_BSWFaultStatus_ADIAve_g_BSWFaultStatus) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.56 (* analyzing LKAMotionPlanningCalculati_Init)
+****** Software Safety Analysis Level 1 - 3.1.56 (* analyzing LKAMotionPlanningCalculati_Init) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.34 (* analyzing fminf)
+****** Software Safety Analysis Level 1 - 3.1.34 (* analyzing fminf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.57 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Driver_Override_IMAPve_d_EPS_Driver_Override)
+****** Software Safety Analysis Level 1 - 3.1.57 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_d_EPS_Driver_Override_IMAPve_d_EPS_Driver_Override) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.58 (* analyzing LKAS_MATLABFunction)
+****** Software Safety Analysis Level 1 - 3.1.58 (* analyzing LKAS_MATLABFunction) took 0.02real, 0.02u + 0s
+****** Software Safety Analysis Level 1 - 3.1.59 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Vehicle_Lane_Display_LKASve_y_Vehicle_Lane_Display)
+****** Software Safety Analysis Level 1 - 3.1.59 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Vehicle_Lane_Display_LKASve_y_Vehicle_Lane_Display) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.60 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C0_IMAPve_g_R0_C0)
+****** Software Safety Analysis Level 1 - 3.1.60 (* analyzing Rte_IRead_LKAS_Runnable_LKAS_Step_IMAPve_g_R0_C0_IMAPve_g_R0_C0) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.61 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob08H_100_LKASve_g_ob08H_100)
+****** Software Safety Analysis Level 1 - 3.1.61 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob08H_100_LKASve_g_ob08H_100) took 0real, 0u + 0s
+****** Software Safety Analysis Level 1 - 3.1.35 (* analyzing Runnable_LKAS_Init)
+****** Software Safety Analysis Level 1 - 3.1.35 (* analyzing Runnable_LKAS_Init) took 0.05real, 0.05u + 0s (0.02gc)
+****** Software Safety Analysis Level 1 - 3.1.62 (* analyzing LKAS_LDW_State_Machine)
+****** Software Safety Analysis Level 1 - 3.1.62 (* analyzing LKAS_LDW_State_Machine) took 0.05real, 0.05u + 0s (0.02gc)
+****** Software Safety Analysis Level 1 - 3.1.15 (* analyzing LKAS_MovingStandardDeviation2)
+****** Software Safety Analysis Level 1 - 3.1.15 (* analyzing LKAS_MovingStandardDeviation2) took 2.22real, 2.22u + 0s (0.5gc)
+****** Software Safety Analysis Level 1 - 3.1.30 (* analyzing LKAMotionPlanningCalculationLKA)
+****** Software Safety Analysis Level 1 - 3.1.30 (* analyzing LKAMotionPlanningCalculationLKA) took 2.58real, 2.58u + 0s (0.41gc)
+****** Software Safety Analysis Level 1 - 3.1.63 (* analyzing Runnable_LKAS_Step)
+****** Software Safety Analysis Level 1 - 3.1.63 (* analyzing Runnable_LKAS_Step) took 9real, 9u + 0s (1.28gc)
+****** Software Safety Analysis Level 1 - 3.1.64 (* analyzing main)
+****** Software Safety Analysis Level 1 - 3.1.64 (* analyzing main) took 1.16real, 1.16u + 0s (0.17gc)
+****** Software Safety Analysis Level 1 - 3.1.65 (* analyzing __PST__MAIN__ENTRY__POINT__)
+****** Software Safety Analysis Level 1 - 3.1.65 (* analyzing __PST__MAIN__ENTRY__POINT__) took 0real, 0u + 0s
+***** Software Safety Analysis Level 1 - 3.1 (pass1) took 16.59real, 16.59u + 0s (0.08gc)
+* 0 ps, 0 cf, 0 dr, 6 ri
+**** Software Safety Analysis Level 1 - 3 (P_RI) took 16.6real, 16.6u + 0s (0.08gc)
+**** Software Safety Analysis Level 1 - 4 (P_C)
+**** Software Safety Analysis Level 1 - 4 (P_C) took 0.12real, 0.12u + 0s (0.03gc)
+*mmu 69
+
+Generating GUI files
+
+Checks statistics: (including internal files)
+ - IRV      => Green :   155, Orange :     0, Red :     0   (100%)
+ - OVFL     => Green :   460, Orange :   218, Red :     0   (68%)
+ - STD_LIB  => Green :    72, Orange :     2, Red :     0   (97%)
+ - NIP      => Green :   254, Orange :     0, Red :     0   (100%)
+ - NIVL     => Green :  1853, Orange :    25, Red :     0   (99%)
+ - NIV      => Green :   819, Orange :     0, Red :     0   (100%)
+ - OBAI     => Green :   155, Orange :     0, Red :     0   (100%)
+ - ZDV      => Green :    68, Orange :    16, Red :     0   (81%)
+ - SHF      => Green :    36, Orange :     0, Red :     0   (100%)
+ - IDP      => Green :   246, Orange :     0, Red :     0   (100%)
+
+TOTAL:    => Green :  4118, Orange :   261, Red :     0   (94%)
+
+Number of NTL : 0
+Number of NTC : 0
+Number of UNR : 247
+Number of functions defined but never called    : 0 / 37
+Number of functions called from unreachable code: 0 / 37
+
+
+
+Classification of orange checks:
+  Orange checks not classified        : 261
+  Orange checks from imprecise sources: 0
+
+First orange checks to review:
+  - Number of orange checks that are path-related issues              : 0
+  - Number of orange checks that are bounded input issues             : 0
+
+GUI files generation completed in 1.95real
+
+**********************************************************
+***
+*** Software Safety Analysis Level 1 done
+***
+**********************************************************
+Ending at: Fri Dec 10 10:12:48 2021
+User time for pass1: 00:00:45.21 (45.21real, 45.21u + 0s (0.08gc))
+
+Polyspace C verification
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri Dec 10 10:12:48 2021
+Host: MINGW64_NTx_64-6.2 DESKTOP-LG 0 amd64
+User: xiaoyang
+**********************************************************
+***
+*** Beginning Software Safety Analysis Level 2
+***
+**********************************************************
+
+**** Software Safety Analysis Level 2 - 1 (P_LF)
+**** Software Safety Analysis Level 2 - 1 (P_LF) took 0.34real, 0.34u + 0s (0.06gc)
+**** Software Safety Analysis Level 2 - 2 (P_CSD)
+**** Software Safety Analysis Level 2 - 2 (P_CSD) took 0.01real, 0.01u + 0s
+**** Software Safety Analysis Level 2 - 3 (P_RI)
+***** Software Safety Analysis Level 2 - 3.1 (pass2)
+****** Software Safety Analysis Level 2 - 3.1.1 (* analyzing Runnable_LKAS_Init)
+****** Software Safety Analysis Level 2 - 3.1.1 (* analyzing Runnable_LKAS_Init) took 0.05real, 0.05u + 0s
+****** Software Safety Analysis Level 2 - 3.1.1 (* analyzing LKAS_SumCondition_Init)
+****** Software Safety Analysis Level 2 - 3.1.1 (* analyzing LKAS_SumCondition_Init) took 0real, 0u + 0s (0.02gc)
+****** Software Safety Analysis Level 2 - 3.1.1 (* analyzing LKAS_Count_5s1_Init)
+****** Software Safety Analysis Level 2 - 3.1.1 (* analyzing LKAS_Count_5s1_Init) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.2 (* analyzing L_MovingStandardDeviation2_Init)
+****** Software Safety Analysis Level 2 - 3.1.2 (* analyzing L_MovingStandardDeviation2_Init) took 0.01real, 0.01u + 0s
+****** Software Safety Analysis Level 2 - 3.1.1 (* analyzing Runnable_LKAS_Step)
+****** Software Safety Analysis Level 2 - 3.1.1 (* analyzing Runnable_LKAS_Step) took 27.74real, 27.74u + 0s (3.72gc)
+****** Software Safety Analysis Level 2 - 3.1.3 (* analyzing LKAS_IfActionSubsystem3)
+****** Software Safety Analysis Level 2 - 3.1.3 (* analyzing LKAS_IfActionSubsystem3) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.2 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5H_10_LKASve_g_ob5H_10)
+****** Software Safety Analysis Level 2 - 3.1.2 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5H_10_LKASve_g_ob5H_10) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.4 (* analyzing LKAS_Ph3SWA)
+****** Software Safety Analysis Level 2 - 3.1.4 (* analyzing LKAS_Ph3SWA) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.2 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_LKA_Control_LKASve_y_EPS_LKA_Control)
+****** Software Safety Analysis Level 2 - 3.1.2 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_LKA_Control_LKASve_y_EPS_LKA_Control) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_State_Control_LKASve_y_EPS_State_Control)
+****** Software Safety Analysis Level 2 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_EPS_State_Control_LKASve_y_EPS_State_Control) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.5 (* analyzing LKAS_IfActionSubsystem2_e)
+****** Software Safety Analysis Level 2 - 3.1.5 (* analyzing LKAS_IfActionSubsystem2_e) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.6 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Status_Display_LKASve_y_LKA_Status_Display)
+****** Software Safety Analysis Level 2 - 3.1.6 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Status_Display_LKASve_y_LKA_Status_Display) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.2 (* analyzing LKAS_LDW_State_Machine)
+****** Software Safety Analysis Level 2 - 3.1.2 (* analyzing LKAS_LDW_State_Machine) took 0.05real, 0.05u + 0s
+****** Software Safety Analysis Level 2 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5L_10_LKASve_g_ob5L_10)
+****** Software Safety Analysis Level 2 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob5L_10_LKASve_g_ob5L_10) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.7 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_HMI_Popup_Status_LKASve_y_HMI_Popup_Status)
+****** Software Safety Analysis Level 2 - 3.1.7 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_HMI_Popup_Status_LKASve_y_HMI_Popup_Status) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.4 (* analyzing LKAS_Ph1SWA)
+****** Software Safety Analysis Level 2 - 3.1.4 (* analyzing LKAS_Ph1SWA) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6H_10_LKASve_g_ob6H_10)
+****** Software Safety Analysis Level 2 - 3.1.3 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6H_10_LKASve_g_ob6H_10) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.8 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKATorqueReq_LKASve_y_LKATorqueReq)
+****** Software Safety Analysis Level 2 - 3.1.8 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKATorqueReq_LKASve_y_LKATorqueReq) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.9 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Vehicle_Lane_Display_LKASve_y_Vehicle_Lane_Display)
+****** Software Safety Analysis Level 2 - 3.1.9 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Vehicle_Lane_Display_LKASve_y_Vehicle_Lane_Display) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.4 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKATorqueReq_Value_LKASve_g_LKATorqueReq_Value)
+****** Software Safety Analysis Level 2 - 3.1.4 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKATorqueReq_Value_LKASve_g_LKATorqueReq_Value) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.5 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Status_Display_LKASve_y_LDW_Status_Display)
+****** Software Safety Analysis Level 2 - 3.1.5 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Status_Display_LKASve_y_LDW_Status_Display) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.5 (* analyzing LKAS_IfActionSubsystem)
+****** Software Safety Analysis Level 2 - 3.1.5 (* analyzing LKAS_IfActionSubsystem) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.4 (* analyzing MovingStandardDeviation2_Reset)
+****** Software Safety Analysis Level 2 - 3.1.4 (* analyzing MovingStandardDeviation2_Reset) took 0.02real, 0.02u + 0s
+****** Software Safety Analysis Level 2 - 3.1.6 (* analyzing LKAS_ifaction)
+****** Software Safety Analysis Level 2 - 3.1.6 (* analyzing LKAS_ifaction) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.10 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6L_10_LKASve_g_ob6L_10)
+****** Software Safety Analysis Level 2 - 3.1.10 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_ob6L_10_LKASve_g_ob6L_10) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.11 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Hands_Off_Warning_LKASve_y_Hands_Off_Warning)
+****** Software Safety Analysis Level 2 - 3.1.11 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_Hands_Off_Warning_LKASve_y_Hands_Off_Warning) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.12 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Action_Indication_LKASve_y_LKA_Action_Indication)
+****** Software Safety Analysis Level 2 - 3.1.12 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LKA_Action_Indication_LKASve_y_LKA_Action_Indication) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.13 (* analyzing LKAS_Ph2SWA)
+****** Software Safety Analysis Level 2 - 3.1.13 (* analyzing LKAS_Ph2SWA) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.5 (* analyzing LKAS_IfActionSubsystem_f)
+****** Software Safety Analysis Level 2 - 3.1.5 (* analyzing LKAS_IfActionSubsystem_f) took 0.04real, 0.04u + 0s
+****** Software Safety Analysis Level 2 - 3.1.14 (* analyzing LKAS_IfActionSubsystem4)
+****** Software Safety Analysis Level 2 - 3.1.14 (* analyzing LKAS_IfActionSubsystem4) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.6 (* analyzing LKAS_LKA_State_Machine)
+****** Software Safety Analysis Level 2 - 3.1.6 (* analyzing LKAS_LKA_State_Machine) took 0.06real, 0.06u + 0s
+****** Software Safety Analysis Level 2 - 3.1.6 (* analyzing LKAS_ifaction_i)
+****** Software Safety Analysis Level 2 - 3.1.6 (* analyzing LKAS_ifaction_i) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.15 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_EPS_Factor_Control_LKASve_g_EPS_Factor_Control)
+****** Software Safety Analysis Level 2 - 3.1.15 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_EPS_Factor_Control_LKASve_g_EPS_Factor_Control) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.7 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Flag_LKASve_y_LDW_Flag)
+****** Software Safety Analysis Level 2 - 3.1.7 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_y_LDW_Flag_LKASve_y_LDW_Flag) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.8 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKA_SWA_Control_LKASve_g_LKA_SWA_Control)
+****** Software Safety Analysis Level 2 - 3.1.8 (* analyzing Rte_IWrite_LKAS_Runnable_LKAS_Step_LKASve_g_LKA_SWA_Control_LKASve_g_LKA_SWA_Control) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.16 (* analyzing LKAS_Count_5s1)
+****** Software Safety Analysis Level 2 - 3.1.16 (* analyzing LKAS_Count_5s1) took 0.02real, 0.02u + 0s (0.02gc)
+****** Software Safety Analysis Level 2 - 3.1.7 (* analyzing LKAS_MATLABFunction)
+****** Software Safety Analysis Level 2 - 3.1.7 (* analyzing LKAS_MATLABFunction) took 0.03real, 0.03u + 0s
+****** Software Safety Analysis Level 2 - 3.1.8 (* analyzing LKAS_Count_5s1_Reset)
+****** Software Safety Analysis Level 2 - 3.1.8 (* analyzing LKAS_Count_5s1_Reset) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.17 (* analyzing fminf)
+****** Software Safety Analysis Level 2 - 3.1.17 (* analyzing fminf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.9 (* analyzing fmaxf)
+****** Software Safety Analysis Level 2 - 3.1.9 (* analyzing fmaxf) took 0.01real, 0.01u + 0s (0.02gc)
+****** Software Safety Analysis Level 2 - 3.1.9 (* analyzing LKAS_SumCondition)
+****** Software Safety Analysis Level 2 - 3.1.9 (* analyzing LKAS_SumCondition) took 0.02real, 0.02u + 0s
+****** Software Safety Analysis Level 2 - 3.1.18 (* analyzing LKAS_Count_5s1_Disable)
+****** Software Safety Analysis Level 2 - 3.1.18 (* analyzing LKAS_Count_5s1_Disable) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.10 (* analyzing LKAS_SumCondition_Reset)
+****** Software Safety Analysis Level 2 - 3.1.10 (* analyzing LKAS_SumCondition_Reset) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.19 (* analyzing LKAS_SumCondition_Disable)
+****** Software Safety Analysis Level 2 - 3.1.19 (* analyzing LKAS_SumCondition_Disable) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.10 (* analyzing LKAS_SaturableGainLutSatGainLut)
+****** Software Safety Analysis Level 2 - 3.1.10 (* analyzing LKAS_SaturableGainLutSatGainLut) took 0.01real, 0.01u + 0s
+****** Software Safety Analysis Level 2 - 3.1.7 (* analyzing LKAS_MovingStandardDeviation2)
+****** Software Safety Analysis Level 2 - 3.1.7 (* analyzing LKAS_MovingStandardDeviation2) took 2.24real, 2.24u + 0s (0.52gc)
+****** Software Safety Analysis Level 2 - 3.1.20 (* analyzing fabsf)
+****** Software Safety Analysis Level 2 - 3.1.20 (* analyzing fabsf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.11 (* analyzing sqrtf)
+****** Software Safety Analysis Level 2 - 3.1.11 (* analyzing sqrtf) took 0.04real, 0.04u + 0s
+****** Software Safety Analysis Level 2 - 3.1.11 (* analyzing LKAMotionPlanningCalculationLKA)
+****** Software Safety Analysis Level 2 - 3.1.11 (* analyzing LKAMotionPlanningCalculationLKA) took 2.56real, 2.56u + 0s (0.44gc)
+****** Software Safety Analysis Level 2 - 3.1.21 (* analyzing LKAS_IfActionSubsystem2)
+****** Software Safety Analysis Level 2 - 3.1.21 (* analyzing LKAS_IfActionSubsystem2) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.12 (* analyzing powf)
+****** Software Safety Analysis Level 2 - 3.1.12 (* analyzing powf) took 0real, 0u + 0s
+****** Software Safety Analysis Level 2 - 3.1.12 (* analyzing LKAS_ifaction3)
+****** Software Safety Analysis Level 2 - 3.1.12 (* analyzing LKAS_ifaction3) took 0real, 0u + 0s
+***** Software Safety Analysis Level 2 - 3.1 (pass2) took 34.01real, 34.01u + 0s (0.08gc)
+* 0 ps, 0 cf, 0 dr, 5 ri
+**** Software Safety Analysis Level 2 - 3 (P_RI) took 34.06real, 34.06u + 0s (0.09gc)
+**** Software Safety Analysis Level 2 - 4 (P_C)
+**** Software Safety Analysis Level 2 - 4 (P_C) took 0.28real, 0.28u + 0s (0.14gc)
+*mmu 101
+
+Generating GUI files
+
+Checks statistics: (including internal files)
+ - IRV      => Green :   155, Orange :     0, Red :     0   (100%)
+ - OVFL     => Green :   463, Orange :   215, Red :     0   (68%)
+ - STD_LIB  => Green :    72, Orange :     2, Red :     0   (97%)
+ - NIP      => Green :   254, Orange :     0, Red :     0   (100%)
+ - NIVL     => Green :  1854, Orange :    24, Red :     0   (99%)
+ - NIV      => Green :   819, Orange :     0, Red :     0   (100%)
+ - OBAI     => Green :   155, Orange :     0, Red :     0   (100%)
+ - ZDV      => Green :    68, Orange :    16, Red :     0   (81%)
+ - SHF      => Green :    36, Orange :     0, Red :     0   (100%)
+ - IDP      => Green :   246, Orange :     0, Red :     0   (100%)
+
+TOTAL:    => Green :  4122, Orange :   257, Red :     0   (94%)
+
+Number of NTL : 0
+Number of NTC : 0
+Number of UNR : 248
+Number of functions defined but never called    : 0 / 37
+Number of functions called from unreachable code: 0 / 37
+
+
+
+Classification of orange checks:
+  Orange checks not classified        : 257
+  Orange checks from imprecise sources: 0
+
+First orange checks to review:
+  - Number of orange checks that are path-related issues              : 0
+  - Number of orange checks that are bounded input issues             : 0
+
+GUI files generation completed in 1.74real
+
+**********************************************************
+***
+*** Software Safety Analysis Level 2 done
+***
+**********************************************************
+Ending at: Fri Dec 10 10:13:26 2021
+User time for pass2: 00:00:37.76 (37.77real, 37.77u + 0s (0.05gc))
+
+Polyspace C verification
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri Dec 10 10:13:26 2021
+Host: MINGW64_NTx_64-6.2 DESKTOP-LG 0 amd64
+User: xiaoyang
+**********************************************************
+***
+*** Beginning Verification Post Analysis
+***
+**********************************************************
+**** Verification Post Analysis - 1 (Load Program)
+**** Verification Post Analysis - 1 (Load Program) took 0.48real, 0.48u + 0s (0.09gc)
+**** Verification Post Analysis - 2 (P_CSD)
+**** Verification Post Analysis - 2 (P_CSD) took 0.05real, 0.05u + 0s
+**** Verification Post Analysis - 3 (P_ISP)
+**** Verification Post Analysis - 3 (P_ISP) took 0.45real, 0.45u + 0s (0.02gc)
+**** Verification Post Analysis - 4 (P_REC)
+**** Verification Post Analysis - 4 (P_REC) took 0.25real, 0.25u + 0s (0.03gc)
+**** Verification Post Analysis - 5 (P_ICSP)
+* 4524 cd, 10512 cf, 0 rc, 0 ed. 
+**** Verification Post Analysis - 5 (P_ICSP) took 1.38real, 1.38u + 0s (0.14gc)
+**** Verification Post Analysis - 6 (P_IIP)
+* 2762 cd, 140 cf, 0 rc.
+**** Verification Post Analysis - 6 (P_IIP) took 10.24real, 10.24u + 0s (1.48gc)
+**** Verification Post Analysis - 7 (P_ICPP)
+**** Verification Post Analysis - 7 (P_ICPP) took 0.52real, 0.52u + 0s (0.06gc)
+**** Verification Post Analysis - 8 (P_CSD)
+**** Verification Post Analysis - 8 (P_CSD) took 0.04real, 0.04u + 0s
+**** Verification Post Analysis - 9 (P_PP)
+* 33 pp, 0 ppp.
+**** Verification Post Analysis - 9 (P_PP) took 0.13real, 0.13u + 0s (0.02gc)
+**** Verification Post Analysis - 10 (P_SULV)
+2587 dv, 0 pr, 2919 ad, 109 trfd, 0 dvf
+**** Verification Post Analysis - 10 (P_SULV) took 0.34real, 0.34u + 0s (0.03gc)
+**** Verification Post Analysis - 11 (P_CSD)
+**** Verification Post Analysis - 11 (P_CSD) took 0.01real, 0.01u + 0s
+**** Verification Post Analysis - 12 (P_SLI)
+* 511 sad
+**** Verification Post Analysis - 12 (P_SLI) took 0.16real, 0.16u + 0s
+**** Verification Post Analysis - 13 (P_ISP)
+**** Verification Post Analysis - 13 (P_ISP) took 0.08real, 0.08u + 0s
+**** Verification Post Analysis - 14 (P_SENUP)
+0 empty procedure(s) removed
+**** Verification Post Analysis - 14 (P_SENUP) took 0.03real, 0.03u + 0s
+**** Verification Post Analysis - 15 (P_CSD)
+**** Verification Post Analysis - 15 (P_CSD) took 0.01real, 0.01u + 0s
+**** Verification Post Analysis - 16 (P_BCK)
+nc=26
+**** Verification Post Analysis - 16 (P_BCK) took 3.24real, 3.24u + 0s (0.45gc)
+**** Verification Post Analysis - 17 (P_OC)
+* i 0/147
+**** Verification Post Analysis - 17 (P_OC) took 11.09real, 11.09u + 0s (1.75gc)
+**** Verification Post Analysis - 18 (P_C)
+**** Verification Post Analysis - 18 (P_C) took 0.25real, 0.25u + 0s (0.14gc)
+*mmu 223
+
+Generating GUI files
+
+Checks statistics: (including internal files)
+ - IRV      => Green :   155, Orange :     0, Red :     0   (100%)
+ - OVFL     => Green :   463, Orange :   215, Red :     0   (68%)
+ - STD_LIB  => Green :    72, Orange :     2, Red :     0   (97%)
+ - NIP      => Green :   254, Orange :     0, Red :     0   (100%)
+ - NIVL     => Green :  1854, Orange :    24, Red :     0   (99%)
+ - NIV      => Green :   819, Orange :     0, Red :     0   (100%)
+ - OBAI     => Green :   155, Orange :     0, Red :     0   (100%)
+ - ZDV      => Green :    68, Orange :    16, Red :     0   (81%)
+ - IDP      => Green :   246, Orange :     0, Red :     0   (100%)
+ - SHF      => Green :    36, Orange :     0, Red :     0   (100%)
+
+TOTAL:    => Green :  4122, Orange :   257, Red :     0   (94%)
+
+Number of NTL : 0
+Number of NTC : 0
+Number of UNR : 203
+Number of functions defined but never called    : 0 / 37
+Number of functions called from unreachable code: 0 / 37
+
+
+
+Classification of orange checks:
+  Orange checks not classified        : 257
+  Orange checks from imprecise sources: 0
+
+First orange checks to review:
+  - Number of orange checks that are path-related issues              : 0
+  - Number of orange checks that are bounded input issues             : 16
+**** GUI Files Generation - 1 (DDT)
+**** GUI Files Generation - 1 (DDT) took 0.01real, 0.01u + 0s
+
+GUI files generation completed in 1.83real
+
+**********************************************************
+***
+*** Verification Post Analysis done
+***
+**********************************************************
+Ending at: Fri Dec 10 10:13:59 2021
+User time for post-analysis: 00:00:33.4 (33.05real, 33.05u + 0s (0.08gc))
+User time for polyspace-code-prover-nodesktop: 00:03:20 (200.16real, 200.16u + 0s (0.38gc))
+
+***
+*** End of Polyspace verification
+***
