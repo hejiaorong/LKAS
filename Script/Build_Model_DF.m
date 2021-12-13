@@ -30,10 +30,14 @@ filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
 slbuild(filename,'StandaloneRTWTarget','ForceTopModelBuild',true);
 %% 2.用polyspace进行代码检测
 if polyflg
-    opts = polyspace.ModelLinkBugFinderOptions();
+    opts = polyspace.ModelLinkCodeProverOptions('C');
     opts.CodingRulesCodeMetrics.EnableMisraC3 = true; %选择代码测试规则
     opts.CodingRulesCodeMetrics.MisraC3Subset = 'all';
+    opts.CodingRulesCodeMetrics.CodeMetrics = true;
     opts.MergedReporting.EnableReportGeneration = true; %生成代码测试报告
+    opts.MergedReporting.CodeProverReportTemplate = 'Developer';
+    opts.MergedReporting.ReportOutputFormat = 'HTML';
+ 
     load_system(filename);
     prjfile = opts.generateProject(filename);  
     mlopts = pslinkoptions(filename);
@@ -41,11 +45,14 @@ if polyflg
     mlopts.EnablePrjConfigFile = true;   %使用以上配置生成的属性文件
     mlopts.PrjConfigFile = prjfile;
     mlopts.ResultDir = strcat(binPath,'\',filename,'_CodeTest_',date1);
-    mlopts.VerificationMode = 'BugFinder'; %选择代码测试模式
+    %mlopts.VerificationMode = 'BugFinder'; %选择代码测试模式
+    mlopts.VerificationMode = 'CodeProver'; %选择代码测试模式
     pslinkrun(filename, mlopts);  %运行代码检测
+    save_system(filename);
 end
 %% 
 close_system(filename);
+date1 = datestr(now,'yyyymmdd_HHMM');
 newSWCfile = strcat(filename,'_AutoSave_DF_',date1);
 getNewSWCName = strcat(newSWCfile,'.slx');
 copyfile(getFileName,ModelSavePath);
