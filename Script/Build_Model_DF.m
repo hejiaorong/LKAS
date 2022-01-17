@@ -26,7 +26,13 @@ warning('off');
 rmpath('D:\ProgramFiles\MATLAB\toolbox\rtw\targets\asap2\asap2\CANape_user')
 ModelSavePath = strcat(path,'\ModelSave');
 binPath = strcat(path,'\bin');
+try
+    rmdir slprj s
+catch
+end
 filename = getFileName(1:length(getFileName)-4);    %获取slx文件名
+date1 = datestr(now,'yyyymmdd_HHMM');
+date2 = datestr(now,'yyyymmdd');
 slbuild(filename,'StandaloneRTWTarget','ForceTopModelBuild',true);
 %% 2.用polyspace进行代码检测
 if polyflg
@@ -41,7 +47,6 @@ if polyflg
     load_system(filename);
     prjfile = opts.generateProject(filename);  
     mlopts = pslinkoptions(filename);
-    date1 = datestr(now,'yyyymmdd_HHMM');
     mlopts.EnablePrjConfigFile = true;   %使用以上配置生成的属性文件
     mlopts.PrjConfigFile = prjfile;
     mlopts.ResultDir = strcat(binPath,'\',filename,'_CodeTest_',date1);
@@ -52,12 +57,11 @@ if polyflg
 end
 %% 
 close_system(filename);
-date1 = datestr(now,'yyyymmdd_HHMM');
 newSWCfile = strcat(filename,'_AutoSave_DF_',date1);
 getNewSWCName = strcat(newSWCfile,'.slx');
 copyfile(getFileName,ModelSavePath);
 eval(strcat('!rename',32,ModelSavePath,'\',getFileName,32,getNewSWCName));
-zipfile = strcat(filename,'_',datestr(now,'yyyymmdd'));
+zipfile = strcat(filename,'_',date2);
 ziplist = {strcat(binPath,'\',filename,'_autosar_rtw')};
 zip(strcat(zipfile,'.zip'),ziplist);
 movefile(strcat(zipfile,'.zip'),ModelSavePath); 
