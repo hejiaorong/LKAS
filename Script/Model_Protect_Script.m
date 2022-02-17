@@ -39,6 +39,7 @@ open_system(filename);
 cs = getActiveConfigSet(filename);
 set_param(cs,'DefaultUnderspecifiedDataType','single');
 set_param(cs,'UseDivisionForNetSlopeComputation','off');
+set_param(cs,'FixedStep','0.001');    % Solver…Ë÷√
 SubSystName = find_system(filename,'SearchDepth',1,'BlockType','SubSystem');
 SubSystName = SubSystName{1};
 Runnable =get_param(strcat(module_name,'/','Runnable_',module_name,'_Step'),'PortHandles');
