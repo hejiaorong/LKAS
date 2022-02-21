@@ -882,7 +882,7 @@ BA_ "GenSigStartValue" SG_ 290 ESC_LongitudinalAcceleration 512;
 BA_ "GenSigStartValue" SG_ 290 ESC_Static_slope 30;
 VAL_ 1073 ESC_ITPMSWarningStatus 1 "Lamp on" 0 "Lamp off" ;
 VAL_ 1073 ESC_ITPMSMalfunctionStatus 1 "Malfunction" 0 "No Malfunction" ;
-VAL_ 1139 ADAS_OBJ04_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+VAL_ 1139 ADAS_OBJ04_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
 unidentification" ;
 VAL_ 1139 ADAS_OBJ04_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
 VAL_ 357 EPS_APA_Status 3 "invalid" 2 "control in progress" 1 "Available" 0 "unavailable " ;
@@ -943,19 +943,19 @@ VAL_ 330 EMS_WhetherACCRequestRealized 1 "request is realized" 0 "request is not
 VAL_ 330 EMS_ACCcontrolGearAvailable 1 "available" 0 "not available" ;
 VAL_ 330 EMS_ACCcontrolTorqueAvailable 1 "available" 0 "not available" ;
 VAL_ 330 EMS_ACCResponseStatus 7 "Failure" 6 "Reserved" 5 "Active effective" 4 "Active not effective" 3 "Waiting" 2 "Inhibit" 1 "Initialization" 0 "Shut down" ;
-VAL_ 1141 ADAS_OBJ06_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+VAL_ 1141 ADAS_OBJ06_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
 unidentification" ;
 VAL_ 1141 ADAS_OBJ06_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
-VAL_ 1140 ADAS_OBJ05_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+VAL_ 1140 ADAS_OBJ05_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
 unidentification" ;
 VAL_ 1140 ADAS_OBJ05_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
-VAL_ 1138 ADAS_OBJ03_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+VAL_ 1138 ADAS_OBJ03_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
 unidentification" ;
 VAL_ 1138 ADAS_OBJ03_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
 VAL_ 1137 ADAS_OBJ02_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
-VAL_ 1137 ADAS_OBJ02_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+VAL_ 1137 ADAS_OBJ02_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
 unidentification" ;
-VAL_ 1136 ADAS_OBJ01_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
+VAL_ 1136 ADAS_OBJ01_Lane 3 "Right-lane" 2 "This lane" 1 "left-lane" 0 "
 unidentification" ;
 VAL_ 1136 ADAS_OBJ01_Class 7 "reserved" 6 "truck or car" 5 "pedestrian" 4 "bicycle" 3 "motorbike" 2 "truck" 1 "car" 0 "unknown object" ;
 VAL_ 1099 ADAS_R0_LINE_TYPE 13 "cones poles" 12 "curb" 11 "elevated_structure" 10 "rode edge" 9 "hov lane" 8 "deceleration" 7 "botts" 6 "double dashed dashed" 5 "double solid soild" 4 "double dashed soild " 3 "double soild dashed" 2 "dashed" 1 "solid" 0 "undecided" ;

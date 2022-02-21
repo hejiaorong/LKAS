@@ -552,7 +552,7 @@ ACC功能前车距离增大/减小命令";
 CM_ SG_ 945 ICE2_Counter_Message "Message Rolling Counter 报文计数";
 CM_ SG_ 945 ICE2_Check_Sum "Message CheckSum 报文校验
 Checksum(Byte7)= Byte0 XOR Byte1 XOR Byte2 XOR Byte3 XOR Byte4 XOR Byte5 XOR Byte6";
-CM_ SG_ 528 Accelerator_Effective_Position "Accelerator effective position,    (0x0-0xFA):   (0%-100%)
+CM_ SG_ 528 Accelerator_Effective_Position "Accelerator effective position,    (0x0-0xFA):   (0%-100%)
 When accelerator effective position>100%，Accelerator_Effective_Position=0xFE
 加速踏板有效位置";
 CM_ SG_ 528 kick_down "kick down condition:  gas Pedal position >100% & Brake pedal not pressed & Limphome not true.";
@@ -566,7 +566,7 @@ CM_ SG_ 530 brake_pedal_status "brake pedal switch status
 （由EMS诊断双触点制动灯开关的信号有效性，制动灯开关进入临界区域的有效时间内不应将0x3发出。0x3仅表示制动灯开关出现失效或故障)
 1、While(brake_pedal_BLS_active=0  & brake_pedal_BTS_active=1), brake_pedal_status=0;   While(BLS=1  & BTS=0), brake_pedal_status=1; 
 2、当brake_pedal_parity=0，并且持续时间大于双路制动开关临界区域的有效时间，brake_pedal_status=3;  其中制动开关临界区域的有效时间为50ms";
-CM_ SG_ 776 Accelerator_ActPedPos "Accelerator Actual Pedal Position,(0x0-0xFA):   (0%-100%)
+CM_ SG_ 776 Accelerator_ActPedPos "Accelerator Actual Pedal Position,(0x0-0xFA):   (0%-100%)
 When Accelerator Actual Pedal Position>100%，Accelerator_ActPedPos=0xFE";
 CM_ SG_ 776 Engine3_Status_ExtFunctionValid "Extended EMS Function Validity,ACC,etc.
 EMS扩展功能有效性，如ACC等";
@@ -608,7 +608,7 @@ CM_ SG_ 512 ABS1_RotDir_RL "To show the Rotation Direction of Wheel RL
 后左轮转动方向";
 CM_ SG_ 512 ABS1_RotDir_RR "To show the Rotation Direction of Wheel RR
 后右轮转动方向";
-CM_ SG_ 512 ABS1_checksum "vehicle reference speed checksum（车速校验信号).
+CM_ SG_ 512 ABS1_checksum "vehicle reference speed checksum（车速校验信号).
 vehicle check sum:Byte7×OR byte5×OR byte4×OR byte3×OR byte2×OR byte1×OR byte0 ";
 CM_ SG_ 512 ABS1_message_counter "every message increments the counter";
 CM_ SG_ 520 wheel_speed_FL "wheel speed front left";
@@ -696,8 +696,8 @@ CM_ SG_ 196 EPS1_Status_HandsoffValid "Takeing Hands off Steering Wheel Validity
 CM_ SG_ 196 EPS1_Msg_Count "This signal increments by one count each time this message is sent.";
 CM_ SG_ 196 EPS1_CRC_check "According SAE J1850, The CRC Check will be implemented to match the values calculated in the attached macro.";
 CM_ SG_ 194 SAS1_msg_counter "Message counter.";
-CM_ SG_ 194 SAS1_checksum "Byte 1 up to Byte 4 and low nibble of Byte 0 of message SAS1 is used to calculate the check sum；       
-temp_result= Byte1 XOR Byte2 XOR Byte3 XOR Byte4；
+CM_ SG_ 194 SAS1_checksum "Byte 1 up to Byte 4 and low nibble of Byte 0 of message SAS1 is used to calculate the check sum；       
+temp_result= Byte1 XOR Byte2 XOR Byte3 XOR Byte4；
 SAS1_checksum=higher nibble(temp_result) XOR lower nibble(temp_result) XOR SAS1_msg_counter";
 CM_ SG_ 194 steering_angle_valid "1:senser information valid;                    0: senser information invalid, an internal sensor fault occurred. ";
 CM_ SG_ 194 calibrated_status "1: sensor calibrated;        0:sensor not calibrated.";
