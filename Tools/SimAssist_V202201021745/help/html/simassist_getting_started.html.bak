@@ -1,0 +1,489 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>SimAssist Toolbox: Getting Started</title>
+<style>
+<!--
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+}
+p
+	{max-width: 600px;}
+h1
+	{max-width: 600px;}
+h2
+	{max-width: 600px;}
+div.CONTENT div
+	{max-width: 600px;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-believe-normal-left:yes;}
+h1
+	{mso-style-link:"标题 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:宋体;
+	color:#990000;
+	font-weight:bold;}
+h2
+	{mso-style-link:"标题 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:宋体;
+	color:#990000;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:宋体;}
+pre
+	{mso-style-link:"HTML 预设格式 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:宋体;}
+tt
+	{font-family:宋体;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"批注框文本 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:宋体;}
+span.1Char
+	{mso-style-name:"标题 1 Char";
+	mso-style-link:"标题 1";
+	font-family:宋体;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-link:"标题 2";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.HTMLChar
+	{mso-style-name:"HTML 预设格式 Char";
+	mso-style-link:"HTML 预设格式";
+	font-family:"Courier New";}
+span.Char
+	{mso-style-name:"批注框文本 Char";
+	mso-style-link:批注框文本;
+	font-family:宋体;}
+p.footer, li.footer, div.footer
+	{mso-style-name:footer;
+	margin-right:0cm;
+	margin-left:0cm;
+	text-align:right;
+	font-size:7.5pt;
+	font-family:宋体;
+	color:gray;
+	font-style:italic;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:宋体;}
+span.keyword
+	{mso-style-name:keyword;
+	color:blue;}
+span.comment
+	{mso-style-name:comment;
+	color:forestgreen;}
+span.string
+	{mso-style-name:string;
+	color:#A020F0;}
+span.untermstring
+	{mso-style-name:untermstring;
+	color:#B20000;}
+span.syscmd
+	{mso-style-name:syscmd;
+	color:#B28C00;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ -->
+</style>
+<![if mso 9]>
+<style>
+p.MsoNormal
+	{margin-left:7.5pt;}
+</style>
+<![endif]><!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+<meta name=date content=2009-12-03>
+<meta name=m-file content="upslope_getting_started">
+</head>
+
+<body bgcolor=white lang=ZH-CN link=blue vlink=purple style='margin-left:7.5pt;
+margin-top:7.5pt;margin-right:7.5pt;margin-bottom:7.5pt'>
+
+<div class=WordSection1>
+
+<h1><span lang=EN-US>SimAssist Toolbox: Getting Started</span></h1>
+
+<!--introduction--><!--/introduction-->
+
+<h2><span lang=EN-US>Contents</span></h2>
+
+<div>
+
+<ul type=disc>
+ <li class=MsoNormal><span lang=EN-US><a href="#1">Acknowledgements</a></span></li>
+ <li class=MsoNormal><span lang=EN-US><a href="#2">What are Digital Elevation
+     Models?</a></span></li>
+ <li class=MsoNormal><span lang=EN-US><a href="#3">What Does
+     &quot;SimAssist&quot; Mean?</a></span></li>
+ <li class=MsoNormal><span lang=EN-US><a href="#4">What Can SimAssist Toolbox
+     Do?</a></span></li>
+ <li class=MsoNormal><span lang=EN-US><a href="#5">What Data Can I Use?</a></span></li>
+ <li class=MsoNormal><span lang=EN-US><a href="#6">Example: Where Does Runoff
+     Go when it Leaves my Property?</a></span></li>
+</ul>
+
+</div>
+
+<h2><span lang=EN-US>Acknowledgements<a name=1></a></span></h2>
+
+<p><span lang=EN-US>The Milford (milford_ma_dem) and Natick (natick_ned) sample
+data sets are courtesy of the <a href="http://www.usgs.gov">U.S. Geological
+Survey (USGS)</a>.</span></p>
+
+<h2><span lang=EN-US>What are Digital Elevation Models?<a name=2></a></span></h2>
+
+<p><span lang=EN-US>A <i>digital elevation model</i> (or DEM) is a computer
+representation of surface topography. A <i>raster DEM</i> is a rectilinear grid
+of values, each of which represents the height of a surface at the
+corresponding grid location.</span></p>
+
+<p><span lang=EN-US>High-quality, high-resolution DEMs are now widely available
+and being used for a wide variety of terrain analysis. DEM data for the United
+States can be obtained through the U.S. Geological Survey (USGS) and its data
+providers.</span></p>
+
+<p><span lang=EN-US>The file milford_ma_dem.mat contains an example DEM
+covering a portion of Massachusetts in the United States. You can load this
+MAT-file and display the elevation matrix <tt>Z</tt> as follows:</span></p>
+
+<pre style='background:#EEEEEE'><span lang=EN-US>load <span class=string>milford_ma_dem</span></span></pre><pre
+style='background:#EEEEEE'><span lang=EN-US>imshow(Z, [])&nbsp; <span
+class=comment>% imshow is in the Image Processing Toolbox</span></span></pre>
+
+<p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US><img
+border=0 width=522 height=559 src="upslope_getting_started_01.jpg"></span></p>
+
+<h2><span lang=EN-US>What Does &quot;SimAssist&quot; Mean?<a name=3></a></span></h2>
+
+<p><span lang=EN-US>Imagine you are standing on the side of hill somewhere in
+the rain. Some of the water that falls uphill from your position will flow
+directly toward and then past your shoes. Some of the water, though, will flow
+downhill in a different direction, away from you. The area of land above you
+that drains directly through where you are standing is called the <i>SimAssist</i>
+of your position.</span></p>
+
+<p><span lang=EN-US>If you were standing at the very top of the hill, the
+SimAssist there would be 0; no water flows to you from anywhere else. On the
+other hand, if you stood at the deepest point in a crater with high rims all
+the way around, the SimAssist would be the entire area of the crater.</span></p>
+
+<p><span lang=EN-US>SimAssist is an important hydrology measurement used to
+study water drainage networks, the motion of sediments and contaminants,
+erosion, landslides.</span></p>
+
+<h2><span lang=EN-US>What Can SimAssist Toolbox Do?<a name=4></a></span></h2>
+
+<p><span lang=EN-US>The SimAssist Toolbox can:</span></p>
+
+<div>
+
+<ul type=disc>
+ <li class=MsoNormal><span lang=EN-US>Compute the SimAssist for every location
+     in a DEM.</span></li>
+ <li class=MsoNormal><span lang=EN-US>Compute the downhill water drainage
+     region (influence map) for a given location in a DEM.</span></li>
+ <li class=MsoNormal><span lang=EN-US>Compute the uphill water drainage region
+     (dependence map) for a given location in a DEM.</span></li>
+ <li class=MsoNormal><span lang=EN-US>Fill interior sinks in a DEM.</span></li>
+ <li class=MsoNormal><span lang=EN-US>Visualize SimAssist, influence maps, and
+     dependence maps superimposed on the original DEM.</span></li>
+ <li class=MsoNormal><span lang=EN-US>Identify fill values connected to the
+     edges of a DEM.</span></li>
+</ul>
+
+</div>
+
+<h2><span lang=EN-US>What Data Can I Use?<a name=5></a></span></h2>
+
+<p><span lang=EN-US>DEM data for the United States can be obtained from the
+U.S. Geological Survey (USGS). For example, DEM data and other datasets can be
+obtained from the <a href="http://seamless.usgs.gov/index.php">National Map
+Seamless Server</a>. You can download this data in BIL format, which can be
+read using the MATLAB function <tt>multibandread</tt>. There are several web
+sites that offer information and tutorials on getting data from the Seamless
+Server, including <a href="http://www.yale.edu/ceo/Documentation/dem_import.pdf">this
+one at Yale University</a>.</span></p>
+
+<p><span lang=EN-US>For locating DEM data covering other regions, you might try
+the listing of <a href="http://www.terrainmap.com/rm39.html">&quot;Free Digital
+Elevation Model (DEM) and Free Satellite Imagery Download Links&quot;</a> at <a
+href="http://www.terrainmap.com/">terrainmap.com</a>.</span></p>
+
+<p><span lang=EN-US>If you have a recent version (R2009b or later) of Mapping
+Toolbox, you can use the Web Map Service (WMS) features to obtain DEM data. The
+<a
+href="http://www.mathworks.com/access/helpdesk/help/toolbox/map/ref/wmsread.html"><tt>wmsread</tt>
+reference page</a> has an example showing how to obtain DEM data directly from
+the JPL WMS server.</span></p>
+
+<p><span lang=EN-US>For sources of other geospatial data that can be read using
+functions in the Mapping Toolbox, see <a
+href="http://www.mathworks.com/support/tech-notes/2100/2101.html">MathWorks
+Technical Note 2101 - Accessing Geospatial Data on the Internet for the Mapping
+Toolbox</a>.</span></p>
+
+<h2><span lang=EN-US>Example: Where Does Runoff Go when it Leaves my Property?<a
+name=6></a></span></h2>
+
+<p><span lang=EN-US>The sample data file natick_ned.bil is a 1/3-Arc Second
+National Elevation Dataset downloaded using the <a
+href="http://seamless.usgs.gov/">USGS Seamless Server</a>. The MathWorks
+headquarters in Natick, Massachusetts is located at the center of this data
+set. In this example you will determine where water runoff goes when it leaves
+The MathWorks.</span></p>
+
+<p><span lang=EN-US>The file natick_ned_output_parameters.txt, included in the
+download, contains enough information to read the data file using the MATLAB
+function <tt>multibandread</tt>.</span></p>
+
+<pre style='background:#EEEEEE'><span lang=EN-US>type <span class=string>natick_ned_output_parameters.txt</span></span></pre><pre><span
+lang=EN-US style='color:#666666'>&nbsp;</span></pre><pre><span lang=EN-US
+style='color:#666666'>Raster Download Information</span></pre><pre><span
+lang=EN-US style='color:#666666'>&nbsp;</span></pre><pre><span lang=EN-US
+style='color:#666666'>Number of columns:&nbsp; 403</span></pre><pre><span
+lang=EN-US style='color:#666666'>Number of rows:&nbsp; 360</span></pre><pre><span
+lang=EN-US style='color:#666666'>Resolution in x direction:&nbsp; 9.25925925929942E-05 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>Resolution in y direction:&nbsp; 9.25925925930018E-05 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>Coordinate system ID Native:&nbsp; 4269</span></pre><pre><span
+lang=EN-US style='color:#666666'>Top edge Native:&nbsp; 42.3169444444063 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>Bottom edge Native:&nbsp; 42.2836111110728 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>Left edge Native:&nbsp; -71.3684259256859 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>Right edge Native:&nbsp; -71.3311111108709 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>&nbsp;</span></pre><pre><span lang=EN-US
+style='color:#666666'>Coordinate system ID WGS84:&nbsp; 4326</span></pre><pre><span
+lang=EN-US style='color:#666666'>Top edge WGS84:&nbsp; 42.3169444444063 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>Bottom edge WGS84:&nbsp; 42.2836111110728 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>Left edge WGS84:&nbsp; -71.3684259256859 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>Right edge WGS84:&nbsp; -71.3311111108709 Degree</span></pre><pre><span
+lang=EN-US style='color:#666666'>&nbsp;</span></pre><pre><span lang=EN-US
+style='color:#666666'>&nbsp;</span></pre>
+
+<p><span lang=EN-US>Read the DEM data using <tt>multibandread</tt> and display
+it using <tt>imshow</tt>.</span></p>
+
+<pre style='background:#EEEEEE'><span lang=EN-US>Z = multibandread(<span
+class=string>'natick_ned.bil'</span>, [360 403 1], <span class=string>'int16'</span>, 0, <span
+class=string>'bil'</span>, <span class=string>'ieee-le'</span>);</span></pre><pre
+style='background:#EEEEEE'><span lang=EN-US>imshow(Z, [])</span></pre>
+
+<p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US><img
+border=0 width=567 height=446 src="upslope_getting_started_02.jpg"></span></p>
+
+<p><span lang=EN-US>Calculate the flow matrix for the DEM.</span></p>
+
+<pre style='background:#EEEEEE'><span lang=EN-US>R = demFlow(Z);</span></pre><pre
+style='background:#EEEEEE'><span lang=EN-US>T = flowMatrix(Z, R);</span></pre>
+
+<p><span lang=EN-US>Calculate the influence map for the location in the center
+of the DEM. Visualize the influence map using <tt>visMap</tt>.</span></p>
+
+<pre style='background:#EEEEEE'><span lang=EN-US>[M, N] = size(Z);</span></pre><pre
+style='background:#EEEEEE'><span lang=EN-US>r = round(M/2);</span></pre><pre
+style='background:#EEEEEE'><span lang=EN-US>c = round(N/2);</span></pre><pre
+style='background:#EEEEEE'><span lang=EN-US>I = influenceMap(Z, T, r, c);</span></pre><pre
+style='background:#EEEEEE'><span lang=EN-US>visMap(I, Z, r, c)</span></pre>
+
+<p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US><img
+border=0 width=567 height=446 src="upslope_getting_started_03.jpg"></span></p>
+
+<p><span lang=EN-US>Zoom in.</span></p>
+
+<pre style='background:#EEEEEE'><span lang=EN-US>axis([195 295 110 200])</span></pre>
+
+<p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US><img
+border=0 width=567 height=446 src="upslope_getting_started_04.jpg"></span></p>
+
+<p><span lang=EN-US>You can see that water draining from The MathWorks
+headquarters flows generally to the northeast.</span></p>
+
+<p class=footer><span lang=EN-US>Copyright 2009 The MathWorks, Inc.<br>
+Published with MATLAB® 7.10</span></p>
+
+</div>
+
+<!--
+##### SOURCE BEGIN #####
+%% Upslope Area Toolbox: Getting Started
+%
+%% Acknowledgements
+% The Milford (milford_ma_dem) and Natick (natick_ned) sample data sets are
+% courtesy of the <http://www.usgs.gov U.S. Geological Survey (USGS)>.
+%
+%% What are Digital Elevation Models?
+% A _digital elevation model_ (or DEM) is a computer representation of surface
+% topography.  A _raster DEM_ is a rectilinear grid of values, each of which
+% represents the height of a surface at the corresponding grid location.
+%
+% High-quality, high-resolution DEMs are now widely available and being used for
+% a wide variety of terrain analysis.  DEM data for the United States can be
+% obtained through the U.S. Geological Survey (USGS) and its data providers.  
+%
+% The file milford_ma_dem.mat contains an example DEM covering a portion of
+% Massachusetts in the United States.  You can load this MAT-file and display
+% the elevation matrix |Z| as follows: 
+
+load milford_ma_dem
+imshow(Z, [])  % imshow is in the Image Processing Toolbox
+
+%% What Does "Upslope Area" Mean?
+% Imagine you are standing on the side of hill somewhere in the rain. Some of
+% the water that falls uphill from your position will flow directly toward and
+% then past your shoes.  Some of the water, though, will flow downhill in a
+% different direction, away from you.  The area of land above you that drains
+% directly through where you are standing is called the _upslope area_ of your
+% position.
+%
+% If you were standing at the very top of the hill, the upslope area there would
+% be 0; no water flows to you from anywhere else.  On the other hand, if you
+% stood at the deepest point in a crater with high rims all the way around, the
+% upslope area would be the entire area of the crater.
+%
+% Upslope area is an important hydrology measurement used to study water
+% drainage networks, the motion of sediments and contaminants, erosion,
+% landslides.
+%
+%% What Can Upslope Area Toolbox Do?
+% The Upslope Area Toolbox can:
+%
+% * Compute the upslope area for every location in a DEM.
+% * Compute the downhill water drainage region (influence map) for a given
+% location in a DEM.
+% * Compute the uphill water drainage region (dependence map) for a given
+% location in a DEM.
+% * Fill interior sinks in a DEM.
+% * Visualize upslope area, influence maps, and dependence maps superimposed on
+% the original DEM.
+% * Identify fill values connected to the edges of a DEM.
+%
+%% What Data Can I Use?
+% DEM data for the United States can be obtained from the U.S. Geological Survey
+% (USGS).  For example, DEM data and other datasets can be obtained from the
+% <http://seamless.usgs.gov/index.php National Map Seamless Server>. You can
+% download this data in BIL format, which can be read using the MATLAB function
+% |multibandread|.  There are several web sites that offer information and
+% tutorials on getting data from the Seamless Server, including
+% <http://www.yale.edu/ceo/Documentation/dem_import.pdf this one at Yale
+% University>.
+%
+% For locating DEM data covering other regions, you might try the listing of
+% <http://www.terrainmap.com/rm39.html "Free Digital Elevation Model (DEM) and
+% Free Satellite Imagery Download Links"> at <http://www.terrainmap.com/
+% terrainmap.com>.
+%
+% If you have a recent version (R2009b or later) of Mapping Toolbox, you can use
+% the Web Map Service (WMS) features to obtain DEM data.  The 
+% <http://www.mathworks.com/access/helpdesk/help/toolbox/map/wmsread.html
+% |wmsread| reference page> has an example showing how to obtain DEM data
+% directly from the JPL WMS server.
+%
+% For sources of other geospatial data that can be read using functions in the
+% Mapping Toolbox, see <http://www.mathworks.com/support/tech-notes/2100/2101.html 
+% MathWorks Technical Note 2101 -  Accessing Geospatial Data on the Internet for
+% the Mapping Toolbox>. 
+%
+%% Example: Where Does Runoff Go when it Leaves my Property? 
+% The sample data file natick_ned.bil is a 1/3-Arc Second National Elevation
+% Dataset downloaded using the <http://seamless.usgs.gov/ USGS Seamless Server>.
+% The MathWorks headquarters in Natick, Massachusetts is located at the center
+% of this data set. In this example you will determine where water runoff goes
+% when it leaves The MathWorks. 
+%
+% The file natick_ned_output_parameters.txt, included in the download, contains
+% enough information to read the data file using the MATLAB function
+% |multibandread|.
+
+type natick_ned_output_parameters.txt
+
+%%
+% Read the DEM data using |multibandread| and display it using |imshow|.
+
+Z = multibandread('natick_ned.bil', [360 403 1], 'int16', 0, 'bil', 'ieee-le');
+imshow(Z, [])
+
+%%
+% Calculate the flow matrix for the DEM.
+
+R = demFlow(Z);
+T = flowMatrix(Z, R);
+
+%%
+% Calculate the influence map for the location in the center of the DEM.
+% Visualize the influence map using |visMap|.
+
+[M, N] = size(Z);
+r = round(M/2);
+c = round(N/2);
+I = influenceMap(Z, T, r, c);
+visMap(I, Z, r, c)
+
+%%
+% Zoom in.
+
+axis([195 295 110 200])
+
+%%
+% You can see that water draining from The MathWorks headquarters flows
+% generally to the northeast.
+
+%%
+% Copyright 2009 The MathWorks, Inc.
+
+##### SOURCE END #####
+-->
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      --><title>visDemFlow</title><meta name="generator" content="MATLAB 7.10"><meta name="date" content="2009-12-03"><meta name="m-file" content="visDemFlow_help"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>visDemFlow</h1><!--introduction--><p>Visual pixel flow directions and magnitude on a DEM</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Description</a></li><li><a href="#2">Example</a></li><li><a href="#3">See also</a></li></ul></div><h2>Description<a name="1"></a></h2><p><tt>visDemFlow(E, R, S)</tt> displays a DEM <tt>E</tt> as a grayscale image and superimposes a quiver plot showing the direction <tt>R</tt> and magnitude <tt>S</tt> of pixel flow directions.</p><p><b>Note:</b> When <tt>R</tt>, <tt>S</tt>, and <tt>E</tt> contain more than 50 rows, <tt>visDemFlow</tt> crudely downsamples <tt>R</tt> and <tt>S</tt> to avoid trying to display too many quiver arrows simultaneously.</p><h2>Example<a name="2"></a></h2><pre class="codeinput">E = peaks;
+[R, S] = demFlow(E);
+visDemFlow(E, R, S);
+</pre><img vspace="5" hspace="5" src="visDemFlow_help_01.jpg" alt=""> <h2>See also<a name="3"></a></h2><p><a href="demFlow_help.html"><tt>demFlow</tt></a>.</p><p class="footer">Copyright 2007-2009 The MathWorks, Inc.<br>
+      Published with MATLAB&reg; 7.10<br></p></div><!--
+##### SOURCE BEGIN #####
+%% visDemFlow
+% Visual pixel flow directions and magnitude on a DEM
+%
+%% Description
+% |visDemFlow(E, R, S)| displays a DEM |E| as a grayscale image and
+% superimposes a quiver plot showing the direction |R| and magnitude |S| of
+% pixel flow directions.
+%
+% *Note:* When |R|, |S|, and |E| contain more than 50 rows, |visDemFlow| crudely
+% downsamples |R| and |S| to avoid trying to display too many quiver arrows
+% simultaneously.
+%
+%% Example
+%
+E = peaks;
+[R, S] = demFlow(E);
+visDemFlow(E, R, S);
+
+%% See also
+% <demFlow_help.html |demFlow|>.
+
+%% 
+% Copyright 2007-2009 The MathWorks, Inc.
+##### SOURCE END #####
+--></body></html>

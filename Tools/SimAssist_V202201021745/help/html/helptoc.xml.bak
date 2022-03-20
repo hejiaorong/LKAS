@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<toc version="2.0">
+<!-- First tocitem specifies top level in Help browser Contents pane -->
+<!-- This can be a roadmap page, as shown below, or a content page -->
+    <tocitem target="simassist_product_page.html">SimAssist Area
+        <!-- Nest tocitems to create hierarchical entries in  Contents-->
+        <!-- To include icons, use the following syntax for tocitems: -->
+        <!-- <tocitem target="foo.html" image="HelpIcon.NAME"> -->
+        <!-- Title-of-Section </tocitem> -->
+        <!-- where NAME is one of the following (use capital letters): -->
+        <!-- FUNCTION, USER_GUIDE, EXAMPLES, BLOCK, GETTING_STARTED, -->
+        <!-- DEMOS, RELEASE_NOTES --> 
+        <!-- Icon images used for these entries are also stored in -->
+        <!-- matlabroot/toolbox/matlab/icons -->
+        <!-- A Getting Started Guide usually comes first -->
+        <tocitem target="simassist_getting_started.html" image="HelpIcon.GETTING_STARTED">
+            About SimAssist Toolbox
+            <tocitem target="simassist_system_requirements.html">System Requirements
+            </tocitem>
+            <tocitem target="simassist_features.html">Features
+            </tocitem>
+        </tocitem>
+     <!-- User Guide comes next -->
+        <tocitem target="simassist_user_guide.html" 
+            image="HelpIcon.USER_GUIDE">User Guide
+        </tocitem>
+     <!-- Function reference next -->
+     <!-- First item is page describing function categories, if any -->
+        <tocitem target="simassist_functions_by_cat.html" 
+                 image="HelpIcon.FUNCTION">Function Reference
+            <!-- List category with link to anchor in above page -->
+            <tocitem target="simassist_functions_by_cat.html#1">Flow Direction 
+                <tocitem target="demFlow_help.html">demFlow</tocitem>
+                <tocitem target="facetFlow_help.html">facetFlow</tocitem>
+                <tocitem target="flowMatrix_help.html">flowMatrix</tocitem>
+                <tocitem target="pixelFlow_help.html">pixelFlow</tocitem>
+            </tocitem>
+            <tocitem target="simassist_functions_by_cat.html#2">Preprocessing and Postprocessing
+                <tocitem target="borderNans_help.html">borderNans</tocitem>
+                <tocitem target="fillSinks_help.html">fillSinks</tocitem>
+                <tocitem target="postprocessPlateaus_help.html">postprocessPlateaus</tocitem>
+            </tocitem>
+            <tocitem target="simassist_functions_by_cat.html#3">Hydrological Applications
+                <tocitem target="dependenceMap_help.html">dependenceMap</tocitem>
+                <tocitem target="influenceMap_help.html">influenceMap</tocitem>
+                <tocitem target="simassistArea_help.html">simassistArea</tocitem>
+            </tocitem>
+            <tocitem target="simassist_functions_by_cat.html#4">Display Functions 
+                <tocitem target="visDemFlow_help.html">visDemFlow</tocitem>
+                <tocitem target="visMap_help.html">visMap</tocitem>
+            </tocitem>
+            <!-- List links to function ref pages, alphabetically -->
+            <!-- <...> -->
+        </tocitem>
+        <!-- Optional Release Notes file -->
+        <tocitem target="simassist_release_notes.html" 
+            image="HelpIcon.RELEASE_NOTES">Release Notes
+        </tocitem>
+        <!-- Optional List of Examples, with hyperlinks to examples in other files -->
+        <!-- Optional Function Reference by category comes next -->
+        <tocreference target="helpfuncbycat.xml" 
+                      image="HelpIcon.FUNCTION">
+        </tocreference>
+        
+        <!-- Optional link or links to your or other Web sites -->
+        <tocitem target="http://www.mathworks.com/matlabcentral/fileexchange/15818-simassist-area-functions" 
+                 image="$toolbox/matlab/icons/webicon.gif">
+        SimAssist Area Toolbox on MATLAB File Exchange
+        </tocitem>
+    </tocitem>
+</toc>

@@ -1,0 +1,110 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      --><title>flowMatrix</title><meta name="generator" content="MATLAB 7.10"><meta name="date" content="2009-12-07"><meta name="m-file" content="flowMatrix_help"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>flowMatrix</h1><!--introduction--><p>System of linear equations representing pixel flow</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Description</a></li><li><a href="#2">Reference</a></li><li><a href="#3">Example</a></li><li><a href="#4">See also</a></li></ul></div><h2>Description<a name="1"></a></h2><p><tt>T = flowMatrix(E, R)</tt> computes a sparse linear system representing flow from pixel to pixel in the DEM represented by the matrix of height values, <tt>E</tt>. <tt>R</tt> is the matrix of pixel flow directions as computed by <tt>demFlow</tt>.  <tt>T</tt> is <tt>numel(E)</tt> -by- <tt>numel(E)</tt>.  The value <tt>T(i,j)</tt> is the negative of the fractional flow from pixel <tt>j</tt> to pixel <tt>i</tt>, where pixels are numbered columnwise. For example, if <tt>E</tt> is 15-by-10, then <tt>T</tt> is 150-by-150, and <tt>T(17,18)</tt> is the negative of the fractional flow from pixel 18 (row 3, column 2) to pixel 17 (row 2, column 2).</p><p><tt>T = flowMatrix(E, R, d1, d2)</tt> specifies the spacing of pixels; <tt>d1</tt> is the horizontal pixel spacing.  <tt>d2</tt> is the vertical pixel spacing.  d1 and <tt>d2</tt> are optional; if omitted, a value of 1.0 is assumed.</p><p><b>Note:</b> Connected groups of NaN pixels touching the border are treated as having no contribution to flow.</p><h2>Reference<a name="2"></a></h2><p>Tarboton, "A new method for the determination of flow directions and upslope areas in grid digital elevation models," <i>Water Resources Research</i>, vol. 33, no. 2, pages 309-319, February 1997.</p><h2>Example<a name="3"></a></h2><pre class="codeinput">E = peaks;
+R = demFlow(E);
+T = flowMatrix(E, R);
+spy(T)
+</pre><img vspace="5" hspace="5" src="flowMatrix_help_01.jpg" alt=""> <h2>See also<a name="4"></a></h2><p><a href="demFlow_help.html"><tt>demFlow</tt></a>, <a href="dependenceMap_help.html"><tt>dependenceMap</tt></a>, <a href="influenceMap_help.html"><tt>influenceMap</tt></a>, <a href="upslopeArea_help.html"><tt>upslopeArea</tt></a>.</p><p class="footer">Copyright 2007-2009 The MathWorks, Inc.<br>
+      Published with MATLAB&reg; 7.10<br></p></div><!--
+##### SOURCE BEGIN #####
+%% flowMatrix
+% System of linear equations representing pixel flow
+%
+%% Description
+% |T = flowMatrix(E, R)| computes a sparse linear system representing flow from
+% pixel to pixel in the DEM represented by the matrix of height values,
+% |E|. |R| is the matrix of pixel flow directions as computed by |demFlow|.  |T| is
+% |numel(E)| -by- |numel(E)|.  The value |T(i,j)| is the negative of the fractional
+% flow from pixel |j| to pixel |i|, where pixels are numbered columnwise. For
+% example, if |E| is 15-by-10, then |T| is 150-by-150, and |T(17,18)| is the
+% negative of the fractional flow from pixel 18 (row 3, column 2) to pixel 17
+% (row 2, column 2).
+%
+% |T = flowMatrix(E, R, d1, d2)| specifies the spacing of pixels; |d1| is
+% the horizontal pixel spacing.  |d2| is the vertical pixel spacing.  d1
+% and |d2| are optional; if omitted, a value of 1.0 is assumed.
+%
+% *Note:* Connected groups of NaN pixels touching the border are treated as
+% having no contribution to flow.
+%
+%% Reference
+% Tarboton, "A new method for the determination of flow
+% directions and upslope areas in grid digital elevation models," _Water
+% Resources Research_, vol. 33, no. 2, pages 309-319, February 1997. 
+%
+%% Example
+E = peaks;
+R = demFlow(E);
+T = flowMatrix(E, R);
+spy(T)
+
+%% See also
+% <demFlow_help.html |demFlow|>, <dependenceMap_help.html |dependenceMap|>, 
+% <influenceMap_help.html |influenceMap|>, <upslopeArea_help.html |upslopeArea|>.
+
+%% 
+% Copyright 2007-2009 The MathWorks, Inc.
+##### SOURCE END #####
+--></body></html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      --><title>Functions by Category</title><meta name="generator" content="MATLAB 7.10"><meta name="date" content="2009-12-03"><meta name="m-file" content="upslope_functions_by_cat"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>Functions by Category</h1><!--introduction--><p>Upslope Area Toolbox Version 2.0 09-Dec-2009</p><p>Requires Image Processing Toolbox&#8482;.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Flow Direction</a></li><li><a href="#2">Preprocessing and Postprocessing</a></li><li><a href="#3">Hydrological Applications</a></li><li><a href="#4">Display</a></li><li><a href="#5">Data</a></li><li><a href="#6">Source</a></li></ul></div><h2>Flow Direction<a name="1"></a></h2><div><ul><li><a href="demFlow_help.html"><tt>demFlow</tt></a> - Downslope flow direction for a DEM</li><li><a href="facetFlow_help.html"><tt>facetFlow</tt></a> - Facet flow direction</li><li><a href="flowMatrix_help.html"><tt>flowMatrix</tt></a> - Linear equations representing water flow</li><li><a href="pixelFlow_help.html"><tt>pixelFlow</tt></a>           - Downslope flow direction for DEM pixels</li></ul></div><h2>Preprocessing and Postprocessing<a name="2"></a></h2><div><ul><li><a href="borderNans_help.html"><tt>borderNans</tt></a> - Find NaNs connected to DEM border</li><li><a href="fillSinks_help.html"><tt>fillSinks</tt></a> - Fill interior sinks in a DEM</li><li><a href="postprocessPlateaus_help.html"><tt>postprocessPlateaus</tt></a> - Replace upslope areas for plateaus with mean value</li></ul></div><h2>Hydrological Applications<a name="3"></a></h2><div><ul><li><a href="dependenceMap_help.html"><tt>dependenceMap</tt></a> - Dependence map for water flow in a DEM</li><li><a href="influenceMap_help.html"><tt>influenceMap</tt></a> - Influence map for water flow in a DEM</li><li><a href="upslopeArea_help.html"><tt>upslopeArea</tt></a> - Upslope area measurements for a DEM</li></ul></div><h2>Display<a name="4"></a></h2><div><ul><li><a href="visDemFlow_help.html"><tt>visDemFlow</tt></a> - Visualize flow directions in a DEM</li><li><a href="visMap_help.html"><tt>visMap</tt></a> - Visualize influence or dependence map for a DEM</li></ul></div><h2>Data<a name="5"></a></h2><div><ul><li>milford_ma_dem.mat - Sample DEM data provided by USGS and distributed via Geo Community (geoworld.com), a USGS data distribution partner.  The data set is a 1:24,000-scale raster profile digital elevation model.  Download the "Milford" file from the "Digital Elevation Models (DEM) - 24K Middlesex County, Massachusetts, United States" page at <a href="http://data.geocomm.com/catalog/US/61059/526/group4-3.html">http://data.geocomm.com/catalog/US/61059/526/group4-3.html</a>.</li><li>natick_ned* - Sample 1/3 arc-second DEM data for a region in Natick, Massachusetts.  Downloaded from the The National Map Seamless Server (<a href="http://seamless.usgs.gov/index.php)">http://seamless.usgs.gov/index.php)</a>.</li></ul></div><h2>Source<a name="6"></a></h2><p>Steven L. Eddins</p><p class="footer">Copyright 2007-2009 The MathWorks, Inc.<br>
+      Published with MATLAB&reg; 7.10<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Functions by Category
+% Upslope Area Toolbox
+% Version 2.0 09-Dec-2009
+%
+% Requires Image Processing Toolbox(TM).
+%
+%% Flow Direction
+% * <demFlow_help.html |demFlow|> - Downslope flow direction for a DEM
+% * <facetFlow_help.html |facetFlow|> - Facet flow direction
+% * <flowMatrix_help.html |flowMatrix|> - Linear equations representing water flow
+% * <pixelFlow_help.html |pixelFlow|>           - Downslope flow direction for DEM pixels
+%
+%% Preprocessing and Postprocessing
+% * <borderNans_help.html |borderNans|> - Find NaNs connected to DEM border
+% * <fillSinks_help.html |fillSinks|> - Fill interior sinks in a DEM
+% * <postprocessPlateaus_help.html |postprocessPlateaus|> - Replace upslope areas for plateaus with mean value 
+%
+%% Hydrological Applications
+% * <dependenceMap_help.html |dependenceMap|> - Dependence map for water flow in a DEM
+% * <influenceMap_help.html |influenceMap|> - Influence map for water flow in a DEM
+% * <upslopeArea_help.html |upslopeArea|> - Upslope area measurements for a DEM
+%
+%% Display
+% * <visDemFlow_help.html |visDemFlow|> - Visualize flow directions in a DEM
+% * <visMap_help.html |visMap|> - Visualize influence or dependence map for a DEM
+%
+%% Data
+% * milford_ma_dem.mat - Sample DEM data provided by USGS and distributed
+% via Geo Community (geoworld.com), a USGS data
+% distribution partner.  The data set is a 1:24,000-scale
+% raster profile digital elevation model.  Download the
+% "Milford" file from the "Digital Elevation Models (DEM)
+% - 24K Middlesex County, Massachusetts, United States"
+% page at http://data.geocomm.com/catalog/US/61059/526/group4-3.html.
+% * natick_ned* - Sample 1/3 arc-second DEM data for a region in Natick,
+% Massachusetts.  Downloaded from the The National Map Seamless Server
+% (http://seamless.usgs.gov/index.php).
+%
+%% Source
+% Steven L. Eddins
+% Copyright 2007-2009 The MathWorks, Inc.
+
+##### SOURCE END #####
+--></body></html>

@@ -1,0 +1,169 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      --><title>pixelFlow</title><meta name="generator" content="MATLAB 7.10"><meta name="date" content="2009-12-03"><meta name="m-file" content="pixelFlow_help"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>pixelFlow</h1><!--introduction--><p>Downslope flow direction for DEM pixels</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Description</a></li><li><a href="#2">Reference</a></li><li><a href="#3">Examples</a></li><li><a href="#6">See also</a></li></ul></div><h2>Description<a name="1"></a></h2><p><tt>[R, S] = pixelFlow(E, i, j, d1, d2)</tt> computes the flow direction and slope for specified pixels (<tt>i</tt> and <tt>j</tt>) of a digital elevation model (<tt>E</tt>). <tt>E</tt> is a matrix of elevation values.  <tt>i</tt> and <tt>j</tt>, which must be the same size, are the row and column coordinates of the specified pixels.  <tt>d1</tt> and <tt>d2</tt> are the horizontal and vertical pixel center spacing.  <tt>d1</tt> and <tt>d2</tt> are optional; if omitted, a value of 1.0 is assumed.</p><p>The specified pixels cannot be on the border of <tt>E</tt>.  In other words, <tt>i</tt> must be greater than 1 and less than <tt>size(E, 1)</tt>, and <tt>j</tt> must be greater than 1 and less than <tt>size(E, 2)</tt>.</p><p><tt>R</tt>, which is the same size as <tt>i</tt> and <tt>j</tt>, contains the pixel flow direction in radians.  Pixel flow direction is measured counter clockwise from the east-pointing horizontal axis.  <tt>R</tt> is NaN for each pixel that has no downhill neighbors.</p><p><tt>S</tt>, which is the same size as <tt>i</tt> and <tt>j</tt>, is the downward slope along the pixel flow direction.  Negative values indicate that the corresponding pixels have no downhill neighbors.</p><p><b>Note:</b> Connected groups of NaN pixels touching the border are treated as being at a higher elevation than all the other pixels in <tt>E</tt>.</p><h2>Reference<a name="2"></a></h2><p>Tarboton, "A new method for the determination of flow directions and upslope areas in grid digital elevation models," <i>Water Resources Research</i>, vol. 33, no. 2, pages 309-319, February 1997.</p><h2>Examples<a name="3"></a></h2><p>Flow from the center pixel goes to the right, so the pixel flow direction is 0 radians.</p><pre class="codeinput">E1 = [2 1 0; 2 1 0; 2 1 0]
+R1 = pixelFlow(E1, 2, 2)
+</pre><pre class="codeoutput">
+E1 =
+
+     2     1     0
+     2     1     0
+     2     1     0
+
+
+R1 =
+
+     0
+
+</pre><p>Flow from the center pixel goes to the upper right, so the pixel flow direction is pi/4 radians.</p><pre class="codeinput">E2 = [2 1 0; 3 2 1; 4 3 2]
+R2 = pixelFlow(E2, 2, 2)
+</pre><pre class="codeoutput">
+E2 =
+
+     2     1     0
+     3     2     1
+     4     3     2
+
+
+R2 =
+
+    0.7854
+
+</pre><p>The center pixel has no downhill neighbors, so the pixel flow direction is NaN.</p><pre class="codeinput">E3 = [2 2 2; 2 1 2; 2 2 2]
+R3 = pixelFlow(E3, 2, 2)
+</pre><pre class="codeoutput">
+E3 =
+
+     2     2     2
+     2     1     2
+     2     2     2
+
+
+R3 =
+
+   NaN
+
+</pre><h2>See also<a name="6"></a></h2><p><a href="demFlow_help.html"><tt>demFlow</tt></a>, <a href="facetFlow_help.html"><tt>facetFlow</tt></a>.</p><p class="footer">Copyright 2007-2009 The MathWorks, Inc.<br>
+      Published with MATLAB&reg; 7.10<br></p></div><!--
+##### SOURCE BEGIN #####
+%% pixelFlow 
+% Downslope flow direction for DEM pixels
+%
+%% Description
+% |[R, S] = pixelFlow(E, i, j, d1, d2)| computes the flow direction and slope
+% for specified pixels (|i| and |j|) of a digital elevation model (|E|). |E| is
+% a matrix of elevation values.  |i| and |j|, which must be the same size, are
+% the row and column coordinates of the specified pixels.  |d1| and |d2| are the
+% horizontal and vertical pixel center spacing.  |d1| and |d2| are optional; if
+% omitted, a value of 1.0 is assumed.
+%
+% The specified pixels cannot be on the border of |E|.  In other words, |i|
+% must be greater than 1 and less than |size(E, 1)|, and |j| must be greater
+% than 1 and less than |size(E, 2)|.
+%
+% |R|, which is the same size as |i| and |j|, contains the pixel flow direction
+% in radians.  Pixel flow direction is measured counter clockwise from the
+% east-pointing horizontal axis.  |R| is NaN for each pixel that has no
+% downhill neighbors. 
+%
+% |S|, which is the same size as |i| and |j|, is the downward slope along the
+% pixel flow direction.  Negative values indicate that the corresponding
+% pixels have no downhill neighbors.
+%
+% *Note:* Connected groups of NaN pixels touching the border are treated as
+% being at a higher elevation than all the other pixels in |E|.
+%
+%% Reference
+% Tarboton, "A new method for the determination of flow
+% directions and upslope areas in grid digital elevation models," _Water
+% Resources Research_, vol. 33, no. 2, pages 309-319, February 1997. 
+%
+%% Examples
+% Flow from the center pixel goes to the right, so the pixel flow
+% direction is 0 radians.
+%
+E1 = [2 1 0; 2 1 0; 2 1 0]
+R1 = pixelFlow(E1, 2, 2)
+
+%%
+% Flow from the center pixel goes to the upper right, so the pixel
+% flow direction is pi/4 radians.
+%
+E2 = [2 1 0; 3 2 1; 4 3 2]
+R2 = pixelFlow(E2, 2, 2)
+
+%%
+% The center pixel has no downhill neighbors, so the pixel flow
+% direction is NaN.
+%
+E3 = [2 2 2; 2 1 2; 2 2 2]
+R3 = pixelFlow(E3, 2, 2)
+
+%% See also
+% <demFlow_help.html |demFlow|>, <facetFlow_help.html |facetFlow|>.
+
+%% 
+% Copyright 2007-2009 The MathWorks, Inc.
+##### SOURCE END #####
+--></body></html>
