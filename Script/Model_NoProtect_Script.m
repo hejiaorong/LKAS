@@ -52,19 +52,11 @@ delete_block(strcat(SubSystName,'/LKASve_g_ob5H_10'));
 delete_block(strcat(SubSystName,'/LKASve_g_ob5L_10'));
 delete_block(strcat(SubSystName,'/LKASve_g_ob6H_10'));
 delete_block(strcat(SubSystName,'/LKASve_g_ob6L_10'));
-delete_block(strcat(SubSystName,'/LKASve_g_ob07H_100'));
-delete_block(strcat(SubSystName,'/LKASve_g_ob07L_100'));
-delete_block(strcat(SubSystName,'/LKASve_g_ob08H_100'));
-delete_block(strcat(SubSystName,'/LKASve_g_ob08L_100'));
 delete_block(strcat(SubSystName,'/Monitor'));
 delete_block(strcat(filename,'/LKASve_g_ob5H_10'));
 delete_block(strcat(filename,'/LKASve_g_ob5L_10'));
 delete_block(strcat(filename,'/LKASve_g_ob6H_10'));
 delete_block(strcat(filename,'/LKASve_g_ob6L_10'));
-delete_block(strcat(filename,'/LKASve_g_ob07H_100'));
-delete_block(strcat(filename,'/LKASve_g_ob07L_100'));
-delete_block(strcat(filename,'/LKASve_g_ob08H_100'));
-delete_block(strcat(filename,'/LKASve_g_ob08L_100'));
 
 %% 3.输出slxp模型，输出mat文件
 getProtectFileName = strcat(protectfile,'.slx');
