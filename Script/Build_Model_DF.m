@@ -81,11 +81,18 @@ delete(strcat(filename,'.slxc'));
 delete(strcat(filename,'_autosar_rtw'));
 eval('clear all');
 [Fcheckflg,Fcheckinfo] = Build_FloatCheck();
+[GBKcheckflg,GBKcheckinfo] = Build_GBKCheck();
 if Fcheckflg
     fprintf(2,'【警告】您生成的代码含有double数据类型，请检查！\n');
     msgbox('您生成的代码含有double数据类型', '警告','error');
     eval('Fcheckinfo');
-else
+end
+if GBKcheckflg
+    fprintf(2,'【警告】您生成的LKAS_component.arxml中含有GBK字符，请检查！\n');
+    msgbox('您生成的LKAS_component.arxml中含有GBK字符', '警告','error');
+    eval('GBKcheckinfo');
+end
+if ~Fcheckflg && ~GBKcheckflg
     fprintf('【成功】您生成的代码已打包\n');
     eval('clear all');
 end
